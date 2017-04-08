@@ -12,14 +12,14 @@
 *.thm
 *.toc
 
-*.pdf
+# *.pdf
 
 # *.bat
 
-doc/
-
 source/*.sty
 source/*.def
+source/*.pdf
 
 test/*.sty
 test/*.def
+test/*.pdf
