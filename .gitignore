@@ -1,0 +1,25 @@
+*.aux
+*.fdb_latexmk
+*.fls
+*.glo
+*.hd
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.synctex.gz
+*.thm
+*.toc
+
+*.pdf
+
+# *.bat
+
+doc/
+
+source/*.sty
+source/*.def
+
+test/*.sty
+test/*.def
