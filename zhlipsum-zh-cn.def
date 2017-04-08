@@ -27,11 +27,10 @@
 %%               and the derived files zhlipsum.sty
 %%                                     zhlipsum-zh-cn.def
 %% 
-
-\NeedsTeXFormat{LaTeX2e}
-\RequirePackage{expl3,xparse}
-\ProvidesExplFile {zhlipsum-zh-cn.def} {2017/04/07} {0.1}
-  {Simplified~ Chinese~ `Lorem~ Ipsum'~ text~ (zhlipsum)}
+\GetIdInfo $Id: zhlipsum.dtx 0.1 2017-04-08 12:00:00Z Xiangdong Zeng $
+  {Simplified Chinese `Lorem Ipsum' text (for zhlipsum)}
+\ProvidesExplFile{\ExplFileName}
+  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 \tl_const:Nn \c__zhlipsum_text_zh_cn_i_tl
   {
     劳仑衣普桑，认至将指点效则机，最你更枝。想极整月正进好志次回

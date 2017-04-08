@@ -25,61 +25,45 @@
 %
 % \iffalse
 %
-
+%
+%<package>\NeedsTeXFormat{LaTeX2e}
+%<package>\RequirePackage{expl3,xparse}
+%<package|zh-cn>\GetIdInfo $Id: zhlipsum.dtx 0.1 2017-04-08 12:00:00Z Xiangdong Zeng $
+%<driver|package>  {Chinese `Lorem Ipsum' text}
+%<zh-cn>  {Simplified Chinese `Lorem Ipsum' text (for zhlipsum)}
+%
 %<*driver>
-
-%%%%%%%%%% 版本历史 %%%%%%%%%%
-% v0.1 2017/04/07
-%   开始
-
-% 禁止调用 `thumbpdf' 宏包
-% 见 http://tex.stackexchange.com/q/39415
-% 又见 `ctxdoc.sty'
-\makeatletter
-\@namedef{ver@thumbpdf.sty}{9999/99/99}
-\makeatother
-
 \documentclass{ctxdoc-m}
 
-\ExplSyntaxOn
-% 重定义 `\__codedoc_print_macroname:nN`
-% 修改不使用紧缩字体的最大命令长度为 99
-\int_const:Nn \l__mydoc_max_name_length_int { 99 }
-\cs_gset_protected:Npn \__codedoc_print_macroname:nN #1#2
-  {
-    \strut
-    \__codedoc_get_hyper_target:xN
-      {
-        \exp_not:n {#1}
-        \bool_if:NT #2 { \tl_to_str:n {TF} }
-      }
-      \l__codedoc_tmpa_tl
-    \cs_if_exist:cTF { r@ \l__codedoc_tmpa_tl }
-      {
-        \exp_last_unbraced:NNo \hyperref
-          [ \l__codedoc_tmpa_tl ]
-      }
-      { \use:n }
-      {
-        \int_compare:nTF
-          { \str_count:n {#1} <= \l__mydoc_max_name_length_int }
-          { \MacroFont }
-          { \MacroLongFont }
-        \tl_set:Nn \l__codedoc_tmpa_tl {#1}
-        \tl_replace_all:Nno \l__codedoc_tmpa_tl
-          { ~ } { \c_catcode_other_space_tl }
-        \__codedoc_macroname_prefix:o \l__codedoc_tmpa_tl
-        \__codedoc_macroname_suffix:N #2
-      }
-  }
-\ExplSyntaxOff
+%% 字体设置。
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{Latin Modern Mono Light}[HyphenChar = None]
+\setmathfont{TeX Gyre Pagella Math}
+\setCJKmainfont{FZShuSong-Z01}%
+  [BoldFont = FZHei-B01, ItalicFont = FZKai-Z03]
+\setCJKmonofont{FZFangSong-Z02}%
+  [BoldFont = FZHei-B01, ItalicFont = FZKai-Z03]
 
-\usepackage[UTF8, heading = true]{ctex}
-%\usepackage{geometry}
-%\usepackage{xcolor}
-%\usepackage{unicode-math}
-%\usepackage{pifont}
-%\usepackage{siunitx}
+%% 中文排版格式。
+\ctexset
+{
+  section = {
+    name    = {第,节},
+    format += \raggedright
+  },
+  indexname = {代码索引}
+}
+
+%% 代码部分页边距。
+\geometry{
+  paper  = a4paper,
+  left   = 6.35 cm,
+  right  = 2.54 cm,
+  top    = 3.18 cm,
+  bottom = 2.54 cm
+}
+
 \sisetup{
   number-math-rm       = \ensuremath,
   inter-unit-product   = \ensuremath{{}\cdot{}},
@@ -90,65 +74,21 @@
   separate-uncertainty = true
 }
 
-%% 代码部分页边距。
-\geometry{
-  paper  = a4paper,
-  left   = 6.35 cm,
-  right  = 2.54 cm,
-  top    = 3.18 cm,
-  bottom = 2.54 cm
-%  showframe
-}
-
-\setmainfont{TeX Gyre Pagella}
-\setsansfont{TeX Gyre Heros}
-\setmonofont{Latin Modern Mono Light}[HyphenChar = None]
-\setmathfont{TeX Gyre Pagella Math}
-
-\setCJKmainfont{FZShuSong-Z01}%
-  [BoldFont = FZHei-B01, ItalicFont = FZKai-Z03]
-\setCJKmonofont{FZFangSong-Z02}%
-  [BoldFont = FZHei-B01, ItalicFont = FZKai-Z03]
-
-%\setCJKfamilyfont{宋}{FZShuSong-Z01}
-%\setCJKfamilyfont{黑}{FZHei-B01}
-%\setCJKfamilyfont{仿}{FZFangSong-Z02}
-%\setCJKfamilyfont{楷}{FZKai-Z03}
-
-%% 句号处理
-%\catcode`\。 = \active
-%\newcommand{。}{．}
-
-\ctexset
-{
-  section = {
-    name    = {第,节},
-    format += \raggedright
-  },
-  indexname = {代码索引}
+\hypersetup{
+  pdftitle          = {zhlipsum：中文版乱数假文（Lorem ipsum）},
+  pdfauthor         = {曾祥东},
+  bookmarksopen     = true,
+  bookmarksnumbered = true,
+  pdfborder         = 0 0 0,
+  colorlinks,
+  linkcolor         = {red!60!black},
+  citecolor         = {green!50!black},
+  urlcolor          = {blue!63!green}
 }
 
 \renewcommand{\pkg}[1]{\textsf{#1}}
 \renewcommand{\cls}[1]{\textsf{\textit{#1}}}
 
-%\newcommand{\XeLaTeX}{\hologo{XeLaTeX}}
-%\newcommand{\LuaLaTeX}{\hologo{LuaLaTeX}}
-
-\hypersetup{
-  % PDF 标题作者
-  pdftitle = {zhlipsum：中文版乱数假文（Lorem ipsum）},
-  pdfauthor = {曾祥东},
-  bookmarksopen = true,
-  % bookmarksopenlevel = 1,
-  bookmarksnumbered = true,
-  % hyperfootnotes = false,
-  % linktoc = page,
-  pdfborder = 0 0 0,
-  colorlinks,
-  linkcolor = {red!60!black},
-  citecolor = {green!50!black},
-  urlcolor  = {blue!63!green}
-}
 
 \EnableCrossrefs
 \CodelineIndex
@@ -188,10 +128,12 @@
 %
 % \title{\textbf{zhlipsum：中文版乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
+% \date{2017/04/08 \quad v0.1\thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 % \maketitle
 %
 % \begin{minipage}{0.9\textwidth}
 % \small \itshape
+% \mbox{} \par \mbox{} \par
 % \qquad 如彭奇和瓦特曼的公共事业所证实的那样有一个胡子雪雪白
 % 的上帝超越时间超越空间确确实实存在他在神圣的冷漠神圣的疯狂神
 % 圣的喑哑的高处深深地爱着我们除了少数的例外不知什么原因但时间
@@ -270,17 +212,15 @@
 %
 % 本宏包使用 \LaTeX3 语法编写，依赖于 \pkg{expl3} 环境。
 %    \begin{macrocode}
-%<*sty|zh-cn>
-\NeedsTeXFormat{LaTeX2e}
-\RequirePackage{expl3,xparse}
-%</sty|zh-cn>
+%<package>\ProvidesExplPackage{\ExplFileName}
+%<zh-cn>\ProvidesExplFile{\ExplFileName}
+%<package|zh-cn>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %    \end{macrocode}
 %
 % \subsection{宏包主体}
+%
 %    \begin{macrocode}
-%<*sty>
-\ProvidesExplPackage {zhlipsum} {2017/04/07} {0.1}
-  {Chinese `Lorem Ipsum' text}
+%<*package>
 %    \end{macrocode}
 %
 % \begin{macro}{\l__zhlipsum_tmpa_int,\l__zhlipsum_tmpa_str}
@@ -363,14 +303,12 @@
 % 读入假文文本定义文件。
 %    \begin{macrocode}
 \file_input:n { zhlipsum-zh-cn.def }
-%</sty>
+%</package>
 %    \end{macrocode}
 %
 % \subsection{假文文本——简体中文}
 %    \begin{macrocode}
 %<*zh-cn>
-\ProvidesExplFile {zhlipsum-zh-cn.def} {2017/04/07} {0.1}
-  {Simplified~ Chinese~ `Lorem~ Ipsum'~ text~ (zhlipsum)}
 %    \end{macrocode}
 %
 % 由 \url{http://www.cancms.com/content/dummytext} 网站生成。

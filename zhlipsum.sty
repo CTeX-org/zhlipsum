@@ -4,7 +4,7 @@
 %%
 %% The original source files were:
 %%
-%% zhlipsum.dtx  (with options: `sty')
+%% zhlipsum.dtx  (with options: `package')
 %% 
 %%     Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>
 %% 
@@ -27,11 +27,12 @@
 %%               and the derived files zhlipsum.sty
 %%                                     zhlipsum-zh-cn.def
 %% 
-
 \NeedsTeXFormat{LaTeX2e}
 \RequirePackage{expl3,xparse}
-\ProvidesExplPackage {zhlipsum} {2017/04/07} {0.1}
+\GetIdInfo $Id: zhlipsum.dtx 0.1 2017-04-08 12:00:00Z Xiangdong Zeng $
   {Chinese `Lorem Ipsum' text}
+\ProvidesExplPackage{\ExplFileName}
+  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 \int_new:N \l__zhlipsum_tmpa_int
 \str_new:N \l__zhlipsum_tmpa_str
 \str_new:N \l__zhlipsum_lang_code_st
