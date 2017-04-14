@@ -28,11 +28,18 @@
 %
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3,xparse}
-%<package|zh-cn>\GetIdInfo $Id: zhlipsum.dtx 0.1 2017-04-08 12:00:00Z Xiangdong Zeng $
+%<package|zh-cn>\GetIdInfo $Id: zhlipsum.dtx 0.2 2017-04-14 12:00:00Z Xiangdong Zeng $
 %<driver|package>  {Chinese `Lorem Ipsum' text}
 %<zh-cn>  {Simplified Chinese `Lorem Ipsum' text (for zhlipsum)}
 %
 %<*driver>
+%% 版本历史
+% v0.1 2017/04/08
+%   开始
+% v0.2 2017/04/14
+%   仿照 kantlipsum 宏包，实现任意的段落选取
+%   使用命名空间
+
 \documentclass{ctxdoc-m}
 
 %% 字体设置。
@@ -128,7 +135,7 @@
 %
 % \title{\textbf{zhlipsum：中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2017/04/08 \quad v0.1\thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
+% \date{2017/04/14 \quad v0.2\thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 % \maketitle
 %
 % \begin{minipage}{0.9\textwidth}
@@ -184,15 +191,41 @@
 % \restoregeometry
 %
 % \section{使用说明}
-% \begin{function}{\zhlipsum,\zhlipsum*}
+% \begin{function}{\zhlipsum}
 %   \begin{syntax}
-%     |\zhlipsum|\oarg{段落数}
-%     |\zhlipsum*|\oarg{段落数}
+%     |\zhlipsum|\oarg{段落}
 %   \end{syntax}
-%   插入假文文本。
-%   不带星号的版本会在假文文本间分段，带星号的版本则不会。
-%   默认段落数为 3。
+%   插入假文文本，每段之间会分段。
+%
+%   只给定一个参数时，将输出对应序号的段落，
+%   如 |\zhlipsum[17]| 将生成第 17 段。
+%   给定两个参数并用“|-|”连接时，
+%   则会输出该范围内的段落。
+%   如 |\zhlipsum[5-34]| 将生成第 5 至第 34 段假文。
+%
+%   目前本宏包只提供了 50 段假文文本，
+%   超出范围的数字一律按 50 处理。
+%   如 |\zhlipsum[48-55]| 将只会输出第 48、49 和第 50 段。
+%
+%   当前仅支持简体中文的假文，以“劳仑衣普桑”开头。
 % \end{function}
+%
+% \begin{function}{\zhlipsum*}
+%   \begin{syntax}
+%     |\zhlipsum*|\oarg{段落}
+%   \end{syntax}
+%   插入假文文本，每段之间不分段。用法同 |\zhlipsum|。
+% \end{function}
+%
+% \section{已知问题}
+% \begin{enumerate}
+%   \item 本宏包中的假文文字使用 UTF-8 编码。用 \pdfLaTeX{} 编译时，
+%     必须在 \pkg{ctex} 宏包或 \cls{ctexart} 等文档类中指明
+%     |UTF8| 选项，否则将无法编译。
+%   
+%   \item 用 |\zhlipsum*| 构建较长的单段假文文本时，可能会很慢。
+%     可能是因为 \TeX{} 的断行算法需耗费较多时间来处理长段落。
+% \end{enumerate}
 %
 % \StopEventually{
 %   ^^A索引部分页边距。
@@ -221,81 +254,159 @@
 %
 %    \begin{macrocode}
 %<*package>
+%<@@=zhlipsum>
 %    \end{macrocode}
 %
-% \begin{macro}{\l__zhlipsum_tmpa_int,\l__zhlipsum_tmpa_str}
+% \begin{macro}{\l_@@_tmpa_str}
 % 临时变量。
 %    \begin{macrocode}
-\int_new:N \l__zhlipsum_tmpa_int
-\str_new:N \l__zhlipsum_tmpa_str
+\str_new:N \l_@@_tmpa_str
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\l__zhlipsum_lang_code_str,
-%   \c__zhlipsum_text_cs_prefix,\c__zhlipsum_text_cs_suffix}
+% \begin{macro}{\l_@@_lang_code_str,
+%   \c_@@_text_cs_prefix,\c_@@_text_cs_suffix}
 % 假文每一段的命令形如 |\c__zhlipsum_text_语言代码_段落数_tl|，
 % 其中的“段落数”用小写罗马数字表示。
 % 这几个字符串分别构成命令的几个部分。
 %    \begin{macrocode}
-\str_new:N \l__zhlipsum_lang_code_st
-\str_const:Nn \c__zhlipsum_text_cs_prefix { c__zhlipsum_text_ }
-\str_const:Nn \c__zhlipsum_text_cs_suffix { _tl }
+\str_new:N    \l_@@_lang_code_str
+\str_const:Nn \c_@@_text_cs_prefix { c__zhlipsum_text_ }
+\str_const:Nn \c_@@_text_cs_suffix { _tl }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum_print_text:N}
+% \begin{macro}{\c_@@_max_par_number_int}
+% 假文的最大段落数。目前设为 50。
+%    \begin{macrocode}
+\int_const:Nn \c_@@_max_par_number_int { 50 }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\zhlipsum_print_single:N}
 % 输出第 $n$ 段假文。
 % 方法是将段落数 $n$ 先转换成罗马数字，再组成完整命令。
 % 目前仅支持简体中文。
 %    \begin{macrocode}
-\cs_new:Npn \zhlipsum_print_text:N #1
+\cs_new:Npn \zhlipsum_print_single:N #1
   {
-    \str_set:Nx \l__zhlipsum_tmpa_str
+    \str_set:Nx \l_@@_tmpa_str
       { \int_to_roman:n { #1 } }
-    \str_set:Nn \l__zhlipsum_lang_code_st
+    \str_set:Nn \l_@@_lang_code_str
       { zh_cn_ }
-    \str_put_left:Nx  \l__zhlipsum_tmpa_str
-      \l__zhlipsum_lang_code_st
-    \str_put_left:Nx  \l__zhlipsum_tmpa_str
-      \c__zhlipsum_text_cs_prefix
-    \str_put_right:Nx \l__zhlipsum_tmpa_str
-      \c__zhlipsum_text_cs_suffix
-    \use:c { \str_use:N \l__zhlipsum_tmpa_str }
+    \str_put_left:Nx  \l_@@_tmpa_str
+      \l_@@_lang_code_str
+    \str_put_left:Nx  \l_@@_tmpa_str
+      \c_@@_text_cs_prefix
+    \str_put_right:Nx \l_@@_tmpa_str
+      \c_@@_text_cs_suffix
+%% Print paragrapf number string. For debug.
+%\str_use:N \l_@@_tmpa_str
+    \use:c { \str_use:N \l_@@_tmpa_str }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_max_par_int,
-%   \c__zhlipsum_default_par_int}
-% 设置最大段落数和默认段落数。
+% \begin{macro}{\l_@@_begin_int,\l_@@_end_int,\l_@@_step_int}
+% 循环的开始、结束和步长。
 %    \begin{macrocode}
-\int_const:Nn \c__zhlipsum_max_par_int { 50 }
-\int_const:Nn \c__zhlipsum_default_par_int { 3 }
+\int_new:N \l_@@_begin_int
+\int_new:N \l_@@_end_int
+\int_new:N \l_@@_step_int
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\zhlipsum_process_par_number:nn}
+% 处理段落数参数。
+%    \begin{macrocode}
+\cs_new:Npn \zhlipsum_process_par_number:nn #1 #2
+  {
+%    \end{macrocode}
+% 获得循环的开始位置。
+%    \begin{macrocode}
+    \int_compare:nTF { #1 <= \c_@@_max_par_number_int }
+      { \int_set:Nn \l_@@_begin_int { #1 } }
+      {
+        \int_set_eq:NN \l_@@_begin_int
+          \c_@@_max_par_number_int
+      }
+%    \end{macrocode}
+% 获得循环的结束位置。
+%    \begin{macrocode}
+    \IfNoValueTF { #2 }
+      {
+        \int_set_eq:NN \l_@@_end_int
+          \l_@@_begin_int
+      }
+      {
+        \int_compare:nTF { #2 <= \c_@@_max_par_number_int }
+          { \int_set:Nn \l_@@_end_int { #2 } }
+          {
+            \int_set_eq:NN \l_@@_end_int
+              \c_@@_max_par_number_int
+          }
+      }
+%    \end{macrocode}
+% 开始位置在结束位置之前时，步长为 1，否则为 $-1$。
+%    \begin{macrocode}
+      \int_compare:nTF
+        { \l_@@_begin_int <= \l_@@_end_int }
+        { \int_set_eq:NN \l_@@_step_int \c_one }
+        { \int_set:Nn    \l_@@_step_int { -1 } }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\zhlipsum_print_multi_par:nn}
+% 输出带段落的假文。
+%    \begin{macrocode}
+\cs_new:Npn \zhlipsum_print_multi_par:nn #1 #2
+  {
+    \zhlipsum_process_par_number:nn { #1 } { #2 }
+    \int_step_inline:nnnn
+      { \l_@@_begin_int }
+      { \l_@@_step_int }
+      { \l_@@_end_int }
+      {
+        \zhlipsum_print_single:N { ##1 }
+        \par
+      }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\zhlipsum_print_multi_no_par:nn}
+% 输出不带段落的假文。
+%    \begin{macrocode}
+\cs_new:Npn \zhlipsum_print_multi_no_par:nn #1 #2
+  {
+    \zhlipsum_process_par_number:nn { #1 } { #2 }
+    \int_step_inline:nnnn
+      { \l_@@_begin_int }
+      { \l_@@_step_int }
+      { \l_@@_end_int }
+      {
+        \zhlipsum_print_single:N { ##1 }
+      }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
 % \begin{macro}{\zhlipsum}
-% 输出假文，可选参数表示段落数，默认为 3。
-% 命令前后均插入了 \tn{par}，以便强制分段。
+% 输出假文，可选参数表示段落数，默认为 |1-3|。
+% 命令前后均插入了 |\par|，以便强制分段。
 % 带星号的命令在假文主体间不分段。
 %    \begin{macrocode}
-\NewDocumentCommand \zhlipsum { s O{ \c__zhlipsum_default_par_int } }
+\NewDocumentCommand \zhlipsum
+  { s >{ \SplitArgument { 1 } { - } } O{ 1 - 3 } }
   {
     \par
-    \int_set:Nn \l__zhlipsum_tmpa_int { \c_one }
-    \int_while_do:nn
-      { \l__zhlipsum_tmpa_int <= #2 }
+    \IfBooleanTF { #1 }
       {
-        % Print paragrapf number. For debug.
-        %\int_use:N \l__zhlipsum_tmpa_int
-        \zhlipsum_print_text:N \l__zhlipsum_tmpa_int
-        \IfBooleanTF { #1 }
-          {
-            \int_compare:nT { \l__zhlipsum_tmpa_int == #2 } { \par }
-          }
-          { \par }
-        \int_incr:N \l__zhlipsum_tmpa_int
+        \zhlipsum_print_multi_no_par:nn #2
+        \par
       }
+      { \zhlipsum_print_multi_par:nn #2 }
   }
 %    \end{macrocode}
 % \end{macro}
@@ -303,20 +414,22 @@
 % 读入假文文本定义文件。
 %    \begin{macrocode}
 \file_input:n { zhlipsum-zh-cn.def }
+%<@@=>
 %</package>
 %    \end{macrocode}
 %
 % \subsection{假文文本——简体中文}
 %    \begin{macrocode}
 %<*zh-cn>
+%<@@=zhlipsum_text_zh_cn>
 %    \end{macrocode}
 %
 % 由 \url{http://www.cancms.com/content/dummytext} 网站生成。
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_i_tl}
+% \begin{macro}{\c_@@_i_tl}
 % 第 1 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_i_tl
+\tl_const:Nn \c_@@_i_tl
   {
     劳仑衣普桑，认至将指点效则机，最你更枝。想极整月正进好志次回
     总般，段然取向使张规军证回，世市总李率英茄持伴。用阶千样响领
@@ -336,10 +449,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_ii_tl}
+% \begin{macro}{\c_@@_ii_tl}
 % 第 2 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_ii_tl
+\tl_const:Nn \c_@@_ii_tl
   {
     水厂共当而面三张，白家决空给意层般，单重总歼者新。每建马先口
     住月大，究平克满现易手，省否何安苏京。两今此叫证程事元七调联
@@ -359,10 +472,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_iii_tl}
+% \begin{macro}{\c_@@_iii_tl}
 % 第 3 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_iii_tl
+\tl_const:Nn \c_@@_iii_tl
   {
     她己道按收面学上全始，形万然许压己金史好，力住记赤则引秧。较
     处高方据近学级素专，者往构支明系状委起查，增子束孤不般前。验
@@ -383,10 +496,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_iv_tl}
+% \begin{macro}{\c_@@_iv_tl}
 % 第 4 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_iv_tl
+\tl_const:Nn \c_@@_iv_tl
   {
     术厂美义据那张别安响物，县交极长选行值深专质，眼心段极型翻
     新。格形连候眼王本加还题但，流但作基白具地机系，总严录件杰串
@@ -406,10 +519,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_v_tl}
+% \begin{macro}{\c_@@_v_tl}
 % 第 5 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_v_tl
+\tl_const:Nn \c_@@_v_tl
   {
     太研认发影们毛消义飞，传立观极思工观查反，响八露加杨适克励。
     受布例子东适进式数，连生片很门都说响今，领该术护家老支。许信
@@ -430,10 +543,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_vi_tl}
+% \begin{macro}{\c_@@_vi_tl}
 % 第 6 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_vi_tl
+\tl_const:Nn \c_@@_vi_tl
   {
     争身节布从选铁称后把表，业装约往始议界机整，便青盯之利圆增
     你。们院查众达能存者响住，根子历里大里土先，定千弦丽批程之。
@@ -453,10 +566,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_vii_tl}
+% \begin{macro}{\c_@@_vii_tl}
 % 第 7 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_vii_tl
+\tl_const:Nn \c_@@_vii_tl
   {
     新领决其名一有里按老进，没局省回识工然式式，斯照园位连联来
     杜。等并众度表儿他战为值装切系，压走完清派快写提较何量，处信
@@ -477,10 +590,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_viii_tl}
+% \begin{macro}{\c_@@_viii_tl}
 % 第 8 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_viii_tl
+\tl_const:Nn \c_@@_viii_tl
   {
     铁进称规例本百型支，色战红元话质应，保反易投今联。适光自气群
     布见么务西，准感办省林罐。难展料验见东真力样，身出阶容合片海
@@ -501,10 +614,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_ix_tl}
+% \begin{macro}{\c_@@_ix_tl}
 % 第 9 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_ix_tl
+\tl_const:Nn \c_@@_ix_tl
   {
     维则话它制，好较气资军，界小主。这成料值元元从都况集周他都才
     局，级按方办今但丽装伶皂式明。我包表照花白理好斯器，青应其列
@@ -524,10 +637,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_x_tl}
+% \begin{macro}{\c_@@_x_tl}
 % 第 10 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_x_tl
+\tl_const:Nn \c_@@_x_tl
   {
     铁引容一飞团江十计，革大事习世约人在养，社头岗连究眼。养率期
     都到精在代子，深或新王界部标，新指屈半针即般。研容龙片几转知
@@ -547,10 +660,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xi_tl}
+% \begin{macro}{\c_@@_xi_tl}
 % 第 11 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xi_tl
+\tl_const:Nn \c_@@_xi_tl
   {
     资边形外压他术器头政月名，断向或高反程达义数可，非争准快太公
     新苏。题对始目风的八律，条者原需易白，放豆太济雪听。象于社设
@@ -571,10 +684,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xii_tl}
+% \begin{macro}{\c_@@_xii_tl}
 % 第 12 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xii_tl
+\tl_const:Nn \c_@@_xii_tl
   {
     海带观全定事空往议，义构口角划上往义酸，就劫队做反压。经军加
     期问全小约程，证因术志里度资，各示丧盛卧学。厂速热走治住车活
@@ -594,10 +707,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xiii_tl}
+% \begin{macro}{\c_@@_xiii_tl}
 % 第 13 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xiii_tl
+\tl_const:Nn \c_@@_xiii_tl
   {
     车反用西只例则队话，相组干层九育制要，存和革豆八下。以共质物
     立一电联低，出同四原际劳王，个除养长信就。准里农化老斯化养
@@ -617,10 +730,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xiv_tl}
+% \begin{macro}{\c_@@_xiv_tl}
 % 第 14 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xiv_tl
+\tl_const:Nn \c_@@_xiv_tl
   {
     直做万开将各然她斗，今除还技常往所设性，别坚你秩询还。革却开
     回反维养安立同定，现提入划育且图反气西南，那度声回保问内呈。
@@ -641,10 +754,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xv_tl}
+% \begin{macro}{\c_@@_xv_tl}
 % 第 15 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xv_tl
+\tl_const:Nn \c_@@_xv_tl
   {
     展中传加其转业，质百科确何明，满热红使。三许阶般近众还口，众
     深很步满例天，学杏南日豆。如置号儿要元话难者一，生除种土杨思
@@ -665,10 +778,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xvi_tl}
+% \begin{macro}{\c_@@_xvi_tl}
 % 第 16 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xvi_tl
+\tl_const:Nn \c_@@_xvi_tl
   {
     目论大流多整多车千，算处往规料器机后，九美屈算敌伶杜。如流论
     门矿回也林口自强上历，东取长争领局自英斯。安消育能变用你领即
@@ -688,10 +801,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xvii_tl}
+% \begin{macro}{\c_@@_xvii_tl}
 % 第 17 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xvii_tl
+\tl_const:Nn \c_@@_xvii_tl
   {
     也及带展土达交步写海式，什果亲她没情律但高五解，那满孟五更应
     属贡。其参土构平社局，理文下持地况制，青少厂利革届，豆头所董
@@ -711,10 +824,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xviii_tl}
+% \begin{macro}{\c_@@_xviii_tl}
 % 第 18 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xviii_tl
+\tl_const:Nn \c_@@_xviii_tl
   {
     往展除线到深京布万，调任区组矿此再进，育引将须物直。料山育团
     还给造造组关在，路圆该杯届扮。四议院多代标该民么，酸各单理军
@@ -734,10 +847,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xix_tl}
+% \begin{macro}{\c_@@_xix_tl}
 % 第 19 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xix_tl
+\tl_const:Nn \c_@@_xix_tl
   {
     写心们况型队飞已划处，便自什军专带又治经，参的杨断八低现步。
     称认克强记问生精证，家金低达山热把态。向特验水报及又，然土构
@@ -758,10 +871,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xx_tl}
+% \begin{macro}{\c_@@_xx_tl}
 % 第 20 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xx_tl
+\tl_const:Nn \c_@@_xx_tl
   {
     红看圆权术如号办即，有所角七论新重，生青共酸打旷。际直地派按
     后百南期，们律没杏量因建。门适引方劳制面运适体，亲县动革门现
@@ -781,10 +894,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxi_tl}
+% \begin{macro}{\c_@@_xxi_tl}
 % 第 21 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxi_tl
+\tl_const:Nn \c_@@_xxi_tl
   {
     叫到铁即接品种般不法，正现方根话说消林，价三陕内眼议地民。农
     况马些青山外律队，级世过规白飞容务，片打学影律不济。机年音建
@@ -804,10 +917,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxii_tl}
+% \begin{macro}{\c_@@_xxii_tl}
 % 第 22 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxii_tl
+\tl_const:Nn \c_@@_xxii_tl
   {
     后完图都飞接社节切，节展斯则支期方又，部府育管扯孤。角求适养
     直集石今按，议类事理拉派规高，治社许号八约。持快除安林身才，
@@ -827,10 +940,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxiii_tl}
+% \begin{macro}{\c_@@_xxiii_tl}
 % 第 23 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxiii_tl
+\tl_const:Nn \c_@@_xxiii_tl
   {
     目队段成细器了马型，目机史无从种过圆，下式陕群茄卖了。构打二
     政清带技他标采然段音科，头规南京总常越卖豆。题效大文管养，百
@@ -850,10 +963,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxiv_tl}
+% \begin{macro}{\c_@@_xxiv_tl}
 % 第 24 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxiv_tl
+\tl_const:Nn \c_@@_xxiv_tl
   {
     法热低红局指南江地，条后红断中加圆究，型往杯是军男。集它老头
     方正型领器，需她越外意第己观件，住霸立林县这农。向起还什院队
@@ -873,10 +986,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxv_tl}
+% \begin{macro}{\c_@@_xxv_tl}
 % 第 25 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxv_tl
+\tl_const:Nn \c_@@_xxv_tl
   {
     标你力石线战价张回单子同立调，保青月重本反进区抛。她米东育用
     组青二，里认人以计往想情值，周板扯两。速家命具层完把想七林直
@@ -896,10 +1009,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxvi_tl}
+% \begin{macro}{\c_@@_xxvi_tl}
 % 第 26 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxvi_tl
+\tl_const:Nn \c_@@_xxvi_tl
   {
     前许属电加合细，多开认此社育众，般询军回束。性而该前油路及，
     声高计表马人将，当屈反世详。及府九阶住日场山式根东，何养即政
@@ -917,10 +1030,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxvii_tl}
+% \begin{macro}{\c_@@_xxvii_tl}
 % 第 27 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxvii_tl
+\tl_const:Nn \c_@@_xxvii_tl
   {
     快济计题基火花红些老毛，程史太金外王开白指七许，究些届相需战
     收。头学族花认增，南见议与小候，严太什。采交术战们达建机海，
@@ -940,10 +1053,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxviii_tl}
+% \begin{macro}{\c_@@_xxviii_tl}
 % 第 28 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxviii_tl
+\tl_const:Nn \c_@@_xxviii_tl
   {
     快线石去时级六程们，支应她县色基展这小，些隶此芳丽体而。最群
     习低步中火族引，易流如都青况会文所，院弦难受照习什。子热过色
@@ -964,10 +1077,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxix_tl}
+% \begin{macro}{\c_@@_xxix_tl}
 % 第 29 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxix_tl
+\tl_const:Nn \c_@@_xxix_tl
   {
     量作务白无天走群地会已，干主列部深步估个。向华所提声如速该
     律，院科于题学除石原了，情他京吨折科前。料车家进段最段线点，
@@ -987,10 +1100,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxx_tl}
+% \begin{macro}{\c_@@_xxx_tl}
 % 第 30 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxx_tl
+\tl_const:Nn \c_@@_xxx_tl
   {
     度严何的会山，规识无化，文蠢能石。加容队传市府使象少须状，证
     观油列型派先通后，革毛种边投战求们。查基它子量么团属义第积
@@ -1011,10 +1124,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxi_tl}
+% \begin{macro}{\c_@@_xxxi_tl}
 % 第 31 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxi_tl
+\tl_const:Nn \c_@@_xxxi_tl
   {
     来分各天类速经华界格，水光使住心效得原政置，天老束务惹府里
     露。元团情他布合也济如总西说，至强九系极录敌农领。活指划选件
@@ -1034,10 +1147,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxii_tl}
+% \begin{macro}{\c_@@_xxxii_tl}
 % 第 32 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxii_tl
+\tl_const:Nn \c_@@_xxxii_tl
   {
     用拉流年热精维许多共，整级就造素来示不此经，至所孟奋民两权
     贡。过米王最验事了果得强，工气阶务张人采路，平美毛相苏卖求。
@@ -1057,10 +1170,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxiii_tl}
+% \begin{macro}{\c_@@_xxxiii_tl}
 % 第 33 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxiii_tl
+\tl_const:Nn \c_@@_xxxiii_tl
   {
     根近家线严识行飞样一，节片气及议万打打几，业手否常气多画何。
     亲厂会少都水着了象花因，断争油名见今条里，相马杨葡相候及变
@@ -1080,10 +1193,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxiv_tl}
+% \begin{macro}{\c_@@_xxxiv_tl}
 % 第 34 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxiv_tl
+\tl_const:Nn \c_@@_xxxiv_tl
   {
     经化心理众术身精外验地世设复，又我重专的间他实王现想金事，般
     习影求总利圆本史委详。层年求毛统八新意定，造状展速开才干科，
@@ -1103,10 +1216,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxv_tl}
+% \begin{macro}{\c_@@_xxxv_tl}
 % 第 35 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxv_tl
+\tl_const:Nn \c_@@_xxxv_tl
   {
     以线则厂来此，影色子消心它，热李响业。快派周受金风更白确院
     都，能拉派层电从把好者严，张建刷提枣过离隶学。基去流须值两意
@@ -1127,10 +1240,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxvi_tl}
+% \begin{macro}{\c_@@_xxxvi_tl}
 % 第 36 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxvi_tl
+\tl_const:Nn \c_@@_xxxvi_tl
   {
     和种位天低委石色好，正等百海书在部所管，快屈听时完吨转。设想
     选具解列九际，广历何江毛其，行影励两门针。圆热由许音级己你
@@ -1150,10 +1263,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxvii_tl}
+% \begin{macro}{\c_@@_xxxvii_tl}
 % 第 37 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxvii_tl
+\tl_const:Nn \c_@@_xxxvii_tl
   {
     片元水作飞白制开平，离准者增受象划东见，现孤苍及号针做。结在
     当类该空况量需必包干放细府，同增风引公军励陕给全在再。学细织
@@ -1173,10 +1286,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxviii_tl}
+% \begin{macro}{\c_@@_xxxviii_tl}
 % 第 38 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxviii_tl
+\tl_const:Nn \c_@@_xxxviii_tl
   {
     越使持儿出种记各十动及办，名米变斗位结取究必实往，角主录过询
     里中务西其。月团据满放政志去思段，实相总性理因人治，件技车要
@@ -1197,10 +1310,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xxxix_tl}
+% \begin{macro}{\c_@@_xxxix_tl}
 % 第 39 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xxxix_tl
+\tl_const:Nn \c_@@_xxxix_tl
   {
     查因构美满保规不术，音矿难却体里治片影，它利果科坟刺。期正六
     打部单油类商分，得民军革流日风众定族，消里标承呆样。易精全天
@@ -1220,10 +1333,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xl_tl}
+% \begin{macro}{\c_@@_xl_tl}
 % 第 40 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xl_tl
+\tl_const:Nn \c_@@_xl_tl
   {
     标小何林性美，议空何力月走，许秧态。本回型毛可第斯本自，眼油
     取见开身来心，消更村告次导。关用因按划这类用质，矿江声置容养
@@ -1243,10 +1356,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xli_tl}
+% \begin{macro}{\c_@@_xli_tl}
 % 第 41 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xli_tl
+\tl_const:Nn \c_@@_xli_tl
   {
     程天目性记它加，体部因个你，但肃告建美。将性亲因决具共查，属
     接一离带研电，速克动芽内。义那度强打际级研，过与制型情难，法
@@ -1267,10 +1380,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xlii_tl}
+% \begin{macro}{\c_@@_xlii_tl}
 % 第 42 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xlii_tl
+\tl_const:Nn \c_@@_xlii_tl
   {
     压才特变算准系意两报长，空适三标形而条候千别，者分极法太何观
     或。空装圆法我积，计医身。酸劳准局保又开市又，走斗深适什并线
@@ -1290,10 +1403,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xliii_tl}
+% \begin{macro}{\c_@@_xliii_tl}
 % 第 43 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xliii_tl
+\tl_const:Nn \c_@@_xliii_tl
   {
     率非关极照自九，名号细十根行革，委坟土。元使强石非来受该计
     少，干研铁那响于式个，声系蠢奇式更通覆。从所联后后效话拉，与
@@ -1313,10 +1426,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xliv_tl}
+% \begin{macro}{\c_@@_xliv_tl}
 % 第 44 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xliv_tl
+\tl_const:Nn \c_@@_xliv_tl
   {
     上约保平体代周或起不，众话大格层研里江，单各肃茎式医严辰。一
     运了须实太权度么，月关地保来科强技斯，几支高声秩第。色养细电
@@ -1337,10 +1450,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xlv_tl}
+% \begin{macro}{\c_@@_xlv_tl}
 % 第 45 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xlv_tl
+\tl_const:Nn \c_@@_xlv_tl
   {
     马高类林什片深铁根，白计命标持命专一，许小蠢是专做。者少亲不
     角文受格动，证际品业着千处却，流也杨兵秃秀消。新格却复例交元
@@ -1360,10 +1473,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xlvi_tl}
+% \begin{macro}{\c_@@_xlvi_tl}
 % 第 46 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xlvi_tl
+\tl_const:Nn \c_@@_xlvi_tl
   {
     议之使类价反团众又包社改整统，响题见组群眼机整二水。路完科复
     花精音做到东同，例子着眼消义去基规做，权向弦励规常斯管。地是
@@ -1384,10 +1497,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xlvii_tl}
+% \begin{macro}{\c_@@_xlvii_tl}
 % 第 47 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xlvii_tl
+\tl_const:Nn \c_@@_xlvii_tl
   {
     部算么红越价始去车重打，办历府就却路需原给，达数杨按界扭样估
     方。周接看积路易质利，件型压出县各共正，除最每包我。物花三府
@@ -1407,10 +1520,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xlviii_tl}
+% \begin{macro}{\c_@@_xlviii_tl}
 % 第 48 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xlviii_tl
+\tl_const:Nn \c_@@_xlviii_tl
   {
     深便做素极育在划几得严才，查按七教列居两奇本然。门品我被千人
     话表深，及近报以图再上，府价者记雪呈。什相满何资据间少传，基
@@ -1430,10 +1543,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_xlix_tl}
+% \begin{macro}{\c_@@_xlix_tl}
 % 第 49 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_xlix_tl
+\tl_const:Nn \c_@@_xlix_tl
   {
     建群而图省必料备土海数价，本设团东全那般实低指矿选，程己建把
     交消二承便两。何接装何红能北们作复，们直加们象省便织具，头专
@@ -1454,10 +1567,10 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\c__zhlipsum_text_zh_cn_l_tl}
+% \begin{macro}{\c_@@_l_tl}
 % 第 50 段。
 %    \begin{macrocode}
-\tl_const:Nn \c__zhlipsum_text_zh_cn_l_tl
+\tl_const:Nn \c_@@_l_tl
   {
     是与油才认养联出系号，北观运市思装别存高，非金林更连界农。业
     金基话则华集，团加争么样群市，律承状军取。广四管间电期些习能
@@ -1479,6 +1592,7 @@
 % \end{macro}
 %
 %    \begin{macrocode}
+%<@@=>
 %</zh-cn>
 %    \end{macrocode}
 % \Finale

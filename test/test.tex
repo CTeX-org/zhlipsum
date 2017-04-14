@@ -2,16 +2,19 @@
 \usepackage{zhlipsum}
 
 \begin{document}
-\section{Baisc}
+\section{Basic}
 \zhlipsum
+
+\section{Single paragraph}
+\zhlipsum[55]
 
 \section{With `\textbackslash par'}
 Some text before lorem ipsum.
-\zhlipsum[10]
+\zhlipsum[0-1]
 Some text after lorem ipsum.
 
 \section{Without `\textbackslash par'}
 Some text before lorem ipsum.
-\zhlipsum*[10]
+\zhlipsum*[0-500]
 Some text after lorem ipsum.
 \end{document}

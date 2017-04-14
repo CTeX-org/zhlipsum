@@ -1,6 +1,6 @@
 %%
 %% This is the modified version of `ctxdoc.cls'.
-%% Modified by Xiangdong Zeng, last update 2017-04-08.
+%% Modified by Xiangdong Zeng, last update 2017-04-14.
 %%
 %%     Copyright (C) 2003--2017
 %%     CTEX.ORG and any individual authors listed in the documentation.
@@ -24,11 +24,13 @@
 %% 
 \NeedsTeXFormat{LaTeX2e}
 \RequirePackage{expl3}
-\GetIdInfo$Id: ctex.dtx d459e18 2017-02-23 02:07:49 +0800 Qing Lee <sobenlee@gmail.com> $
-  {ctex documentation (CTEX)}
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-14.
+%\GetIdInfo$Id: ctex.dtx d459e18 2017-02-23 02:07:49 +0800 Qing Lee <sobenlee@gmail.com> $
+%  {ctex documentation (CTEX)}
+%\ProvidesExplClass{ctxdoc}
+%  {\ExplFileDate}{2.4.8}{\ExplFileDescription}
 \ProvidesExplClass{ctxdoc-m}
-  {\ExplFileDate}{2.4.8}{\ExplFileDescription}
+  {2017/04/14}{0.alpha}{The modified version of `ctxdoc.cls'}
 \ExplSyntaxOff
 \let\pdfmdfivesum\mdfivesum
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{l3doc}}
@@ -36,14 +38,14 @@
 \ProcessOptions
 \@namedef{ver@thumbpdf.sty}{9999/99/99}
 \LoadClass{l3doc}
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 %\RequirePackage[UTF8, punct = kaiming, heading, fontset = none,
 %  linespread = 1.2, sub3section]{ctex}
 \RequirePackage[UTF8, heading = true]{ctex}
 \ifxetex
   \xeCJKsetup{AutoFakeBold=false}
 \fi
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 %\ctexset{
 %  fontset,
 %  abstractname   = 简介,
@@ -64,13 +66,14 @@
 \RequirePackage{caption}
 \RequirePackage{fvrb-ex}
 \RequirePackage{zref-base}
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 %\geometry{includemp,hmargin={0mm,15mm},vmargin={25mm,15mm},footskip=7mm}
 %\hypersetup{pdfstartview=FitH,bookmarksdepth=subparagraph}
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{2}
+%% Modified by Xiangdong Zeng, 2017-04-14.
+%\setcounter{secnumdepth}{4}
+%\setcounter{tocdepth}{2}
 \newcommand*\email{\nolinkurl}
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 %\setmainfont{TeX Gyre Pagella}
 %\setsansfont{TeX Gyre Heros}
 %\setmonofont[
@@ -107,11 +110,12 @@
 \patchcmd{\@getpen}{\@M}{\@Mi}
   {\typeout{*** SUCCESS ***}}{\typeout{*** FAIL ***}}
 %% --->
+%% Modified by Xiangdong Zeng, 2017-04-14.
 %% 不对代码实现的 \section 以下标题编目录。
-\AtBeginEnvironment{implementation}{%
-  \ifnum\value{tocdepth}>\@ne
-    \addtocontents{toc}{\protect\value{tocdepth}=1\relax}%
-  \fi}
+%\AtBeginEnvironment{implementation}{%
+%  \ifnum\value{tocdepth}>\@ne
+%    \addtocontents{toc}{\protect\value{tocdepth}=1\relax}%
+%  \fi}
 \ifxetex
   \let\ctexdocverbaddon\xeCJKVerbAddon
   \def\ctexdisableecglue{\xeCJKsetup{CJKecglue}}
@@ -173,7 +177,7 @@
 \AtEndEnvironment{function}{%
   \par\xdef\ctexfixprevdepth{\prevdepth=\the\prevdepth\space}}
 \AfterEndEnvironment{function}{\ctexfixprevdepth}
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 % linespread: 1 -> 1.2.
 \AtBeginEnvironment{syntax}{\linespread{1.2}\ctexplainps\ctexdisableecglue}
 \BeforeBeginEnvironment{SideBySideExample}{\par\addvspace{\medskipamount}}
@@ -229,52 +233,33 @@
   { \iow_term:n { *** ~ SUCCESS ~ *** } }
   { \iow_term:n { *** ~ FAIL ~ *** } }
 \cs_set_eq:NN \__codedoc_macro_end_style:n \use_none:n
-% Modified by Xiangdong Zeng, 2017-04-08.
-%\cs_set_protected:Npn \__codedoc_macro_typeset_one:nN #1#2
-%  {
-%    \vbox_set:Nn \l__codedoc_macro_box
-%      {
-%        \MacroFont
-%        \vbox_unpack_clear:N \l__codedoc_macro_box
-%        \hbox_set:Nn \l_tmpa_box
-%          { \__codedoc_print_macroname:nN {#1} #2 }
-%        \dim_set:Nn \l_tmpa_dim { \marginparwidth - \labelsep }
-%        \dim_compare:nNnT { \box_wd:N \l_tmpa_box } > \l_tmpa_dim
-%          {
-%            \box_resize_to_wd_and_ht:Nnn \l_tmpa_box
-%              { \l_tmpa_dim }
-%              { \box_ht:N \l_tmpa_box }
-%          }
-%        \hbox_overlap_left:n
-%          {
-%            \box_use:N \l_tmpa_box
-%            \skip_horizontal:n { \marginparsep - \labelsep }
-%          }
-%      }
-%    \int_incr:N \l__codedoc_macro_int
-%  }
-%\cs_set_protected:Npn \__codedoc_print_macroname:nN #1#2
-%  {
-%    \strut
-%    \__codedoc_get_hyper_target:xN
-%      {
-%        \exp_not:n {#1}
-%        \bool_if:NT #2 { \tl_to_str:n {TF} }
-%      }
-%      \l__codedoc_tmpa_tl
-%    \cs_if_exist:cTF { r@ \l__codedoc_tmpa_tl }
-%      { \exp_args:NNo \label@hyperref [ \l__codedoc_tmpa_tl ] }
-%      { \use:n }
-%      {
-%        \tl_set:Nn \l__codedoc_tmpa_tl {#1}
-%        \tl_replace_all:Non \l__codedoc_tmpa_tl
-%          { \c_catcode_other_space_tl }
-%          { \fontspec_visible_space: }
-%        \__codedoc_macroname_prefix:o \l__codedoc_tmpa_tl
-%        \__codedoc_macroname_suffix:N #2
-%      }
-%  }
-\cs_gset_protected:Npn \__codedoc_print_macroname:nN #1#2
+\cs_set_protected:Npn \__codedoc_macro_typeset_one:nN #1#2
+  {
+    \vbox_set:Nn \l__codedoc_macro_box
+      {
+        \MacroFont
+        \vbox_unpack_clear:N \l__codedoc_macro_box
+        \hbox_set:Nn \l_tmpa_box
+          { \__codedoc_print_macroname:nN {#1} #2 }
+%% Modified by Xiangdong Zeng, 2017-04-14.
+%% HACK: I just use the marginsep of my doc.
+        %\dim_set:Nn \l_tmpa_dim { \marginparwidth - \labelsep }
+        \dim_set:Nn \l_tmpa_dim { 5.72cm }
+        \dim_compare:nNnT { \box_wd:N \l_tmpa_box } > \l_tmpa_dim
+          {
+            \box_resize_to_wd_and_ht:Nnn \l_tmpa_box
+              { \l_tmpa_dim }
+              { \box_ht:N \l_tmpa_box }
+          }
+        \hbox_overlap_left:n
+          {
+            \box_use:N \l_tmpa_box
+            \skip_horizontal:n { \marginparsep - \labelsep }
+          }
+      }
+    \int_incr:N \l__codedoc_macro_int
+  }
+\cs_set_protected:Npn \__codedoc_print_macroname:nN #1#2
   {
     \strut
     \__codedoc_get_hyper_target:xN
@@ -284,25 +269,48 @@
       }
       \l__codedoc_tmpa_tl
     \cs_if_exist:cTF { r@ \l__codedoc_tmpa_tl }
-      {
-        \exp_last_unbraced:NNo \hyperref
-          [ \l__codedoc_tmpa_tl ]
-      }
+      { \exp_args:NNo \label@hyperref [ \l__codedoc_tmpa_tl ] }
       { \use:n }
       {
-        \int_compare:nTF
-          % 修改不使用紧缩字体的最大命令长度为 99
-          { \str_count:n {#1} <= 99 }
-          { \MacroFont }
-          { \MacroLongFont }
         \tl_set:Nn \l__codedoc_tmpa_tl {#1}
-        \tl_replace_all:Nno \l__codedoc_tmpa_tl
-          { ~ } { \c_catcode_other_space_tl }
+        \tl_replace_all:Non \l__codedoc_tmpa_tl
+          { \c_catcode_other_space_tl }
+          { \fontspec_visible_space: }
         \__codedoc_macroname_prefix:o \l__codedoc_tmpa_tl
         \__codedoc_macroname_suffix:N #2
       }
   }
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-14.
+%% This function is from `l3doc.sty'. Deprecated.
+%\cs_gset_protected:Npn \__codedoc_print_macroname:nN #1#2
+%  {
+%    \strut
+%    \__codedoc_get_hyper_target:xN
+%      {
+%        \exp_not:n {#1}
+%        \bool_if:NT #2 { \tl_to_str:n {TF} }
+%      }
+%      \l__codedoc_tmpa_tl
+%    \cs_if_exist:cTF { r@ \l__codedoc_tmpa_tl }
+%      {
+%        \exp_last_unbraced:NNo \hyperref
+%          [ \l__codedoc_tmpa_tl ]
+%      }
+%      { \use:n }
+%      {
+%        \int_compare:nTF
+%          % 修改不使用紧缩字体的最大命令长度为 99
+%          { \str_count:n {#1} <= 99 }
+%          { \MacroFont }
+%          { \MacroLongFont }
+%        \tl_set:Nn \l__codedoc_tmpa_tl {#1}
+%        \tl_replace_all:Nno \l__codedoc_tmpa_tl
+%          { ~ } { \c_catcode_other_space_tl }
+%        \__codedoc_macroname_prefix:o \l__codedoc_tmpa_tl
+%        \__codedoc_macroname_suffix:N #2
+%      }
+%  }
+%% Modified by Xiangdong Zeng, 2017-04-08.
 %\AtBeginEnvironment { syntax }
 %  {
 %    \char_set_catcode_active:N \|
@@ -724,7 +732,7 @@
 \seq_new:N \g__ctxdoc_slash_format_seq
 \seq_gput_right:Nn \g__ctxdoc_format_seq { \MacroFont }
 \seq_gput_right:Nn \g__ctxdoc_format_seq { \AltMacroFont }
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 % linespread: 1 -> 1.2.
 \cs_set_protected:Npn \MacroFont
   {
@@ -863,7 +871,7 @@
   \input{ctex-name-utf8.cfg}%
   \ExplSyntaxOff
   \MakePercentIgnore}{}
-% Modified by Xiangdong Zeng, 2017-04-08.
+%% Modified by Xiangdong Zeng, 2017-04-08.
 %\def\ctexkit{\href{https://github.com/CTeX-org/ctex-kit/}{\texttt{ctex-kit}}}
 %\def\ctexkitrev#1{%
 %  \href{https://github.com/CTeX-org/ctex-kit/commit/#1}{\texttt{ctex-kit} rev. #1}}
@@ -875,12 +883,14 @@
   \def\subsubitem{\@idxitem\hspace*{2em}}}
 \def\glossaryname{版本历史}
 \GlossaryPrologue{\section{\glossaryname}}
+% Modified by Xiangdong Zeng, 2017-04-14.
+\def\usage#1{\textbf{#1}}
 \IndexPrologue{%
   \section{\indexname}
-  \textit{意大利体的数字表示描述对应索引项的页码；
-  带下划线的数字表示定义对应索引项的代码行号；
-  罗马字体的数字表示使用对应索引项的代码行号。}}
-% Modified by Xiangdong Zeng, 2017-04-08.
+  粗体的数字表示\emph{描述}对应索引项的页码；
+  带下划线的数字表示\emph{定义}对应索引项的代码行号；
+  不加修饰的数字表示\emph{使用}对应索引项的代码行号。}
+%% Modified by Xiangdong Zeng, 2017-04-08.
 \def\IndexLayout{%
   %\newgeometry{hmargin=15mm,vmargin={25mm,15mm},footskip=7mm}%
   \setlength\IndexMin{.5\textheight}%
