@@ -95,10 +95,10 @@ tlmgr install   \
 
 # LaTeX3 packages
 # Added by Xiangdong Zeng, 2017-04-17
-tlmgr install
-  l3kernel            \
-  l3experimental      \
-  l3packages          \
+tlmgr install    \
+  l3kernel       \
+  l3experimental \
+  l3packages     \
   l3build
 
 # Keep no backups (not required, simply makes cache bigger)
