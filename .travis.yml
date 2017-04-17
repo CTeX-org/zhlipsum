@@ -1,0 +1,17 @@
+install:
+  - source ./support/texlive.sh
+
+cache:
+  directories:
+    - /tmp/texlive
+    - $HOME/.texlive
+
+script:
+  - cd source
+  - xetex zhlipsum.ins
+  - cp zhlipsum.sty       ../test/zhlipsum.sty
+  - cp zhlipsum-zh-cn.def ../test/zhlipsum-zh-cn.def
+  - cd ../test
+  - xelatex  -interaction=nonstopmode test
+  - pdflatex -interaction=nonstopmode test
+  - lualatex -interaction=nonstopmode test
