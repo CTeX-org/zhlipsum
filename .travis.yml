@@ -13,5 +13,4 @@ script:
   - cp zhlipsum-zh-cn.def ../test/zhlipsum-zh-cn.def
   - cd ../test
   - xelatex  -interaction=nonstopmode test
-  - pdflatex -interaction=nonstopmode test
   - lualatex -interaction=nonstopmode test
