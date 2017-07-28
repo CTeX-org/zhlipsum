@@ -27,7 +27,7 @@
 %%               and the derived files zhlipsum.sty
 %%                                     zhlipsum-zh-cn.def
 %% 
-\GetIdInfo $Id: zhlipsum.dtx 0.2 2017-04-14 12:00:00Z Xiangdong Zeng $
+\GetIdInfo $Id: zhlipsum.dtx 0.3 2017-07-28 12:00:00Z Xiangdong Zeng $
   {Simplified Chinese `Lorem Ipsum' text (for zhlipsum)}
 \ProvidesExplFile{\ExplFileName}
   {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
