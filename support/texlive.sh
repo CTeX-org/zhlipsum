@@ -49,57 +49,53 @@ tlmgr install graphics graphics-cfg graphics-def oberdiek
 # The packages themselves are done with --no-depends to avoid
 # picking up l3kernel, etc.
 #
-# fontspec comes first as other packages tested have it as a dep
-tlmgr install --no-depends fontspec
 tlmgr install ifluatex lm lualibs luaotfload
 
 # Other contrib packages: done as a block to avoid multiple calls to tlmgr
 # Dependencies other than the core l3build set up, metafont, fontspec and the
 # 'graphics stack' (itself needed by fontspec) are listed below
-tlmgr install --no-depends \
-  chemformula \
-  ctex        \
-  mhchem      \
-  siunitx     \
-  unicode-math
-tlmgr install --no-depends cjk
-tlmgr install   \
-  adobemapping  \
-  amsfonts      \
-  amsmath       \
-  chemgreek     \
-  cjkpunct      \
-  ctablestack   \
-  ec            \
-  environ       \
-  etoolbox      \
-  fandol        \
-  filehook      \
-  ifxetex       \
-  lm-math       \
-  lualatex-math \
-  luatexbase    \
-  luatexja      \
-  ms            \
-  pgf           \
-  tools         \
-  trimspaces    \
-  ucharcat      \
-  ulem          \
-  units         \
-  xcolor        \
-  xecjk         \
-  xunicode      \
-  zhmetrics     \
+tlmgr install     \
+  l3kernel        \
+  l3experimental  \
+  l3packages      \
+  l3build         \
+  adobemapping    \
+  amsfonts        \
+  amsmath         \
+  chemformula     \
+  chemgreek       \
+  cjk             \
+  cjkpunct        \
+  ctablestack     \
+  ctex            \
+  ec              \
+  environ         \
+  etoolbox        \
+  fandol          \
+  filehook        \
+  fontspec        \
+  ifxetex         \
+  kantlipsum      \
+  lm-math         \
+  lualatex-math   \
+  luatexbase      \
+  luatexja        \
+  mhchem          \
+  ms              \
+  pgf             \
+  siunitx         \
+  tools           \
+  trimspaces      \
+  ucharcat        \
+  ulem            \
+  unicode-math    \
+  units           \
+  xcolor          \
+  xecjk           \
+  xkeyval         \
+  xunicode        \
+  zhmetrics       \
   zhnumber
-
-# LaTeX3 packages
-# Added by Xiangdong Zeng, 2017-04-17
-tlmgr install    \
-  l3kernel       \
-  l3experimental \
-  l3packages     \
-  l3build
 
 # Keep no backups (not required, simply makes cache bigger)
 tlmgr option -- autobackup 0
