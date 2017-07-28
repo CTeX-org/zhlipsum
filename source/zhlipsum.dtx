@@ -25,7 +25,6 @@
 %
 % \iffalse
 %
-%
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3,xparse}
 %<package|zh-cn>\GetIdInfo $Id: zhlipsum.dtx 0.2 2017-04-14 12:00:00Z Xiangdong Zeng $
@@ -33,44 +32,7 @@
 %<zh-cn>  {Simplified Chinese `Lorem Ipsum' text (for zhlipsum)}
 %
 %<*driver>
-%% 版本历史
-% v0.1 2017/04/08
-%   开始
-% v0.2 2017/04/14
-%   仿照 kantlipsum 宏包，实现任意的段落选取
-%   使用命名空间
-
-\documentclass{ctxdoc-m}
-
-%% 字体设置。
-\setmainfont{TeX Gyre Pagella}
-\setsansfont{TeX Gyre Heros}
-\setmonofont{Latin Modern Mono Light}[HyphenChar = None]
-\setmathfont{TeX Gyre Pagella Math}
-\setCJKmainfont{FZShuSong-Z01}%
-  [BoldFont = FZHei-B01, ItalicFont = FZKai-Z03]
-\setCJKmonofont{FZFangSong-Z02}%
-  [BoldFont = FZHei-B01, ItalicFont = FZKai-Z03]
-
-%% 中文排版格式。
-\ctexset
-{
-  section = {
-    name    = {第,节},
-    format += \raggedright
-  },
-  indexname = {代码索引}
-}
-
-%% 代码部分页边距。
-\geometry{
-  paper  = a4paper,
-  left   = 6.35 cm,
-  right  = 2.54 cm,
-  top    = 3.18 cm,
-  bottom = 2.54 cm
-}
-
+\documentclass{ctxdoc}
 \sisetup{
   number-math-rm       = \ensuremath,
   inter-unit-product   = \ensuremath{{}\cdot{}},
@@ -80,32 +42,25 @@
   range-phrase         = \symbol{65374},
   separate-uncertainty = true
 }
-
 \hypersetup{
   pdftitle          = {zhlipsum：中文乱数假文（Lorem ipsum）},
   pdfauthor         = {曾祥东},
   bookmarksopen     = true,
-  bookmarksnumbered = true,
-  pdfborder         = 0 0 0,
-  colorlinks,
-  linkcolor         = {red!60!black},
-  citecolor         = {green!50!black},
-  urlcolor          = {blue!63!green}
+  bookmarksnumbered = true
 }
-
-\renewcommand{\pkg}[1]{\textsf{#1}}
-\renewcommand{\cls}[1]{\textsf{\textit{#1}}}
-
-
 \EnableCrossrefs
 \CodelineIndex
 \RecordChanges
-
 \begin{document}
   \DocInput{\jobname.dtx}
 \end{document}
 %</driver>
 % \fi
+%
+% \changes{v0.1}{2017/04/08}{开始编写宏包。}
+% \changes{v0.2}{2017/04/14}{仿照 \pkg{kantlipsum} 宏包，实现
+%   任意的段落选取。}
+% \changes{v0.2}{2017/04/14}{使用名字空间。}
 %
 % \CheckSum{0}
 %
@@ -188,12 +143,18 @@
 %
 % ^^A\tableofcontents
 %
-% \restoregeometry
+% ^^A\restoregeometry
+% \newgeometry{
+%   left   = 6.35 cm,
+%   right  = 2.54 cm,
+%   top    = 3.18 cm,
+%   bottom = 2.54 cm
+% }
 %
 % \section{使用说明}
 % \begin{function}{\zhlipsum}
 %   \begin{syntax}
-%     |\zhlipsum|\oarg{段落}
+%     \cs{zhlipsum}\oarg{段落}
 %   \end{syntax}
 %   插入假文文本，每段之间会分段。
 %
@@ -212,7 +173,7 @@
 %
 % \begin{function}{\zhlipsum*}
 %   \begin{syntax}
-%     |\zhlipsum*|\oarg{段落}
+%     \cs{zhlipsum*}\oarg{段落}
 %   \end{syntax}
 %   插入假文文本，每段之间不分段。用法同 |\zhlipsum|。
 % \end{function}
@@ -235,11 +196,12 @@
 %     top    = 3.18 cm,
 %     bottom = 3.18 cm
 %   }
-%   \ctexset{
-%     section / numbering = false
-%   }
+%   \ctexset{section / numbering = false}
+%   \PrintChanges
 %   \PrintIndex
 % }
+%
+% \begin{implementation}
 %
 % \section{实现细节}
 %
@@ -283,12 +245,13 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum_print_single:N}
+% \begin{macro}{\@@_print_single:N}
+% \changes{v0.3}{2017/07/28}{改为内部函数。}
 % 输出第 $n$ 段假文。
 % 方法是将段落数 $n$ 先转换成罗马数字，再组成完整命令。
 % 目前仅支持简体中文。
 %    \begin{macrocode}
-\cs_new:Npn \zhlipsum_print_single:N #1
+\cs_new:Npn \@@_print_single:N #1
   {
     \str_set:Nx \l_@@_tmpa_str
       { \int_to_roman:n { #1 } }
@@ -316,10 +279,11 @@
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum_process_par_number:nn}
+% \begin{macro}{\@@_process_par_number:nn}
+% \changes{v0.3}{2017/07/28}{改为内部函数。}
 % 处理段落数参数。
 %    \begin{macrocode}
-\cs_new:Npn \zhlipsum_process_par_number:nn #1 #2
+\cs_new:Npn \@@_process_par_number:nn #1 #2
   {
 %    \end{macrocode}
 % 获得循环的开始位置。
@@ -362,13 +326,13 @@
 %    \begin{macrocode}
 \cs_new:Npn \zhlipsum_print_multi_par:nn #1 #2
   {
-    \zhlipsum_process_par_number:nn { #1 } { #2 }
+    \@@_process_par_number:nn { #1 } { #2 }
     \int_step_inline:nnnn
       { \l_@@_begin_int }
       { \l_@@_step_int }
       { \l_@@_end_int }
       {
-        \zhlipsum_print_single:N { ##1 }
+        \@@_print_single:N { ##1 }
         \par
       }
   }
@@ -380,13 +344,13 @@
 %    \begin{macrocode}
 \cs_new:Npn \zhlipsum_print_multi_no_par:nn #1 #2
   {
-    \zhlipsum_process_par_number:nn { #1 } { #2 }
+    \@@_process_par_number:nn { #1 } { #2 }
     \int_step_inline:nnnn
       { \l_@@_begin_int }
       { \l_@@_step_int }
       { \l_@@_end_int }
       {
-        \zhlipsum_print_single:N { ##1 }
+        \@@_print_single:N { ##1 }
       }
   }
 %    \end{macrocode}
@@ -414,7 +378,6 @@
 % 读入假文文本定义文件。
 %    \begin{macrocode}
 \file_input:n { zhlipsum-zh-cn.def }
-%<@@=>
 %</package>
 %    \end{macrocode}
 %
@@ -424,7 +387,8 @@
 %<@@=zhlipsum_text_zh_cn>
 %    \end{macrocode}
 %
-% 由 \url{http://www.cancms.com/content/dummytext} 网站生成。
+% 由 \url{http://www.cancms.com/content/dummytext} 网站生成，
+% 略有改动。
 %
 % \begin{macro}{\c_@@_i_tl}
 % 第 1 段。
@@ -489,12 +453,20 @@
     月断细面便，事定什呀传。边力心层下等共命每，厂五交型车想所
     利，直下报亲积速。元前很地传气领权节，求反立全各市状，新上录
     所走值上。明统多表过变物每区广，会王问西听观生真林，二决定织
-    助议苏。格节基全却及飞口口，难之规利争白观，证查李却调代动。
+    助议苏。格节基全却及飞口悉，难之规利争白观，证查李却调代动。
     斗形放数委同领，内从但五身。当了美话也步京边但容代认，放非济
     边建按划近些派民越，更具建火法住收保步连。
   }
 %    \end{macrocode}
 % \end{macro}
+%
+% 以下还有 47 段，此处从略。
+%
+% \end{implementation}
+%
+% \DisableImplementation
+%
+% \begin{implementation}
 %
 % \begin{macro}{\c_@@_iv_tl}
 % 第 4 段。
@@ -1591,8 +1563,17 @@
 %    \end{macrocode}
 % \end{macro}
 %
+% \end{implementation}
+%
+% \EnableImplementation
+%
+% \begin{implementation}
+%
 %    \begin{macrocode}
 %<@@=>
 %</zh-cn>
 %    \end{macrocode}
+%
+% \end{implementation}
+%
 % \Finale

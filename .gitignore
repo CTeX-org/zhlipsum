@@ -2,12 +2,16 @@
 *.dvi
 *.fdb_latexmk
 *.fls
+*.fmt
+*.glg
 *.glo
+*.gls
 *.hd
 *.idx
 *.ilg
 *.ind
 *.log
+*.map
 *.out
 *.synctex.gz
 *.thm
@@ -15,11 +19,12 @@
 
 # *.pdf
 
-# *.bat
+*.bat
 
 source/*.sty
 source/*.def
 source/*.pdf
+source/ctxdoc-m.cls
 
 test/*.sty
 test/*.def

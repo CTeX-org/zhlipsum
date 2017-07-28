@@ -38,7 +38,7 @@
 \str_const:Nn \c__zhlipsum_text_cs_prefix { c__zhlipsum_text_ }
 \str_const:Nn \c__zhlipsum_text_cs_suffix { _tl }
 \int_const:Nn \c__zhlipsum_max_par_number_int { 50 }
-\cs_new:Npn \zhlipsum_print_single:N #1
+\cs_new:Npn \__zhlipsum_print_single:N #1
   {
     \str_set:Nx \l__zhlipsum_tmpa_str
       { \int_to_roman:n { #1 } }
@@ -56,7 +56,7 @@
 \int_new:N \l__zhlipsum_begin_int
 \int_new:N \l__zhlipsum_end_int
 \int_new:N \l__zhlipsum_step_int
-\cs_new:Npn \zhlipsum_process_par_number:nn #1 #2
+\cs_new:Npn \__zhlipsum_process_par_number:nn #1 #2
   {
     \int_compare:nTF { #1 <= \c__zhlipsum_max_par_number_int }
       { \int_set:Nn \l__zhlipsum_begin_int { #1 } }
@@ -84,25 +84,25 @@
   }
 \cs_new:Npn \zhlipsum_print_multi_par:nn #1 #2
   {
-    \zhlipsum_process_par_number:nn { #1 } { #2 }
+    \__zhlipsum_process_par_number:nn { #1 } { #2 }
     \int_step_inline:nnnn
       { \l__zhlipsum_begin_int }
       { \l__zhlipsum_step_int }
       { \l__zhlipsum_end_int }
       {
-        \zhlipsum_print_single:N { ##1 }
+        \__zhlipsum_print_single:N { ##1 }
         \par
       }
   }
 \cs_new:Npn \zhlipsum_print_multi_no_par:nn #1 #2
   {
-    \zhlipsum_process_par_number:nn { #1 } { #2 }
+    \__zhlipsum_process_par_number:nn { #1 } { #2 }
     \int_step_inline:nnnn
       { \l__zhlipsum_begin_int }
       { \l__zhlipsum_step_int }
       { \l__zhlipsum_end_int }
       {
-        \zhlipsum_print_single:N { ##1 }
+        \__zhlipsum_print_single:N { ##1 }
       }
   }
 \NewDocumentCommand \zhlipsum
