@@ -21,6 +21,8 @@
 
 *.bat
 
+*.zip
+
 source/*.sty
 source/*.def
 source/*.pdf
@@ -32,3 +34,4 @@ test/*.pdf
 
 doc/
 TDS/
+zhlipsum/
