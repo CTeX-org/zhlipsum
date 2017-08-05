@@ -1,6 +1,7 @@
 # zhlipsum - Chinese dummy text
 
 [![Build Status](https://travis-ci.org/Stone-Zeng/zhlipsum.svg?branch=master)](https://travis-ci.org/Stone-Zeng/zhlipsum)
+[![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
 [![GitHub release](https://img.shields.io/github/release/Stone-Zeng/zhlipsum/all.svg)](https://github.com/Stone-Zeng/zhlipsum/releases/latest)
 
 Basic usage:
@@ -11,7 +12,7 @@ Basic usage:
 ```
 
 More information can be found in the package documentation 
-[zhlipsum.pdf](https://github.com/Stone-Zeng/zhlipsum/releases/download/v0.3/zhlipsum.pdf).
+[zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf).
 
 ## License
 
