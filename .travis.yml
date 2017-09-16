@@ -7,11 +7,18 @@ cache:
     - $HOME/.texlive
 
 script:
+  - mkdir test
   - cd source
   - xetex zhlipsum.dtx
-  - cp zhlipsum.sty       ../test/zhlipsum.sty
-  - cp zhlipsum-zh-cn.def ../test/zhlipsum-zh-cn.def
+  - source ../support/zhconvert.sh
+  - cp *.sty  ../test
+  - cp *.def  ../test
+  - cp *.tex  ../test
   - cd ../test
-  - pdflatex -interaction=nonstopmode test
-  - xelatex  -interaction=nonstopmode test
-  - lualatex -interaction=nonstopmode test
+  - latex    -interaction=nonstopmode zhlipsum-example-gbk
+  - latex    -interaction=nonstopmode zhlipsum-example-utf8
+  - pdflatex -interaction=nonstopmode zhlipsum-example-gbk
+  - pdflatex -interaction=nonstopmode zhlipsum-example-utf8
+  - xelatex  -interaction=nonstopmode zhlipsum-example-utf8
+  - lualatex -interaction=nonstopmode zhlipsum-example-utf8
+  - uplatex  -interaction=nonstopmode zhlipsum-example-utf8

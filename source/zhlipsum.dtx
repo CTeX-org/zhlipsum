@@ -19,7 +19,10 @@
 % This work consists of the file zhlipsum.dtx,
 %          and the derived files zhlipsum.ins,
 %                                zhlipsum.sty,
-%                                zhlipsum-zh-cn.def,
+%                                zhlipsum-zh-cn-utf8.def,
+%                                zhlipsum-zh-cn-gbk.def,
+%                                zhlipsum-example-utf8.tex,
+%                                zhlipsum-example-gbk.tex,
 %                                zhlipsum.pdf,
 %                            and README.md.
 %
@@ -59,10 +62,6 @@ version.
 %</internal>
 %
 %<*install>
-\input l3docstrip.tex
-\keepsilent
-\askforoverwritefalse
-
 \input ctxdocstrip.tex
 \keepsilent
 
@@ -87,7 +86,10 @@ version.
     This work consists of the file zhlipsum.dtx,
              and the derived files zhlipsum.ins,
                                    zhlipsum.sty,
-                                   zhlipsum-zh-cn.def,
+                                   zhlipsum-zh-cn-utf8.def,
+                                   zhlipsum-zh-cn-gbk.def,
+                                   zhlipsum-example-utf8.tex,
+                                   zhlipsum-example-gbk.tex,
                                    zhlipsum.pdf,
                                and README.md.
 
@@ -95,17 +97,23 @@ version.
 
 \generate{
   \usedir{tex/latex/zhlipsum}
-    \file{\jobname.sty}       {\from{\jobname.dtx}{package}}
-    \file{\jobname-zh-cn.def} {\from{\jobname.dtx}{zh-cn}}
+    \file{\jobname.sty}              {\from{\jobname.dtx}{package}}
+    \file{\jobname-zh-cn-utf8.def}   {\from{\jobname.dtx}{zh-cn,utf8}}
+    \file{\jobname-zh-cn-gbk.def}    {\from{\jobname.dtx}{zh-cn,gbk}}
 %</install>
 %<*internal>
   \usedir{source/latex/zhlipsum}
-    \file{\jobname.ins}        {\from{\jobname.dtx}{install}}
+    \file{\jobname.ins}              {\from{\jobname.dtx}{install}}
 %</internal>
 %<*install>
+  \usedir{doc/latex/zhlipsum/example}
+  \usepreamble\emptypreamble
+  \usepostamble\emptypostamble
+    \file{\jobname-example-utf8.tex} {\from{\jobname.dtx}{ex-utf8}}
+    \file{\jobname-example-gbk.tex}  {\from{\jobname.dtx}{ex-gbk}}
   \usedir{doc/latex/zhlipsum}
   \nopreamble\nopostamble
-    \file{README.md}           {\from{\jobname.dtx}{readme}}
+    \file{README.md}                 {\from{\jobname.dtx}{readme}}
 }
 
 \obeyspaces
@@ -115,7 +123,8 @@ version.
 \Msg{* following file into a directory searched by TeX: *}
 \Msg{*                                                  *}
 \Msg{*     zhlipsum.sty                                 *}
-\Msg{*     zhlipsum-zh-cn.def                           *}
+\Msg{*     zhlipsum-zh-cn-utf8.def                      *}
+\Msg{*     zhlipsum-zh-cn-gbk.def                       *}
 \Msg{*                                                  *}
 \Msg{* The recommended directory is                     *}
 \Msg{*   TDS:tex/latex/zhlipsum                         *}
@@ -135,15 +144,17 @@ version.
 %</internal>
 %
 %<package>\NeedsTeXFormat{LaTeX2e}
-%<package>\RequirePackage{expl3,xparse}
-%<*!(driver|install)>
-%<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.3 2017-07-28 12:00:00Z Xiangdong Zeng <pssysrq@163.com> $
+%<package>\RequirePackage{expl3}
+%<*!(driver|install|ex-utf8|ex-gbk)>
+%<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.4 2017-09-16 12:00:00Z Xiangdong Zeng <pssysrq@163.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
-%<zh-cn>  {Simplified Chinese dummy text (for zhlipsum)}
-%<zh-cn>\ProvidesExplFile{\ExplFileName-zh-cn.def}
+%<zh-cn&utf8>  {Simplified Chinese dummy text with UTF8 encoding (for zhlipsum)}
+%<zh-cn&utf8>\ProvidesExplFile{\ExplFileName-zh-cn-utf8.def}
+%<zh-cn&gbk>  {Simplified Chinese dummy text with GBK encoding (for zhlipsum)}
+%<zh-cn&gbk>\ProvidesExplFile{\ExplFileName-zh-cn-gbk.def}
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
-%</!(driver|install)>
+%</!(driver|install|ex-utf8|ex-gbk)>
 %<*driver>
 \documentclass{ctxdoc}
 \sisetup{
@@ -161,6 +172,7 @@ version.
   bookmarksopen     = true,
   bookmarksnumbered = true
 }
+\DoNotIndex{\\}
 \EnableCrossrefs
 \CodelineIndex
 \RecordChanges
@@ -174,9 +186,11 @@ version.
 % \changes{v0.2}{2017/04/14}{仿照 \pkg{kantlipsum} 宏包，实现
 %   任意的段落选取。}
 % \changes{v0.2}{2017/04/14}{使用名字空间。}
-% \changes{v0.4}{2017/09/16}{将 |.ins| 文件集成进源文件。}
+% \changes{v0.4}{2017/09/16}{将安装、测试文件集成进源文件。}
+% \changes{v0.4}{2017/09/16}{新增 \opt{encoding} 选项。}
+% \changes{v0.4}{2017/09/16}{优化宏包实现。}
 %
-% \CheckSum{0}
+% \CheckSum{121}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -196,15 +210,15 @@ version.
 %
 % ^^A标题页页边距。
 % \newgeometry{
-%   left   = 3.18 cm,
-%   right  = 3.18 cm,
-%   top    = 3.18 cm,
-%   bottom = 3.18 cm
+%   left   = 1.25 in,
+%   right  = 1.25 in,
+%   top    = 1.25 in,
+%   bottom = 1.00 in
 % }
 %
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2017/07/28 \quad v0.3\thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
+% \date{2017/09/16 \quad v0.4\thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 % \maketitle
 %
 % \begin{minipage}{0.9\textwidth}
@@ -259,13 +273,22 @@ version.
 %
 % ^^A\restoregeometry
 % \newgeometry{
-%   left   = 6.35 cm,
-%   right  = 2.54 cm,
-%   top    = 3.18 cm,
-%   bottom = 2.54 cm
+%   left   = 2.50 in,
+%   right  = 1.00 in,
+%   top    = 1.25 in,
+%   bottom = 1.00 in
 % }
 %
 % \section{使用说明}
+% \begin{function}[added=2017-09-16]{encoding}
+%   \begin{syntax}
+%     encoding = <(UTF8)|GBK>
+%   \end{syntax}
+%   用于指定编码的宏包选项，可以在调用宏包的时候设定，默认为
+%   UTF8。对于 \XeLaTeX{}、\LuaLaTeX{} 和 \upLaTeX{} 等 Unicode
+%   引擎，GBK 编码无效，宏包将强制使用 UTF8 编码。
+% \end{function}
+%
 % \begin{function}{\zhlipsum}
 %   \begin{syntax}
 %     \cs{zhlipsum}\oarg{段落}
@@ -292,22 +315,16 @@ version.
 % \end{function}
 %
 % \section{已知问题}
-% \begin{enumerate}
-%   \item 本宏包中的假文文字使用 UTF-8 编码。用 \pdfLaTeX{} 编译时，
-%     必须在 \pkg{ctex} 宏包或 \cls{ctexart} 等文档类中指明
-%     |UTF8| 选项，否则将无法编译。
-%
-%   \item 用 |\zhlipsum*| 构建较长的单段假文文本时，可能会很慢。
-%     可能是因为 \TeX{} 的断行算法需耗费较多时间来处理长段落。
-% \end{enumerate}
+% 用 |\zhlipsum*| 构建较长的单段假文文本时，可能会很慢。
+% 可能是因为 \TeX{} 的断行算法需耗费较多时间来处理长段落。
 %
 % \StopEventually{
 %   ^^A索引部分页边距。
 %   \newgeometry{
-%     left   = 2.54 cm,
-%     right  = 2.54 cm,
-%     top    = 3.18 cm,
-%     bottom = 3.18 cm
+%     left   = 1.00 in,
+%     right  = 1.00 in,
+%     top    = 1.25 in,
+%     bottom = 1.00 in
 %   }
 %   \ctexset{section / numbering = false}
 %   \PrintChanges
@@ -318,106 +335,168 @@ version.
 %
 % \section{实现细节}
 %
-% \subsection{宏包主体}
-%
 %    \begin{macrocode}
 %<*package>
 %<@@=zhlipsum>
 %    \end{macrocode}
 %
-% \begin{macro}{\l_@@_tmpa_str}
+%    \begin{macrocode}
+\RequirePackage { xparse, l3keys2e }
+%    \end{macrocode}
+%
+% \subsection{内部变量和函数}
+%
+% \begin{variable}[int]{\l_@@_tmpa_str}
 % 临时变量。
 %    \begin{macrocode}
 \str_new:N \l_@@_tmpa_str
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\l_@@_lang_code_str,
-%   \c_@@_text_cs_prefix,\c_@@_text_cs_suffix}
-% 假文每一段的命令形如 |\c__zhlipsum_text_语言代码_段落数_tl|，
-% 其中的“段落数”用小写罗马数字表示。
-% 这几个字符串分别构成命令的几个部分。
+% \begin{variable}[int]{\g_@@_encoding_tl}
+% 存放编码信息。
 %    \begin{macrocode}
-\str_new:N    \l_@@_lang_code_str
-\str_const:Nn \c_@@_text_cs_prefix { c__zhlipsum_text_ }
-\str_const:Nn \c_@@_text_cs_suffix { _tl }
+\tl_new:N \g_@@_encoding_tl
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_max_par_number_int}
+% \begin{variable}[int]{\c_@@_max_par_number_int}
 % 假文的最大段落数。目前设为 50。
 %    \begin{macrocode}
 \int_const:Nn \c_@@_max_par_number_int { 50 }
 %    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}[int,TF]{\@@_if_unicode_engine:}
+% 判断是否为 Unicode 引擎。来自于 \pkg{zhnumber} 宏包。
+%    \begin{macrocode}
+\bool_lazy_any:nTF
+  {
+    { \sys_if_engine_xetex_p:  }
+    { \sys_if_engine_luatex_p: }
+    { \sys_if_engine_uptex_p:  }
+  }
+  { \cs_new_eq:NN \@@_if_unicode_engine:TF \use_i:nn  }
+  { \cs_new_eq:NN \@@_if_unicode_engine:TF \use_ii:nn }
+%    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_print_single:N}
-% \changes{v0.3}{2017/07/28}{改为内部函数。}
-% 输出第 $n$ 段假文。
-% 方法是将段落数 $n$ 先转换成罗马数字，再组成完整命令。
-% 目前仅支持简体中文。
+% \begin{macro}[int]{\@@_input_def_file:N}
+% 读入定义文件。
 %    \begin{macrocode}
-\cs_new:Npn \@@_print_single:N #1
+\cs_new:Npn \@@_input_def_file:N #1
+  { \exp_args:Nx \file_input:n { zhlipsum-zh-cn- #1 .def } }
+%    \end{macrocode}
+% \end{macro}
+%
+% \subsection{宏包选项}
+%
+% \begin{macro}{encoding}
+% 设置编码。
+%    \begin{macrocode}
+\keys_define:nn { zhlipsum / option }
   {
-    \str_set:Nx \l_@@_tmpa_str
-      { \int_to_roman:n {#1} }
-    \str_set:Nn \l_@@_lang_code_str
-      { zh_cn_ }
-    \str_put_left:Nx  \l_@@_tmpa_str
-      \l_@@_lang_code_str
-    \str_put_left:Nx  \l_@@_tmpa_str
-      \c_@@_text_cs_prefix
-    \str_put_right:Nx \l_@@_tmpa_str
-      \c_@@_text_cs_suffix
-%% Print paragraph number string. For debug.
-%\str_use:N \l_@@_tmpa_str
-    \use:c { \str_use:N \l_@@_tmpa_str }
+    encoding .choice:,
+    encoding / UTF8    .code:n =
+      { \tl_set:Nn \g_@@_encoding_tl { utf8 } },
+    encoding / GBK     .code:n =
+      {
+        \@@_if_unicode_engine:TF
+          {
+            \tl_set:Nn \g_@@_encoding_tl { utf8 }
+            \msg_warning:nn { zhlipsum } { unicode-engine }
+          }
+          { \tl_set:Nn \g_@@_encoding_tl { gbk  } }
+      },
+    encoding / unknown .code:n =
+      { \msg_error:nnn { zhlipsum } { encoding-invalid } {#1} },
+    encoding .value_required:n = true,
+    encoding .initial:n        = { UTF8 },
+%    \end{macrocode}
+% \end{macro}
+%
+% 处理未知选项。
+%    \begin{macrocode}
+    unknown  .code:n =
+      { \msg_error:nn { zhlipsum } { unknown-option } }
+  }
+%    \end{macrocode}
+%
+% 提示信息。
+%    \begin{macrocode}
+\msg_new:nnn { zhlipsum } { unicode-engine }
+  {
+    You~ are~ now~ using~ Unicode~ engine~ \c_sys_engine_str. \\
+    Encoding~ "GBK"~ is~ invalid.~ Changed~ into~ UTF8.
+  }
+\msg_new:nnn { zhlipsum } { encoding-invalid }
+  {
+    Encoding~ "#1"~ is~ invalid. \\
+    Available~ encodings~ are~ "UTF8"~ and~ "GBK".
+  }
+\msg_new:nnn { zhlipsum } { unknown-option }
+  { Package~ option~ "\l_keys_key_tl"~ is~ unknown. }
+%    \end{macrocode}
+%
+% 将宏包选项传给 |zhlipsum/option|。
+%    \begin{macrocode}
+\ProcessKeysOptions { zhlipsum / option }
+%    \end{macrocode}
+%
+% 根据编码读入假文文本定义文件。
+%    \begin{macrocode}
+\@@_input_def_file:N \g_@@_encoding_tl
+%    \end{macrocode}
+%
+% \subsection{核心函数}
+%
+% \begin{macro}{\zhlipsum}
+% 输出假文，可选参数表示段落数，默认为 |1-3|。命令前后均插入了
+% |\par|，以便强制分段。带星号的命令在假文主体间不分段。
+%    \begin{macrocode}
+\NewDocumentCommand \zhlipsum
+  { s >{ \SplitArgument { 1 } { - } } O{ 1 - 3 } }
+  {
+    \@@_process_par_number:nn #2
+    \par
+    \IfBooleanTF {#1}
+      {
+        \zhlipsum_print_multi_no_par:VVV
+          \l_@@_begin_int \l_@@_step_int \l_@@_end_int
+        \par
+      }
+      {
+        \zhlipsum_print_multi:VVV
+          \l_@@_begin_int \l_@@_step_int \l_@@_end_int
+      }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\l_@@_begin_int,\l_@@_end_int,\l_@@_step_int}
+% \begin{variable}[int]{\l_@@_begin_int,\l_@@_end_int,\l_@@_step_int}
 % 循环的开始、结束和步长。
 %    \begin{macrocode}
 \int_new:N \l_@@_begin_int
 \int_new:N \l_@@_end_int
 \int_new:N \l_@@_step_int
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\@@_process_par_number:nn}
+% \begin{macro}[int]{\@@_process_par_number:nn}
 % \changes{v0.3}{2017/07/28}{改为内部函数。}
 % 处理段落数参数。
 %    \begin{macrocode}
-\cs_new:Npn \@@_process_par_number:nn #1 #2
+\cs_new:Npn \@@_process_par_number:nn #1#2
   {
 %    \end{macrocode}
-% 获得循环的开始位置。
+% 获得循环的开始位置和结束位置。
 %    \begin{macrocode}
-    \int_compare:nTF { #1 <= \c_@@_max_par_number_int }
-      { \int_set:Nn \l_@@_begin_int {#1} }
-      {
-        \int_set_eq:NN \l_@@_begin_int
-          \c_@@_max_par_number_int
-      }
-%    \end{macrocode}
-% 获得循环的结束位置。
-%    \begin{macrocode}
+    \@@_process_par_number_aux:Nn \l_@@_begin_int {#1}
     \IfNoValueTF {#2}
-      {
-        \int_set_eq:NN \l_@@_end_int
-          \l_@@_begin_int
-      }
-      {
-        \int_compare:nTF { #2 <= \c_@@_max_par_number_int }
-          { \int_set:Nn \l_@@_end_int {#2} }
-          {
-            \int_set_eq:NN \l_@@_end_int
-              \c_@@_max_par_number_int
-          }
-      }
+      { \int_set_eq:NN \l_@@_end_int \l_@@_begin_int }
+      { \@@_process_par_number_aux:Nn \l_@@_end_int {#2} }
 %    \end{macrocode}
-% 开始位置在结束位置之前时，步长为 1，否则为 $-1$。
+% 开始位置在结束位置之前时，步长为 $1$，否则为 $-1$。
 %    \begin{macrocode}
       \int_compare:nTF
         { \l_@@_begin_int <= \l_@@_end_int }
@@ -427,55 +506,60 @@ version.
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum_print_multi_par:nn}
+% \begin{macro}[aux]{\@@_process_par_number_aux:Nn}
+% 与最大段落数进行比较，防止下标越界。
+%    \begin{macrocode}
+\cs_new:Npn \@@_process_par_number_aux:Nn #1#2
+  {
+    \int_compare:nTF { #2 <= \c_@@_max_par_number_int }
+      { \int_set:Nn #1 {#2} }
+      { \int_set_eq:NN #1 \c_@@_max_par_number_int }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\zhlipsum_print_multi:nnn,
+%   \zhlipsum_print_multi:VVV}
 % 输出带段落的假文。
 %    \begin{macrocode}
-\cs_new:Npn \zhlipsum_print_multi_par:nn #1#2
+\cs_new:Npn \zhlipsum_print_multi:nnn #1#2#3
   {
-    \@@_process_par_number:nn {#1} {#2}
-    \int_step_inline:nnnn
-      { \l_@@_begin_int }
-      { \l_@@_step_int }
-      { \l_@@_end_int }
-      { \@@_print_single:N {##1} \par }
+    \int_step_inline:nnnn {#1} {#2} {#3}
+      { \@@_print_single:n {##1} \par }
   }
+\cs_generate_variant:Nn \zhlipsum_print_multi:nnn { VVV }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum_print_multi_no_par:nn}
+% \begin{macro}{\zhlipsum_print_multi_no_par:nnn,
+%   \zhlipsum_print_multi_no_par:VVV}
 % 输出不带段落的假文。
 %    \begin{macrocode}
-\cs_new:Npn \zhlipsum_print_multi_no_par:nn #1#2
+\cs_new:Npn \zhlipsum_print_multi_no_par:nnn #1#2#3
   {
-    \@@_process_par_number:nn {#1} {#2}
-    \int_step_inline:nnnn
-      { \l_@@_begin_int }
-      { \l_@@_step_int }
-      { \l_@@_end_int }
-      { \@@_print_single:N {##1} }
+    \int_step_inline:nnnn {#1} {#2} {#3}
+      { \@@_print_single:n {##1} }
+  }
+\cs_generate_variant:Nn \zhlipsum_print_multi_no_par:nnn { VVV }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}[int]{\@@_print_single:n}
+% \changes{v0.3}{2017/07/28}{改为内部函数。}
+% 输出第 $n$ 段假文。方法是将段落数 $n$ 先转换成罗马数字，再组成
+% 完整命令。目前仅支持简体中文。
+%    \begin{macrocode}
+\cs_new:Npn \@@_print_single:n #1
+  {
+    \str_set:Nx \l_@@_tmpa_str { \int_to_roman:n {#1} }
+    \str_put_left:Nn  \l_@@_tmpa_str { c_@@_text_zh_cn_ }
+    \str_put_right:Nn \l_@@_tmpa_str { _tl }
+    \use:c { \str_use:N \l_@@_tmpa_str }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum}
-% 输出假文，可选参数表示段落数，默认为 |1-3|。
-% 命令前后均插入了 |\par|，以便强制分段。
-% 带星号的命令在假文主体间不分段。
 %    \begin{macrocode}
-\NewDocumentCommand \zhlipsum
-  { s >{ \SplitArgument { 1 } { - } } O{ 1 - 3 } }
-  {
-    \par
-    \IfBooleanTF {#1}
-      { \zhlipsum_print_multi_no_par:nn #2 \par }
-      { \zhlipsum_print_multi_par:nn #2 }
-  }
-%    \end{macrocode}
-% \end{macro}
-%
-% 读入假文文本定义文件。
-%    \begin{macrocode}
-\file_input:n { zhlipsum-zh-cn.def }
 %</package>
 %    \end{macrocode}
 %
@@ -488,7 +572,7 @@ version.
 % 由 \url{http://www.cancms.com/content/dummytext} 网站生成，
 % 略有改动。
 %
-% \begin{macro}{\c_@@_i_tl}
+% \begin{variable}[int]{\c_@@_i_tl}
 % 第 1 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_i_tl
@@ -509,9 +593,9 @@ version.
     所界走置派农难取眼，并细杆至志本。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_ii_tl}
+% \begin{variable}[int]{\c_@@_ii_tl}
 % 第 2 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_ii_tl
@@ -532,9 +616,9 @@ version.
     铁看年程第则于去，且它后基格并下，每收感石形步而。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_iii_tl}
+% \begin{variable}[int]{\c_@@_iii_tl}
 % 第 3 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_iii_tl
@@ -556,7 +640,7 @@ version.
     边建按划近些派民越，更具建火法住收保步连。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
 % 以下还有 47 段，此处从略。
 %
@@ -566,7 +650,7 @@ version.
 %
 % \begin{implementation}
 %
-% \begin{macro}{\c_@@_iv_tl}
+% \begin{variable}[int]{\c_@@_iv_tl}
 % 第 4 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_iv_tl
@@ -587,9 +671,9 @@ version.
     置进义。治风理年构族业酸整要第，认取历难丽园变队。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_v_tl}
+% \begin{variable}[int]{\c_@@_v_tl}
 % 第 5 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_v_tl
@@ -611,9 +695,9 @@ version.
     车图命辆该。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_vi_tl}
+% \begin{variable}[int]{\c_@@_vi_tl}
 % 第 6 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_vi_tl
@@ -634,9 +718,9 @@ version.
     更心办要养任除并，者述水带称白。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_vii_tl}
+% \begin{variable}[int]{\c_@@_vii_tl}
 % 第 7 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_vii_tl
@@ -658,9 +742,9 @@ version.
     音，什日学术等次。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_viii_tl}
+% \begin{variable}[int]{\c_@@_viii_tl}
 % 第 8 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_viii_tl
@@ -682,9 +766,9 @@ version.
     件多如届两列性严拉。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_ix_tl}
+% \begin{variable}[int]{\c_@@_ix_tl}
 % 第 9 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_ix_tl
@@ -705,9 +789,9 @@ version.
     一院却阶候，组准李年美坟林共值。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_x_tl}
+% \begin{variable}[int]{\c_@@_x_tl}
 % 第 10 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_x_tl
@@ -728,9 +812,9 @@ version.
     型伯列。领条看的低细，南月这专处，济李我原。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xi_tl}
+% \begin{variable}[int]{\c_@@_xi_tl}
 % 第 11 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xi_tl
@@ -752,9 +836,9 @@ version.
     研，程束步伸过音。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xii_tl}
+% \begin{variable}[int]{\c_@@_xii_tl}
 % 第 12 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xii_tl
@@ -775,9 +859,9 @@ version.
     青，管品联便。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xiii_tl}
+% \begin{variable}[int]{\c_@@_xiii_tl}
 % 第 13 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xiii_tl
@@ -798,9 +882,9 @@ version.
     油的物力队济持且量，县都两码表杰隶。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xiv_tl}
+% \begin{variable}[int]{\c_@@_xiv_tl}
 % 第 14 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xiv_tl
@@ -822,9 +906,9 @@ version.
     型压规么把整器候，义白各议万次伶到济支。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xv_tl}
+% \begin{variable}[int]{\c_@@_xv_tl}
 % 第 15 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xv_tl
@@ -846,9 +930,9 @@ version.
     水材蹦杏束码每利。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xvi_tl}
+% \begin{variable}[int]{\c_@@_xvi_tl}
 % 第 16 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xvi_tl
@@ -869,9 +953,9 @@ version.
     院，个存何片水按传头风育多，更第弦代造必斗了但军。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xvii_tl}
+% \begin{variable}[int]{\c_@@_xvii_tl}
 % 第 17 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xvii_tl
@@ -892,9 +976,9 @@ version.
     毛众或。美装外状切保西金基，清中意很提队已，可式束型飞十科。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xviii_tl}
+% \begin{variable}[int]{\c_@@_xviii_tl}
 % 第 18 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xviii_tl
@@ -915,9 +999,9 @@ version.
     层同已声张同建建，权这深斯制张处区直水。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xix_tl}
+% \begin{variable}[int]{\c_@@_xix_tl}
 % 第 19 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xix_tl
@@ -939,9 +1023,9 @@ version.
     住。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xx_tl}
+% \begin{variable}[int]{\c_@@_xx_tl}
 % 第 20 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xx_tl
@@ -962,9 +1046,9 @@ version.
     目报然属系，众历军出上外求究，回或葬精芽部。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxi_tl}
+% \begin{variable}[int]{\c_@@_xxi_tl}
 % 第 21 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxi_tl
@@ -985,9 +1069,9 @@ version.
     到型详歼选放最。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxii_tl}
+% \begin{variable}[int]{\c_@@_xxii_tl}
 % 第 22 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxii_tl
@@ -1008,9 +1092,9 @@ version.
     劳决，型复角克验扯。结这日府火其月果，日取济入图。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxiii_tl}
+% \begin{variable}[int]{\c_@@_xxiii_tl}
 % 第 23 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxiii_tl
@@ -1031,9 +1115,9 @@ version.
     业究己现派当运却着，却飞照进大极更面可细图又。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxiv_tl}
+% \begin{variable}[int]{\c_@@_xxiv_tl}
 % 第 24 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxiv_tl
@@ -1054,9 +1138,9 @@ version.
     学响西计六观人影，斯除更放委族率克。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxv_tl}
+% \begin{variable}[int]{\c_@@_xxv_tl}
 % 第 25 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxv_tl
@@ -1077,9 +1161,9 @@ version.
     来。观等反公消委回切，元织增义物只象火，每建型豆你需。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxvi_tl}
+% \begin{variable}[int]{\c_@@_xxvi_tl}
 % 第 26 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxvi_tl
@@ -1098,9 +1182,9 @@ version.
     格持织四无交各日周，格给这边南方想土片月正类。论图论构。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxvii_tl}
+% \begin{variable}[int]{\c_@@_xxvii_tl}
 % 第 27 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxvii_tl
@@ -1121,9 +1205,9 @@ version.
     花，这报期两级与各识节杏化。问志长积义，调里包响声，详医励。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxviii_tl}
+% \begin{variable}[int]{\c_@@_xxviii_tl}
 % 第 28 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxviii_tl
@@ -1145,9 +1229,9 @@ version.
     回，计为听芦贡。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxix_tl}
+% \begin{variable}[int]{\c_@@_xxix_tl}
 % 第 29 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxix_tl
@@ -1168,9 +1252,9 @@ version.
     照第。走一委理长流团，书议交林斯，内京需在。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxx_tl}
+% \begin{variable}[int]{\c_@@_xxx_tl}
 % 第 30 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxx_tl
@@ -1192,9 +1276,9 @@ version.
     保持加利必蠢没罐织三那。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxi_tl}
+% \begin{variable}[int]{\c_@@_xxxi_tl}
 % 第 31 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxi_tl
@@ -1215,9 +1299,9 @@ version.
     包从话，历林接照满飞处广验设达，组取理把些改别空。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxii_tl}
+% \begin{variable}[int]{\c_@@_xxxii_tl}
 % 第 32 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxii_tl
@@ -1238,9 +1322,9 @@ version.
     解后决细关，更龙争极学电各器资，再才求五众候。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxiii_tl}
+% \begin{variable}[int]{\c_@@_xxxiii_tl}
 % 第 33 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxiii_tl
@@ -1261,9 +1345,9 @@ version.
     弦示走在系。区大布进划民率能美标带，展美段究听杨上才月。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxiv_tl}
+% \begin{variable}[int]{\c_@@_xxxiv_tl}
 % 第 34 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxiv_tl
@@ -1284,9 +1368,9 @@ version.
     低持，选公东联完结际思飞划，切华弦治员扯路下斯。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxv_tl}
+% \begin{variable}[int]{\c_@@_xxxv_tl}
 % 第 35 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxv_tl
@@ -1308,9 +1392,9 @@ version.
     位，标取材呈束奋低公。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxvi_tl}
+% \begin{variable}[int]{\c_@@_xxxvi_tl}
 % 第 36 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxvi_tl
@@ -1331,9 +1415,9 @@ version.
     该，也计热五难上名加造，情海精造采。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxvii_tl}
+% \begin{variable}[int]{\c_@@_xxxvii_tl}
 % 第 37 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxvii_tl
@@ -1354,9 +1438,9 @@ version.
     史次员断，情政无转商区成其，明世屈芽置观高。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxviii_tl}
+% \begin{variable}[int]{\c_@@_xxxviii_tl}
 % 第 38 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxviii_tl
@@ -1378,9 +1462,9 @@ version.
     线，片贡再罐为。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xxxix_tl}
+% \begin{variable}[int]{\c_@@_xxxix_tl}
 % 第 39 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xxxix_tl
@@ -1401,9 +1485,9 @@ version.
     族，速知增界验关据，而辰抓次敌。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xl_tl}
+% \begin{variable}[int]{\c_@@_xl_tl}
 % 第 40 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xl_tl
@@ -1424,9 +1508,9 @@ version.
     回照织由走政可美至，走毛极更英专。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xli_tl}
+% \begin{variable}[int]{\c_@@_xli_tl}
 % 第 41 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xli_tl
@@ -1448,9 +1532,9 @@ version.
     中还当辅半。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xlii_tl}
+% \begin{variable}[int]{\c_@@_xlii_tl}
 % 第 42 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xlii_tl
@@ -1471,9 +1555,9 @@ version.
     本刷写究间覆。积品很市火线的个，识写深步龙都，质村约折果片。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xliii_tl}
+% \begin{variable}[int]{\c_@@_xliii_tl}
 % 第 43 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xliii_tl
@@ -1494,9 +1578,9 @@ version.
     家，如那酸龙现石工，即丽位型主军。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xliv_tl}
+% \begin{variable}[int]{\c_@@_xliv_tl}
 % 第 44 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xliv_tl
@@ -1518,9 +1602,9 @@ version.
     属不内济正四，过层孟计杨起里连身。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xlv_tl}
+% \begin{variable}[int]{\c_@@_xlv_tl}
 % 第 45 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xlv_tl
@@ -1541,9 +1625,9 @@ version.
     理说转角段万，具即明流压实先，向鹰识刷。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xlvi_tl}
+% \begin{variable}[int]{\c_@@_xlvi_tl}
 % 第 46 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xlvi_tl
@@ -1565,9 +1649,9 @@ version.
     态。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xlvii_tl}
+% \begin{variable}[int]{\c_@@_xlvii_tl}
 % 第 47 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xlvii_tl
@@ -1588,9 +1672,9 @@ version.
     极九从精极素少到，斗常装求矿求重。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xlviii_tl}
+% \begin{variable}[int]{\c_@@_xlviii_tl}
 % 第 48 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xlviii_tl
@@ -1611,9 +1695,9 @@ version.
     拉表拉少本总报，多多为特内村林。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_xlix_tl}
+% \begin{variable}[int]{\c_@@_xlix_tl}
 % 第 49 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_xlix_tl
@@ -1635,9 +1719,9 @@ version.
     市承足助秩使赤。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
-% \begin{macro}{\c_@@_l_tl}
+% \begin{variable}[int]{\c_@@_l_tl}
 % 第 50 段。
 %    \begin{macrocode}
 \tl_const:Nn \c_@@_l_tl
@@ -1659,7 +1743,7 @@ version.
     葡己。
   }
 %    \end{macrocode}
-% \end{macro}
+% \end{variable}
 %
 % \end{implementation}
 %
@@ -1670,6 +1754,49 @@ version.
 %    \begin{macrocode}
 %<@@=>
 %</zh-cn>
+%    \end{macrocode}
+%
+% \end{implementation}
+%
+% \DisableImplementation
+%
+% \begin{implementation}
+%
+%    \begin{macrocode}
+%<ex-utf8>\documentclass[UTF8]{ctexart}
+%<ex-utf8>\usepackage[encoding=UTF8]{zhlipsum}
+%<ex-gbk>\documentclass[GBK]{ctexart}
+%<ex-gbk>\usepackage[encoding=GBK]{zhlipsum}
+%<*(ex-utf8|ex-gbk)>
+\begin{document}
+\def\parcmd{\texttt{\textbackslash par}}
+
+\section{Basic}
+\zhlipsum
+
+\section{Different fonts}
+{\songti   \zhlipsum[1]}
+
+{\heiti    \zhlipsum[2]}
+
+{\fangsong \zhlipsum[3]}
+
+{\kaishu   \zhlipsum[4]}
+
+\section{Single paragraph}
+\zhlipsum[55]
+
+\section{With `\parcmd'}
+Some text before lorem ipsum.
+\zhlipsum[0-1]
+Some text after lorem ipsum.
+
+\section{Without `\parcmd'}
+Some text before lorem ipsum.
+\zhlipsum*[0-500]
+Some text after lorem ipsum.
+\end{document}
+%</(ex-utf8|ex-gbk)>
 %    \end{macrocode}
 %
 % \end{implementation}

@@ -31,4 +31,5 @@ latexmkrc
 .vscode/
 doc/
 TDS/
+test/
 zhlipsum/
