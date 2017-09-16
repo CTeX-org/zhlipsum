@@ -16,22 +16,19 @@
 *.synctex.gz
 *.thm
 *.toc
+*.xdv
 
-# *.pdf
-
+*.pdf
 *.bat
-
 *.zip
 
-source/*.sty
-source/*.def
-source/*.pdf
-source/ctxdoc-m.cls
+*.sty
+*.def
+*.ins
 
-test/*.sty
-test/*.def
-test/*.pdf
+latexmkrc
 
+.vscode/
 doc/
 TDS/
 zhlipsum/

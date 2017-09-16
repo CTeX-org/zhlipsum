@@ -6,12 +6,10 @@
 
 Basic usage:
 
-```tex
-\zhlipsum[3]
-\zhlipsum*[1-5]
-```
+    \zhlipsum[3]
+    \zhlipsum*[1-5]
 
-More information can be found in the package documentation 
+More information can be found in the package documentation
 [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf).
 
 ## License

@@ -8,9 +8,10 @@ cache:
 
 script:
   - cd source
-  - xetex zhlipsum.ins
+  - xetex zhlipsum.dtx
   - cp zhlipsum.sty       ../test/zhlipsum.sty
   - cp zhlipsum-zh-cn.def ../test/zhlipsum-zh-cn.def
   - cd ../test
+  - pdlatex  -interaction=nonstopmode test
   - xelatex  -interaction=nonstopmode test
   - lualatex -interaction=nonstopmode test
