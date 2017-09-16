@@ -46,13 +46,17 @@ tlmgr install     \
 tlmgr install     \
   amsmath         \
   caption         \
+  cjk             \
+  cjkpunct        \
   ctablestack     \
   ctex            \
   currfile        \
   environ         \
   etoolbox        \
+  euenc           \
   fancyhdr        \
   filehook        \
+  fontspec        \
   graphics        \
   graphics-cfg    \
   graphics-def    \
@@ -73,6 +77,7 @@ tlmgr install     \
   luatexja        \
   ms              \
   oberdiek        \
+  platex-tools    \
   preview         \
   tools           \
   trimspaces      \
@@ -81,13 +86,14 @@ tlmgr install     \
   unicode-data    \
   uplatex         \
   varwidth        \
+  xcjk2uni        \
   xcolor          \
   xecjk           \
   xetex           \
   xkeyval         \
   xunicode        \
-  zh­metrics       \
-  zh­metrics-up­tex \
+  zhmetrics       \
+  zhmetrics-uptex \
   zhnumber
 
 # Keep no backups (not required, simply makes cache bigger)
