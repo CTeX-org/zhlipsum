@@ -17,8 +17,8 @@ script:
   - cd ../test
   - latex    -interaction=nonstopmode zhlipsum-example-gbk
   - latex    -interaction=nonstopmode zhlipsum-example-utf8
-  - pdflatex -interaction=nonstopmode zhlipsum-example-gbk
-  - pdflatex -interaction=nonstopmode zhlipsum-example-utf8
+  # - pdflatex -interaction=nonstopmode zhlipsum-example-gbk
+  # - pdflatex -interaction=nonstopmode zhlipsum-example-utf8
   - xelatex  -interaction=nonstopmode zhlipsum-example-utf8
   - lualatex -interaction=nonstopmode zhlipsum-example-utf8
   - uplatex  -interaction=nonstopmode zhlipsum-example-utf8
