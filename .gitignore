@@ -19,17 +19,16 @@
 *.xdv
 
 *.pdf
-*.bat
 *.zip
 
 *.sty
 *.def
 *.ins
 
-latexmkrc
-
 .vscode/
-doc/
+CTAN/
 TDS/
 test/
-zhlipsum/
+
+source/*.bat
+source/latexmkrc
