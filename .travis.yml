@@ -1,5 +1,5 @@
 install:
-  - source ./support/texlive.sh
+  - source ./scripts/texlive.sh
 
 cache:
   directories:
@@ -10,7 +10,7 @@ script:
   - mkdir test
   - cd source
   - xetex zhlipsum.dtx
-  - source ../support/zhconvert.sh
+  - source ../scripts/zhconvert.sh
   - cp *.sty  ../test
   - cp *.def  ../test
   - cp *.tex  ../test
