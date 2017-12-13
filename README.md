@@ -4,7 +4,7 @@
 [![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
 [![GitHub release](https://img.shields.io/github/release/Stone-Zeng/zhlipsum/all.svg)](https://github.com/Stone-Zeng/zhlipsum/releases/latest)
 
-## 欢迎使用 `zhlipsum` （中文乱数假文）
+## 欢迎使用 zhlipsum （中文乱数假文）
 
 本宏包提供了中文乱数假文的功能，可用于测试中文 LaTeX 文档。`zhlipsum` 支持 UTF-8 和 GBK 编码。
 
@@ -27,11 +27,11 @@
 
 <br>
 
-## Welcome to `zhlipsum` (Chinese dummy text)
+## Welcome to zhlipsum (Chinese dummy text)
 
-This pack­age pro­vides an in­ter­face to dummy text in Chi­nese, which will be use­ful for test­ing Chi­nese doc­u­ments.
+This package provides an interface to dummy text in Chinese, which will be useful for testing Chinese documents.
 
-`zhlipsum` supports both UTF-8 and GBK en­cod­ing.
+`zhlipsum` supports both UTF-8 and GBK encoding.
 
 ### Basic usage
 
