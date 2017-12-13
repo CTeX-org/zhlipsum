@@ -31,35 +31,72 @@
 %</internal>
 %
 %<*readme>
-# zhlipsum - Chinese dummy text
+The `zhlipsum` package
+======================
 
-[![Build Status](https://travis-ci.org/Stone-Zeng/zhlipsum.svg?branch=master)](https://travis-ci.org/Stone-Zeng/zhlipsum)
-[![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
-[![GitHub release](https://img.shields.io/github/release/Stone-Zeng/zhlipsum/all.svg)](https://github.com/Stone-Zeng/zhlipsum/releases/latest)
-
-## Introduction
-
-This pack­age pro­vides an in­ter­face to dummy text in Chi­nese, which
-will be use­ful for test­ing Chi­nese doc­u­ments.
+The `zhlipsum` package pro­vides an in­ter­face to dummy text in Chi­nese,
+which will be use­ful for test­ing Chi­nese doc­u­ments.
 
 `zhlipsum` supports both UTF-8 and GBK en­cod­ing.
 
-## Basic usage
+Basic usage
+-----------
 
-```tex
-\zhlipsum[3]
-\zhlipsum*[1-5]
-```
+    \zhlipsum[3]
+    \zhlipsum*[1-5]
 
 More information can be found in the package documentation
 [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf).
 
-## License
+Installation
+------------
+
+To install `zhlipsum`, you can use one of the following methods:
+
+- If you are running TeX Live, the simplest way is to run
+
+      tlmgr install zhlipsum
+
+- Download
+  [zhlipsum.tds.zip](http://mirror.ctan.org/install/macros/latex/contrib/zhlipsum.tds.zip)
+  from CTAN, extract it in the root of one of your TDS trees, and
+  update the filename database.
+
+- Get the latest development version from GitHub:
+
+      git clone https://github.com/Stone-Zeng/zhlipsum.git
+
+  Run
+
+      xetex zhlipsum.dtx
+
+  to generate the package. Then move the following files into a directory
+  where LaTeX will find them (e.g. `TEXMF/tex/latex/zhlipsum/`):
+
+  - `zhlipsum.sty`
+  - `zhlipsum-zh-cn-utf8.def`
+  - `zhlipsum-zh-cn-gbk.def`
+
+  Do not forget to update the filename database afterwards.
+
+Contributing
+------------
+
+[Issues](https://github.com/Stone-Zeng/zhlipsum/issues) and
+[pull requests](https://github.com/Stone-Zeng/zhlipsum/pulls)
+are always welcome.
+
+License
+-------
 
 This work may be distributed and/or modified under the conditions of
 the [LaTeX Project Public License](http://www.latex-project.org/lppl.txt),
 either version 1.3c of this license or (at your option) any later
 version.
+
+-----
+
+Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %</readme>
 %
 %<*internal>

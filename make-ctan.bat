@@ -7,10 +7,10 @@ mkdir "CTAN\zhlipsum"
 copy /Y "source\*.dtx"  "CTAN\zhlipsum"
 copy /Y "source\*.ins"  "CTAN\zhlipsum"
 copy /Y "source\*.pdf"  "CTAN\zhlipsum"
+copy /Y "source\*.md"   "CTAN\zhlipsum"
 copy /Y "test\*.sty"    "CTAN\zhlipsum"
 copy /Y "test\*.def"    "CTAN\zhlipsum"
 copy /Y "test\*.tex"    "CTAN\zhlipsum"
-copy /Y "README.md"     "CTAN\zhlipsum"
 
 REM ***** TDS *****
 
@@ -24,7 +24,7 @@ copy /Y "source\*.ins"  "TDS\source\latex\zhlipsum"
 copy /Y "test\*.sty"    "TDS\tex\latex\zhlipsum"
 copy /Y "test\*.def"    "TDS\tex\latex\zhlipsum"
 copy /Y "source\*.pdf"  "TDS\doc\latex\zhlipsum"
-copy /Y "README.md"     "TDS\doc\latex\zhlipsum"
+copy /Y "source\*.md"   "TDS\doc\latex\zhlipsum"
 copy /Y "test\*.tex"    "TDS\doc\latex\zhlipsum\example"
 
 REM ***** Make zip files *****

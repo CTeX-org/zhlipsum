@@ -31,4 +31,5 @@ TDS/
 test/
 
 source/*.bat
+source/*.md
 source/latexmkrc
