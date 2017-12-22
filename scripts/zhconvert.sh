@@ -2,7 +2,7 @@
 
 # This script is used for changing encoding from UTF-8 to GBK.
 
-jobname=zhlipsum-zh-cn
+jobname=zhlipsum-simp
 
 mv "$jobname-gbk.def" "$jobname-gbk.old.def"
 
