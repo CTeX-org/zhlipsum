@@ -19,12 +19,12 @@
 % This work consists of the file zhlipsum.dtx,
 %          and the derived files zhlipsum.ins,
 %                                zhlipsum.sty,
-%                                zhlipsum-simp-utf8.def,
-%                                zhlipsum-simp-gbk.def,
-%                                zhlipsum-trad-utf8.def,
-%                                zhlipsum-trad-gbk.def,
+%                                zhlipsum-utf8.def,
+%                                zhlipsum-gbk.def,
+%                                zhlipsum-big5.def,
 %                                zhlipsum-example-utf8.tex,
 %                                zhlipsum-example-gbk.tex,
+%                                zhlipsum-example-big5.tex,
 %                                zhlipsum.pdf,
 %                            and README.md.
 %
@@ -76,10 +76,9 @@ To install `zhlipsum`, you can use one of the following methods:
   where LaTeX will find them (e.g. `TEXMF/tex/latex/zhlipsum/`):
 
   - `zhlipsum.sty`
-  - `zhlipsum-simp-utf8.def`
-  - `zhlipsum-simp-gbk.def`
-  - `zhlipsum-trad-utf8.def`
-  - `zhlipsum-trad-gbk.def`
+  - `zhlipsum-utf8.def`,
+  - `zhlipsum-gbk.def`,
+  - `zhlipsum-big5.def`
 
   Do not forget to update the filename database afterwards.
 
@@ -136,12 +135,12 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
     This work consists of the file zhlipsum.dtx,
              and the derived files zhlipsum.ins,
                                    zhlipsum.sty,
-                                   zhlipsum-simp-utf8.def,
-                                   zhlipsum-simp-gbk.def,
-                                   zhlipsum-trad-utf8.def,
-                                   zhlipsum-trad-gbk.def,
+                                   zhlipsum-utf8.def,
+                                   zhlipsum-gbk.def,
+                                   zhlipsum-big5.def,
                                    zhlipsum-example-utf8.tex,
                                    zhlipsum-example-gbk.tex,
+                                   zhlipsum-example-big5.tex,
                                    zhlipsum.pdf,
                                and README.md.
 
@@ -150,10 +149,9 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \generate{
   \usedir{tex/latex/zhlipsum}
     \file{\jobname.sty}              {\from{\jobname.dtx}{package}}
-    \file{\jobname-simp-utf8.def}    {\from{\jobname.dtx}{simp,utf8}}
-    \file{\jobname-simp-gbk.def}     {\from{\jobname.dtx}{simp,gbk}}
-    \file{\jobname-trad-utf8.def}    {\from{\jobname.dtx}{trad,utf8}}
-    \file{\jobname-trad-gbk.def}     {\from{\jobname.dtx}{trad,gbk}}
+    \file{\jobname-utf8.def}         {\from{\jobname.dtx}{text,utf8}}
+    \file{\jobname-gbk.def}          {\from{\jobname.dtx}{text,gbk}}
+    \file{\jobname-big5.def}         {\from{\jobname.dtx}{text,big5}}
 %</install>
 %<*internal>
   \usedir{source/latex/zhlipsum}
@@ -163,8 +161,9 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
   \usedir{doc/latex/zhlipsum/example}
   \usepreamble\emptypreamble
   \usepostamble\emptypostamble
-    \file{\jobname-example-utf8.tex} {\from{\jobname.dtx}{ex-utf8}}
-    \file{\jobname-example-gbk.tex}  {\from{\jobname.dtx}{ex-gbk}}
+    \file{\jobname-example-utf8.tex} {\from{\jobname.dtx}{example,utf8}}
+    \file{\jobname-example-gbk.tex}  {\from{\jobname.dtx}{example,gbk}}
+    \file{\jobname-example-big5.tex} {\from{\jobname.dtx}{example,big5}}
   \usedir{doc/latex/zhlipsum}
   \nopreamble\nopostamble
     \file{README.md}                 {\from{\jobname.dtx}{readme}}
@@ -177,10 +176,9 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \Msg{* following file into a directory searched by TeX: *}
 \Msg{*                                                  *}
 \Msg{*     zhlipsum.sty                                 *}
-\Msg{*     zhlipsum-simp-utf8.def                       *}
-\Msg{*     zhlipsum-simp-gbk.def                        *}
-\Msg{*     zhlipsum-trad-utf8.def                       *}
-\Msg{*     zhlipsum-trad-gbk.def                        *}
+\Msg{*     zhlipsum-utf8.def                            *}
+\Msg{*     zhlipsum-gbk.def                             *}
+\Msg{*     zhlipsum-big5.def                            *}
 \Msg{*                                                  *}
 \Msg{* The recommended directory is                     *}
 \Msg{*   TDS:tex/latex/zhlipsum                         *}
@@ -201,20 +199,18 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
-%<*!(driver|install|ex-utf8|ex-gbk)>
+%<*!(driver|install|example)>
 %<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.4 2017-09-16 12:00:00Z Xiangdong Zeng <pssysrq@163.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
-%<simp&utf8>  {Simplified Chinese dummy text with UTF8 encoding (for zhlipsum)}
-%<simp&utf8>\ProvidesExplFile{\ExplFileName-simp-utf8.def}
-%<simp&gbk>  {Simplified Chinese dummy text with GBK encoding (for zhlipsum)}
-%<simp&gbk>\ProvidesExplFile{\ExplFileName-simp-gbk.def}
-%<trad&utf8>  {Traditional Chinese dummy text with UTF8 encoding (for zhlipsum)}
-%<trad&utf8>\ProvidesExplFile{\ExplFileName-trad-utf8.def}
-%<trad&gbk>  {Traditional Chinese dummy text with GBK encoding (for zhlipsum)}
-%<trad&gbk>\ProvidesExplFile{\ExplFileName-trad-gbk.def}
+%<utf8>  {Chinese dummy text with UTF8 encoding (for zhlipsum)}
+%<utf8>\ProvidesExplFile{\ExplFileName-utf8.def}
+%<gbk>  {Chinese dummy text with GBK encoding (for zhlipsum)}
+%<gbk>\ProvidesExplFile{\ExplFileName-gbk.def}
+%<big5>  {Chinese dummy text with BIG5 encoding (for zhlipsum)}
+%<big5>\ProvidesExplFile{\ExplFileName-big5.def}
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
-%</!(driver|install|ex-utf8|ex-gbk)>
+%</!(driver|install|example)>
 %<*driver>
 \documentclass{ctxdoc}
 \sisetup{
@@ -341,13 +337,13 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 % }
 %
 % \section{使用说明}
-% \begin{function}[added=2017-09-16]{encoding}
+% \begin{function}[added=2017-09-16,updated=2017-12-22]{encoding}
 %   \begin{syntax}
-%     encoding = <(UTF8)|GBK>
+%     encoding = <(UTF8)|GBK|BIG5>
 %   \end{syntax}
 %   用于指定编码的宏包选项，可以在调用宏包的时候设定，默认为
 %   UTF8。对于 \XeLaTeX{}、\LuaLaTeX{} 和 \upLaTeX{} 等 Unicode
-%   引擎，GBK 编码无效，宏包将强制使用 UTF8 编码。
+%   引擎，GBK 和 BIG5 编码无效，宏包将强制使用 UTF8 编码。
 % \end{function}
 %
 % \begin{function}{\zhlipsum}
@@ -442,11 +438,12 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_input_def_file:N}
+% \begin{macro}{\@@_input_def_file:n,\@@_input_def_file:V}
 % 读入定义文件。
 %    \begin{macrocode}
-\cs_new:Npn \@@_input_def_file:N #1
-  { \exp_args:Nx \file_input:n { zhlipsum-simp- #1 .def } }
+\cs_new:Npn \@@_input_def_file:n #1
+  { \exp_args:Nx \file_input:n { zhlipsum- #1 .def } }
+\cs_generate_variant:Nn \@@_input_def_file:n { V }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -465,9 +462,18 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
         \@@_if_unicode_engine:TF
           {
             \tl_set:Nn \g_@@_encoding_tl { utf8 }
-            \msg_warning:nn { zhlipsum } { unicode-engine }
+            \msg_warning:nnn { zhlipsum } { unicode-engine } { GBK }
           }
-          { \tl_set:Nn \g_@@_encoding_tl { gbk  } }
+          { \tl_set:Nn \g_@@_encoding_tl { gbk } }
+      },
+    encoding / BIG5    .code:n =
+      {
+        \@@_if_unicode_engine:TF
+          {
+            \tl_set:Nn \g_@@_encoding_tl { utf8 }
+            \msg_warning:nnn { zhlipsum } { unicode-engine } { BIG5 }
+          }
+          { \tl_set:Nn \g_@@_encoding_tl { big5 } }
       },
     encoding / unknown .code:n =
       { \msg_error:nnn { zhlipsum } { encoding-invalid } {#1} },
@@ -488,12 +494,12 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \msg_new:nnn { zhlipsum } { unicode-engine }
   {
     You~ are~ now~ using~ Unicode~ engine~ \c_sys_engine_str. \\
-    Encoding~ "GBK"~ is~ invalid.~ Changed~ into~ UTF8.
+    Encoding~ "#1"~ is~ invalid.~ Changed~ into~ UTF8.
   }
 \msg_new:nnn { zhlipsum } { encoding-invalid }
   {
     Encoding~ "#1"~ is~ invalid. \\
-    Available~ encodings~ are~ "UTF8"~ and~ "GBK".
+    Available~ encodings~ are~ "UTF8",~ "GBK"~ and~ "BIG5".
   }
 \msg_new:nnn { zhlipsum } { unknown-option }
   { Package~ option~ "\l_keys_key_tl"~ is~ unknown. }
@@ -506,7 +512,7 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %
 % 根据编码读入假文文本定义文件。
 %    \begin{macrocode}
-\@@_input_def_file:N \g_@@_encoding_tl
+\@@_input_def_file:V \g_@@_encoding_tl
 %    \end{macrocode}
 %
 % \subsection{核心函数}
@@ -640,7 +646,8 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 % 略有改动。此处从略。
 %
 %    \begin{macrocode}
-%<*simp>
+%<*text>
+%<*!big5>
 %<@@=zhlipsum_text_simp>
 %    \end{macrocode}
 %
@@ -1225,9 +1232,8 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-%</simp>
-%<*trad>
 %<@@=zhlipsum_text_trad>
+%</!big5>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
@@ -1811,42 +1817,44 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-%</trad>
+%</text>
 %<@@=>
 %    \end{macrocode}
 %
 %    \begin{macrocode}
-%<ex-utf8>\documentclass[UTF8]{ctexart}
-%<ex-utf8>\usepackage[encoding=UTF8]{zhlipsum}
-%<ex-gbk>\documentclass[GBK]{ctexart}
-%<ex-gbk>\usepackage[encoding=GBK]{zhlipsum}
-%<*(ex-utf8|ex-gbk)>
+%<example&utf8>\documentclass[UTF8]{ctexart}
+%<example&gbk>\documentclass[GBK]{ctexart}
+%<example&big5>\documentclass{article} 
+%<example&big5>\usepackage{CJK}
+%<example&utf8>\usepackage[encoding=UTF8]{zhlipsum}
+%<example&gbk>\usepackage[encoding=GBK]{zhlipsum}
+%<example&big5>\usepackage[encoding=BIG5]{zhlipsum}
+%<*example>
 \begin{document}
+%<big5>\begin{CJK*}{Bg5}{bsmi}
 \def\parcmd{\texttt{\textbackslash par}}
-
 \section{Basic}
 \zhlipsum
-
+%<*!big5>
 \section{Different fonts}
 {\songti   \zhlipsum[1]} \par
 {\heiti    \zhlipsum[2]} \par
 {\fangsong \zhlipsum[3]} \par
 {\kaishu   \zhlipsum[4]} \par
-
+%</!big5>
 \section{Single paragraph}
 \zhlipsum[55]
-
 \section{With `\parcmd'}
 Some text before lorem ipsum.
 \zhlipsum[0-1]
 Some text after lorem ipsum.
-
 \section{Without `\parcmd'}
 Some text before lorem ipsum.
 \zhlipsum*[0-500]
 Some text after lorem ipsum.
+%<big5>\end{CJK*}
 \end{document}
-%</(ex-utf8|ex-gbk)>
+%</example>
 %    \end{macrocode}
 %
 % \end{implementation}
