@@ -52,4 +52,4 @@ This work may be distributed and/or modified under the conditions of the [LaTeX 
 
 -----
 
-Copyright (C) 2017 by Xiangdong Zeng.
+Copyright (C) 2017, 2018 by Xiangdong Zeng.
