@@ -30,6 +30,7 @@ CTAN/
 TDS/
 test/
 
+scripts/*.local.sh
 source/*.bat
 source/*.md
 source/latexmkrc

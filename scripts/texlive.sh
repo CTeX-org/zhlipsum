@@ -10,6 +10,9 @@
 
 # See if there is a cached version of TL available
 export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
+
+export PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
+
 if ! command -v texlua > /dev/null; then
   # Obtain TeX Live
   wget https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
@@ -49,6 +52,7 @@ tlmgr install     \
   caption         \
   cjk             \
   cjkpunct        \
+  cjkutils        \
   ctablestack     \
   ctex            \
   currfile        \
