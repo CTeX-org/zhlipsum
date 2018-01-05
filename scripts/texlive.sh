@@ -26,40 +26,29 @@ if ! command -v texlua > /dev/null; then
   cd ..
 fi
 
-# TeX base
-tlmgr install     \
-  tex             \
-  etex            \
-  knuth-lib       \
-  latex-bin       \
-  tex-ini-files   \
-  cm
+# Change default package repository
+tlmgr option repository https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
 
-# Fonts
+# Packages
 tlmgr install     \
   adobemapping    \
   amsfonts        \
-  fandol          \
-  lm              \
-  lm-math         \
-  metafont        \
-  mfware          \
-  psnfss
-
-# Other
-tlmgr install     \
   amsmath         \
   caption         \
   cjk             \
   cjkpunct        \
   cjkutils        \
+  cm              \
   ctablestack     \
   ctex            \
   currfile        \
+  dvipdfmx        \
   environ         \
+  etex            \
   etoolbox        \
   euenc           \
   fancyhdr        \
+  fandol          \
   filehook        \
   fontspec        \
   graphics        \
@@ -69,10 +58,14 @@ tlmgr install     \
   ifpdf           \
   ifxetex         \
   kantlipsum      \
-  l3kernel        \
-  l3experimental  \
-  l3packages      \
+  knuth-lib       \
   l3build         \
+  l3experimental  \
+  l3kernel        \
+  l3packages      \
+  latex-bin       \
+  lm              \
+  lm-math         \
   lualatex-math   \
   lualibs         \
   luaotfload      \
@@ -80,10 +73,15 @@ tlmgr install     \
   luatex85        \
   luatexbase      \
   luatexja        \
+  metafont        \
+  mfware          \
   ms              \
   oberdiek        \
   platex-tools    \
   preview         \
+  psnfss          \
+  tex             \
+  tex-ini-files   \
   tools           \
   trimspaces      \
   ucharcat        \

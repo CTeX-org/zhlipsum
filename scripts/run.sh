@@ -34,10 +34,10 @@ latex    -interaction=nonstopmode -jobname=latex-utf8    $JOBNAME-utf8
 latex    -interaction=nonstopmode -jobname=latex-gbk     $JOBNAME-gbk
 latex    -interaction=nonstopmode -jobname=latex-big5    $JOBNAME-big5
 
-pdflatex -interaction=nonstopmode -jobname=pdflatex-utf8 $JOBNAME-gbk
-pdflatex -interaction=nonstopmode -jobname=pdflatex-gbk  $JOBNAME-utf8
 # Under pdflatex, CTeX can't set up fonts automatically on Linux.
-# pdflatex -interaction=nonstopmode -jobname=pdflatex-big5 $JOBNAME-big5
+# pdflatex -interaction=nonstopmode -jobname=pdflatex-utf8 $JOBNAME-gbk
+# pdflatex -interaction=nonstopmode -jobname=pdflatex-gbk  $JOBNAME-utf8
+pdflatex -interaction=nonstopmode -jobname=pdflatex-big5 $JOBNAME-big5
 
 xelatex  -interaction=nonstopmode -jobname=xelatex-utf8  $JOBNAME-utf8
 lualatex -interaction=nonstopmode -jobname=lualatex-utf8 $JOBNAME-utf8
