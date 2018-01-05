@@ -10,8 +10,12 @@ iconv --from-code=utf8 --to-code=big5 --output=zhlipsum-big5.tmpb.def zhlipsum-b
 
 # Convert a TeX document in Big5 encoding into `preprocessed' form
 # From CJK utilities
+echo *************************
+echo ** Converting Big5/GBK **
+echo *************************
 export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
-bg5conv <zhlipsum-big5.tmpb.def> zhlipsum-big5.def
+extconv <zhlipsum-big5.tmpb.def> zhlipsum-big5.def
+extconv <zhlipsum-gbk.tmpb.def>  zhlipsum-gbk.def
 
 rm *.tmpa.def
 rm *.tmpb.def
