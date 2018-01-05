@@ -207,7 +207,7 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %<utf8>\ProvidesExplFile{\ExplFileName-utf8.def}
 %<gbk>  {Chinese dummy text with GBK encoding (for zhlipsum)}
 %<gbk>\ProvidesExplFile{\ExplFileName-gbk.def}
-%<big5>  {Chinese dummy text with BIG5 encoding (for zhlipsum)}
+%<big5>  {Chinese dummy text with Big5 encoding (for zhlipsum)}
 %<big5>\ProvidesExplFile{\ExplFileName-big5.def}
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %</!(driver|install|example)>
@@ -243,10 +243,9 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %   任意的段落选取。}
 % \changes{v0.2}{2017/04/14}{使用名字空间。}
 % \changes{v0.4}{2017/09/16}{将安装、测试文件集成进源文件。}
-% \changes{v0.4}{2017/09/16}{新增 \opt{encoding} 选项。}
 % \changes{v0.4}{2017/09/16}{优化宏包实现。}
 %
-% \CheckSum{115}
+% \CheckSum{0}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -339,11 +338,11 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 % \section{使用说明}
 % \begin{function}[added=2017-09-16,updated=2017-12-22]{encoding}
 %   \begin{syntax}
-%     encoding = <(UTF8)|GBK|BIG5>
+%     encoding = <(utf8)|gbk|big5>
 %   \end{syntax}
 %   用于指定编码的宏包选项，可以在调用宏包的时候设定，默认为
-%   UTF8。对于 \XeLaTeX{}、\LuaLaTeX{} 和 \upLaTeX{} 等 Unicode
-%   引擎，GBK 和 BIG5 编码无效，宏包将强制使用 UTF8 编码。
+%   |utf8|。对于 \XeLaTeX{}、\LuaLaTeX{} 和 \upLaTeX{} 等 Unicode
+%   引擎，GBK 和 Big5 编码无效，宏包将强制使用 UTF8 编码。
 % \end{function}
 %
 % \begin{function}{\zhlipsum}
@@ -424,6 +423,13 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{macro}[TF]{\tl_if_eq:Vn}
+% \LaTeX3{} 函数变体。
+%    \begin{macrocode}
+\prg_generate_conditional_variant:Nnn \tl_if_eq:nn { Vn } { T, TF }
+%    \end{macrocode}
+% \end{macro}
+%
 % \begin{macro}[int,TF]{\@@_if_unicode_engine:}
 % 判断是否为 Unicode 引擎。来自于 \pkg{zhnumber} 宏包。
 %    \begin{macrocode}
@@ -442,12 +448,15 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 % 读入定义文件。
 %    \begin{macrocode}
 \cs_new:Npn \@@_input_def_file:n #1
-  { \exp_args:Nx \file_input:n { zhlipsum- #1 .def } }
+  { \file_input:n { zhlipsum- #1 .def } }
 \cs_generate_variant:Nn \@@_input_def_file:n { V }
 %    \end{macrocode}
 % \end{macro}
 %
 % \subsection{宏包选项}
+%
+% \changes{v0.4}{2017/09/16}{新增 \opt{encoding} 选项。}
+% \changes{v0.5}{2017/12/22}{支持 Big5 编码。}
 %
 % \begin{macro}{encoding}
 % 设置编码。
@@ -455,30 +464,30 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \keys_define:nn { zhlipsum / option }
   {
     encoding .choice:,
-    encoding / UTF8    .code:n =
+    encoding / utf8    .code:n =
       { \tl_set:Nn \g_@@_encoding_tl { utf8 } },
-    encoding / GBK     .code:n =
+    encoding / gbk     .code:n =
       {
         \@@_if_unicode_engine:TF
           {
             \tl_set:Nn \g_@@_encoding_tl { utf8 }
-            \msg_warning:nnn { zhlipsum } { unicode-engine } { GBK }
+            \msg_warning:nnn { zhlipsum } { unicode-engine } { gbk }
           }
           { \tl_set:Nn \g_@@_encoding_tl { gbk } }
       },
-    encoding / BIG5    .code:n =
+    encoding / big5    .code:n =
       {
         \@@_if_unicode_engine:TF
           {
             \tl_set:Nn \g_@@_encoding_tl { utf8 }
-            \msg_warning:nnn { zhlipsum } { unicode-engine } { BIG5 }
+            \msg_warning:nnn { zhlipsum } { unicode-engine } { big5 }
           }
           { \tl_set:Nn \g_@@_encoding_tl { big5 } }
       },
     encoding / unknown .code:n =
       { \msg_error:nnn { zhlipsum } { encoding-invalid } {#1} },
     encoding .value_required:n = true,
-    encoding .initial:n        = { UTF8 },
+    encoding .initial:n        = { utf8 },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -494,12 +503,12 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \msg_new:nnn { zhlipsum } { unicode-engine }
   {
     You~ are~ now~ using~ Unicode~ engine~ \c_sys_engine_str. \\
-    Encoding~ "#1"~ is~ invalid.~ Changed~ into~ UTF8.
+    Encoding~ "#1"~ is~ invalid.~ Changed~ into~ "utf8".
   }
 \msg_new:nnn { zhlipsum } { encoding-invalid }
   {
     Encoding~ "#1"~ is~ invalid. \\
-    Available~ encodings~ are~ "UTF8",~ "GBK"~ and~ "BIG5".
+    Available~ encodings~ are~ "utf8",~ "gbk"~ and~ "big5".
   }
 \msg_new:nnn { zhlipsum } { unknown-option }
   { Package~ option~ "\l_keys_key_tl"~ is~ unknown. }
@@ -515,31 +524,95 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \@@_input_def_file:V \g_@@_encoding_tl
 %    \end{macrocode}
 %
+% \subsection{函数选项}
+%
+% \changes{v0.5}{2017/12/22}{新增选项 \opt{script}，同时支持简体中文
+%   和繁体中文。}
+%
+% \begin{variable}{\l_@@_script_str}
+% 存放 |simp| / |trad|。
+%    \begin{macrocode}
+\str_new:N \l_@@_script_str
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{macro}{script}
+% 选择输入简体中文或繁体中文。Big5 编码不支持简体中文。
+%    \begin{macrocode}
+\keys_define:nn { zhlipsum }
+  {
+    script .choice:,
+    script / simp    .code:n =
+      {
+        \str_set:Nn \l_@@_script_str { simp }
+        \tl_if_eq:VnT \g_@@_encoding_tl { big5 }
+          {
+            \str_set:Nn \l_@@_script_str { trad }
+            \msg_warning:nn { zhlipsum } { big5-require-trad }
+          }
+      },
+    script / trad    .code:n =
+      { \str_set:Nn \l_@@_script_str { trad } },
+    script / unknown .code:n =
+      { \msg_error:nnn { zhlipsum } { script-invalid } {#1} },
+    script .value_required:n = true
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% 提示信息。
+%    \begin{macrocode}
+\msg_new:nnn { zhlipsum } { big5-require-trad }
+  {
+    "script=simp"~ is~ not~ available~ in~ "BIG5"~ encoding.\\
+    Changed~ into~ "script=trad".
+  }
+\msg_new:nnn { zhlipsum } { script-invalid }
+  {
+    Script~ "#1"~ is~ unknown. \\
+    Available~ scripts~ are~ "simp"~ and~ "trad".
+  }
+%    \end{macrocode}
+%
+% 初始选项设置。
+%    \begin{macrocode}
+\tl_if_eq:VnTF \g_@@_encoding_tl { big5 }
+  { \keys_set:nn { zhlipsum } { script = trad } }
+  { \keys_set:nn { zhlipsum } { script = simp } }
+%    \end{macrocode}
+%
 % \subsection{核心函数}
 %
 % \begin{macro}{\zhlipsum}
-% 输出假文，可选参数表示段落数，默认为 |1-3|。命令前后均插入了
-% |\par|，以便强制分段。带星号的命令在假文主体间不分段。
+% \changes{v0.5}{2018/01/05}{支持选项设置。}
+% 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为
+% 选项列表。命令前后均插入了 |\par|，以便强制分段。带星号的命令在假文
+% 主体间不分段。
 %    \begin{macrocode}
 \NewDocumentCommand \zhlipsum
-  { s >{ \SplitArgument { 1 } { - } } O{ 1 - 3 } }
+  { s >{ \SplitArgument { 1 } { - } } O{ 1 - 3 } o }
   {
-    \@@_process_par_number:nn #2
-    \par
-    \IfBooleanTF {#1}
-      {
-        \zhlipsum_print_multi_no_par:VVV
-          \l_@@_begin_int
-          \l_@@_step_int
-          \l_@@_end_int
-        \par
-      }
-      {
-        \zhlipsum_print_multi:VVV
-          \l_@@_begin_int
-          \l_@@_step_int
-          \l_@@_end_int
-      }
+    \group_begin:
+      \@@_process_par_number:nn #2
+      \IfValueTF {#3}
+        { \keys_set:nn { zhlipsum } {#3} }
+        { \@@_initialize_options: }
+      \par
+      \IfBooleanTF {#1}
+        {
+          \zhlipsum_print_multi_no_par:VVV
+            \l_@@_begin_int
+            \l_@@_step_int
+            \l_@@_end_int
+          \par
+        }
+        {
+          \zhlipsum_print_multi:VVV
+            \l_@@_begin_int
+            \l_@@_step_int
+            \l_@@_end_int
+        }
+    \group_end:
   }
 %    \end{macrocode}
 % \end{macro}
@@ -552,6 +625,14 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \int_new:N \l_@@_step_int
 %    \end{macrocode}
 % \end{variable}
+%
+% \begin{macro}{\@@_initialize_options:}
+% 初始化选项设置。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_initialize_options:
+  { \keys_set:nn { zhlipsum } { script = simp } }
+%    \end{macrocode}
+% \end{macro}
 %
 % \begin{macro}{\@@_process_par_number:nn}
 % \changes{v0.3}{2017/07/28}{改为内部函数。}
@@ -623,7 +704,8 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 \cs_new:Npn \@@_print_single:n #1
   {
     \str_set:Nx \l_@@_tmpa_str { \int_to_roman:n {#1} }
-    \str_put_left:Nn  \l_@@_tmpa_str { c_@@_text_simp_ }
+    \str_put_left:Nx  \l_@@_tmpa_str
+      { c_@@_text_ \l_@@_script_str _ }
     \str_put_right:Nn \l_@@_tmpa_str { _tl }
     \use:c { \str_use:N \l_@@_tmpa_str }
   }
@@ -1826,15 +1908,22 @@ Copyright (C) 2017 by Xiangdong Zeng <pssysrq@163.com>.
 %<example&gbk>\documentclass[GBK]{ctexart}
 %<example&big5>\documentclass{article} 
 %<example&big5>\usepackage{CJK}
-%<example&utf8>\usepackage[encoding=UTF8]{zhlipsum}
-%<example&gbk>\usepackage[encoding=GBK]{zhlipsum}
-%<example&big5>\usepackage[encoding=BIG5]{zhlipsum}
+%<example&utf8>\usepackage[encoding=utf8]{zhlipsum}
+%<example&gbk>\usepackage[encoding=gbk]{zhlipsum}
+%<example&big5>\usepackage[encoding=big5]{zhlipsum}
 %<*example>
 \begin{document}
 %<big5>\begin{CJK*}{Bg5}{bsmi}
 \def\parcmd{\texttt{\textbackslash par}}
 \section{Basic}
 \zhlipsum
+\section{Simplified / traditional}
+\subsection{Simplified}
+\zhlipsum[1-3][script=simp]
+\subsection{Traditional}
+\zhlipsum*[1-3][script=trad]
+\subsection{Simplified}
+\zhlipsum[4-5]
 %<*!big5>
 \section{Different fonts}
 {\songti   \zhlipsum[1]} \par
