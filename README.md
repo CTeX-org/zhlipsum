@@ -6,13 +6,14 @@
 
 ## 欢迎使用 zhlipsum （中文乱数假文）
 
-本宏包提供了中文乱数假文的功能，可用于测试中文 LaTeX 文档。`zhlipsum` 支持 UTF-8 和 GBK 编码。
+本宏包提供了中文乱数假文的功能，可用于测试中文 LaTeX 文档。`zhlipsum` 支持 UTF-8、GBK 和 Big5 编码。
 
 ### 基本用法
 
 ```tex
-\zhlipsum[3]
+\zhlipsum
 \zhlipsum*[1-5]
+\zhlipsum[6-10][script=trad]
 ```
 
 更多信息可从宏包文档 [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf) 中获取。
@@ -29,18 +30,19 @@
 
 ## Welcome to zhlipsum (Chinese dummy text)
 
-This package provides an interface to dummy text in Chinese, which will be useful for testing Chinese documents.
+This package provides an interface to dummy text in Chinese language, which will be useful for testing Chinese documents.
 
-`zhlipsum` supports both UTF-8 and GBK encoding.
+`zhlipsum` supports UTF-8, GBK and Big5 encodings.
 
 ### Basic usage
 
 ```tex
-\zhlipsum[3]
+\zhlipsum
 \zhlipsum*[1-5]
+\zhlipsum[6-10][script=trad]
 ```
 
-More information can be found in the package documentation [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf).
+More information can be found in the package documentation [zhlipsum-en.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf).
 
 ### Contributing
 

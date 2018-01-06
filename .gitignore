@@ -33,4 +33,6 @@ test/
 scripts/*.local.sh
 source/*.bat
 source/*.md
+source/*.tex
 source/latexmkrc
+source/latexmkrc-en

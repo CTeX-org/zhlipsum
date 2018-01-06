@@ -25,6 +25,7 @@
 %                                zhlipsum-example-utf8.tex,
 %                                zhlipsum-example-gbk.tex,
 %                                zhlipsum-example-big5.tex,
+%                                zhlipsum-en.tex,
 %                                zhlipsum.pdf,
 %                            and README.md.
 %
@@ -36,19 +37,23 @@
 The `zhlipsum` package
 ======================
 
-The `zhlipsum` package pro­vides an in­ter­face to dummy text in Chi­nese,
-which will be use­ful for test­ing Chi­nese doc­u­ments.
+The `zhlipsum` package provides an interface to dummy text in
+Chinese language, which will be useful for testing Chinese
+documents.
 
-`zhlipsum` supports both UTF-8 and GBK en­cod­ing.
+`zhlipsum` supports UTF-8, GBK and Big5 encodings.
 
 Basic usage
 -----------
 
-    \zhlipsum[3]
+    \zhlipsum
     \zhlipsum*[1-5]
+    \zhlipsum[6-10][script=trad]
 
 More information can be found in the package documentation
-[zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf).
+[zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf)
+(Chinese version) or [zhlipsum-en.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf)
+(English version).
 
 Installation
 ------------
@@ -63,24 +68,6 @@ To install `zhlipsum`, you can use one of the following methods:
   [zhlipsum.tds.zip](http://mirror.ctan.org/install/macros/latex/contrib/zhlipsum.tds.zip)
   from CTAN, extract it in the root of one of your TDS trees, and
   update the filename database.
-
-- Get the latest development version from GitHub:
-
-      git clone https://github.com/Stone-Zeng/zhlipsum.git
-
-  Run
-
-      xetex zhlipsum.dtx
-
-  to generate the package. Then move the following files into a directory
-  where LaTeX will find them (e.g. `TEXMF/tex/latex/zhlipsum/`):
-
-  - `zhlipsum.sty`
-  - `zhlipsum-utf8.def`,
-  - `zhlipsum-gbk.def`,
-  - `zhlipsum-big5.def`
-
-  Do not forget to update the filename database afterwards.
 
 Contributing
 ------------
@@ -141,6 +128,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
                                    zhlipsum-example-utf8.tex,
                                    zhlipsum-example-gbk.tex,
                                    zhlipsum-example-big5.tex,
+                                   zhlipsum-en.tex,
                                    zhlipsum.pdf,
                                and README.md.
 
@@ -214,27 +202,21 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %<*driver>
 \documentclass{ctxdoc}
 \ctexset{punct = quanjiao}
-\sisetup{
-  number-math-rm       = \ensuremath,
-  inter-unit-product   = \ensuremath{{}\cdot{}},
-  group-digits         = true,
-  group-minimum-digits = 4,
-  group-separator      = \text{~},
-  range-phrase         = \symbol{"FF5E},
-  separate-uncertainty = true
-}
 \hypersetup{
   pdftitle          = {zhlipsum: 中文乱数假文（Lorem ipsum）},
   pdfauthor         = {曾祥东},
-  bookmarksopen     = true,
   bookmarksnumbered = true
 }
+\def\IndexLayout{%
+  \newgeometry{hmargin = 1.00 in, vmargin = {1.25 in, 1.00 in}}%
+  \ctexset{section/numbering = false}%
+  \StopSpecialIndexModule}
 \DoNotIndex{\\}
-\EnableCrossrefs
-\CodelineIndex
-\RecordChanges
 \begin{document}
   \DocInput{\jobname.dtx}
+  \IndexLayout
+  \PrintChanges
+  \PrintIndex
 \end{document}
 %</driver>
 % \fi
@@ -264,7 +246,32 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %   Right brace   \}     Tilde         \~}
 %
-% ^^A标题页页边距。
+%^^A! \PassOptionsToPackage{scheme=plain, linespread=1.1}{ctex}
+%^^A! \documentclass{ctxdoc}
+%^^A! \hypersetup{
+%^^A!   pdftitle          = {zhlipsum: Chinese dummy text},
+%^^A!   pdfauthor         = {Xiangdong Zeng},
+%^^A!   bookmarksnumbered = true
+%^^A! }
+%^^A! \ctexset
+%^^A!   {
+%^^A!     section = {name = {}, format+ = \raggedright},
+%^^A!     subsubsection/tocline = {\CTEXnumberline{#1}#2}
+%^^A!   }
+%^^A! \pagestyle{headings}
+%^^A!
+%
+% \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
+% \author{曾祥东}
+% \date{2017/09/16 \quad v0.4^^A
+%   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
+%^^A! \title{\textbf{The \pkg{zhlipsum} Package: Chinese Dummy Text}}
+%^^A! \author{Xiangdong Zeng}
+%^^A! \date{2017/09/16 \quad v0.4%
+%^^A!   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
+%^^A!
+%
+%^^A 标题页页边距
 % \newgeometry{
 %   left   = 1.25 in,
 %   right  = 1.25 in,
@@ -272,9 +279,9 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %   bottom = 1.00 in
 % }
 %
-% \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
-% \author{曾祥东}
-% \date{2017/09/16 \quad v0.4\thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
+%^^A! \begin{document}
+%^^A!
+%
 % \maketitle
 %
 % \begin{minipage}{0.9\textwidth}
@@ -320,9 +327,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %   \small \itshape ——萨缪尔·贝克特《等待戈多》
 % \end{flushright}
 %
-% ^^A\tableofcontents
-%
-% ^^A\restoregeometry
+%^^A 用户手册的页边距
 % \newgeometry{
 %   left      = 2.50 in,
 %   right     = 1.00 in,
@@ -331,38 +336,87 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %   marginpar = 2.25 in
 % }
 %
-% \section{简介}
+%^^A! \maketitle
+%^^A!
 %
-% \pkg{zhlipsum} 宏包用于输入中文乱数假文（拉丁语为 \emph{lorem
+% \section{简介}
+%^^A! \section{Introduction}
+%^^A!
+%
+% \pkg{zhlipsum} 宏包用于输入中文乱数假文（拉丁语为 \emph{Lorem
 % ipsum}）。乱数假文是大段无意义的文字，常用来测试排版效果。支持其他
 % 语言乱数假文的宏包还有 \pkg{lipsum}、\pkg{kantlipsum}、
 % \pkg{blindtext} 等。
+%^^A! The \pkg{zhlipsum} package is used for typing in dummy text
+%^^A! (i.e.\ ``\emph{Lorem ipsum}'') as \pkg{lipsum},
+%^^A! \pkg{kantlipsum}, \pkg{blindtext} etc., but for Chinese
+%^^A! language. Dummy text will be useful when testing the effect of
+%^^A! page style.
+%^^A!
 %
-% 为正确输入中文，\pkg{zhlipsum} 需要与 \pkg{CJK} 宏包或 \CTeX{} 宏集
-% 等配套使用。
+% \pkg{zhlipsum} 宏包支持 UTF-8、GBK 和 Big5 编码，依赖 \LaTeX3{} 项目% 中的 \pkg{expl3}、\pkg{xparse} 和 \pkg{l3keys2e} 宏包。为正确输入中
+% 文，\pkg{zhlipsum} 需要与 \pkg{CJK} 宏包或 \CTeX{} 宏集等配套使用。
+%^^A! \pkg{zhlipsum} supports UTF-8, GBK and Big5 encodings. Packages
+%^^A! \pkg{expl3}, \pkg{xparse} and \pkg{l3keys2e} in the \LaTeX3{}
+%^^A! Project are required. To type Chinese properly, \pkg{zhlipsum}
+%^^A! should be used with \pkg{CJK} package or \CTeX{} bundle.
+%^^A!
 %
 % \section{使用说明}
+%^^A! \section{User's guide}
+%^^A!
 %
+%^^A+
 % \begin{function}[added=2017-09-16,updated=2018-01-05]{encoding}
 %   \begin{syntax}
 %     encoding = <(utf8)|gbk|big5>
 %   \end{syntax}
-%   用于指定编码的宏包选项，可以在调用宏包的时候设定，默认为
+%^^A-
+%   用于指定编码的宏包选项，可在调用宏包的时候设定。默认为
 %   \opt{utf8}。对于 \XeLaTeX{}、\LuaLaTeX{} 和 \upLaTeX{} 等 Unicode
-%   引擎，GBK 和 Big5 编码无效，宏包将强制使用 UTF-8 编码。
+%   引擎，\opt{gbk} 和 \opt{big5} 编码无效，宏包将强制使用 \opt{utf8}
+%   编码。
 % \end{function}
+%^^A!   Package option for selecting encoding. Default value is
+%^^A!   \opt{utf8}. For Unicode engines as \XeLaTeX{}, \LuaLaTeX{} ands \XeLaTeX{}, \LuaLaTeX{} and
+%^^A!   \upLaTeX{}, \opt{gbk} / \opt{big5} encodings are invalid and
+%^^A!   \opt{utf8} will be used forcibly.
+%^^A! \end{function}
+%^^A!
+%
+% 在 \CTeX{} 宏集中，相应的宏包选项为 \opt{UTF8} 和 \opt{GBK}。注意本
+% 宏包中所有选项均为小写。
+%^^A! In \CTeX{} bundle, the correspoding options are \opt{UTF8} and
+%^^A! \opt{GBK}. Note that all the options in \pkg{zhlipsum} are in
+%^^A! \emph{lowercase}.
+%^^A!
 %
 % \begin{function}[updated=2018-01-05]{\zhlipsum}
 %   \begin{syntax}
-%     \cs{zhlipsum}   \oarg{段落} \oarg{选项}
-%     \cs{zhlipsum} * \oarg{段落} \oarg{选项}
+%     \cs{zhlipsum}\oarg{段落}\oarg{选项}
+%     \cs{zhlipsum*}\oarg{段落}\oarg{选项}
 %   \end{syntax}
 %   插入假文文本。默认会在每段文本之间分段（添加 \tn{par}）。如需禁止
 %   分段，请使用带星号的命令。在两种情况下，假文文本的前后都会强制分
 %   段。
 % \end{function}
+%^^A! \begin{function}[updated=2018-01-05]{\zhlipsum}
+%^^A!   \begin{syntax}
+%^^A!     \cs{zhlipsum}\oarg{paragraph}\oarg{options}
+%^^A!     \cs{zhlipsum*}\oarg{paragraph}\oarg{options}
+%^^A!   \end{syntax}
+%^^A!   Insert dummy text. Each fragment will be typed as single
+%^^A!   paragraph (inserting \tn{par} in between) by default. If you
+%^^A!   want get a big chunk of text without \tn{par}, please use
+%^^A!   \cs{zhlipsum*}. In both situations, \tn{par} will be inserted
+%^^A!   before and after the whole dummy text.
+%^^A! \end{function}
+%^^A!
 %
 % 第一个可选参数 \meta{段落} 可通过如下方式指定：
+%^^A! The first optional argument \meta{paragraph} can be specified
+%^^A! as the following:
+%^^A!
 %
 % \begin{itemize}
 %   \item 只给定一个参数时，将输出对应序号的段落，如 |\zhlipsum[17]|
@@ -371,44 +425,72 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %     |\zhlipsum[5-34]| 将生成第 5 至 34 段假文;
 %   \item 没有指定段落时，默认输出第 1 至 3 段假文。
 % \end{itemize}
+%^^A! \begin{itemize}
+%^^A!   \item Only one integer, then \cs{zhlipsum} will produce the
+%^^A!     correspoding paragraph.
+%^^A!   \item Two integers linked with ``|-|'', then all the
+%^^A!     paragraphs between will be produced.
+%^^A!  \item Bare \cs{zhlipsum} will lead to paragraphs 1 to 3 by
+%^^A!     default.
+%^^A! \end{itemize}
+%^^A!
 %
 % 目前本宏包只提供了 50 段假文文本，超出范围的数字一律按 50 处理。如
 % |\zhlipsum[51]| 将给出第 50 段，而 |\zhlipsum[48-55]| 将只会输出第
 % 48、49 和第 50 段。
+%^^A! At present, \pkg{zhlipsum} can provide 50 paragraphs. Numbers
+%^^A! larger than 50 will not be considered. For example,
+%^^A! |\zhlipsum[51]| produces paragraph 50, and |\zhlipsum[48-55]|
+%^^A! produces 48--50 paragraphs.
+%^^A!
 %
 % 第二个可选参数 \meta{选项} 通过英文逗号分隔的键值列表形式给出。如果
 % 需要设置选项，则必须显式地指明段落参数。支持的选项如下。
+%^^A! The second optional argument \meta{options} should be a
+%^^A! key-value list. If you need set the options, \meta{paragraph}
+%^^A! must be specified explicitly. Supported options are the
+%^^A! following.
+%^^A!
 %
+%^^A+
 % \begin{function}[added=2018-01-05]{script}
 %   \begin{syntax}
 %     script = <simp|trad>
 %   \end{syntax}
+%^^A-
 %   选择插入简体中文（\opt{simp}）或繁体中文（\opt{trad}）。注意在
 %   Big5 编码下，只可使用繁体中文。其他编码下，默认使用简体中文。
 % \end{function}
+%^^A!   Use simplified Chinese (\opt{simp}) or traditional Chinese
+%^^A!   text (opt{trad}). Default value is \opt{simp} except for Big5
+%^^A!   encoding, since this encoding only supports traditional
+%^^A!   Chinese.
+%^^A! \end{function}
+%^^A!
 %
 % \section{已知问题}
+%^^A! \section{Known issues}
+%^^A!
 %
 % GBK 和 Big5 编码在第二字节并没有避开 ASCII 码的范围，因此部分汉字编
 % 码的第二字节恰好是 ASCII 编码中的一些特殊字符（如 |{|、|}|、|\|
-% 等），将导致编译失败。本宏包将这两种编码下的 |.def| 文件转换为了较安
-% 全的形式，请勿手工修改这些文件。
+% 等），将导致编译失败。本宏包将这两种编码下的 \file{.def} 文件转换为
+% 了较安全的形式，请勿手工修改这些文件。
+%^^A! GBK and Big5 encodings do not escape the ASCII range in the
+%^^A! second byte, so the second byte of some Chinese characters may
+%^^A! have the same encoding as special characters in ASCII like |{|,
+%^^A! |}|, |\| etc., which will lead to compilation failure. The
+%^^A! \file{.def} files in \pkg{zhlipsum} have been converted into
+%^^A! a safer form. Please do not modify them manually.
+%^^A!
 %
 % 如无特殊需要，始终建议您采用 UTF-8 编码，并使用 \XeLaTeX{}、
 % \LuaLaTeX{} 等 Unicode 引擎编译。
+%^^A! If there is no special requirement, UTF-8 encoding and Unicode
+%^^A! engines as \XeLaTeX{} and \LuaLaTeX{} are always recommended.
+%^^A!
 %
-% \StopEventually{
-%   ^^A索引部分页边距。
-%   \newgeometry{
-%     left   = 1.00 in,
-%     right  = 1.00 in,
-%     top    = 1.25 in,
-%     bottom = 1.00 in
-%   }
-%   \ctexset{section/numbering = false}
-%   \PrintChanges
-%   \PrintIndex
-% }
+%^^A! \end{document}
 %
 % \begin{implementation}
 %
