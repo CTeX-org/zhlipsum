@@ -492,6 +492,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %
 %^^A! \end{document}
 %
+% \StopEventually{}
+%
 % \begin{implementation}
 %
 % \section{实现细节}
@@ -568,6 +570,13 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 \cs_new:Npn \@@_input_def_file:n #1
   { \file_input:n { zhlipsum- #1 .def } }
 \cs_generate_variant:Nn \@@_input_def_file:n { V }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_par:}
+% 分段命令。
+%    \begin{macrocode}
+\cs_new_eq:NN \@@_par: \tex_par:D
 %    \end{macrocode}
 % \end{macro}
 %
@@ -704,8 +713,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 % \begin{macro}{\zhlipsum}
 % \changes{v0.5}{2018/01/05}{支持选项设置。}
 % 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选
-% 项列表。命令前后均插入了 |\par|，以便强制分段。带星号的命令在假文主
-% 体间不分段。
+% 项列表。命令前后均插入了 \cs{@@_par:}，以便强制分段。带星号的命令在
+% 假文主体间不分段。
 %    \begin{macrocode}
 \NewDocumentCommand \zhlipsum
   { s >{ \SplitArgument { 1 } { - } } O{ 1 - 3 } o }
@@ -713,14 +722,14 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
     \group_begin:
       \@@_process_par_number:nn #2
       \IfValueT {#3} { \keys_set:nn { zhlipsum } {#3} }
-      \par
+      \@@_par:
       \IfBooleanTF {#1}
         {
           \zhlipsum_print_multi_no_par:VVV
             \l_@@_begin_int
             \l_@@_step_int
             \l_@@_end_int
-          \par
+          \@@_par:
         }
         {
           \zhlipsum_print_multi:VVV
@@ -785,7 +794,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 \cs_new:Npn \zhlipsum_print_multi:nnn #1#2#3
   {
     \int_step_inline:nnnn {#1} {#2} {#3}
-      { \@@_print_single:n {##1} \par }
+      { \@@_print_single:n {##1} \@@_par: }
   }
 \cs_generate_variant:Nn \zhlipsum_print_multi:nnn { VVV }
 %    \end{macrocode}
@@ -2043,7 +2052,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 \zhlipsum[55]
 \section{With `\parcmd'}
 Some text before lorem ipsum.
-\zhlipsum[0-1]
+\zhlipsum[0-2]
 Some text after lorem ipsum.
 \section{Without `\parcmd'}
 Some text before lorem ipsum.
