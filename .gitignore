@@ -30,8 +30,9 @@ CTAN/
 TDS/
 test/
 
+*.bat
+
 scripts/*.local.sh
-source/*.bat
 source/*.md
 source/*.tex
 source/latexmkrc
