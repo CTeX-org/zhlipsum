@@ -27,6 +27,7 @@
 %                                zhlipsum-example-big5.tex,
 %                                zhlipsum-en.tex,
 %                                zhlipsum.pdf,
+%                                zhlipsum-en.pdf,
 %                            and README.md.
 %
 %<*internal>
@@ -130,6 +131,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
                                    zhlipsum-example-big5.tex,
                                    zhlipsum-en.tex,
                                    zhlipsum.pdf,
+                                   zhlipsum-en.pdf,
                                and README.md.
 
 \endpreamble
@@ -188,7 +190,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
 %<*!(driver|install|example)>
-%<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.4 2017-09-16 12:00:00Z Xiangdong Zeng <pssysrq@163.com> $
+%<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.5 2018-01-06 12:00:00Z Xiangdong Zeng <pssysrq@163.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
 %<utf8>  {Chinese dummy text with UTF8 encoding (for zhlipsum)}
@@ -227,8 +229,9 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 % \changes{v0.2}{2017/04/14}{使用名字空间。}
 % \changes{v0.4}{2017/09/16}{将安装、测试文件集成进源文件。}
 % \changes{v0.4}{2017/09/16}{优化宏包实现。}
+% \changes{v0.5}{2018/01/06}{添加英文版用户文档。}
 %
-% \CheckSum{0}
+% \CheckSum{167}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -253,6 +256,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %^^A!   pdfauthor         = {Xiangdong Zeng},
 %^^A!   bookmarksnumbered = true
 %^^A! }
+%^^A! \geometry{
+%^^A!   ignoremp,
+%^^A!   hmargin   = {2.00 in, 1.00 in},
+%^^A!   vmargin   = {1.25 in, 1.00 in},
+%^^A!   marginpar = 1.75 in
+%^^A! }
 %^^A! \ctexset
 %^^A!   {
 %^^A!     section = {name = {}, format+ = \raggedright},
@@ -263,20 +272,18 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2017/09/16 \quad v0.4^^A
+% \date{2018/01/06 \quad v0.5^^A
 %   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A! \title{\textbf{The \pkg{zhlipsum} Package: Chinese Dummy Text}}
 %^^A! \author{Xiangdong Zeng}
-%^^A! \date{2017/09/16 \quad v0.4%
+%^^A! \date{2018/01/06 \quad v0.5%
 %^^A!   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A!
 %
 %^^A 标题页页边距
 % \newgeometry{
-%   left   = 1.25 in,
-%   right  = 1.25 in,
-%   top    = 1.25 in,
-%   bottom = 1.00 in
+%   hmargin   = {1.25 in, 1.25 in},
+%   vmargin   = {1.25 in, 1.00 in}
 % }
 %
 %^^A! \begin{document}
@@ -329,10 +336,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <pssysrq@163.com>.
 %
 %^^A 用户手册的页边距
 % \newgeometry{
-%   left      = 2.50 in,
-%   right     = 1.00 in,
-%   top       = 1.25 in,
-%   bottom    = 1.00 in,
+%   hmargin   = {2.50 in, 1.00 in},
+%   vmargin   = {1.25 in, 1.00 in},
 %   marginpar = 2.25 in
 % }
 %
