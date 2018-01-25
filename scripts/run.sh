@@ -47,3 +47,5 @@ dvipdfmx latex-utf8
 dvipdfmx latex-gbk
 dvipdfmx latex-big5
 dvipdfmx uplatex-utf8
+
+cd ..
