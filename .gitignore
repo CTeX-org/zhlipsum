@@ -28,6 +28,7 @@
 .vscode/
 CTAN/
 TDS/
+build/
 test/
 
 *.bat

@@ -11,13 +11,16 @@
 *.dtx          text eol=lf
 *.ins          text eol=lf
 *.lua          text eol=lf
-*.tex          text eol=lf
+*.lvt          text eol=lf
 *.md           text eol=lf
 *.profile      text eol=lf
 *.sh           text eol=lf
+*.tex          text eol=lf
+*.tlg          text eol=lf
 *.yml          text eol=lf
 .gitignore     text eol=lf
 .gitattributes text eol=lf
+LICENSE        text eol=lf
 latexmkrc      text eol=lf
 
 # Declare files that will always have CRLF line endings on checkout.

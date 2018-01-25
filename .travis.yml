@@ -8,3 +8,4 @@ cache:
 
 script:
   - source ./scripts/run.sh
+  - texlua build.lua check
