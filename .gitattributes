@@ -30,3 +30,10 @@ latexmkrc      text eol=lf
 *.pdf  binary
 *.xdv  binary
 *.fmt  binary
+
+# Linguist overrides
+*.cls linguist-language=TeX
+*.def linguist-language=TeX
+*.dtx linguist-language=TeX
+*.ins linguist-language=TeX
+*.lvt linguist-language=TeX
