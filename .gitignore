@@ -29,6 +29,7 @@
 CTAN/
 TDS/
 build/
+data/
 test/
 
 *.bat
