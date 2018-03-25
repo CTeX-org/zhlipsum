@@ -24,7 +24,9 @@
 
 ### 许可证
 
-本模板的发布遵守 [LaTeX Project Public License](http://www.latex-project.org/lppl.txt)（版本 1.3c 或更高）。
+除文本数据外，本模板的发布遵守 [LaTeX Project Public License](http://www.latex-project.org/lppl.txt)（版本 1.3c 或更高）。
+
+文本数据的许可证见该 [README](https://github.com/Stone-Zeng/zhlipsum/blob/master/data/README.md)。
 
 <br>
 
@@ -50,7 +52,9 @@ More information can be found in the package documentation [zhlipsum-en.pdf](htt
 
 ### License
 
-This work may be distributed and/or modified under the conditions of the [LaTeX Project Public License](http://www.latex-project.org/lppl.txt), either version 1.3c of this license or (at your option) any later version.
+Except for the text data, this work may be distributed and/or modified under the conditions of the [LaTeX Project Public License](http://www.latex-project.org/lppl.txt), either version 1.3c of this license or (at your option) any later version.
+
+Licenses of text data can be found in this [README](https://github.com/Stone-Zeng/zhlipsum/blob/master/data/README.md).
 
 -----
 
