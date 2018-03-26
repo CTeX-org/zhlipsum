@@ -583,7 +583,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \begin{macro}[int,TF]{\@@_if_encoding:n}
 %    \begin{macrocode}
-\prg_new_conditional:Npnn \@@_if_encoding:n #1 { T, F, TF }
+\prg_new_protected_conditional:Npnn \@@_if_encoding:n #1 { T, F, TF }
   {
     \tl_if_eq:VnTF \g_@@_encoding_tl {#1}
       { \prg_return_true: } { \prg_return_false: }
@@ -594,7 +594,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \begin{macro}{\@@_msg_new:nn,
 %   \@@_error:n,\@@_error:nn,\@@_warning:n
 %   \@@_warning:nn,\@@_warning:nnn,\@@_warning:nxxx,
-%   \@@_log:nn}
+%   \@@_info:nn}
 % 各种信息函数的缩略形式。
 %    \begin{macrocode}
 \cs_new:Npn \@@_msg_new:nn   { \msg_new:nnn       { zhlipsum } }
@@ -603,7 +603,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \cs_new:Npn \@@_warning:nn   { \msg_warning:nnn   { zhlipsum } }
 \cs_new:Npn \@@_warning:nnn  { \msg_warning:nnnn  { zhlipsum } }
 \cs_new:Npn \@@_warning:nxxx { \msg_warning:nnxxx { zhlipsum } }
-\cs_new:Npn \@@_log:nn       { \msg_log:nnn       { zhlipsum } }
+\cs_new:Npn \@@_info:nn      { \msg_info:nnn      { zhlipsum } }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -756,11 +756,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     Name~ "#1"~ is~ not~ available~ in~ "Big5"~ encoding. \\
     Changed~ into~ "trad".
   }
-\@@_msg_new:nn { invalid-name }
-  {
-    Name~ "#1"~ is~ unknown. \\
-    Please~ use~ the~ pre-defined~ dummy~ texts~ or~ declare~ new~ one.
-  }
 \@@_msg_new:nn { deprecated-option }
   { Option~ "\l_keys_key_tl"~ is~ deprecated. \\ #1 }
 %    \end{macrocode}
@@ -809,15 +804,36 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 \cs_new_protected:Npn \zhlipsum_use:nn #1#2
   {
-    \@@_parse_par:nn {#1} {#2}
-    \seq_map_inline:Nn \l_@@_par_num_seq
+    \zhlipsum_if_exist:nTF {#1}
       {
-        \tl_use:N \l_@@_before_each_tl
-        \@@_use:nn {#1} {##1}
-        \tl_use:N \l_@@_after_each_tl
+        \@@_parse_par:nn {#1} {#2}
+        \seq_map_inline:Nn \l_@@_par_num_seq
+          {
+            \tl_use:N \l_@@_before_each_tl
+            \@@_use:nn {#1} {##1}
+            \tl_use:N \l_@@_after_each_tl
+          }
       }
+      { \@@_error:nn { invalid-name } {#1} }
   }
 \cs_generate_variant:Nn \zhlipsum_use:nn { Vn }
+\@@_msg_new:nn { invalid-name }
+  {
+    Name~ "#1"~ is~ unknown. \\\\
+    Please~ use~ the~ pre-defined~ Chinese~ dummy~ texts~ or~
+    declare~ new~ one.
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}[TF]{\zhlipsum_if_exist:n}
+% 判断是否存在对应名称的假文。
+%    \begin{macrocode}
+\prg_new_protected_conditional:Npnn \zhlipsum_if_exist:n #1 { TF }
+  {
+    \seq_if_in:NnTF \g_@@_seq {#1}
+      { \prg_return_true: } { \prg_return_false: }
+  }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -1004,45 +1020,39 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \subsection{声明假文}
 %
-% \begin{macro}{\newzhlipsum}
-% 声明假文。
+% \begin{macro}{\newzhlipsum,\zhlipsum_new:nn}
+% 声明假文。|#1| = 假文名称，|#2| = 文本 clist。
 %    \begin{macrocode}
 \NewDocumentCommand \newzhlipsum { m m }
+  { \zhlipsum_new:nn {#1} {#2} }
+\cs_new_protected:Npn \zhlipsum_new:nn #1#2
   {
     \zhlipsum_if_exist:nTF {#1}
       { \@@_error:nn { already-defined } {#1} }
       {
         \seq_gput_left:Nn \g_@@_seq {#1}
         \int_new:c { g_@@_ #1 _int }
-        \clist_map_inline:nn {#2} { \zhlipsum_new:nn {#1} {##1} }
-        \@@_log:nn { defining-text } {#1}
+        \clist_map_inline:nn {#2} { \@@_new:nn {#1} {##1} }
+        \@@_info:nn { defining-text } {#1}
       }
   }
 \@@_msg_new:nn { already-defined }
-  { Dummy~ text~ "#1"~ has~ been~ used. Please~ use~ another~ name. }
+  {
+    Chinese~ dummy~ text~ "#1"~ has~ been~ used.~
+    Please~ use~ another~ name.
+  }
 \@@_msg_new:nn { defining-text }
   {
-    Dummy~ text~ "#1"~ is~ created.~
+    Chinese~ dummy~ text~ "#1"~ is~ created.~
     It~ has~ \int_use:c { g_@@_ #1 _int }~ paragraphs.
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}[TF]{\zhlipsum_if_exist:n}
-% 判断是否存在对应名称的假文。
-%    \begin{macrocode}
-\prg_new_conditional:Npnn \zhlipsum_if_exist:n #1 { TF }
-  {
-    \seq_if_in:NnTF \g_@@_seq {#1}
-      { \prg_return_true: } { \prg_return_false: }
-  }
-%    \end{macrocode}
-% \end{macro}
-%
-% \begin{macro}{\zhlipsum_new:nn}
+% \begin{macro}{\@@_new:nn}
 % 定义新的假文段落。|#1| = 假文名称，|#2| = 文本。
 %    \begin{macrocode}
-\cs_new_protected:Npn \zhlipsum_new:nn #1#2
+\cs_new_protected:Npn \@@_new:nn #1#2
   {
     \int_gincr:c { g_@@_ #1 _int }
     \tl_const:cn
@@ -1062,7 +1072,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %</package>
 %    \end{macrocode}
 %
-% TODO: 不需要排版
+% TODO: 以下不需要排版
 %    \begin{macrocode}
 %<example&utf8>\documentclass[UTF8]{ctexart}
 %<example&gbk>\documentclass[GBK]{ctexart}
