@@ -688,6 +688,13 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{variable}{\c_@@_simp_clist}
+% 简体中文假文列表。
+%    \begin{macrocode}
+\clist_const:Nn \c_@@_simp_clist { simp, zhufu, aspirin }
+%    \end{macrocode}
+% \end{variable}
+%
 %    \begin{macrocode}
 \keys_define:nn { zhlipsum }
   {
@@ -1056,11 +1063,33 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % 读入假文文本定义文件。
 %    \begin{macrocode}
 \file_input:x { zhlipsum- \g_@@_encoding_tl .def }
+%</package>
 %    \end{macrocode}
 %
+% \subsection{假文文本}
+%
 %    \begin{macrocode}
-%<@@=>
-%</package>
+%<*text>
+\cs_new_protected:Npn \@@_set_special_catcode:
+  {
+%<!utf8>    \@@_active_first_byte:
+    \char_set_catcode_escape:N      \+
+    \char_set_catcode_group_begin:N \<
+    \char_set_catcode_group_end:N   \>
+    \char_set_catcode_space:N       \*
+    \char_set_catcode_other:N \\
+    \char_set_catcode_other:N \{
+    \char_set_catcode_other:N \}
+    \char_set_catcode_other:N \~
+  }
+%<*!utf8>
+\cs_new_protected:Npx \@@_active_first_byte:
+  {
+    \int_step_function:nnnN { "81 } { 1 } { "FE }
+      \char_set_catcode_active:n
+  }
+%</!utf8>
+%</text>
 %    \end{macrocode}
 %
 % \end{implementation}
