@@ -16,24 +16,23 @@
 %
 % The Current Maintainer of this work is Xiangdong Zeng.
 %
-% This work consists of the file zhlipsum.dtx,
-%          and the derived files zhlipsum.ins,
-%                                zhlipsum.sty,
-%                                zhlipsum-utf8.def,
-%                                zhlipsum-gbk.def,
-%                                zhlipsum-big5.def,
-%                                zhlipsum-example-utf8.tex,
-%                                zhlipsum-example-gbk.tex,
-%                                zhlipsum-example-big5.tex,
-%                                zhlipsum-en.tex,
-%                                zhlipsum.pdf,
-%                                zhlipsum-en.pdf,
-%                            and README.md.
+% This work consists of the files zhlipsum.dtx,
+%                                 zhlipsum-text.dtx,
+%           and the derived files zhlipsum.ins,
+%                                 zhlipsum.sty,
+%                                 zhlipsum-utf8.def,
+%                                 zhlipsum-gbk.def,
+%                                 zhlipsum-big5.def,
+%                                 zhlipsum-en.tex,
+%                                 zhlipsum.pdf,
+%                                 zhlipsum-en.pdf,
+%                             and README.md.
 %
 %<*internal>
 \iffalse
 %</internal>
 %
+% TODO: update README
 %<*readme>
 The `zhlipsum` package
 ======================
@@ -120,46 +119,38 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 
     The Current Maintainer of this work is Xiangdong Zeng.
 
-    This work consists of the file zhlipsum.dtx,
-             and the derived files zhlipsum.ins,
-                                   zhlipsum.sty,
-                                   zhlipsum-utf8.def,
-                                   zhlipsum-gbk.def,
-                                   zhlipsum-big5.def,
-                                   zhlipsum-example-utf8.tex,
-                                   zhlipsum-example-gbk.tex,
-                                   zhlipsum-example-big5.tex,
-                                   zhlipsum-en.tex,
-                                   zhlipsum.pdf,
-                                   zhlipsum-en.pdf,
-                               and README.md.
+    This work consists of the files zhlipsum.dtx,
+                                    zhlipsum-text.dtx,
+              and the derived files zhlipsum.ins,
+                                    zhlipsum.sty,
+                                    zhlipsum-utf8.def,
+                                    zhlipsum-gbk.def,
+                                    zhlipsum-big5.def,
+                                    zhlipsum-en.tex,
+                                    zhlipsum.pdf,
+                                    zhlipsum-en.pdf,
+                                and README.md.
 
 \endpreamble
 
 \generate{
   \usedir{tex/latex/zhlipsum}
-    \file{\jobname.sty}              {\from{\jobname.dtx}{package}}
-    \file{\jobname-utf8.def}         {\from{\jobname.dtx}{text,utf8}
-                                      \from{\jobname-text.dtx}{text,utf8}}
-    \file{\jobname-gbk.def}          {\from{\jobname.dtx}{text,gbk}
-                                      \from{\jobname-text.dtx}{text,gbk}}
-    \file{\jobname-big5.def}         {\from{\jobname.dtx}{text,big5}
-                                      \from{\jobname-text.dtx}{text,big5}}
+    \file{\jobname.sty}      {\from{\jobname.dtx}{package}}
+    \file{\jobname-utf8.def} {\from{\jobname.dtx}{text,utf8}
+                              \from{\jobname-text.dtx}{text,utf8}}
+    \file{\jobname-gbk.def}  {\from{\jobname.dtx}{text,gbk}
+                              \from{\jobname-text.dtx}{text,gbk}}
+    \file{\jobname-big5.def} {\from{\jobname.dtx}{text,big5}
+                              \from{\jobname-text.dtx}{text,big5}}
 %</install>
 %<*internal>
   \usedir{source/latex/zhlipsum}
-    \file{\jobname.ins}              {\from{\jobname.dtx}{install}}
+    \file{\jobname.ins}      {\from{\jobname.dtx}{install}}
 %</internal>
 %<*install>
-  \usedir{doc/latex/zhlipsum/example}
-  \usepreamble\emptypreamble
-  \usepostamble\emptypostamble
-    \file{\jobname-example-utf8.tex} {\from{\jobname.dtx}{example,utf8}}
-    \file{\jobname-example-gbk.tex}  {\from{\jobname.dtx}{example,gbk}}
-    \file{\jobname-example-big5.tex} {\from{\jobname.dtx}{example,big5}}
   \usedir{doc/latex/zhlipsum}
   \nopreamble\nopostamble
-    \file{README.md}                 {\from{\jobname.dtx}{readme}}
+    \file{README.md}         {\from{\jobname.dtx}{readme}}
 }
 
 \obeyspaces
@@ -192,7 +183,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
-%<*!(driver|install|example)>
+%<*!(driver|install)>
 %<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.5 2018-01-06 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
@@ -203,7 +194,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<big5>  {Chinese dummy text with Big5 encoding (for zhlipsum)}
 %<big5>\ProvidesExplFile{\ExplFileName-big5.def}
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
-%</!(driver|install|example)>
+%</!(driver|install)>
 %<*driver>
 \PassOptionsToPackage{showframe}{geometry}
 \documentclass{ctxdoc}
@@ -1070,50 +1061,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 %<@@=>
 %</package>
-%    \end{macrocode}
-%
-% TODO: 以下不需要排版
-%    \begin{macrocode}
-%<example&utf8>\documentclass[UTF8]{ctexart}
-%<example&gbk>\documentclass[GBK]{ctexart}
-%<example&big5>\documentclass{article} 
-%<example&big5>\usepackage{CJK}
-%<example&utf8>\usepackage[encoding=utf8]{zhlipsum}
-%<example&gbk>\usepackage[encoding=gbk]{zhlipsum}
-%<example&big5>\usepackage[encoding=big5]{zhlipsum}
-%<*example>
-\begin{document}
-%<big5>\begin{CJK*}{Bg5}{bsmi}
-\def\parcmd{\texttt{\textbackslash par}}
-\section{Basic}
-\zhlipsum
-\section{Simplified / traditional}
-\subsection{Simplified}
-\zhlipsum[1-3][script=simp]
-\subsection{Traditional}
-\zhlipsum*[1-3][script=trad]
-\subsection{Simplified}
-\zhlipsum[4-5]
-%<*!big5>
-\section{Different fonts}
-{\songti   \zhlipsum[1]} \par
-{\heiti    \zhlipsum[2]} \par
-{\fangsong \zhlipsum[3]} \par
-{\kaishu   \zhlipsum[4]} \par
-%</!big5>
-\section{Single paragraph}
-\zhlipsum[55]
-\section{With `\parcmd'}
-Some text before lorem ipsum.
-\zhlipsum[0-2]
-Some text after lorem ipsum.
-\section{Without `\parcmd'}
-Some text before lorem ipsum.
-\zhlipsum*[0-500]
-Some text after lorem ipsum.
-%<big5>\end{CJK*}
-\end{document}
-%</example>
 %    \end{macrocode}
 %
 % \end{implementation}
