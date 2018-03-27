@@ -20,3 +20,10 @@
 - `zhufu`
   - <https://zh.wikisource.org/w/index.php?title=%E7%A5%9D%E7%A6%8F&oldid=1336706>
   - License: [CC-BY-SA 3.0 License](https://zh.wikipedia.org/zh-cn/Wikipedia%3ACC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC)
+
+## Comments
+
+- *xiang-yu-ben-ji* p.11 and p.34: `鬬` (`U+9B2C`) does not exist in Big5 encoding.
+  Use `鬥` (`U+9B25`) for Big5.
+- *xiang-yu-ben-ji* p.22: there should be one more sentence `并王其地。` afterwards.
+- *aspirin* p.4: `阿司匹灵` -> `阿司匹林`.
