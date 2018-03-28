@@ -1,0 +1,55 @@
+\input{regression-test}
+
+\documentclass[UTF8, fontset=fandol]{ctexart}
+\usepackage{zhlipsum}
+
+\begin{document}
+
+\START
+
+\OMIT
+文字占位符 \clearpage
+\TIMO
+
+\loggingoutput
+
+\TEST{Basic:}{%
+  \zhlipsum
+  \clearpage
+  \zhlipsum*
+  \clearpage
+}
+
+\TEST{Simplified:}{%
+  \zhlipsum{49-51}[name=simp]
+  \clearpage
+}
+
+\TEST{Traditional:}{%
+  \zhlipsum*{1-2}[script=trad] % deprecated option
+  \clearpage
+}
+
+\TEST{Nanshanjing:}{%
+  \zhlipsum[name=nanshanjing, before={xxx}]
+  \clearpage
+}
+
+\TEST{Xiangyu:}{%
+  \zhlipsum[name=xiangyu, before-each={xxx}]
+  \clearpage
+}
+
+\TEST{Zhufu:}{%
+  \zhlipsum*{8-10}[name=zhufu,after={xxx}]
+  \clearpage
+}
+
+\TEST{Aspirin:}{%
+  \zhlipsum*{51-53}[name=aspirin,after-each={\par xxx\par}]
+  \clearpage
+}
+
+\END
+
+\end{document}

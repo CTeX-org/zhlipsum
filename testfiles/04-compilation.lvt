@@ -1,0 +1,42 @@
+\input{regression-test}
+
+\documentclass[UTF8, fontset=fandol]{ctexart}
+\usepackage{zhlipsum}
+
+\begin{document}
+
+\START
+
+\TEST{Simplified:}{%
+  \zhlipsum{-}[name=simp]
+  \clearpage
+}
+
+\TEST{Traditional:}{%
+  \zhlipsum{-}[name=trad]
+  \clearpage
+}
+
+\TEST{Nanshanjing:}{%
+  \zhlipsum{-}[name=nanshanjing]
+  \clearpage
+}
+
+\TEST{Xiangyu}{%
+  \zhlipsum*{-}[name=xiangyu]
+  \clearpage
+}
+
+\TEST{Zhufu}{%
+  \zhlipsum*{-}[name=zhufu]
+  \clearpage
+}
+
+\TEST{Aspirin}{%
+  \zhlipsum*{-}[name=aspirin]
+  \clearpage
+}
+
+\END
+
+\end{document}

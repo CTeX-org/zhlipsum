@@ -7,5 +7,9 @@ cache:
     - $HOME/.texlive
 
 script:
-  - source ./scripts/run.sh
+  # - source ./scripts/run.sh
+  - texlua build.lua check --halt-on-error --quiet
   # - texlua build.lua check
+
+after_failure:
+  - cat ./build/test/*.diff

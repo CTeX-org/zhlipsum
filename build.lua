@@ -4,15 +4,15 @@
 
 module = "zhlipsum"
 
-sourcefiles = {"source/zhlipsum.dtx"}
+checkengines = {"xetex", "luatex"}
+checkopts    = "-interaction=batchmode"
+
+sourcefiles  = {"source/*.dtx"}
 installfiles = {"*.sty", "*.def"}
 
-stdengine    = "xetex"
-checkengines = {"xetex"}
-
 -- Need to change the encodings.
-unpackexe   = "xetex"
 unpackfiles = {"zhlipsum.dtx"}
+unpackexe   = "xetex"
 
 kpse.set_program_name("kpsewhich")
 dofile(kpse.lookup("l3build.lua"))

@@ -1,0 +1,96 @@
+\input{regression-test}
+
+\documentclass[UTF8, fontset=fandol]{ctexart}
+\usepackage{zhlipsum}
+
+\begin{document}
+
+\START
+
+\OMIT
+文字占位符 \clearpage
+\TIMO
+
+\ExplSyntaxOn
+
+\OMIT
+\cs_new:Npn \zhlipsumtest_parse_par_num_i:n #1
+  {
+    \tl_log:n { TEST~ ARGUMENT:~ #1}
+    \group_begin:
+      \int_set:Nn \l__zhlipsum_max_int { 20 }
+      \__zhlipsum_parse_par_aux:n {#1}
+      \seq_log:N \l__zhlipsum_tmpa_seq
+    \group_end:
+  }
+\cs_new:Npn \zhlipsumtest_parse_par_num_ii:n #1
+  {
+    \tl_log:n { TEST~ ARGUMENTS:~ #1}
+    \__zhlipsum_parse_par:nn { TEST } {#1}
+    \seq_log:N \l__zhlipsum_par_num_seq
+  }
+\int_new:c  { g__zhlipsum_ TEST _int }
+\int_set:cn { g__zhlipsum_ TEST _int } { 20 }
+\TIMO
+
+\TEST { Parsing~ paragraph~ numbers~ (I): }
+  {
+    \clist_map_inline:nn
+      {
+           1 - 3  ,
+           5 - 15 ,
+             - 3  ,
+          15 -    ,
+             -    ,
+           0 - 5  ,
+          18 - 24 ,
+          20 - 24 ,
+          22 - 24 ,
+           0 - 30 ,
+          -1 - 4  ,
+        {-1} - 4  ,
+          14 - 14 ,
+          20 - 20 ,
+          15 - 7  ,
+          24 - 18 ,
+               10 ,
+               0  ,
+               24
+      }
+      { \zhlipsumtest_parse_par_num_i:n {#1} }
+  }
+
+\TEST { Parsing~ paragraph~ numbers~ (II): }
+  {
+    \clist_map_inline:nn
+      {
+        { 1-3             } ,
+        { 4               } ,
+        { 1-3, 5-8, 10-12 } ,
+        { 1-4, 6, 12, 2-7 } ,
+        { -3, 18-, 17     } ,
+        { 7, 8, 24, 25    } ,
+        { 0, {-1}, {-3}   } ,
+        { 18-24, 15-7     } ,
+        { 22-28, 17-19    }
+      }
+      { \zhlipsumtest_parse_par_num_ii:n {#1} }
+  }
+
+\loggingoutput
+
+\TEST { Use~ single~ paragraph: }
+  {
+    \__zhlipsum_use:nn { simp        } { 1 } \par
+    \__zhlipsum_use:nn { trad        } { 2 } \par
+    \__zhlipsum_use:nn { nanshanjing } { 3 } \par
+    \__zhlipsum_use:nn { xiangyu     } { 4 } \par
+    \__zhlipsum_use:nn { zhufu       } { 5 } \par
+    \__zhlipsum_use:nn { aspirin     } { 6 } \clearpage
+  }
+
+\ExplSyntaxOff
+
+\END
+
+\end{document}
