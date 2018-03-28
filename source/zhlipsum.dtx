@@ -679,14 +679,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\l_@@_before_tl,\l_@@_after_tl,
-%   \l_@@_before_each_tl,\l_@@_after_each_tl}
-% 保存（每段）假文前后的插入内容。
+% \begin{variable}{\l_@@_before_tl,\l_@@_after_tl,\l_@@_inter_tl}
+% 保存假文之前、之后与之间插入的内容。
 %    \begin{macrocode}
 \tl_new:N \l_@@_before_tl
 \tl_new:N \l_@@_after_tl
-\tl_new:N \l_@@_before_each_tl
-\tl_new:N \l_@@_after_each_tl
+\tl_new:N \l_@@_inter_tl
 %    \end{macrocode}
 % \end{variable}
 %
@@ -700,7 +698,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \begin{macro}{name}
 % 假文名称。Big5 编码不支持简体中文。
 %    \begin{macrocode}
-    name        .code:n   =
+    name .code:n =
       {
         \tl_set:Nn \l_@@_name_tl {#1}
         \@@_if_encoding:nT { big5 }
@@ -722,7 +720,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \begin{macro}{script}
 % 选择输入简体中文或繁体中文。过时选项。
 %    \begin{macrocode}
-    script      .code:n   =
+    script .code:n =
       {
         \@@_warning:nn { deprecated-option }
           { Option~ "name=#1"~ will~ be~ set. }
@@ -731,23 +729,15 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% \changes{v1.0.0}{2018/03/23}{新增选项 \opt{before}、\opt{after}、
-%   \opt{before-each} 和 \opt{after-each}。}
+% \changes{v1.0.0}{2018/03/23}{新增选项 \opt{before}、\opt{after}。}
+% \changes{v1.0.0}{2018/03/29}{新增选项 \opt{inter}。}
 %
-% TODO: 增加 inter，在每段之间加内容；移除 xxx-each
 % \begin{macro}{before,after}
-% 假文前后的插入内容。
+% 假文之前、之后与之间插入的内容。
 %    \begin{macrocode}
-    before      .tl_set:N = \l_@@_before_tl,
-    after       .tl_set:N = \l_@@_after_tl,
-%    \end{macrocode}
-% \end{macro}
-%
-% \begin{macro}{before-each,after-each}
-% 每段假文前后的插入内容。
-%    \begin{macrocode}
-    before-each .tl_set:N = \l_@@_before_each_tl,
-    after-each  .tl_set:N = \l_@@_after_each_tl
+    before .tl_set:N = \l_@@_before_tl,
+    after  .tl_set:N = \l_@@_after_tl,
+    inter  .tl_set:N = \l_@@_inter_tl
   }
 %    \end{macrocode}
 % \end{macro}
@@ -784,13 +774,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \group_begin:
       \IfBooleanF {#1}
         {
-          \tl_set:Nn \l_@@_before_tl     { \@@_par: }
-          \tl_set:Nn \l_@@_after_each_tl { \@@_par: }
+          \tl_set:Nn \l_@@_before_tl { \@@_par: }
+          \tl_set:Nn \l_@@_after_tl  { \@@_par: }
+          \tl_set:Nn \l_@@_inter_tl  { \@@_par: }
         }
       \IfValueT {#3} { \keys_set:nn { zhlipsum } {#3} }
-      \tl_use:N \l_@@_before_tl
       \zhlipsum_use:Vn \l_@@_name_tl {#2}
-      \tl_use:N \l_@@_after_tl
     \group_end:
   }
 %    \end{macrocode}
@@ -804,20 +793,23 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{variable}
 %
 % \begin{macro}{\zhlipsum_use:nn,\zhlipsum_use:Vn}
-% 输出多段假文。|#1| = 假文名称，|#2| = 段落编号列表。解析段落编号
-% 之后，按次序逐项输出，并在前后插入相应内容。
+% 输出多段假文。|#1| = 假文名称，|#2| = 段落编号列表。解析段落编号之
+% 后，按次序逐项输出，并在前后插入相应内容。注意最后一段需要单独处理。
 %    \begin{macrocode}
 \cs_new_protected:Npn \zhlipsum_use:nn #1#2
   {
     \zhlipsum_if_exist:nTF {#1}
       {
         \@@_parse_par:nn {#1} {#2}
+        \seq_pop_right:NN  \l_@@_par_num_seq \l_@@_tmpa_tl
+        \tl_use:N \l_@@_before_tl
         \seq_map_inline:Nn \l_@@_par_num_seq
           {
-            \tl_use:N \l_@@_before_each_tl
             \@@_use:nn {#1} {##1}
-            \tl_use:N \l_@@_after_each_tl
+            \tl_use:N \l_@@_inter_tl
           }
+        \@@_use:nn {#1} { \tl_use:N \l_@@_tmpa_tl }
+        \tl_use:N \l_@@_after_tl
       }
       { \@@_error:nn { invalid-name } {#1} }
   }
@@ -978,42 +970,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     Nothing~ will~ be~ output.
   }
 %    \end{macrocode}
-%
-%^^A%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%^^A TEST \@@_parse_par:n
-%^^A%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%^^A
-%^^A\@@_parse_par:n {1-4,5,6-8}
-%^^A\seq_show:N \l_@@_par_num_seq
-%^^A\@@_parse_par:n {1-4,-7,19-}
-%^^A\seq_show:N \l_@@_par_num_seq
-%^^A\@@_parse_par:n {48-56,48}
-%^^A\seq_show:N \l_@@_par_num_seq
-%^^A
-%^^A%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%^^A TEST \@@_parse_par_aux:n
-%^^A%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%^^A
-%^^A \@@_parse_par_aux:n {5-7}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {7}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {16-}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {-4}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {19-22}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {0-4}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {48}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {23-58}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {0-22}
-%^^A \seq_show:N \l_@@_tmpa_seq
-%^^A \@@_parse_par_aux:n {-1-4}
-%^^A \seq_show:N \l_@@_tmpa_seq
 %
 % \begin{macro}{\@@_use:nn}
 % 输出一段假文。|#1| = 假文名称，|#2| = 段落编号。

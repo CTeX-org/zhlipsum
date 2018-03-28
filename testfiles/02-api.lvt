@@ -20,6 +20,9 @@
       { \tl_log:n { "#1"~ exists.           } }
       { \tl_log:n { "#1"~ does~ not~ exist. } }
   }
+\tl_set:Nn \l__zhlipsum_before_tl { \__zhlipsum_par: }
+\tl_set:Nn \l__zhlipsum_after_tl  { \__zhlipsum_par: }
+\tl_set:Nn \l__zhlipsum_inter_tl  { \__zhlipsum_par: }
 \TIMO
 
 \loggingoutput

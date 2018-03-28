@@ -10239,13 +10239,11 @@ Completed box being shipped out [9]
 ....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 227.5881fil
+..\vbox(550.0+0.0)x345.0, glue set 244.0278fil
 ...\write-{}
-...\glue(\topskip) 1.7793
-...\hbox(8.2207+2.03409)x345.0, glue set - 0.05869
+...\glue(\topskip) 1.76875
+...\hbox(8.23125+2.03409)x345.0, glue set - 0.08853
 ....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 xxx
-....\glue 3.50961 plus 1.7548 minus 1.16986
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 項
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 籍
@@ -10315,14 +10313,14 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 梁
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 父
-....\glue(\rightskip) 0.0
-...\penalty 300
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set 3.98822fil
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 即
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 楚
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.10623
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 將
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 項
@@ -10393,23 +10391,14 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
-....\kern 0.00041
-....\kern -0.00041
-....\kern -0.18753
-....\kern 0.18753
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 6.06018
-...\hbox(8.34718+2.03409)x345.0, glue set - 0.2131
-....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 xxx
-....\glue 3.50961 plus 1.7548 minus 1.16986
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 項
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 籍
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.06018
+...\hbox(8.34718+2.03409)x345.0, glue set - 0.03932
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 少
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 時
@@ -10474,10 +10463,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 足
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.95479
-...\hbox(8.45258+2.03409)x345.0, glue set 0.11702
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 記
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 名
@@ -10490,8 +10476,9 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.95479
+...\hbox(8.45258+2.03409)x345.0, glue set - 0.0284
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 劍
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 一
@@ -10554,9 +10541,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 籍
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 大
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.1328
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 喜
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
@@ -10573,8 +10558,9 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set 0.45369
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 又
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 不
@@ -10630,9 +10616,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 陽
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 獄
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.1328
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 掾
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 司
@@ -10646,7 +10630,9 @@ Completed box being shipped out [9]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.1328
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 故
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 事
@@ -10706,9 +10692,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 出
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 項
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.1328
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 梁
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 下
@@ -10722,7 +10706,9 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 吳
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 中
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.1328
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 有
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 大
@@ -10782,9 +10768,7 @@ Completed box being shipped out [9]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.95479
-...\hbox(8.45258+2.03409)x345.0, glue set - 0.25096
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 是
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 知
@@ -10798,7 +10782,9 @@ Completed box being shipped out [9]
 ....\glue 6.78735 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 秦
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.95479
+...\hbox(8.45258+2.03409)x345.0, glue set 0.1786
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 始
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 皇
@@ -10863,9 +10849,8 @@ Completed box being shipped out [9]
 ....\glue -5.26968 plus 5.26968 minus 0.96962
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 」
 ....\rule(0.0+0.0)x-6.2393
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.95479
-...\hbox(8.45258+2.03409)x345.0, glue set - 0.0721
+....\glue 6.2393 minus 5.26968
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 梁
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 掩
@@ -10876,8 +10861,9 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.95479
+...\hbox(8.45258+2.03409)x345.0, glue set - 0.0721
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 曰
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ：
@@ -10945,10 +10931,7 @@ Completed box being shipped out [9]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 才
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set 193.69684fil
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 氣
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 過
@@ -10960,7 +10943,9 @@ Completed box being shipped out [9]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 雖
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.1328
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 吳
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 中
@@ -10981,19 +10966,8 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
-....\kern 0.00041
-....\kern -0.00041
-....\kern -0.18753
-....\kern 0.18753
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 6.11288
-...\hbox(8.29448+2.03409)x345.0, glue set - 0.30984
-....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 xxx
-....\glue 3.50961 plus 1.7548 minus 1.16986
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 秦
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 二
@@ -11045,7 +11019,9 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 稽
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 守
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.05812
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 通
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 謂
@@ -11058,10 +11034,7 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\glue -5.26968 plus 5.26968 minus 6.2393
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 「江
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.10623
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 西
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 皆
@@ -11122,8 +11095,9 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.95479
+...\hbox(8.45258+2.03409)x345.0, glue set - 0.09895
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 吾
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 欲
@@ -11137,9 +11111,7 @@ Completed box being shipped out [9]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 使
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.95479
-...\hbox(8.45258+2.03409)x345.0, glue set - 0.09895
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 公
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 及
@@ -11201,7 +11173,9 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 知
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 其
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.95479
+...\hbox(8.45258+2.03409)x345.0, glue set - 0.0721
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 處
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
@@ -11215,9 +11189,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 知
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 之
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.95479
-...\hbox(8.45258+2.03409)x345.0, glue set - 0.0721
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 耳
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
@@ -11283,7 +11255,9 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 「請
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 召
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.04384
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 籍
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
@@ -11297,9 +11271,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 命
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 召
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.19333
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 桓
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 楚
@@ -11369,8 +11341,9 @@ Completed box being shipped out [9]
 ....\glue -5.26968 plus 5.26968 minus 0.96962
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 」
 ....\rule(0.0+0.0)x-6.2393
-....\glue 6.2393 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.10623
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 於
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 是
@@ -11382,9 +11355,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 拔
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 劍
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.08853
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 斬
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 守
@@ -11448,7 +11419,9 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 擊
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 殺
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set 0.27318
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 數
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 十
@@ -11462,9 +11435,7 @@ Completed box being shipped out [9]
 ....\glue 6.78735 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 一
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set 0.24242
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 府
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 中
@@ -11525,8 +11496,9 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set - 0.10623
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 遂
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 舉
@@ -11539,9 +11511,8 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set - 0.10623
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 使
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 人
@@ -11603,7 +11574,9 @@ Completed box being shipped out [9]
 ....\glue 6.87167 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.0918
+...\hbox(8.31557+2.03409)x345.0, glue set 0.12419
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 馬
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
@@ -11617,9 +11590,7 @@ Completed box being shipped out [9]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 人
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 不
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.95479
-...\hbox(8.45258+2.03409)x345.0, glue set 0.13672
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 得
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 用
@@ -11680,7 +11651,10 @@ Completed box being shipped out [9]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 5.73346
+...\hbox(8.6739+2.03409)x345.0, glue set 27.93365fil
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 此
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 不
@@ -11696,10 +11670,8 @@ Completed box being shipped out [9]
 ....\glue -5.26968 plus 5.26968 minus 0.96962
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 」
 ....\rule(0.0+0.0)x-6.2393
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.73346
-...\hbox(8.6739+2.03409)x345.0, glue set 119.92126fil
+....\glue 6.2393 minus 5.26968
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 眾
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 乃
@@ -11750,10 +11722,10 @@ Completed box being shipped out [9]
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
-....\kern 0.00041
-....\kern -0.00041
-....\kern -0.18753
-....\kern 0.18753
+....\glue 6.78735 minus 5.26968
+....\TU/lmr/m/n/10.53937 xxx
+....\kern -0.0002
+....\kern 0.0002
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -11780,7 +11752,7 @@ Completed box being shipped out [10]
 ....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 424.86446fil
+..\vbox(550.0+0.0)x345.0, glue set 408.42476fil
 ...\write-{}
 ...\glue(\topskip) 1.71605
 ...\hbox(8.28395+2.03409)x345.0, glue set - 0.08661
@@ -11858,9 +11830,9 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 人
 ....\glue(\rightskip) 0.0
-...\penalty 150
+...\penalty 300
 ...\glue(\baselineskip) 6.18666
-...\hbox(8.2207+2.03409)x345.0, glue set 0.11374
+...\hbox(8.2207+2.03409)x345.0, glue set 175.4848fil
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 死
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 了
@@ -11895,7 +11867,16 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ”
 ....\rule(0.0+0.0)x-6.16553
 ....\glue 6.16553 minus 5.26968
-....\glue 0.0 plus 0.60931
+....\TU/lmr/m/n/10.53937 xxx
+....\kern -0.0002
+....\kern 0.0002
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 6.20773
+...\hbox(8.19963+2.03409)x345.0, glue set - 0.17706
+....\hbox(0.0+0.0)x21.07874
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 我
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 很
@@ -11935,9 +11916,7 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 上
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 也
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.19719
-...\hbox(8.21017+2.03409)x345.0, glue set - 0.2656
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 就
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 遭
@@ -11965,7 +11944,10 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 校
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 里
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 6.19719
+...\hbox(8.21017+2.03409)x345.0, glue set - 0.17706
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 遇
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 到
@@ -12007,9 +11989,7 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 身
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 旁
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.15504
-...\hbox(8.25232+2.03409)x345.0, glue set - 0.1328
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 的
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 时
@@ -12039,7 +12019,9 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 于
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 魂
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.15504
+...\hbox(8.25232+2.03409)x345.0, glue set - 0.1328
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 灵
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 的
@@ -12083,9 +12065,7 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 在
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 此
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.18666
-...\hbox(8.2207+2.03409)x345.0, glue set - 0.10623
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 刻
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
@@ -12115,7 +12095,9 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 在
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 极
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.18666
+...\hbox(8.2207+2.03409)x345.0, glue set - 0.10623
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 短
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 期
@@ -12161,9 +12143,7 @@ Completed box being shipped out [10]
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 然
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.18666
-...\hbox(8.2207+2.03409)x345.0, glue set - 0.09947
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 而
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 她
@@ -12195,7 +12175,9 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 者
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 不
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.18666
+...\hbox(8.2207+2.03409)x345.0, glue set - 0.12239
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 如
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 说
@@ -12243,9 +12225,7 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 人
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 何
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.21828
-...\hbox(8.18909+2.03409)x345.0, glue set - 0.31363
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 必
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 增
@@ -12273,7 +12253,10 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 一
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 为
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 6.22882
+...\hbox(8.17854+2.03409)x345.0, glue set 222.91196fil
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 她
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 起
@@ -12295,8 +12278,19 @@ Completed box being shipped out [10]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 罢
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\TU/lmr/m/n/10.53937 xxx
+....\kern -0.0002
+....\kern 0.0002
 ....\penalty 10000
-....\glue -5.26968 plus 5.26968 minus 6.16553
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 6.22882
+...\hbox(8.17854+2.03409)x345.0, glue set 110.27774fil
+....\hbox(0.0+0.0)x21.07874
+....\rule(0.0+0.0)x-6.16553
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 “也
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 许
@@ -12324,10 +12318,8 @@ Completed box being shipped out [10]
 ....\glue -5.26968 plus 5.26968 minus 0.89584
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ”
 ....\rule(0.0+0.0)x-6.16553
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 6.22882
-...\hbox(8.17854+1.7706)x345.0, glue set 222.91196fil
+....\glue 6.16553 minus 5.26968
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 我
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 于
@@ -12352,14 +12344,10 @@ Completed box being shipped out [10]
 ....\kern -0.00041
 ....\kern -0.18753
 ....\kern 0.18753
-....\glue 6.78735 minus 5.26968
-....\TU/lmr/m/n/10.53937 xxx
-....\kern -0.0002
-....\kern 0.0002
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue -1.7706
+...\glue -2.03409
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
@@ -12382,7 +12370,7 @@ Completed box being shipped out [11]
 ....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 244.0278fil
+..\vbox(550.0+0.0)x345.0, glue set 260.4675fil
 ...\write-{}
 ...\glue(\topskip) 1.75821
 ...\hbox(8.24179+2.03409)x345.0, glue set - 0.17706
@@ -13357,7 +13345,7 @@ Completed box being shipped out [11]
 ....\glue(\rightskip) 0.0
 ...\penalty 150
 ...\glue(\baselineskip) 6.06018
-...\hbox(8.2734+1.99193)x345.0, glue set 35.60632fil
+...\hbox(8.2734+1.99193)x345.0, glue set 28.81897fil
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 用
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 以
@@ -13422,19 +13410,11 @@ Completed box being shipped out [11]
 ....\kern -0.00041
 ....\kern -0.18753
 ....\kern 0.18753
+....\glue 6.78735 minus 5.26968
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 9.90706
-...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
-....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 xxx
-....\kern -0.0002
-....\kern 0.0002
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
+...\glue -1.99193
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil

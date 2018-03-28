@@ -31,22 +31,22 @@
 }
 
 \TEST{Nanshanjing:}{%
-  \zhlipsum[name=nanshanjing, before={xxx}]
+  \zhlipsum[name=nanshanjing,before={xxx}]
   \clearpage
 }
 
 \TEST{Xiangyu:}{%
-  \zhlipsum[name=xiangyu, before-each={xxx}]
+  \zhlipsum*[name=xiangyu,after={xxx}]
   \clearpage
 }
 
 \TEST{Zhufu:}{%
-  \zhlipsum*{8-10}[name=zhufu,after={xxx}]
+  \zhlipsum{8-10}[name=zhufu,inter={xxx\par}]
   \clearpage
 }
 
 \TEST{Aspirin:}{%
-  \zhlipsum*{51-53}[name=aspirin,after-each={\par xxx\par}]
+  \zhlipsum*{51-53}[name=aspirin,inter={\par xxx\par}]
   \clearpage
 }
 

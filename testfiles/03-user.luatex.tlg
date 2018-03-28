@@ -14280,11 +14280,11 @@ Completed box being shipped out [9]
 ....\TU/lmr/m/n/10.53937 9
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 227.5881fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 244.0278fil, direction TLT
 ...\whatsit4=[]
 ...\write-{}
 ...\glue(\topskip) 0.72536
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.04755, direction TLT
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.1328, direction TLT
 ....\whatsit4=[]
 ....\localpar
 .....\localinterlinepenalty=0
@@ -14292,10 +14292,6 @@ Completed box being shipped out [9]
 .....\localleftbox=null
 .....\localrightbox=null
 ....\hbox(0.0+0.0)x21.07874, direction TLT
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\glue 2.63484 plus 1.0 minus 1.0
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 項
 ....\glue 0.0 plus 0.60931
@@ -14388,17 +14384,17 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 父
-....\glue(\rightskip) 0.0
-...\penalty 300
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 2.47055fil, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 即
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 楚
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 將
 ....\glue 0.0 plus 0.60931
@@ -14489,7 +14485,6 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 項
-....\penalty 500
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 氏
@@ -14497,29 +14492,16 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.29295, direction TLT
-....\whatsit4=[]
-....\localpar
-.....\localinterlinepenalty=0
-.....\localbrokenpenalty=0
-.....\localleftbox=null
-.....\localrightbox=null
-....\hbox(0.0+0.0)x21.07874, direction TLT
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\glue 2.63484 plus 1.0 minus 1.0
+....\glue 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 項
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 籍
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.1328, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 少
 ....\glue 0.0 plus 0.60931
@@ -14607,11 +14589,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 足
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.15018, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 以
 ....\glue 0.0 plus 0.60931
@@ -14633,7 +14611,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
-....\glue 5.26968
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.10623, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 劍
 ....\glue 0.0 plus 0.60931
@@ -14716,10 +14697,7 @@ Completed box being shipped out [9]
 ....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 籍
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 大
 ....\glue 0.0 plus 0.60931
@@ -14745,7 +14723,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
-....\glue 5.26968 minus 5.26968
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 又
 ....\glue 0.0 plus 0.60931
@@ -14822,10 +14803,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 陽
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 獄
 ....\glue 0.0 plus 0.60931
@@ -14850,7 +14828,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 故
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 0.47049, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 事
 ....\glue 0.0 plus 0.60931
@@ -14928,10 +14909,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 出
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.13982, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 項
 ....\glue 0.0 plus 0.60931
@@ -14953,7 +14931,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 有
 ....\glue 0.0 plus 0.60931
@@ -15034,10 +15015,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.15018, direction TLT
-....\whatsit4=[]
+....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 以
 ....\glue 0.0 plus 0.60931
@@ -15059,7 +15037,10 @@ Completed box being shipped out [9]
 ....\glue 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 秦
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 0.1448, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 始
 ....\glue 0.0 plus 0.60931
@@ -15142,10 +15123,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 代
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.15594, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 也
 ....\penalty 10000
@@ -15172,7 +15150,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
-....\glue 5.26968 minus 5.26968
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.08853, direction TLT
+....\whatsit4=[]
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 曰
 ....\penalty 10000
@@ -15257,11 +15238,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 扛
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 160.56107fil, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 鼎
 ....\penalty 10000
@@ -15287,7 +15264,10 @@ Completed box being shipped out [9]
 ....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 雖
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
 ....\glue 0.0 plus 0.60931
@@ -15311,7 +15291,6 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 籍
-....\penalty 500
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 矣
@@ -15319,23 +15298,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.37595, direction TLT
-....\whatsit4=[]
-....\localpar
-.....\localinterlinepenalty=0
-.....\localbrokenpenalty=0
-.....\localleftbox=null
-.....\localrightbox=null
-....\hbox(0.0+0.0)x21.07874, direction TLT
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\glue 2.63484 plus 1.0 minus 1.0
+....\glue 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 秦
 ....\glue 0.0 plus 0.60931
@@ -15407,7 +15370,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 守
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 通
 ....\glue 0.0 plus 0.60931
@@ -15430,11 +15396,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 江
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 西
 ....\glue 0.0 plus 0.60931
@@ -15519,7 +15481,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
-....\glue 5.26968
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.1328, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吾
 ....\glue 0.0 plus 0.60931
@@ -15538,10 +15503,7 @@ Completed box being shipped out [9]
 ....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 使
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.1328, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 公
 ....\glue 0.0 plus 0.60931
@@ -15631,7 +15593,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 其
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.08853, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 處
 ....\penalty 10000
@@ -15650,10 +15615,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 之
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.08853, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 耳
 ....\penalty 10000
@@ -15745,7 +15707,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 召
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.08853, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 籍
 ....\penalty 10000
@@ -15764,10 +15729,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 召
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.2552, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 桓
 ....\glue 0.0 plus 0.60931
@@ -15869,7 +15831,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 」
-....\glue 5.26968 minus 5.26968
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 於
 ....\glue 0.0 plus 0.60931
@@ -15887,10 +15852,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 劍
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 斬
 ....\glue 0.0 plus 0.60931
@@ -15976,7 +15938,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 殺
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 0.1448, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 數
 ....\glue 0.0 plus 0.60931
@@ -15995,10 +15960,7 @@ Completed box being shipped out [9]
 ....\glue 5.26968
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 一
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.1448, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 府
 ....\glue 0.0 plus 0.60931
@@ -16083,7 +16045,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
-....\glue 5.26968 minus 5.26968
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 遂
 ....\glue 0.0 plus 0.60931
@@ -16102,10 +16067,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
-....\whatsit4=[]
+....\glue 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 使
 ....\glue 0.0 plus 0.60931
@@ -16190,7 +16152,10 @@ Completed box being shipped out [9]
 ....\glue 5.26968 minus 2.63484
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 0.15594, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 馬
 ....\penalty 10000
@@ -16209,10 +16174,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 不
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.1448, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 得
 ....\glue 0.0 plus 0.60931
@@ -16299,7 +16261,11 @@ Completed box being shipped out [9]
 ....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 27.93365fil, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 此
 ....\glue 0.0 plus 0.60931
@@ -16322,11 +16288,7 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 」
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 118.4036fil, direction TLT
-....\whatsit4=[]
+....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 眾
 ....\glue 0.0 plus 0.60931
@@ -16397,6 +16359,10 @@ Completed box being shipped out [9]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
+....\glue 5.26968
+....\TU/lmr/m/n/10.53937 x
+....\TU/lmr/m/n/10.53937 x
+....\TU/lmr/m/n/10.53937 x
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -16450,7 +16416,7 @@ Completed box being shipped out [10]
 ....\TU/lmr/m/n/10.53937 0
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 424.86444fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 408.42477fil, direction TLT
 ...\whatsit4=[]
 ...\write-{}
 ...\glue(\topskip) 0.72536
@@ -16562,9 +16528,9 @@ Completed box being shipped out [10]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 个
 ....\glue(\rightskip) 0.0
-...\penalty 150
+...\penalty 300
 ...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.1448, direction TLT
+...\hbox(9.27464+1.26472)x345.0, glue set 164.94543fil, direction TLT
 ....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 人
@@ -16605,6 +16571,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 灵
+....\penalty 500
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 的
@@ -16617,6 +16584,22 @@ Completed box being shipped out [10]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ”
 ....\glue 5.26968 minus 5.26968
+....\TU/lmr/m/n/10.53937 x
+....\TU/lmr/m/n/10.53937 x
+....\TU/lmr/m/n/10.53937 x
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
+....\whatsit4=[]
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x21.07874, direction TLT
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 我
 ....\glue 0.0 plus 0.60931
@@ -16669,10 +16652,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 上
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 也
 ....\glue 0.0 plus 0.60931
@@ -16715,7 +16695,11 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 里
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 遇
 ....\glue 0.0 plus 0.60931
@@ -16773,10 +16757,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 身
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.17706, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 旁
 ....\glue 0.0 plus 0.60931
@@ -16820,7 +16801,10 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 魂
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.1328, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 灵
 ....\glue 0.0 plus 0.60931
@@ -16879,10 +16863,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 在
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.1448, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 此
 ....\glue 0.0 plus 0.60931
@@ -16926,7 +16907,10 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 极
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.10623, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 短
 ....\glue 0.0 plus 0.60931
@@ -16986,10 +16970,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set - 0.10623, direction TLT
-....\whatsit4=[]
+....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 然
 ....\glue 0.0 plus 0.60931
@@ -17033,7 +17014,10 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 不
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set - 0.1328, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 如
 ....\glue 0.0 plus 0.60931
@@ -17094,10 +17078,7 @@ Completed box being shipped out [10]
 ....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 人
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 0.15018, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 何
 ....\glue 0.0 plus 0.60931
@@ -17140,7 +17121,11 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 为
-....\glue 0.0 plus 0.60931
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 222.91196fil, direction TLT
+....\whatsit4=[]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 她
 ....\glue 0.0 plus 0.60931
@@ -17165,6 +17150,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 有
+....\penalty 500
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 罢
@@ -17173,6 +17159,23 @@ Completed box being shipped out [10]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
 ....\glue 5.26968
+....\TU/lmr/m/n/10.53937 x
+....\TU/lmr/m/n/10.53937 x
+....\TU/lmr/m/n/10.53937 x
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 5.90208
+...\hbox(9.27464+1.26472)x345.0, glue set 102.59454fil, direction TLT
+....\whatsit4=[]
+....\localpar
+.....\localinterlinepenalty=0
+.....\localbrokenpenalty=0
+.....\localleftbox=null
+.....\localrightbox=null
+....\hbox(0.0+0.0)x21.07874, direction TLT
+....\glue 5.26968 minus 5.26968
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 “
 ....\penalty 10000
@@ -17201,11 +17204,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 我
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 5.90208
-...\hbox(9.27464+1.26472)x345.0, glue set 196.56354fil, direction TLT
-....\whatsit4=[]
+....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 想
 ....\penalty 10000
@@ -17248,10 +17247,6 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
-....\glue 5.26968
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -17282,7 +17277,7 @@ Completed box being shipped out [11]
 ....\TU/lmr/m/n/10.53937 1
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 244.0278fil, direction TLT
+..\vbox(550.0+0.0)x345.0, glue set 260.4675fil, direction TLT
 ...\whatsit4=[]
 ...\write-{}
 ...\glue(\topskip) 0.72536
@@ -18823,22 +18818,7 @@ Completed box being shipped out [11]
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 10.63426
-...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil, direction TLT
-....\whatsit4=[]
-....\localpar
-.....\localinterlinepenalty=0
-.....\localbrokenpenalty=0
-.....\localleftbox=null
-.....\localrightbox=null
-....\hbox(0.0+0.0)x21.07874, direction TLT
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\TU/lmr/m/n/10.53937 x
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
+...\glue -1.26472
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil
