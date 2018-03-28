@@ -522,38 +522,44 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \subsection{内部变量和函数}
 %
-% \begin{variable}{\l_@@_tmpa_seq,\l_@@_tmpb_seq,\l_@@_tmpa_str}
+% \begin{variable}{\l_@@_tmpa_tl,\l_@@_tmpa_seq,\l_@@_tmpb_seq}
 % 临时变量。
 %    \begin{macrocode}
+\tl_new:N  \l_@@_tmpa_tl
 \seq_new:N \l_@@_tmpa_seq
 \seq_new:N \l_@@_tmpb_seq
-\tl_new:N  \l_@@_tmpa_tl
-%    \end{macrocode}
-% \end{variable}
-%
-% \begin{variable}{\g_@@_seq}
-% 保存假文名称列表。
-%    \begin{macrocode}
-\seq_new:N \g_@@_seq
 %    \end{macrocode}
 % \end{variable}
 %
 % \begin{variable}{\g_@@_encoding_tl}
-% 保存编码信息。
+% 编码信息。
 %    \begin{macrocode}
 \tl_new:N \g_@@_encoding_tl
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{macro}{\file_input:x}
-% \begin{macro}[TF]{\tl_if_eq:VnTF}
+% \begin{variable}{\g_zhlipsum_seq}
+% 假文名称列表。
+%    \begin{macrocode}
+\seq_new:N \g_zhlipsum_seq
+%    \end{macrocode}
+% \end{variable}
+%
+% \begin{variable}{\c_zhlipsum_simp_seq,\c_zhlipsum_trad_seq}
+% 预定义的简体中文与繁体中文的假文名称列表。
+%    \begin{macrocode}
+\seq_new:N \c_zhlipsum_simp_seq
+\seq_new:N \c_zhlipsum_trad_seq
+\seq_set_from_clist:Nn \c_zhlipsum_simp_seq { simp, zhufu, aspirin }
+\seq_set_from_clist:Nn \c_zhlipsum_trad_seq { trad, xiangyu, nanshanjing }
+%    \end{macrocode}
+% \end{variable}
+%
 % \LaTeX3 函数变体。
 %    \begin{macrocode}
 \cs_generate_variant:Nn \file_input:n { x }
 \prg_generate_conditional_variant:Nnn \tl_if_eq:nn { Vn } { TF }
 %    \end{macrocode}
-% \end{macro}
-% \end{macro}
 %
 % \begin{macro}[int,TF]{\@@_if_unicode_engine:}
 % 判断是否为 Unicode 引擎。来自于 \pkg{zhnumber} 宏包。
@@ -572,7 +578,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}[int,TF]{\@@_if_encoding:n}
+% \begin{macro}[TF]{\@@_if_encoding:n}
+% 判断当前编码。
 %    \begin{macrocode}
 \prg_new_protected_conditional:Npnn \@@_if_encoding:n #1 { T, F, TF }
   {
@@ -583,7 +590,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{macro}
 %
 % \begin{macro}{\@@_msg_new:nn,
-%   \@@_error:n,\@@_error:nn,\@@_warning:n
+%   \@@_error:n,\@@_error:nn,
 %   \@@_warning:nn,\@@_warning:nnn,\@@_warning:nxxx,
 %   \@@_info:nn}
 % 各种信息函数的缩略形式。
@@ -665,11 +672,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \subsection{函数选项}
 %
-% \changes{v0.5}{2017/12/22}{新增选项 \opt{script}，同时支持简体中文
-%   和繁体中文。}
-% \changes{v1.0.0}{2018/03/24}{新增选项 \opt{name}。}
-% \changes{v1.0.0}{2018/03/24}{\opt{script} 成为过时选项。}
-%
 % \begin{variable}{\l_@@_name_tl}
 % 保存假文名称。
 %    \begin{macrocode}
@@ -688,17 +690,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{variable}{\c_@@_simp_clist}
-% 简体中文假文列表。
-%    \begin{macrocode}
-\clist_const:Nn \c_@@_simp_clist { simp, zhufu, aspirin }
-%    \end{macrocode}
-% \end{variable}
-%
 %    \begin{macrocode}
 \keys_define:nn { zhlipsum }
   {
 %    \end{macrocode}
+%
+% \changes{v1.0.0}{2018/03/24}{新增选项 \opt{name}。}
 %
 % \begin{macro}{name}
 % 假文名称。Big5 编码不支持简体中文。
@@ -708,7 +705,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
         \tl_set:Nn \l_@@_name_tl {#1}
         \@@_if_encoding:nT { big5 }
           {
-            \clist_if_in:NVT \c_@@_simp_clist \l_@@_name_tl
+            \seq_if_in:NVT \c_zhlipsum_simp_seq \l_@@_name_tl
               {
                 \@@_warning:nn { big5-require-trad } {#1}
                 \tl_set:Nn \l_@@_name_tl { trad }
@@ -718,8 +715,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
+% \changes{v0.5}{2017/12/22}{新增选项 \opt{script}，同时支持简体中文
+%   和繁体中文。}
+% \changes{v1.0.0}{2018/03/24}{\opt{script} 成为过时选项。}
+%
 % \begin{macro}{script}
-% 选择输入简体中文或繁体中文。
+% 选择输入简体中文或繁体中文。过时选项。
 %    \begin{macrocode}
     script      .code:n   =
       {
@@ -730,6 +731,10 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
+% \changes{v1.0.0}{2018/03/23}{新增选项 \opt{before}、\opt{after}、
+%   \opt{before-each} 和 \opt{after-each}。}
+%
+% TODO: 增加 inter，在每段之间加内容；移除 xxx-each
 % \begin{macro}{before,after}
 % 假文前后的插入内容。
 %    \begin{macrocode}
@@ -769,10 +774,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \begin{macro}{\zhlipsum}
 % \changes{v0.5}{2018/01/05}{支持选项设置。}
+% \changes{v1.0.0}{2018/03/23}{更改参数形式，允许利用逗号分隔列表选择
+%   段落。}
 % 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选
 % 项列表。注意第一个可选参数需要用花括号包围。
 %    \begin{macrocode}
-\NewDocumentCommand \zhlipsum { s G { 1 - 3 } o }
+\NewDocumentCommand \zhlipsum { s G { 1 - 3 } +o }
   {
     \group_begin:
       \IfBooleanF {#1}
@@ -829,7 +836,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 \prg_new_protected_conditional:Npnn \zhlipsum_if_exist:n #1 { TF }
   {
-    \seq_if_in:NnTF \g_@@_seq {#1}
+    \seq_if_in:NnTF \g_zhlipsum_seq {#1}
       { \prg_return_true: } { \prg_return_false: }
   }
 %    \end{macrocode}
@@ -1028,7 +1035,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \zhlipsum_if_exist:nTF {#1}
       { \@@_error:nn { already-defined } {#1} }
       {
-        \seq_gput_left:Nn \g_@@_seq {#1}
+        \seq_gput_left:Nn \g_zhlipsum_seq {#1}
         \int_new:c { g_@@_ #1 _int }
         \clist_map_inline:nn {#2} { \@@_new:nn {#1} {##1} }
         \@@_info:nn { defining-text } {#1}
@@ -1059,8 +1066,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% TODO
-% 读入假文文本定义文件。
+% 根据编码读入假文文本定义文件。
 %    \begin{macrocode}
 \file_input:x { zhlipsum- \g_@@_encoding_tl .def }
 %</package>
@@ -1068,6 +1074,15 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \subsection{假文文本}
 %
+% \changes{v1.0.0}{2018/03/27}{利用类别码机制回避 \pkg{CJK} 宏包的
+%   预处理操作。}
+%
+% \begin{macro}{\@@_set_special_catcode:}
+% 在声明预定义文本时，为了兼容 \pkg{CJK} 宏包的特殊处理，需要临时更改
+% 类别码。具体来说，在 GBK/Big5 编码下，由于汉字的第二个字节会与
+% \TeX{} 中的特殊符号 |\|、|{|、|}|、|~| 冲突，所以需要将它们的类别码
+% 改为 12（其他），并分别用 |+|、|<|、|>| 和 |*| 代替。星号 |*| 在
+% 开启 \LaTeX3 语法后实际相当于空格（类别码为 10）。
 %    \begin{macrocode}
 %<*text>
 \cs_new_protected:Npn \@@_set_special_catcode:
@@ -1082,6 +1097,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \char_set_catcode_other:N \}
     \char_set_catcode_other:N \~
   }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\@@_active_first_byte:}
+% 将汉字的首字节设为活动字符（类别码 12）。UTF8 编码下不需要该操作。
+%    \begin{macrocode}
 %<*!utf8>
 \cs_new_protected:Npx \@@_active_first_byte:
   {
@@ -1091,6 +1112,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %</!utf8>
 %</text>
 %    \end{macrocode}
+% \end{macro}
+%
+% \changes{v1.0.0}{2018/03/26}{增加预定义假文。}
+%
+% 预定义假文的声明放置在分组内，利用 \cs{@@_set_special_catcode:} 切换
+% 类别码后可以不再需要 \pkg{CJK} 的预处理操作。具体声明此处不再列出。
 %
 % \end{implementation}
 %
