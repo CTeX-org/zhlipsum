@@ -1,0 +1,37 @@
+\input{regression-test}
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage[encoding=big5]{zhlipsum}
+
+\begin{document}
+
+% Big5 encoding does not support Simplified Chinese.
+\begin{CJK*}{Bg5}{bsmi}
+
+\START
+
+\SEPARATOR
+
+\TYPE{Checking compilation. No log file data expected.}
+
+\TEST{Simplified:}{%
+  \zhlipsum{-}[name=simp]
+  \clearpage
+}
+
+\TEST{Traditional:}{%
+  \zhlipsum*{-}[name=trad]
+  \clearpage
+}
+
+\TEST{Xiangyu}{%
+  \zhlipsum{-}[name=xiangyu]
+  \clearpage
+}
+
+\END
+
+\end{CJK*}
+
+\end{document}

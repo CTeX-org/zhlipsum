@@ -1,0 +1,161 @@
+This is a generated file for the l3build validation system.
+Don't change this file in any respect.
+============================================================
+Checking compilation. No log file data expected.
+============================================================
+TEST 1: Simplified:
+============================================================
+LaTeX Font Info:    Try loading font information for C10+gbsn on input line ....
+) [1
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+============================================================
+============================================================
+TEST 2: Zhufu
+============================================================
+[15
+] [16] [17] [18] [19] [20] [21] [22]
+============================================================
+============================================================
+TEST 3: Aspirin
+============================================================
+LaTeX Font Info:    Try loading font information for OML+cmr on input line ....
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line ....
+Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
+[]\C10/gbsn/m/n/10/06 ^^83 \C10/gbsn/m/n/10/16 ^^89 \C10/gbsn/m/n/10/14 ^^9a \C10/gbsn/m/n/10/12 ^^f5 \C10/gbsn/m/n/10/01 ^^c3 \C10/gbsn/m/n/10/19 ] ^^aa \C10/gbsn/m/n/10/01 ^^d5\OT1/cmr/m/n/10 Aspirin\C10/gbsn/m/n/10/01 ^^c4 ^^c7 \C10/gbsn/m/n/10/19 ^^O \C10/gbsn/m/n/10/07 ^^c1 \C10/gbsn/m/n/10/19 / \C10/gbsn/m/n/10/31 ^^da \C10/gbsn/m/n/10/16 y \C10/gbsn/m/n/10/18 ^^ed \C10/gbsn/m/n/10/16 ^^ac \C10/gbsn/m/n/10/01 ^^c3 \C10/gbsn/m/n/10/19 ] ^^aa \C10/gbsn/m/n/10/01 ^^d5\OT1/cmr/m/n/10 acetylsalicylic acid\C10/gbsn/m/n/10/01 ^^c4 ^^c7
+\hbox(8.71999+1.94444)x345.0, glue set - 1.0
+.\hbox(0.0+0.0)x15.0
+.\C10/gbsn/m/n/10/06 ^^83
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/16 ^^89
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/14 ^^9a
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/12 ^^f5
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/01 ^^c3
+.\kern -0.00003
+.\kern 0.00003
+.\penalty 10000
+.\glue 0.0 plus 0.96002
+.\penalty 10000
+.\C10/gbsn/m/n/10/19 ]
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/19 ^^aa
+.\kern -0.00002
+.\kern 0.00002
+.\penalty 10000
+.\glue 0.0 plus 0.96002
+.\penalty 10000
+.\C10/gbsn/m/n/10/01 ^^d5
+.\kern -0.00002
+.\kern 0.00002
+.\OT1/cmr/m/n/10 A
+.\OT1/cmr/m/n/10 s
+.\OT1/cmr/m/n/10 p
+.\OT1/cmr/m/n/10 i
+.\OT1/cmr/m/n/10 r
+.\OT1/cmr/m/n/10 i
+.\OT1/cmr/m/n/10 n
+.\C10/gbsn/m/n/10/01 ^^c4
+.\kern -0.00002
+.\kern 0.00002
+.\penalty 10000
+.\glue 0.0 plus 0.96002
+.\penalty 10000
+.\C10/gbsn/m/n/10/01 ^^c7
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/19 ^^O
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/07 ^^c1
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/19 /
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/31 ^^da
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/16 y
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/18 ^^ed
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/16 ^^ac
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/01 ^^c3
+.\kern -0.00003
+.\kern 0.00003
+.\penalty 10000
+.\glue 0.0 plus 0.96002
+.\penalty 10000
+.\C10/gbsn/m/n/10/19 ]
+.\kern -0.00002
+.\kern 0.00002
+.\glue 0.0 plus 0.96002
+.\C10/gbsn/m/n/10/19 ^^aa
+.\kern -0.00002
+.\kern 0.00002
+.\penalty 10000
+.\glue 0.0 plus 0.96002
+.\penalty 10000
+.\C10/gbsn/m/n/10/01 ^^d5
+.\kern -0.00002
+.\kern 0.00002
+.\OT1/cmr/m/n/10 a
+.\OT1/cmr/m/n/10 c
+.\OT1/cmr/m/n/10 e
+.\OT1/cmr/m/n/10 t
+.\kern-0.27779
+.\OT1/cmr/m/n/10 y
+.\OT1/cmr/m/n/10 l
+.\OT1/cmr/m/n/10 s
+.\OT1/cmr/m/n/10 a
+.\OT1/cmr/m/n/10 l
+.\OT1/cmr/m/n/10 i
+.\OT1/cmr/m/n/10 c
+.\OT1/cmr/m/n/10 y
+.\OT1/cmr/m/n/10 l
+.\OT1/cmr/m/n/10 i
+.\OT1/cmr/m/n/10 c
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\OT1/cmr/m/n/10 a
+.\OT1/cmr/m/n/10 c
+.\OT1/cmr/m/n/10 i
+.\OT1/cmr/m/n/10 d
+.\C10/gbsn/m/n/10/01 ^^c4
+.\kern -0.00002
+.\kern 0.00002
+.\penalty 10000
+.\glue 0.0 plus 0.96002
+.\penalty 10000
+.\C10/gbsn/m/n/10/01 ^^c7
+.\kern -0.00002
+.\kern 0.0
+.\glue(\rightskip) 0.0
+[23
+] [24] [25] [26] [27] [28] [29]
+============================================================
+Bad grouping: 2!

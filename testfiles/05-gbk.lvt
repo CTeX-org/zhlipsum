@@ -1,0 +1,37 @@
+\input{regression-test}
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage[encoding=gbk]{zhlipsum}
+
+\begin{document}
+
+% GB 2312 encoding does not support Traditional Chinese.
+\begin{CJK*}{GB}{gbsn}
+
+\START
+
+\SEPARATOR
+
+\TYPE{Checking compilation. No log file data expected.}
+
+\TEST{Simplified:}{%
+  \zhlipsum{-}[name=simp]
+  \clearpage
+}
+
+\TEST{Zhufu}{%
+  \zhlipsum{-}[name=zhufu]
+  \clearpage
+}
+
+\TEST{Aspirin}{%
+  \zhlipsum*{-}[name=aspirin]
+  \clearpage
+}
+
+\END
+
+\end{CJK*}
+
+\end{document}
