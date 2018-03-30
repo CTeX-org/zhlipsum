@@ -1,0 +1,18 @@
+\input{regression-test}
+
+\PassOptionsToPackage{log-declarations=false}{xparse}
+\documentclass[fontset=none]{ctexart}
+
+\START
+
+\ExplSyntaxOn
+
+\TEST { Load~ package: }
+  { \usepackage [ encoding = utf8 ] { zhlipsum } }
+
+\TEST { Check~ encoding: }
+  { \tl_log:N \g__zhlipsum_encoding_tl }
+
+\ExplSyntaxOff
+
+\END

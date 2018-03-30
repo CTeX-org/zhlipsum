@@ -1,0 +1,19 @@
+\input{regression-test}
+
+\RequirePackage[log-declarations=false]{xparse}
+\documentclass{article}
+\usepackage{CJK}
+
+\START
+
+\ExplSyntaxOn
+
+\TEST { Load~ package: }
+  { \usepackage [ encoding = big5 ] { zhlipsum } }
+
+\TEST { Check~ encoding: }
+  { \tl_log:N \g__zhlipsum_encoding_tl }
+
+\ExplSyntaxOff
+
+\END
