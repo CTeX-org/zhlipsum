@@ -1,0 +1,53 @@
+\input{regression-test}
+
+\documentclass{article}
+\usepackage{CJK}
+\usepackage{zhlipsum}
+
+\begin{document}
+
+\START
+
+\ExplSyntaxOn
+
+\TEST { Check~ CJK~ encoding~ (UTF8): }
+  {
+    \begin{CJK*}{UTF8}{song}
+      \__zhlipsum_if_cjk_valid_encoding:TF
+        { \tl_show:n { true  } }
+        { \tl_show:n { false } }
+    \end{CJK*}
+  }
+
+\TEST { Check~ CJK~ encoding~ (GBK): }
+  {
+    \begin{CJK*}{GBK}{gbsn}
+      \__zhlipsum_if_cjk_valid_encoding:TF
+        { \tl_show:n { true  } }
+        { \tl_show:n { false } }
+    \end{CJK*}
+  }
+
+\TEST { Check~ CJK~ encoding~ (GB): }
+  {
+    \begin{CJK*}{GB}{gbsn}
+      \__zhlipsum_if_cjk_valid_encoding:TF
+        { \tl_show:n { true  } }
+        { \tl_show:n { false } }
+    \end{CJK*}
+  }
+
+\TEST { Check~ CJK~ encoding~ (Bg5): }
+  {
+    \begin{CJK*}{Bg5}{bsmi}
+      \__zhlipsum_if_cjk_valid_encoding:TF
+        { \tl_show:n { true  } }
+        { \tl_show:n { false } }
+    \end{CJK*}
+  }
+
+\END
+
+\ExplSyntaxOff
+
+\end{document}

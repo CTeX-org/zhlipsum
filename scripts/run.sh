@@ -21,6 +21,9 @@ encodings08
 
 export TESTFILES_B=\
 "
+cjk01
+cjk02
+cjk03
 compilation-gbk
 compilation-big5
 encodings01

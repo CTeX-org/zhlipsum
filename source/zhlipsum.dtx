@@ -948,20 +948,24 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 \cs_new_protected:Npn \zhlipsum_use:nn #1#2
   {
-    \zhlipsum_if_exist:nTF {#1}
+    \@@_if_cjk_valid_encoding:TF
       {
-        \@@_parse_par:nn {#1} {#2}
-        \seq_pop_right:NN  \l_@@_par_num_seq \l_@@_tmpa_tl
-        \tl_use:N \l_@@_before_tl
-        \seq_map_inline:Nn \l_@@_par_num_seq
+        \zhlipsum_if_exist:nTF {#1}
           {
-            \@@_use:nn {#1} {##1}
-            \tl_use:N \l_@@_inter_tl
+            \@@_parse_par:nn {#1} {#2}
+            \seq_pop_right:NN  \l_@@_par_num_seq \l_@@_tmpa_tl
+            \tl_use:N \l_@@_before_tl
+            \seq_map_inline:Nn \l_@@_par_num_seq
+              {
+                \@@_use:nn {#1} {##1}
+                \tl_use:N \l_@@_inter_tl
+              }
+            \@@_use:nn {#1} { \tl_use:N \l_@@_tmpa_tl }
+            \tl_use:N \l_@@_after_tl
           }
-        \@@_use:nn {#1} { \tl_use:N \l_@@_tmpa_tl }
-        \tl_use:N \l_@@_after_tl
+          { \@@_error:nn { invalid-name } {#1} }
       }
-      { \@@_error:nn { invalid-name } {#1} }
+      { \@@_error:n { CJK-invalid-encoding } }
   }
 \cs_generate_variant:Nn \zhlipsum_use:nn { Vn }
 \@@_msg_new:nn { invalid-name }
@@ -970,16 +974,61 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     Please~ use~ the~ pre-defined~ Chinese~ dummy~ texts~ or~
     declare~ new~ one.
   }
+\@@_msg_new:nn { CJK-invalid-encoding }
+  {
+%<@@=>
+    The~ current~ CJK~ environment~ uses~ "\tl_use:N \CJK@@@enc"~
+    encoding,\\
+%<@@=zhlipsum>
+    but~ zhlipsum~ package~ has~ been~ loaded~ with~ the~ option~
+    "encoding=\tl_use:N \g_@@_encoding_tl".\\\\
+    Please~ check~ the~ package~ options.
+  }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}[TF]{\zhlipsum_if_exist:n}
+% \begin{macro}{\@@_if_cjk_valid_encoding:TF}
+% 检查 \env{CJK} 环境编码。
+%    \begin{macrocode}
+\cs_new_protected:Npn \@@_if_cjk_valid_encoding:TF
+  {
+%<@@=>
+    \tl_if_exist:NTF \CJK@@@enc
+      {
+        \tl_set:Nx \l__zhlipsum_tmpa_tl
+          { \str_lower_case:f { \CJK@@@enc } }
+%<@@=zhlipsum>
+% TODO: str or tl?
+        \str_if_eq:NNTF \g_@@_encoding_tl \l_@@_tmpa_tl
+          { \use_i:nn }
+          {
+            \@@_if_encoding:nTF { gbk }
+              {
+                \str_if_eq:VnTF \l_@@_tmpa_tl { gb }
+                  { \use_i:nn } { \use_ii:nn }
+              }
+              {
+                \@@_if_encoding:nTF { big5 }
+                  {
+                    \str_if_eq:VnTF \l_@@_tmpa_tl { bg5 }
+                      { \use_i:nn } { \use_ii:nn }
+                  }
+                  { \use_ii:nn }
+              }
+          }
+      }
+      { \use_i:nn }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}{\zhlipsum_if_exist:nTF}
 % 判断是否存在对应名称的假文。
 %    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \zhlipsum_if_exist:n #1 { TF }
+\cs_new_protected:Npn \zhlipsum_if_exist:nTF #1
   {
     \seq_if_in:NnTF \g_zhlipsum_seq {#1}
-      { \prg_return_true: } { \prg_return_false: }
+      { \use_i:nn } { \use_ii:nn }
   }
 %    \end{macrocode}
 % \end{macro}
