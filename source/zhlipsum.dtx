@@ -372,7 +372,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! page style.
 %^^A!
 %
-% \pkg{zhlipsum} 宏包支持 UTF-8、GBK 和 Big5 编码，依赖 \LaTeX3{} 项目% 中的 \pkg{expl3}、\pkg{xparse} 和 \pkg{l3keys2e} 宏包。为正确输入中
+% \pkg{zhlipsum} 宏包支持 UTF-8、GBK 和 Big5 编码，依赖 \LaTeX3{} 项目
+% 中的 \pkg{expl3}、\pkg{xparse} 和 \pkg{l3keys2e} 宏包。为正确输入中
 % 文，\pkg{zhlipsum} 需要与 \pkg{CJK} 宏包或 \CTeX{} 宏集等配套使用。
 %^^A! \pkg{zhlipsum} supports UTF-8, GBK and Big5 encodings. Packages
 %^^A! \pkg{expl3}, \pkg{xparse} and \pkg{l3keys2e} in the \LaTeX3{}
@@ -567,9 +568,23 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   \end{arguments}
 % \end{function}
 %
-% \section{已知问题和兼容性信息}
+% \section{兼容性信息}
+%
+% 以下选项在测试版 \pkg{zhlipsum} 宏包中存在，但在 1.0.0 版本之后不
+% 建议继续使用。这里仅为兼容性保留。未来将可能删除对它们的支持。
+%
+% \begin{function}{script}
+%   过时选项。相当于 \opt{name}。
+% \end{function}
+%
+% \section{已知问题}
 %^^A! \section{Known issues}
 %^^A!
+%
+% 假文文本 |nanshanjing| 和 |xiangyu| 含有若干生僻字。如需正确显示，
+% 可使用 \pkg{xeCJK} 宏包，并设置后备字体为 SimSun-ExtB、Hanazono
+% Mincho （花园明朝）等，具体方法请参考 \pkg{xeCJK} 宏包文档（仅针对
+% 编码为 UTF8，且使用 \XeLaTeX{} 编译的情况）。
 %
 % GBK 和 Big5 编码在第二字节并没有避开 ASCII 码的范围，因此部分汉字编
 % 码的第二字节恰好是 ASCII 编码中的一些特殊字符（如 |{|、|}|、|\|
@@ -609,13 +624,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   +endgroup
 %   \zhlipsum[name=big5]
 % \end{ctexexam}
-%
-% 以下选项在测试版 \pkg{zhlipsum} 宏包中存在，但在 1.0.0 版本之后不
-% 建议继续使用。这里仅为兼容性保留。未来将可能删除对它们的支持。
-%
-% \begin{function}{script}
-%   过时选项。相当于 \opt{name}。
-% \end{function}
 %
 %^^A! \end{document}
 %
@@ -685,7 +693,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \LaTeX3 函数变体。
 %    \begin{macrocode}
 \cs_generate_variant:Nn \file_input:n { x }
-\prg_generate_conditional_variant:Nnn \tl_if_eq:nn { Vn } { TF }
+\prg_generate_conditional_variant:Nnn \tl_if_eq:nn { Vn } { T, TF }
 %    \end{macrocode}
 %
 % \begin{macro}[int,TF]{\@@_if_unicode_engine:}
@@ -790,6 +798,21 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
   }
 \@@_msg_new:nn { unknown-option }
   { Package~ option~ "\l_keys_key_tl"~ is~ unknown. }
+%    \end{macrocode}
+%
+% \changes{v1.0.0}{2018/03/30}{根据 \CTeX{} 宏集的选项自动确定编码。}
+%
+% 如果调用了 \CTeX{} 宏集，则自动确定编码。
+%    \begin{macrocode}
+\tl_if_exist:NT \l__ctex_encoding_tl
+  {
+    \tl_if_eq:VnTF \l__ctex_encoding_tl { UTF8 }
+      { \tl_gset:Nn \g_@@_encoding_tl { utf8 } }
+      {
+        \tl_if_eq:VnT \l__ctex_encoding_tl { GBK }
+          { \tl_gset:Nn \g_@@_encoding_tl { gbk } }
+      }
+  }
 %    \end{macrocode}
 %
 % 将宏包选项传给 |zhlipsum/option|。
