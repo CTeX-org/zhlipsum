@@ -12,8 +12,8 @@
 
 ```tex
 \zhlipsum
-\zhlipsum*[1-5]
-\zhlipsum[6-10][script=trad]
+\zhlipsum*{1-5}
+\zhlipsum{6-10,18}[name=trad]
 ```
 
 更多信息可从宏包文档 [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf) 中获取。
@@ -40,8 +40,8 @@ This package provides an interface to dummy text in Chinese language, which will
 
 ```tex
 \zhlipsum
-\zhlipsum*[1-5]
-\zhlipsum[6-10][script=trad]
+\zhlipsum*{1-5}
+\zhlipsum{6-10,18}[name=trad]
 ```
 
 More information can be found in the package documentation [zhlipsum-en.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf).

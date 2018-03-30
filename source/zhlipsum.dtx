@@ -32,7 +32,6 @@
 \iffalse
 %</internal>
 %
-% TODO: update README
 %<*readme>
 The `zhlipsum` package
 ======================
@@ -47,8 +46,8 @@ Basic usage
 -----------
 
     \zhlipsum
-    \zhlipsum*[1-5]
-    \zhlipsum[6-10][script=trad]
+    \zhlipsum*{1-5}
+    \zhlipsum{6-10,18}[name=trad]
 
 More information can be found in the package documentation
 [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf)
@@ -196,14 +195,33 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %</!(driver|install)>
 %<*driver>
-\PassOptionsToPackage{showframe}{geometry}
+%\PassOptionsToPackage{showframe}{geometry}
 \documentclass{ctxdoc}
-\ctexset{punct = quanjiao}
+\usepackage{multirow}
+\setCJKmonofont{FangSong}[ItalicFont=KaiTi]
 \hypersetup{
   pdftitle          = {zhlipsum: 中文乱数假文（Lorem ipsum）},
   pdfauthor         = {曾祥东},
   bookmarksnumbered = true
 }
+\makeatletter
+\catcode`!=\active
+\RecustomVerbatimEnvironment{ctexexam}{Verbatim}{%
+  gobble=4, frame=single, framesep=10pt,
+  label=\rule{0pt}{12pt}\textnormal{\bfseries 例 \arabic{ctexexam}},
+  listparameters=%
+    \setlength\topsep{\bigskipamount}%
+    \refstepcounter{ctexexam}\ctexexamlabelref
+    \appto\FV@EndList{\nointerlineskip},
+  defineactive=\def!{\color{gray}\itshape\%}}
+\preto\ctexexam{\catcode`!=\active}
+\preto\endctexexam{\catcode`!=12}
+\catcode`!=12
+\makeatother
+\RenewDocumentEnvironment{arguments}{}%
+  {\enumerate[label={\texttt{\#\arabic*:~}},
+    leftmargin=2em, labelsep=0pt, nolistsep]}%
+  {\endenumerate}
 \def\IndexLayout{%
   \newgeometry{hmargin = 1.00 in, vmargin = {1.25 in, 1.00 in}}%
   \ctexset{section/numbering = false}%
@@ -362,7 +380,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! should be used with \pkg{CJK} package or \CTeX{} bundle.
 %^^A!
 %
-% \section{使用说明}
+% \section{使用说明} \label{sec:user-guide}
 %^^A! \section{User's guide}
 %^^A!
 %
@@ -391,14 +409,13 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \emph{lowercase}.
 %^^A!
 %
-% \begin{function}[updated=2018-01-05]{\zhlipsum}
+% \begin{function}[updated=2018-03-23]{\zhlipsum}
 %   \begin{syntax}
-%     \cs{zhlipsum}\oarg{段落}\oarg{选项}
-%     \cs{zhlipsum*}\oarg{段落}\oarg{选项}
+%     \cs{zhlipsum}\Arg{段落}\oarg{选项}
+%     \cs{zhlipsum}*\Arg{段落}\oarg{选项}
 %   \end{syntax}
-%   插入假文文本。默认会在每段文本之间分段（添加 \tn{par}）。如需禁止
-%   分段，请使用带星号的命令。在两种情况下，假文文本的前后都会强制分
-%   段。
+%   插入假文文本。参数 \meta{段落} 和 \meta{选项} 都是可选的。注意各
+%   参数之间不可以有空格。
 % \end{function}
 %^^A! \begin{function}[updated=2018-01-05]{\zhlipsum}
 %^^A!   \begin{syntax}
@@ -413,18 +430,20 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \end{function}
 %^^A!
 %
-% 第一个可选参数 \meta{段落} 可通过如下方式指定：
+% 第一个可选参数 \meta{段落} 为英文逗号分隔的段落编号列表，举例如下：
 %^^A! The first optional argument \meta{paragraph} can be specified
 %^^A! as the following:
 %^^A!
 %
-% \begin{itemize}
-%   \item 只给定一个参数时，将输出对应序号的段落，如 |\zhlipsum[17]|
-%     将生成第 17 段；
-%   \item 给定两个参数并用“|-|”连接时，则会输出该范围内的段落。如
-%     |\zhlipsum[5-34]| 将生成第 5 至 34 段假文;
-%   \item 没有指定段落时，默认输出第 1 至 3 段假文。
-% \end{itemize}
+% \begin{ctexexam}
+%   ! 假设假文最大段落数为 50
+%   \zhlipsum{2-4}          ! 可用 a-b 的形式指定
+%   \zhlipsum{4,12,3-8}     ! 也可用单个数字指定
+%   \zhlipsum{-10,40-}      ! 输出 1-10 段和 40-50 段
+%   \zhlipsum{-}            ! 输出全部段落，即 1-50 段
+%   \zhlipsum               ! 默认输出 1-3 段
+%   \zhlipsum{48-52}        ! 超出部分会自动忽略，即只输出 48-50 段
+% \end{ctexexam}
 %^^A! \begin{itemize}
 %^^A!   \item Only one integer, then \cs{zhlipsum} will produce the
 %^^A!     correspoding paragraph.
@@ -435,17 +454,14 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \end{itemize}
 %^^A!
 %
-% 目前本宏包只提供了 50 段假文文本，超出范围的数字一律按 50 处理。如
-% |\zhlipsum[51]| 将给出第 50 段，而 |\zhlipsum[48-55]| 将只会输出第
-% 48、49 和第 50 段。
 %^^A! At present, \pkg{zhlipsum} can provide 50 paragraphs. Numbers
 %^^A! larger than 50 will not be considered. For example,
 %^^A! |\zhlipsum[51]| produces paragraph 50, and |\zhlipsum[48-55]|
 %^^A! produces 48--50 paragraphs.
 %^^A!
 %
-% 第二个可选参数 \meta{选项} 通过英文逗号分隔的键值列表形式给出。如果
-% 需要设置选项，则必须显式地指明段落参数。支持的选项如下。
+% 第二个可选参数 \meta{选项} 通过英文逗号分隔的键值列表形式给出。
+% 支持的选项如下。
 %^^A! The second optional argument \meta{options} should be a
 %^^A! key-value list. If you need to set the options, \meta{paragraph}
 %^^A! must be specified explicitly. Supported options are the
@@ -453,13 +469,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %
 %^^A+
-% \begin{function}[added=2018-01-05]{script}
+% \begin{function}[added=2018-03-24]{name}
 %   \begin{syntax}
-%     script = <simp|trad>
+%     name = \meta{假文名称}
 %   \end{syntax}
 %^^A-
-%   选择插入简体中文（\opt{simp}）或繁体中文（\opt{trad}）。注意在
-%   Big5 编码下，只可使用繁体中文。其他编码下，默认使用简体中文。
+%   选择插入假文的名称。预定义的假文共有 6 种，见表~\ref{tab:pre-defined-dummy-text}。
 % \end{function}
 %^^A!   Use simplified Chinese (\opt{simp}) or traditional Chinese
 %^^A!   (\opt{trad}) text. Default value is \opt{simp} except for Big5
@@ -468,14 +483,98 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \end{function}
 %^^A!
 %
-% \section{已知问题}
+% \begin{table}[htb]
+%   \caption{预定义假文} \label{tab:pre-defined-dummy-text}
+%   \centering\small
+%   \def\B{\bullet}
+%   \def\T#1{\multirow{2}*{\textbf{#1}}}
+%   \begin{tabular}{cccccccc}
+%     \toprule
+%       \T{名称} & \T{段落数} & \T{简体 / 繁体} & \T{描述} &
+%         \multicolumn{3}{c}{\textbf{各编码下的支持情况}} \\
+%       & & & & |utf8| & |gbk| & |big5| \\
+%     \midrule
+%       |simp|        &  50 & 简 & 无意义随机假文          & \B & \B &    \\
+%       |trad|        &  50 & 繁 & 无意义随机假文          & \B & \B & \B \\
+%       |nanshanjing| &  43 & 繁 & 《山海经·南山经》       & \B &    &    \\
+%       |xiangyu|     &  45 & 繁 & 司马迁《史记·项羽本纪》 & \B & \B & \B \\
+%       |zhufu|       & 110 & 简 & 鲁迅《祝福》            & \B & \B &    \\
+%       |aspirin|     &  66 & 简 & 维基百科条目：阿司匹林  & \B & \B &    \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+%
+% 您也可以通过 \cs{newzhlipsum} 命令来定义新的假文。
+%
+% \begin{function}[added=2018-03-29]{before,after,inter}
+%   \begin{syntax}
+%     name  = \meta{内容}
+%     after = \meta{内容}
+%     inter = \meta{内容}
+%   \end{syntax}
+%   在假文段落之前、之后与之间插入内容。
+% \end{function}
+%
+% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之前、之后与
+% 之间均插入分段命令 \tn{par}，而带星号的命令 \cs{zhlipsum}|*| 则不
+% 进行任何额外操作。
+%
+% \begin{function}[added=2018-03-29]{\newzhlipsum}
+%   \begin{syntax}
+%     \cs{newzhlipsum}\Arg{假文名称}\Arg{段落列表}
+%   \end{syntax}
+%   声明新的假文。假文名称区分大小写。段落列表以英文逗号分隔，示例如下。
+% \end{function}
+%
+% \begin{ctexexam}
+%   ! 注意区分中文逗号与英文逗号
+%   \newzhlipsum{jingyesi}{!
+%     {床前明月光，}, {疑是地上霜。}, {举头望明月，}, {低头思故乡。}}
+%
+%   \zhlipsum*{-}[name=jingyesi]  ! 输出全部四句假文，且不分段
+% \end{ctexexam}
+%
+% \section{\LaTeX3 编程接口}
+%
+% 一般而言，第~\ref{sec:user-guide} 节中列出的命令足够一般用户使用。
+% 如需使用编程接口，则可以考虑以下变量和函数。注意使用时需确保开启
+% \LaTeX3 语法。
+%
+% \begin{variable}{\g_zhlipsum_seq}
+%   假文名称列表。
+% \end{variable}
+%
+% \begin{function}{\zhlipsum_use:nn}
+%   输出多段假文。
+%   \begin{arguments}
+%     \item 假文名称
+%     \item 段落编号列表
+%   \end{arguments}
+% \end{function}
+%
+% \begin{function}[TF]{\zhlipsum_if_exist:n}
+%   判断是否存在对应名称的假文。
+%   \begin{arguments}
+%     \item 假文名称
+%   \end{arguments}
+% \end{function}
+%
+% \begin{function}{\zhlipsum_new:nn}
+%   声明假文。
+%   \begin{arguments}
+%     \item 假文名称
+%     \item 文本列表
+%   \end{arguments}
+% \end{function}
+%
+% \section{已知问题和兼容性信息}
 %^^A! \section{Known issues}
 %^^A!
 %
 % GBK 和 Big5 编码在第二字节并没有避开 ASCII 码的范围，因此部分汉字编
 % 码的第二字节恰好是 ASCII 编码中的一些特殊字符（如 |{|、|}|、|\|
-% 等），将导致编译失败。本宏包将这两种编码下的 \file{.def} 文件转换为
-% 了较安全的形式，请勿手工修改这些文件。
+% 等），将导致编译失败。本宏包在这两种编码下的 \file{.def} 文件中采取
+%了特殊技巧（见~\ref{subsec:dummy-text} 小节），请避免修改这些文件。
 %^^A! GBK and Big5 encodings do not escape the ASCII range in the
 %^^A! second byte, so the second byte of some Chinese characters may
 %^^A! have the same encoding as special characters in ASCII like |{|,
@@ -489,6 +588,34 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! If there is no special requirement, UTF-8 encoding and Unicode
 %^^A! engines as \XeLaTeX{} and \LuaLaTeX{} are always recommended.
 %^^A!
+%
+% 特殊情况下，如果您必须使用 GBK 或 Big5 编码，并需要声明新的假文，
+% 可以采取以下手段临时回避上述问题。
+%
+% \begin{ctexexam}
+%   !  文件编码需使用 Big5
+%   ! \usepackage[encoding=big5]{zhlipsum}
+%
+%   ! 直接使用 \newzhlipsum{big5}{許蓋功, 蓋功許, 功許蓋} 会报错
+%   ! 原理：在分组内用 <、>、+ 代替 {、}、\，再将原先的 {、}、\ 设为“其他”类
+%   \begingroup
+%     \catcode`\<=1
+%     \catcode`\>=2
+%     \catcode`\+=0
+%     \catcode`\{=12
+%     \catcode`\}=12
+%     \catcode`\\=12
+%     +newzhlipsum<big5><許蓋功, 蓋功許, 功許蓋>
+%   +endgroup
+%   \zhlipsum[name=big5]
+% \end{ctexexam}
+%
+% 以下选项在测试版 \pkg{zhlipsum} 宏包中存在，但在 1.0.0 版本之后不
+% 建议继续使用。这里仅为兼容性保留。未来将可能删除对它们的支持。
+%
+% \begin{function}{script}
+%   过时选项。相当于 \opt{name}。
+% \end{function}
 %
 %^^A! \end{document}
 %
@@ -732,7 +859,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v1.0.0}{2018/03/23}{新增选项 \opt{before}、\opt{after}。}
 % \changes{v1.0.0}{2018/03/29}{新增选项 \opt{inter}。}
 %
-% \begin{macro}{before,after}
+% \begin{macro}{before,after,inter}
 % 假文之前、之后与之间插入的内容。
 %    \begin{macrocode}
     before .tl_set:N = \l_@@_before_tl,
@@ -1028,7 +1155,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %</package>
 %    \end{macrocode}
 %
-% \subsection{假文文本}
+% \subsection{假文文本} \label{subsec:dummy-text}
 %
 % \changes{v1.0.0}{2018/03/27}{利用类别码机制回避 \pkg{CJK} 宏包的
 %   预处理操作。}
