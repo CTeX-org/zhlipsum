@@ -16,8 +16,12 @@
 *.xdv binary
 
 # Linguist overrides
-*.cls linguist-language=TeX
-*.def linguist-language=TeX
-*.dtx linguist-language=TeX
-*.ins linguist-language=TeX
-*.lvt linguist-language=TeX
+*.cls         linguist-language=TeX
+*.def         linguist-language=TeX
+*.dtx         linguist-language=TeX
+*.ins         linguist-language=TeX
+*.lvt         linguist-language=TeX
+*.sty         linguist-language=TeX
+latexmkrc     linguist-language=Perl
+latexmkrc-en  linguist-language=Perl
+*.profile     linguist-language=Shell
