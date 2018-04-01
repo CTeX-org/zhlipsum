@@ -195,7 +195,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %</!(driver|install)>
 %<*driver>
-%\PassOptionsToPackage{showframe}{geometry}
+\PassOptionsToPackage{showframe}{geometry}
 \documentclass{ctxdoc}
 \usepackage{multirow}
 \setCJKmonofont{FangSong}[ItalicFont=KaiTi]
@@ -205,6 +205,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
   bookmarksnumbered = true
 }
 \makeatletter
+% ctexexam 中以 ! 作为注释
 \catcode`!=\active
 \RecustomVerbatimEnvironment{ctexexam}{Verbatim}{%
   gobble=4, frame=single, framesep=10pt,
@@ -218,6 +219,22 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \preto\endctexexam{\catcode`!=12}
 \catcode`!=12
 \makeatother
+\ExplSyntaxOn
+% TF 不添加超链接，并且不更改颜色
+\cs_set_protected:Npn \__codedoc_typeset_TF:
+  {
+    \group_begin:
+      \exp_args:No \__codedoc_if_macro_internal:nT \l__codedoc_tmpa_tl
+        { \color[gray]{0.5} }
+      \itshape TF
+      \makebox[0pt][r]
+        {
+          \color{red}
+          \underline { \phantom{\itshape TF} \kern-0.1em }
+        }
+    \group_end:
+  }
+\ExplSyntaxOff
 \RenewDocumentEnvironment{arguments}{}%
   {\enumerate[label={\texttt{\#\arabic*:~}},
     leftmargin=2em, labelsep=0pt, nolistsep]}%
