@@ -8,7 +8,6 @@ export TESTFILES_A=\
 internal
 api
 user
-compilation-utf8
 encodings01
 encodings02
 encodings03
@@ -17,6 +16,7 @@ encodings05
 encodings06
 encodings07
 encodings08
+compilation-utf8
 "
 
 export TESTFILES_B=\
@@ -24,8 +24,6 @@ export TESTFILES_B=\
 cjk01
 cjk02
 cjk03
-compilation-gbk
-compilation-big5
 encodings01
 encodings02
 encodings03
@@ -34,6 +32,8 @@ encodings05
 encodings06
 encodings07
 encodings08
+compilation-gbk
+compilation-big5
 "
 
 if [ "$1" = "save" ]; then

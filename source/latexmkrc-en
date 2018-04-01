@@ -1,0 +1,4 @@
+# Latexmk configuration file.
+
+# Use XeLaTeX to compile.
+$pdf_mode = 5;

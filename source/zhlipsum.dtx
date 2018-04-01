@@ -462,12 +462,17 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %
 % 第二个可选参数 \meta{选项} 通过英文逗号分隔的键值列表形式给出。
-% 支持的选项如下。
+% 支持的选项在下文给出。
 %^^A! The second optional argument \meta{options} should be a
 %^^A! key-value list. If you need to set the options, \meta{paragraph}
 %^^A! must be specified explicitly. Supported options are the
 %^^A! following.
 %^^A!
+%
+% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之前、之后与
+% 之间均插入分段命令 \tn{par}，而带星号的命令 \cs{zhlipsum}|*| 则不
+% 进行分段操作。您可以利用 \opt{before}、\opt{after}、\opt{inter} 选项
+% 来更改默认设置。
 %
 %^^A+
 % \begin{function}[added=2018-03-24]{name}
@@ -513,18 +518,15 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %     after = \meta{内容}
 %     inter = \meta{内容}
 %   \end{syntax}
-%   在假文段落之前、之后与之间插入内容。
+%   在假文段落之前、之后与之间插入内容。注意使用不带星号的
+%   \cs{zhlipsum} 命令时插入的分段命令会被这里的设置覆盖。
 % \end{function}
-%
-% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之前、之后与
-% 之间均插入分段命令 \tn{par}，而带星号的命令 \cs{zhlipsum}|*| 则不
-% 进行任何额外操作。
 %
 % \begin{function}[added=2018-03-29]{\newzhlipsum}
 %   \begin{syntax}
 %     \cs{newzhlipsum}\Arg{假文名称}\Arg{段落列表}
 %   \end{syntax}
-%   声明新的假文。假文名称区分大小写。段落列表以英文逗号分隔，示例如下。
+%   声明新的假文。假文名称区分大小写。段落列表以英文逗号分隔，示例如下：
 % \end{function}
 %
 % \begin{ctexexam}
@@ -581,8 +583,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \section{Known issues}
 %^^A!
 %
-% 假文文本 |nanshanjing| 和 |xiangyu| 含有若干生僻字。如需正确显示，
-% 可使用 \pkg{xeCJK} 宏包，并设置后备字体为 SimSun-ExtB、Hanazono
+% 名称为 |nanshanjing| 和 |xiangyu| 的假文文本含有若干生僻字。如需正确
+% 显示，可使用 \pkg{xeCJK} 宏包，并设置后备字体为 SimSun-ExtB、Hanazono
 % Mincho （花园明朝）等，具体方法请参考 \pkg{xeCJK} 宏包文档（仅针对
 % 编码为 UTF8，且使用 \XeLaTeX{} 编译的情况）。
 %
@@ -769,12 +771,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
                 \@@_warning:nn { unicode-engine } {#1}
               }
           }
-        % TODO: 根据 ctex 决定编码
+        \@@_if_ctex_valid_encoding:F
+          { \@@_error:nn { ctex-invalid-encoding } {#1} }
       },
     encoding / unknown .code:n =
       { \@@_error:nn { invalid-encoding } {#1} },
     encoding .value_required:n = true,
-    encoding .initial:n        = { utf8 },
 %    \end{macrocode}
 % \end{macro}
 %
@@ -791,6 +793,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
     You~ are~ now~ using~ Unicode~ engine~ \c_sys_engine_str. \\
     Encoding~ "#1"~ is~ invalid.~ Changed~ into~ "utf8".
   }
+\@@_msg_new:nn { ctex-invalid-encoding }
+  {
+    Package~ option~ "encoding=#1"~ is~ in~ conflict~ with~ ctex's~
+    option~ "\tl_use:N \l__ctex_encoding_tl".\\\\
+    Please~ check~ the~ package~ options.
+  }
 \@@_msg_new:nn { invalid-encoding }
   {
     Encoding~ "#1"~ is~ invalid. \\
@@ -802,9 +810,26 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \changes{v1.0.0}{2018/03/30}{根据 \CTeX{} 宏集的选项自动确定编码。}
 %
-% 如果调用了 \CTeX{} 宏集，则自动确定编码。
+% \begin{macro}[TF]{\@@_if_ctex_valid_encoding:}
+% 检查 \CTeX{} 编码。
 %    \begin{macrocode}
-\tl_if_exist:NT \l__ctex_encoding_tl
+\prg_new_protected_conditional:Npnn \@@_if_ctex_valid_encoding: { F }
+  {
+    \tl_if_exist:NTF \l__ctex_encoding_tl
+      {
+        \tl_set:Nx \l_@@_tmpa_tl
+          { \str_lower_case:f { \l__ctex_encoding_tl } }
+        \str_if_eq:NNTF \g_@@_encoding_tl \l_@@_tmpa_tl
+          { \prg_return_true: } { \prg_return_false: }
+      }
+      { \prg_return_true: }
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% 如果调用了 \CTeX{} 宏集，则自动确定编码；否则默认设为 UTF8。
+%    \begin{macrocode}
+\tl_if_exist:NTF \l__ctex_encoding_tl
   {
     \tl_if_eq:VnTF \l__ctex_encoding_tl { UTF8 }
       { \tl_gset:Nn \g_@@_encoding_tl { utf8 } }
@@ -813,6 +838,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
           { \tl_gset:Nn \g_@@_encoding_tl { gbk } }
       }
   }
+  { \tl_gset:Nn \g_@@_encoding_tl { utf8 } }
 %    \end{macrocode}
 %
 % 将宏包选项传给 |zhlipsum/option|。
@@ -987,48 +1013,47 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_if_cjk_valid_encoding:TF}
+% \begin{macro}[TF]{\@@_if_cjk_valid_encoding:}
 % 检查 \env{CJK} 环境编码。
 %    \begin{macrocode}
-\cs_new_protected:Npn \@@_if_cjk_valid_encoding:TF
+\prg_new_protected_conditional:Npnn \@@_if_cjk_valid_encoding: { TF }
   {
 %<@@=>
     \tl_if_exist:NTF \CJK@@@enc
       {
-        \tl_set:Nx \l__zhlipsum_tmpa_tl
-          { \str_lower_case:f { \CJK@@@enc } }
+        \tl_set:Nx \l__zhlipsum_tmpa_tl { \str_lower_case:f { \CJK@@@enc } }
 %<@@=zhlipsum>
 % TODO: str or tl?
         \str_if_eq:NNTF \g_@@_encoding_tl \l_@@_tmpa_tl
-          { \use_i:nn }
+          { \prg_return_true: }
           {
             \@@_if_encoding:nTF { gbk }
               {
                 \str_if_eq:VnTF \l_@@_tmpa_tl { gb }
-                  { \use_i:nn } { \use_ii:nn }
+                  { \prg_return_true: } { \prg_return_false: }
               }
               {
                 \@@_if_encoding:nTF { big5 }
                   {
                     \str_if_eq:VnTF \l_@@_tmpa_tl { bg5 }
-                      { \use_i:nn } { \use_ii:nn }
+                      { \prg_return_true: } { \prg_return_false: }
                   }
-                  { \use_ii:nn }
+                  { \prg_return_false: }
               }
           }
       }
-      { \use_i:nn }
+      { \prg_return_true: }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\zhlipsum_if_exist:nTF}
+% \begin{macro}[TF]{\zhlipsum_if_exist:n}
 % 判断是否存在对应名称的假文。
 %    \begin{macrocode}
-\cs_new_protected:Npn \zhlipsum_if_exist:nTF #1
+\prg_new_protected_conditional:Npnn \zhlipsum_if_exist:n #1 { T, F, TF }
   {
     \seq_if_in:NnTF \g_zhlipsum_seq {#1}
-      { \use_i:nn } { \use_ii:nn }
+      { \prg_return_true: } { \prg_return_false: }
   }
 %    \end{macrocode}
 % \end{macro}
