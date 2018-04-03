@@ -183,7 +183,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
 %<*!(driver|install)>
-%<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.5 2018-01-06 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
+%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.0.0 2018-04-03 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
 %<utf8>  {Chinese dummy text with UTF-8 encoding (for zhlipsum)}
@@ -195,7 +195,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %</!(driver|install)>
 %<*driver>
-\PassOptionsToPackage{showframe}{geometry}
+%\PassOptionsToPackage{showframe}{geometry}
 %^^A! \PassOptionsToPackage{scheme=plain, linespread=1.1}{ctex}
 %^^A+
 \documentclass{ctxdoc}
@@ -301,11 +301,11 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2018/01/06 \quad v0.5^^A
+% \date{2018/04/03 \quad v1.0.0^^A
 %   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A! \title{\textbf{The \pkg{zhlipsum} Package: Chinese Dummy Text}}
 %^^A! \author{Xiangdong Zeng}
-%^^A! \date{2018/01/06 \quad v0.5%
+%^^A! \date{2018/04/03 \quad v1.0.0%
 %^^A!   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A!
 %
@@ -385,7 +385,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! (i.e.\ ``\emph{Lorem ipsum}'') as \pkg{lipsum},
 %^^A! \pkg{kantlipsum}, \pkg{blindtext} etc., but for Chinese
 %^^A! language. Dummy text will be pretty useful, for example, when
-%^^A! testing font or page style.
+%^^A! testing fonts or page styles.
 %^^A!
 %
 % \pkg{zhlipsum} 宏包支持 UTF-8、GBK 和 Big5 编码，依赖 \LaTeX3{} 项目
@@ -705,10 +705,10 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \begin{function}{script}
 %   过时选项。现在相当于 \opt{name}。
 % \end{function}
-%^^A \begin{function}{script}
-%^^A   Deprecated option. It's now the same as \opt{name}.
-%^^A \end{function}
-%^^A
+%^^A! \begin{function}{script}
+%^^A!   Deprecated option. Now it's the same as \opt{name}.
+%^^A! \end{function}
+%^^A!
 %
 % \section{已知问题}
 %^^A! \section{Known issues}

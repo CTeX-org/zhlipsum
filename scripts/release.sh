@@ -2,29 +2,40 @@
 
 export NAME=zhlipsum
 
+export TEX_PATH=TDS/tex/latex/$NAME
+export DOC_PATH=TDS/doc/latex/$NAME
+export SRC_PATH=TDS/source/latex/$NAME
+export TEMP_PATH=TDS/TEMP
+
+export DOC_EN_SCRIPT=scripts/get-doc-en.lua
+export ZHCONVERT_SCRIPT=scripts/zhconvert.local.sh
+
 # Make TDS zip
 
-mkdir -p TDS/doc/latex/$NAME/example/
-mkdir -p TDS/tex/latex/$NAME/
-mkdir -p TDS/source/latex/$NAME/
-mkdir -p TDS/TEMP/
+mkdir -p $SRC_PATH/
+mkdir -p $TEX_PATH/
+mkdir -p $DOC_PATH/
+mkdir -p $TEMP_PATH/
 
-cp source/*.dtx TDS/TEMP/
+cp source/*.dtx $TEMP_PATH/
+cp source/*.pdf $TEMP_PATH/
 
-cd TDS/TEMP/
+# All files should be rw-rw-r--
+chmod 664 $TEMP_PATH/*
+
+cd $TEMP_PATH/
 xetex $NAME.dtx
-texlua ../../scripts/get-doc-en.lua $NAME.dtx $NAME-en.tex
-source ../../scripts/zhconvert.local.sh
+texlua ../../$DOC_EN_SCRIPT $NAME.dtx $NAME-en.tex
+source ../../$ZHCONVERT_SCRIPT
 cd ../..
 
-mv TDS/TEMP/*.dtx               TDS/source/latex/$NAME/
-mv TDS/TEMP/*.ins               TDS/source/latex/$NAME/
-mv TDS/TEMP/*.sty               TDS/tex/latex/$NAME/
-mv TDS/TEMP/*.def               TDS/tex/latex/$NAME/
-mv TDS/TEMP/README.md           TDS/doc/latex/$NAME/
-mv TDS/TEMP/$NAME-en.tex        TDS/doc/latex/$NAME/
-mv TDS/TEMP/$NAME-example-*.tex TDS/doc/latex/$NAME/example/
-cp source/*.pdf                 TDS/doc/latex/$NAME/
+mv $TEMP_PATH/*.dtx  $SRC_PATH/
+mv $TEMP_PATH/*.ins  $SRC_PATH/
+mv $TEMP_PATH/*.sty  $TEX_PATH/
+mv $TEMP_PATH/*.def  $TEX_PATH/
+mv $TEMP_PATH/*.md   $DOC_PATH/
+mv $TEMP_PATH/*.tex  $DOC_PATH/
+mv $TEMP_PATH/*.pdf  $DOC_PATH/
 
 cd TDS/
 rm -r TEMP/
@@ -37,10 +48,10 @@ mv -f TDS/$NAME.tds.zip .
 
 mkdir CTAN/
 
-cp TDS/source/latex/$NAME/*.dtx  CTAN/
-cp TDS/doc/latex/$NAME/README.md CTAN/
-cp TDS/doc/latex/$NAME/*.pdf     CTAN/
-cp $NAME.tds.zip                 CTAN/
+cp $SRC_PATH/*.dtx  CTAN/
+cp $DOC_PATH/*.md   CTAN/
+cp $DOC_PATH/*.pdf  CTAN/
+cp $NAME.tds.zip    CTAN/
 
 cd CTAN/
 zip -r -9 $NAME.zip .
