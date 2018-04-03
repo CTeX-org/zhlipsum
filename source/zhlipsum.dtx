@@ -186,7 +186,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<!readme>\GetIdInfo $Id: zhlipsum.dtx 0.5 2018-01-06 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
-%<utf8>  {Chinese dummy text with UTF8 encoding (for zhlipsum)}
+%<utf8>  {Chinese dummy text with UTF-8 encoding (for zhlipsum)}
 %<utf8>\ProvidesExplFile{\ExplFileName-utf8.def}
 %<gbk>  {Chinese dummy text with GBK encoding (for zhlipsum)}
 %<gbk>\ProvidesExplFile{\ExplFileName-gbk.def}
@@ -196,20 +196,39 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %</!(driver|install)>
 %<*driver>
 \PassOptionsToPackage{showframe}{geometry}
+%^^A! \PassOptionsToPackage{scheme=plain, linespread=1.1}{ctex}
+%^^A+
 \documentclass{ctxdoc}
 \usepackage{multirow}
 \setCJKmonofont{FangSong}[ItalicFont=KaiTi]
-\hypersetup{
-  pdftitle          = {zhlipsum: 中文乱数假文（Lorem ipsum）},
-  pdfauthor         = {曾祥东},
-  bookmarksnumbered = true
+%^^A-
+\hypersetup{%
+  pdftitle={zhlipsum: 中文乱数假文（Lorem ipsum）},
+  pdfauthor={曾祥东},
+  bookmarksnumbered=true
 }
+%^^A! \hypersetup{%
+%^^A!   pdftitle={zhlipsum: Chinese dummy text},
+%^^A!   pdfauthor={Xiangdong Zeng},
+%^^A!   bookmarksnumbered=true
+%^^A! }
+%^^A! \ctexset{%
+%^^A!   section={name={}, format+=\raggedright},
+%^^A!   subsubsection/tocline={\CTEXnumberline{#1}#2}
+%^^A! }
+%^^A! \pagestyle{headings}
+%^^A+
+% Use `!` for comment in `ctexexam`.
 \makeatletter
-% ctexexam 中以 ! 作为注释
 \catcode`!=\active
 \RecustomVerbatimEnvironment{ctexexam}{Verbatim}{%
-  gobble=4, frame=single, framesep=10pt,
+  frame=single, framesep=10pt,
+%^^A-
+  gobble=4,
   label=\rule{0pt}{12pt}\textnormal{\bfseries 例 \arabic{ctexexam}},
+%^^A!  gobble=2,
+%^^A!  label=\rule{0pt}{12pt}\textnormal{\bfseries Example \arabic{ctexexam}},
+%^^A+
   listparameters=%
     \setlength\topsep{\bigskipamount}%
     \refstepcounter{ctexexam}\ctexexamlabelref
@@ -219,8 +238,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \preto\endctexexam{\catcode`!=12}
 \catcode`!=12
 \makeatother
+% Do not add hyperlink for `TF`, and do not change color.
 \ExplSyntaxOn
-% TF 不添加超链接，并且不更改颜色
 \cs_set_protected:Npn \__codedoc_typeset_TF:
   {
     \group_begin:
@@ -230,7 +249,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
       \makebox[0pt][r]
         {
           \color{red}
-          \underline { \phantom{\itshape TF} \kern-0.1em }
+          \underline{\phantom{\itshape TF} \kern-0.1em}
         }
     \group_end:
   }
@@ -239,9 +258,10 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
   {\enumerate[label={\texttt{\#\arabic*:~}},
     leftmargin=2em, labelsep=0pt, nolistsep]}%
   {\endenumerate}
+%^^A-
 \def\IndexLayout{%
-  \newgeometry{hmargin = 1.00 in, vmargin = {1.25 in, 1.00 in}}%
-  \ctexset{section/numbering = false}%
+  \newgeometry{hmargin=1.00in, vmargin={1.25in, 1.00in}}%
+  \ctexset{section/numbering=false}%
   \StopSpecialIndexModule}
 \DoNotIndex{\\}
 \begin{document}
@@ -279,27 +299,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   Grave accent  \`     Left brace    \{     Vertical bar  \|
 %   Right brace   \}     Tilde         \~}
 %
-%^^A! \PassOptionsToPackage{scheme=plain, linespread=1.1}{ctex}
-%^^A! \documentclass{ctxdoc}
-%^^A! \hypersetup{
-%^^A!   pdftitle          = {zhlipsum: Chinese dummy text},
-%^^A!   pdfauthor         = {Xiangdong Zeng},
-%^^A!   bookmarksnumbered = true
-%^^A! }
-%^^A! \geometry{
-%^^A!   ignoremp,
-%^^A!   hmargin   = {2.00 in, 1.00 in},
-%^^A!   vmargin   = {1.25 in, 1.00 in},
-%^^A!   marginpar = 1.75 in
-%^^A! }
-%^^A! \ctexset
-%^^A!   {
-%^^A!     section = {name = {}, format+ = \raggedright},
-%^^A!     subsubsection/tocline = {\CTEXnumberline{#1}#2}
-%^^A!   }
-%^^A! \pagestyle{headings}
-%^^A!
-%
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
 % \date{2018/01/06 \quad v0.5^^A
@@ -311,10 +310,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %
 %^^A 标题页页边距
-% \newgeometry{
-%   hmargin   = {1.25 in, 1.25 in},
-%   vmargin   = {1.25 in, 1.00 in}
-% }
+% \newgeometry{hmargin={1.25in, 1.25in}, vmargin={1.25in, 1.00in}}
 %
 %^^A! \begin{document}
 %^^A!
@@ -365,11 +361,14 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{flushright}
 %
 %^^A 用户手册的页边距
-% \newgeometry{
-%   hmargin   = {2.0 in, 0.8 in},
-%   vmargin   = {1.2 in, 1.0 in},
-%   marginpar = 1.8 in
+%^^A+
+% \newgeometry{%
+%   hmargin={2.0in, 0.8in},
+%   vmargin={1.2in, 1.0in},
+%   marginpar=1.8in
 % }
+%^^A-
+%^^A!
 %
 %^^A! \maketitle
 %^^A!
@@ -382,11 +381,11 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % ipsum}）。乱数假文是大段无意义的文字，常用来测试排版效果。支持其他
 % 语言乱数假文的宏包还有 \pkg{lipsum}、\pkg{kantlipsum}、
 % \pkg{blindtext} 等。
-%^^A! The \pkg{zhlipsum} package is used for typing dummy text
+%^^A! The \pkg{zhlipsum} package is used for typesetting dummy text
 %^^A! (i.e.\ ``\emph{Lorem ipsum}'') as \pkg{lipsum},
 %^^A! \pkg{kantlipsum}, \pkg{blindtext} etc., but for Chinese
-%^^A! language. Dummy text will be useful when testing the effect of
-%^^A! page style.
+%^^A! language. Dummy text will be pretty useful, for example, when
+%^^A! testing font or page style.
 %^^A!
 %
 % \pkg{zhlipsum} 宏包支持 UTF-8、GBK 和 Big5 编码，依赖 \LaTeX3{} 项目
@@ -394,16 +393,16 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % 文，\pkg{zhlipsum} 需要与 \pkg{CJK} 宏包或 \CTeX{} 宏集等配套使用。
 %^^A! \pkg{zhlipsum} supports UTF-8, GBK and Big5 encodings. Packages
 %^^A! \pkg{expl3}, \pkg{xparse} and \pkg{l3keys2e} in the \LaTeX3{}
-%^^A! Project are required. To type Chinese properly, \pkg{zhlipsum}
+%^^A! Project are required. To typeset Chinese properly, \pkg{zhlipsum}
 %^^A! should be used with \pkg{CJK} package or \CTeX{} bundle.
 %^^A!
 %
 % \section{使用说明} \label{sec:user-guide}
-%^^A! \section{User's guide}
+%^^A! \section{User's guide} \label{sec:user-guide}
 %^^A!
 %
 %^^A+
-% \begin{function}[added=2017-09-16,updated=2018-01-05]{encoding}
+% \begin{function}[added=2017-09-16,updated=2018-04-01]{encoding}
 %   \begin{syntax}
 %     encoding = <(utf8)|gbk|big5>
 %   \end{syntax}
@@ -414,20 +413,24 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   编码。
 % \end{function}
 %^^A!   Package option for selecting encoding. Default value is
-%^^A!   \opt{utf8}. For Unicode engines as \XeLaTeX{}, \LuaLaTeX{} ands \XeLaTeX{}, \LuaLaTeX{} and
+%^^A!   \opt{utf8}. For Unicode engines as \XeLaTeX{}, \LuaLaTeX{} and
 %^^A!   \upLaTeX{}, \opt{gbk} / \opt{big5} encodings are invalid and
 %^^A!   \opt{utf8} will be used forcibly.
 %^^A! \end{function}
 %^^A!
 %
-% 在 \CTeX{} 宏集中，相应的宏包选项为 \opt{UTF8} 和 \opt{GBK}。注意本
+% 如果使用了 \CTeX{} 宏集，则编码会根据 \CTeX{} 自动确定。但需注意，
+% 在 \CTeX{} 宏集中，相应的宏包选项为 \opt{UTF8} 和 \opt{GBK}，而本
 % 宏包中所有选项均为小写。
-%^^A! In \CTeX{} bundle, the correspoding options are \opt{UTF8} and
-%^^A! \opt{GBK}. Note that all the options in \pkg{zhlipsum} are in
-%^^A! \emph{lowercase}.
+%^^A! If you have loaded \CTeX{} bundle, then the encoding will be
+%^^A! selected automatically according to \CTeX{}. Note that in \CTeX{}
+%^^A! bundle, the correspoding options are \opt{UTF8} and \opt{GBK},
+%^^A! while the options in \pkg{zhlipsum} are all in \emph{lowercase}.
 %^^A!
 %
+%^^A+
 % \begin{function}[updated=2018-03-23]{\zhlipsum}
+%^^A-
 %   \begin{syntax}
 %     \cs{zhlipsum}\Arg{段落}\oarg{选项}
 %     \cs{zhlipsum}*\Arg{段落}\oarg{选项}
@@ -435,22 +438,30 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   插入假文文本。参数 \meta{段落} 和 \meta{选项} 都是可选的。注意各
 %   参数之间不可以有空格。
 % \end{function}
-%^^A! \begin{function}[updated=2018-01-05]{\zhlipsum}
 %^^A!   \begin{syntax}
-%^^A!     \cs{zhlipsum}\oarg{paragraph}\oarg{options}
-%^^A!     \cs{zhlipsum*}\oarg{paragraph}\oarg{options}
+%^^A!     \cs{zhlipsum}\Arg{paragraph}\oarg{options}
+%^^A!     \cs{zhlipsum*}\Arg{paragraph}\oarg{options}
 %^^A!   \end{syntax}
-%^^A!   Insert dummy text. Each fragment will be typed as single
-%^^A!   paragraph (inserting \tn{par} in between) by default. If you
-%^^A!   want get a big chunk of text without \tn{par}, please use
-%^^A!   \cs{zhlipsum*}. In both situations, \tn{par} will be inserted
-%^^A!   before and after the whole dummy text.
+%^^A!   Produce dummy text. Both arguments \meta{paragraph} and
+%^^A!   \meta{options} are optional. Note that spaces are not allowed
+%^^A!   between the arguments.
 %^^A! \end{function}
 %^^A!
 %
+% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之前、之后与
+% 之间进行分段（即插入 \tn{par}），而带星号的命令 \cs{zhlipsum}|*|
+% 则不做额外处理。您可以利用后文给出的 \opt{before}、\opt{after}、
+% \opt{inter} 选项来更改默认设置。
+%^^A! By default, the \cs{zhlipsum} command will insert \tn{par} before,
+%^^A! after and between dummy text paragraphs, while \cs{zhlipsum}|*|
+%^^A! will not give any extra processing. To change the default
+%^^A! behavior, you can use the \opt{before}, \opt{after} and
+%^^A! \opt{inter} options described below.
+%^^A!
+%
 % 第一个可选参数 \meta{段落} 为英文逗号分隔的段落编号列表，举例如下：
-%^^A! The first optional argument \meta{paragraph} can be specified
-%^^A! as the following:
+%^^A! The first optional argument \meta{paragraph} should be a comma
+%^^A! list. It can be specified as the following:
 %^^A!
 %
 % \begin{ctexexam}
@@ -462,59 +473,57 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   \zhlipsum               ! 默认输出 1-3 段
 %   \zhlipsum{48-52}        ! 超出部分会自动忽略，即只输出 48-50 段
 % \end{ctexexam}
-%^^A! \begin{itemize}
-%^^A!   \item Only one integer, then \cs{zhlipsum} will produce the
-%^^A!     correspoding paragraph.
-%^^A!   \item Two integers linked with ``|-|'', then all the
-%^^A!     paragraphs between will be produced.
-%^^A!  \item Bare \cs{zhlipsum} will lead to paragraphs 1 to 3 by
-%^^A!     default.
-%^^A! \end{itemize}
-%^^A!
-%
-%^^A! At present, \pkg{zhlipsum} can provide 50 paragraphs. Numbers
-%^^A! larger than 50 will not be considered. For example,
-%^^A! |\zhlipsum[51]| produces paragraph 50, and |\zhlipsum[48-55]|
-%^^A! produces 48--50 paragraphs.
+%^^A! \begin{ctexexam}
+%^^A!   ! Suppose the dummy text has 50 paragraphs.
+%^^A!   \zhlipsum{2-4}          ! Can be specified as a-b
+%^^A!   \zhlipsum{4,12,3-8}     ! A single number is also acceptable
+%^^A!   \zhlipsum{-10,40-}      ! Produce paragraphs 1-10 and 40-50
+%^^A!   \zhlipsum{-}            ! Produce all paragraphs, i.e. 1-50
+%^^A!   \zhlipsum               ! Default value is 1-3
+%^^A!   \zhlipsum{48-52}        ! Numbers larger than 50 will not be considered
+%^^A!                           ! i.e. only paragraphs 48-50 are produced
+%^^A! \end{ctexexam}
 %^^A!
 %
 % 第二个可选参数 \meta{选项} 通过英文逗号分隔的键值列表形式给出。
-% 支持的选项在下文给出。
+% 支持的选项见下。
 %^^A! The second optional argument \meta{options} should be a
-%^^A! key-value list. If you need to set the options, \meta{paragraph}
-%^^A! must be specified explicitly. Supported options are the
-%^^A! following.
+%^^A! key-value list. Supported options are the listed below.
 %^^A!
-%
-% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之前、之后与
-% 之间均插入分段命令 \tn{par}，而带星号的命令 \cs{zhlipsum}|*| 则不
-% 进行分段操作。您可以利用 \opt{before}、\opt{after}、\opt{inter} 选项
-% 来更改默认设置。
 %
 %^^A+
 % \begin{function}[added=2018-03-24]{name}
+%^^A-
 %   \begin{syntax}
 %     name = \meta{假文名称}
 %   \end{syntax}
-%^^A-
-%   选择插入假文的名称。预定义的假文共有 6 种，见表~\ref{tab:pre-defined-dummy-text}。
+%   选择插入假文的名称。预定义的假文共有 6 种，见表~^^A
+%   \ref{tab:pre-defined-dummy-text}。当 |encoding=utf8| 或 |gbk| 时，
+%   默认使用的假文为 |simp|；而当 |encoding=big5| 时，默认则为 |trad|。
 % \end{function}
-%^^A!   Use simplified Chinese (\opt{simp}) or traditional Chinese
-%^^A!   (\opt{trad}) text. Default value is \opt{simp} except for Big5
-%^^A!   encoding, since this encoding only supports traditional
-%^^A!   Chinese.
+%^^A!   \begin{syntax}
+%^^A!     name = \meta{name}
+%^^A!   \end{syntax}
+%^^A!   Select the name of the dummy text. There are 6 pre-defined
+%^^A!   dummy texts described in table~\ref{tab:pre-defined-dummy-text}.
+%^^A!   The default text is |simp| when |encoding=utf8| or |gbk|, but
+%^^A!   |trad| when |encoding=big5|.
 %^^A! \end{function}
 %^^A!
 %
+%^^A+
+% \begingroup
+% \def\B{\bullet}
+% \def\M#1{\multirow{2}*{\textbf{#1}}}
+% \def\T#1{\textbf{#1}}
 % \begin{table}[htb]
+%^^A-
 %   \caption{预定义假文} \label{tab:pre-defined-dummy-text}
 %   \centering\small
-%   \def\B{\bullet}
-%   \def\T#1{\multirow{2}*{\textbf{#1}}}
 %   \begin{tabular}{cccccccc}
 %     \toprule
-%       \T{名称} & \T{段落数} & \T{简体 / 繁体} & \T{描述} &
-%         \multicolumn{3}{c}{\textbf{各编码下的支持情况}} \\
+%       \M{名称} & \M{段落数} & \M{简体 / 繁体} & \M{描述} &
+%         \multicolumn{3}{c}{\T{各编码下的支持情况}} \\
 %       & & & & |utf8| & |gbk| & |big5| \\
 %     \midrule
 %       |simp|        &  50 & 简 & 无意义随机假文          & \B & \B &    \\
@@ -526,10 +535,35 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %     \bottomrule
 %   \end{tabular}
 % \end{table}
+% \endgroup
+%^^A!   \caption{Pre-defined dummy texts} \label{tab:pre-defined-dummy-text}
+%^^A!   \centering\scriptsize
+%^^A!   \begin{tabular}{cccccccc}
+%^^A!     \toprule
+%^^A!       \M{Name} & \T{Paragraph} & \T{Simplified /} & \M{Description} &
+%^^A!         \multicolumn{3}{c}{\T{Encodings' support}} \\
+%^^A!       & \T{numbers} & \T{traditional} & & |utf8| & |gbk| & |big5| \\
+%^^A!     \midrule
+%^^A!       |simp|        &  50 & S & Random dummy text                         & \B & \B &    \\
+%^^A!       |trad|        &  50 & T & Random dummy text                         & \B & \B & \B \\
+%^^A!       |nanshanjing| &  43 & T & \emph{Shanhaijing: Nanshanjing}           & \B &    &    \\
+%^^A!       |xiangyu|     &  45 & T & \emph{Shiji: Xiang Yu Benji} by Sima Qian & \B & \B & \B \\
+%^^A!       |zhufu|       & 110 & S & \emph{Zhufu} by Lu Xun                    & \B & \B &    \\
+%^^A!       |aspirin|     &  66 & S & Wikipedia: \emph{Aspirin}                 & \B & \B &    \\
+%^^A!     \bottomrule
+%^^A!   \end{tabular}
+%^^A! \end{table}
+%^^A! \endgroup
+%^^A!
 %
 % 您也可以通过 \cs{newzhlipsum} 命令来定义新的假文。
+%^^A! You can use \cs{newzhlipsum} command to define new dummy text
+%^^A! as well.
+%^^A!
 %
+%^^A+
 % \begin{function}[added=2018-03-29]{before,after,inter}
+%^^A-
 %   \begin{syntax}
 %     name  = \meta{内容}
 %     after = \meta{内容}
@@ -538,13 +572,35 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   在假文段落之前、之后与之间插入内容。注意使用不带星号的
 %   \cs{zhlipsum} 命令时插入的分段命令会被这里的设置覆盖。
 % \end{function}
+%^^A!   \begin{syntax}
+%^^A!     name  = \meta{content}
+%^^A!     after = \meta{content}
+%^^A!     inter = \meta{content}
+%^^A!   \end{syntax}
+%^^A!   Insert contents before, after or between dummy text paragraphs.
+%^^A!   Note that the \tn{par} command inserted when using \cs{zhlipsum}
+%^^A!   will be overridden by the settings here.
+%^^A! \end{function}
+%^^A!
 %
+% \pagebreak[3]
+%
+%^^A+
 % \begin{function}[added=2018-03-29]{\newzhlipsum}
+%^^A-
 %   \begin{syntax}
 %     \cs{newzhlipsum}\Arg{假文名称}\Arg{段落列表}
 %   \end{syntax}
 %   声明新的假文。假文名称区分大小写。段落列表以英文逗号分隔，示例如下：
 % \end{function}
+%^^A!   \begin{syntax}
+%^^A!     \cs{newzhlipsum}\Arg{name}\Arg{paragraphs list}
+%^^A!   \end{syntax}
+%^^A!   Declare new dummy text. The \meta{name} is case sensitive and
+%^^A!   the \meta{paragraphs list} is a comma list. An example is
+%^^A!   shown below:
+%^^A! \end{function}
+%^^A!
 %
 % \begin{ctexexam}
 %   ! 注意区分中文逗号与英文逗号
@@ -553,48 +609,106 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 %   \zhlipsum*{-}[name=jingyesi]  ! 输出全部四句假文，且不分段
 % \end{ctexexam}
+%^^A! \begin{ctexexam}
+%^^A!   ! Fullwidth comma `，' is used in Chinese language.
+%^^A!   ! Normal comma `,' is used as separator.
+%^^A!   \newzhlipsum{jingyesi}{!
+%^^A!     {床前明月光，}, {疑是地上霜。}, {举头望明月，}, {低头思故乡。}}
+%^^A!
+%^^A!   \zhlipsum*{-}[name=jingyesi]  ! Print all the four sentences without `\par'
+%^^A! \end{ctexexam}
+%^^A!
 %
-% \section{\LaTeX3 编程接口}
+% \section{编程接口}
+%^^A! \section{Programming interface}
+%^^A!
 %
 % 一般而言，第~\ref{sec:user-guide} 节中列出的命令足够一般用户使用。
 % 如需使用编程接口，则可以考虑以下变量和函数。注意使用时需确保开启
 % \LaTeX3 语法。
+%^^A! Usually, the commands provided in section~\ref{sec:user-guide}
+%^^A! are sufficient for users. For programmers professional users,
+%^^A! however, the programming interface is also necessary and provided
+%^^A! here. \LaTeX3 syntax should be opened when using them.
+%^^A!
 %
+%
+%^^A+
 % \begin{variable}{\g_zhlipsum_seq}
+%^^A-
 %   假文名称列表。
-% \end{variable}
+%\end{variable}
+%^^A!   A sequence of dummy text names.
+%^^A! \end{variable}
+%^^A!
 %
+%^^A+
 % \begin{function}{\zhlipsum_use:nn}
+%^^A-
 %   输出多段假文。
 %   \begin{arguments}
 %     \item 假文名称
 %     \item 段落编号列表
 %   \end{arguments}
 % \end{function}
+%^^A!   Produce some dummy text paragraphs.
+%^^A!   \begin{arguments}
+%^^A!     \item Name
+%^^A!     \item Comma list of aragraph numbers.
+%^^A!   \end{arguments}
+%^^A! \end{function}
+%^^A!
 %
+%^^A+
 % \begin{function}[TF]{\zhlipsum_if_exist:n}
+%^^A-
 %   判断是否存在对应名称的假文。
 %   \begin{arguments}
 %     \item 假文名称
 %   \end{arguments}
 % \end{function}
+%^^A!   Test whether the name has been used for dummy text。
+%^^A!   \begin{arguments}
+%^^A!     \item Name
+%^^A!   \end{arguments}
+%^^A! \end{function}
+%^^A!
 %
+%^^A+
 % \begin{function}{\zhlipsum_new:nn}
+%^^A-
 %   声明假文。
 %   \begin{arguments}
 %     \item 假文名称
 %     \item 文本列表
 %   \end{arguments}
 % \end{function}
+%^^A!   Declare dummy text.
+%^^A!   \begin{arguments}
+%^^A!     \item Name.
+%^^A!     \item Comma list of texts.
+%^^A!   \end{arguments}
+%^^A! \end{function}
+%^^A!
 %
 % \section{兼容性信息}
+%^^A! \section{Compatibility information}
+%^^A!
 %
 % 以下选项在测试版 \pkg{zhlipsum} 宏包中存在，但在 1.0.0 版本之后不
 % 建议继续使用。这里仅为兼容性保留。未来将可能删除对它们的支持。
+%^^A! The following option exists in the beta version of \pkg{zhlipsum}
+%^^A! package, but has become deprecated after version 1.0.0. It is
+%^^A! reserved only for compatibility and may be removed in the future.
+%^^A!
 %
 % \begin{function}{script}
-%   过时选项。相当于 \opt{name}。
+%   过时选项。现在相当于 \opt{name}。
 % \end{function}
+%^^A \begin{function}{script}
+%^^A   Deprecated option. It's now the same as \opt{name}.
+%^^A \end{function}
+%^^A
 %
 % \section{已知问题}
 %^^A! \section{Known issues}
@@ -603,7 +717,13 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % 名称为 |nanshanjing| 和 |xiangyu| 的假文文本含有若干生僻字。如需正确
 % 显示，可使用 \pkg{xeCJK} 宏包，并设置后备字体为 SimSun-ExtB、Hanazono
 % Mincho （花园明朝）等，具体方法请参考 \pkg{xeCJK} 宏包文档（仅针对
-% 编码为 UTF8，且使用 \XeLaTeX{} 编译的情况）。
+% 编码为 UTF-8，且使用 \XeLaTeX{} 编译的情况）。
+%^^A! Dummy text |nanshanjing| and |xiangyu| have some rarely used
+%^^A! characters. To display them correctly, you can use the \pkg{xeCJK}
+%^^A! package and set SimSun-ExtB or Hanazono Mincho as the fallback
+%^^A! font. Refer to the \pkg{xeCJK}'s user guide for specific methods
+%^^A! (only for UTF-8 encoding and \XeLaTeX{} engine).
+%^^A!
 %
 % GBK 和 Big5 编码在第二字节并没有避开 ASCII 码的范围，因此部分汉字编
 % 码的第二字节恰好是 ASCII 编码中的一些特殊字符（如 |{|、|}|、|\|
@@ -613,8 +733,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! second byte, so the second byte of some Chinese characters may
 %^^A! have the same encoding as special characters in ASCII like |{|,
 %^^A! |}|, |\| etc., which will lead to compilation failure. The
-%^^A! \file{.def} files in \pkg{zhlipsum} have been converted into
-%^^A! a safer form. Please do not modify them manually.
+%^^A! \file{.def} files in \pkg{zhlipsum} are created with special
+%^^A! techniques. Please do not modify them.
 %^^A!
 %
 % 如无特殊需要，始终建议您采用 UTF-8 编码，并使用 \XeLaTeX{}、
@@ -625,13 +745,18 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % 特殊情况下，如果您必须使用 GBK 或 Big5 编码，并需要声明新的假文，
 % 可以采取以下手段临时回避上述问题。
+%^^A! In special cases, if you must use GBK or Big5 encoding and need
+%^^A! to declare new dummy text, the following method can be taken in
+%^^A! order to avoid the problem temporarily.
+%^^A!
 %
 % \begin{ctexexam}
-%   !  文件编码需使用 Big5
+%   ! 文件编码需使用 Big5
 %   ! \usepackage[encoding=big5]{zhlipsum}
 %
 %   ! 直接使用 \newzhlipsum{big5}{許蓋功, 蓋功許, 功許蓋} 会报错
-%   ! 原理：在分组内用 <、>、+ 代替 {、}、\，再将原先的 {、}、\ 设为“其他”类
+%   ! 原理：在分组内用 <、>、+ 代替 {、}、\，再将原先的 {、}、\ 设为“其他”
+%   ! 类（即类别码为 12）
 %   \begingroup
 %     \catcode`\<=1
 %     \catcode`\>=2
@@ -643,6 +768,26 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   +endgroup
 %   \zhlipsum[name=big5]
 % \end{ctexexam}
+%^^A! \begin{ctexexam}
+%^^A!   ! File encoding should be Big5.
+%^^A!   ! \usepackage[encoding=big5]{zhlipsum}
+%^^A!
+%^^A!   ! Using `\newzhlipsum{big5}{許蓋功, 蓋功許, 功許蓋}' directly will
+%^^A!   ! lead to an error.
+%^^A!   ! Use <, >, + to replace {, } and \, and set the original {, } and \
+%^^A!   ! to be `other' category (i.e. catcode=12).
+%^^A!   \begingroup
+%^^A!     \catcode`\<=1
+%^^A!     \catcode`\>=2
+%^^A!     \catcode`\+=0
+%^^A!     \catcode`\{=12
+%^^A!     \catcode`\}=12
+%^^A!     \catcode`\\=12
+%^^A!     +newzhlipsum<big5><許蓋功, 蓋功許, 功許蓋>
+%^^A!   +endgroup
+%^^A!   \zhlipsum[name=big5]
+%^^A! \end{ctexexam}
+%^^A!
 %
 %^^A! \end{document}
 %
@@ -825,7 +970,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
   { Package~ option~ "\l_keys_key_tl"~ is~ unknown. }
 %    \end{macrocode}
 %
-% \changes{v1.0.0}{2018/03/30}{根据 \CTeX{} 宏集的选项自动确定编码。}
+% \changes{v1.0.0}{2018/04/01}{根据 \CTeX{} 宏集的选项自动确定编码。}
 %
 % \begin{macro}[TF]{\@@_if_ctex_valid_encoding:}
 % 检查 \CTeX{} 编码。
@@ -844,7 +989,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% 如果调用了 \CTeX{} 宏集，则自动确定编码；否则默认设为 UTF8。
+% 如果调用了 \CTeX{} 宏集，则自动确定编码；否则默认设为 UTF-8。
 %    \begin{macrocode}
 \tl_if_exist:NTF \l__ctex_encoding_tl
   {
@@ -1298,7 +1443,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{macro}
 %
 % \begin{macro}{\@@_active_first_byte:}
-% 将汉字的首字节设为活动字符（类别码 12）。UTF8 编码下不需要该操作。
+% 将汉字的首字节设为活动字符（类别码 12）。UTF-8 编码下不需要该操作。
 %    \begin{macrocode}
 %<*!utf8>
 \cs_new_protected:Npx \@@_active_first_byte:
