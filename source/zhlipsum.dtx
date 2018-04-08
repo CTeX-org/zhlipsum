@@ -50,8 +50,8 @@ Basic usage
     \zhlipsum[6-10,18][name=trad]
 
 More information can be found in the package documentation
-[zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf)
-(Chinese version) or [zhlipsum-en.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf)
+[zhlipsum.pdf](http://mirror.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf)
+(Chinese version) or [zhlipsum-en.pdf](http://mirror.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf)
 (English version).
 
 Installation
@@ -183,7 +183,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
 %<*!(driver|install)>
-%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.0.0 2018-04-03 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
+%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.1.0 2018-04-08 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
 %<utf8>  {Chinese dummy text with UTF-8 encoding (for zhlipsum)}
@@ -301,11 +301,11 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2018/04/03 \quad v1.0.0^^A
+% \date{2018/04/08 \quad v1.1.0^^A
 %   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A! \title{\textbf{The \pkg{zhlipsum} Package: Chinese Dummy Text}}
 %^^A! \author{Xiangdong Zeng}
-%^^A! \date{2018/04/03 \quad v1.0.0%
+%^^A! \date{2018/04/08 \quad v1.1.0%
 %^^A!   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A!
 %
@@ -439,8 +439,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   参数之间不可以有空格。
 % \end{function}
 %^^A!   \begin{syntax}
-%^^A!     \cs{zhlipsum}\Arg{paragraph}\oarg{options}
-%^^A!     \cs{zhlipsum*}\Arg{paragraph}\oarg{options}
+%^^A!     \cs{zhlipsum}\oarg{paragraph}\oarg{options}
+%^^A!     \cs{zhlipsum*}\oarg{paragraph}\oarg{options}
 %^^A!   \end{syntax}
 %^^A!   Produce dummy text. Both arguments \meta{paragraph} and
 %^^A!   \meta{options} are optional. Note that spaces are not allowed
