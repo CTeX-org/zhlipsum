@@ -46,8 +46,8 @@ Basic usage
 -----------
 
     \zhlipsum
-    \zhlipsum*{1-5}
-    \zhlipsum{6-10,18}[name=trad]
+    \zhlipsum*[1-5]
+    \zhlipsum[6-10,18][name=trad]
 
 More information can be found in the package documentation
 [zhlipsum.pdf](http://mirrors.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum.pdf)
@@ -429,11 +429,11 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %
 %^^A+
-% \begin{function}[updated=2018-03-23]{\zhlipsum}
+% \begin{function}[updated=2018-04-08]{\zhlipsum}
 %^^A-
 %   \begin{syntax}
-%     \cs{zhlipsum}\Arg{段落}\oarg{选项}
-%     \cs{zhlipsum}*\Arg{段落}\oarg{选项}
+%     \cs{zhlipsum}\oarg{段落}\oarg{选项}
+%     \cs{zhlipsum}*\oarg{段落}\oarg{选项}
 %   \end{syntax}
 %   插入假文文本。参数 \meta{段落} 和 \meta{选项} 都是可选的。注意各
 %   参数之间不可以有空格。
@@ -466,21 +466,21 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \begin{ctexexam}
 %   ! 假设假文最大段落数为 50
-%   \zhlipsum{2-4}          ! 可用 a-b 的形式指定
-%   \zhlipsum{4,12,3-8}     ! 也可用单个数字指定
-%   \zhlipsum{-10,40-}      ! 输出 1-10 段和 40-50 段
-%   \zhlipsum{-}            ! 输出全部段落，即 1-50 段
+%   \zhlipsum[2-4]          ! 可用 a-b 的形式指定
+%   \zhlipsum[4,12,3-8]     ! 也可用单个数字指定
+%   \zhlipsum[-10,40-]      ! 输出 1-10 段和 40-50 段
+%   \zhlipsum[-]            ! 输出全部段落，即 1-50 段
 %   \zhlipsum               ! 默认输出 1-3 段
-%   \zhlipsum{48-52}        ! 超出部分会自动忽略，即只输出 48-50 段
+%   \zhlipsum[48-52]        ! 超出部分会自动忽略，即只输出 48-50 段
 % \end{ctexexam}
 %^^A! \begin{ctexexam}
 %^^A!   ! Suppose the dummy text has 50 paragraphs.
-%^^A!   \zhlipsum{2-4}          ! Can be specified as a-b
-%^^A!   \zhlipsum{4,12,3-8}     ! A single number is also acceptable
-%^^A!   \zhlipsum{-10,40-}      ! Produce paragraphs 1-10 and 40-50
-%^^A!   \zhlipsum{-}            ! Produce all paragraphs, i.e. 1-50
+%^^A!   \zhlipsum[2-4]          ! Can be specified as a-b
+%^^A!   \zhlipsum[4,12,3-8]     ! A single number is also acceptable
+%^^A!   \zhlipsum[-10,40-]      ! Produce paragraphs 1-10 and 40-50
+%^^A!   \zhlipsum[-]            ! Produce all paragraphs, i.e. 1-50
 %^^A!   \zhlipsum               ! Default value is 1-3
-%^^A!   \zhlipsum{48-52}        ! Numbers larger than 50 will not be considered
+%^^A!   \zhlipsum[48-52]        ! Numbers larger than 50 will not be considered
 %^^A!                           ! i.e. only paragraphs 48-50 are produced
 %^^A! \end{ctexexam}
 %^^A!
@@ -607,7 +607,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   \newzhlipsum{jingyesi}{!
 %     {床前明月光，}, {疑是地上霜。}, {举头望明月，}, {低头思故乡。}}
 %
-%   \zhlipsum*{-}[name=jingyesi]  ! 输出全部四句假文，且不分段
+%   \zhlipsum*[-][name=jingyesi]  ! 输出全部四句假文，且不分段
 % \end{ctexexam}
 %^^A! \begin{ctexexam}
 %^^A!   ! Fullwidth comma `，' is used in Chinese language.
@@ -615,7 +615,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!   \newzhlipsum{jingyesi}{!
 %^^A!     {床前明月光，}, {疑是地上霜。}, {举头望明月，}, {低头思故乡。}}
 %^^A!
-%^^A!   \zhlipsum*{-}[name=jingyesi]  ! Print all the four sentences without `\par'
+%^^A!   \zhlipsum*[-][name=jingyesi]  ! Print all the four sentences without `\par'
 %^^A! \end{ctexexam}
 %^^A!
 %
@@ -1104,10 +1104,11 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v0.5}{2018/01/05}{支持选项设置。}
 % \changes{v1.0.0}{2018/03/23}{更改参数形式，允许利用逗号分隔列表选择
 %   段落。}
+% \changes{v1.1.0}{2018/04/08}{改回使用方括号指定段落数的形式。}
 % 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选
-% 项列表。注意第一个可选参数需要用花括号包围。
+% 项列表。
 %    \begin{macrocode}
-\NewDocumentCommand \zhlipsum { s G { 1 - 3 } +o }
+\NewDocumentCommand \zhlipsum { s o +o }
   {
     \group_begin:
       \IfBooleanF {#1}
@@ -1116,9 +1117,35 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
           \tl_set:Nn \l_@@_after_tl  { \@@_par: }
           \tl_set:Nn \l_@@_inter_tl  { \@@_par: }
         }
-      \IfValueT {#3} { \keys_set:nn { zhlipsum } {#3} }
-      \zhlipsum_use:Vn \l_@@_name_tl {#2}
+      \IfValueTF {#3}
+        {
+          \keys_set:nn { zhlipsum } {#3}
+          \zhlipsum_use:Vn \l_@@_name_tl {#2}
+        }
+        {
+%    \end{macrocode}
+% 如果只带一个参数，那么根据其是否含有 |=| 来判断该参数是段落数还是
+% 选项列表。
+%    \begin{macrocode}
+          \@@_if_key_value_list:nTF {#2}
+            {
+              \keys_set:nn { zhlipsum } {#2}
+              \zhlipsum_use:Vn \l_@@_name_tl { 1 - 3 }
+            }
+            { \zhlipsum_use:Vn \l_@@_name_tl {#2} }
+        }
     \group_end:
+  }
+%    \end{macrocode}
+% \end{macro}
+%
+% \begin{macro}[TF]{\@@_if_key_value_list:n}
+% 判断是否为键值列表，即是否含有 |=|。
+%    \begin{macrocode}
+\prg_new_protected_conditional:Npnn \@@_if_key_value_list:n #1 { TF }
+  {
+    \tl_if_in:nnTF {#1} { = }
+      { \prg_return_true: } { \prg_return_false: }
   }
 %    \end{macrocode}
 % \end{macro}

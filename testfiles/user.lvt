@@ -21,12 +21,12 @@
 }
 
 \TEST{Simplified:}{%
-  \zhlipsum{49-51}[name=simp]
+  \zhlipsum[49-51][name=simp]
   \clearpage
 }
 
 \TEST{Traditional:}{%
-  \zhlipsum*{1-2}[script=trad] % deprecated option
+  \zhlipsum*[1-2][script=trad] % deprecated option
   \clearpage
 }
 
@@ -41,12 +41,12 @@
 }
 
 \TEST{Zhufu:}{%
-  \zhlipsum{8-10}[name=zhufu,inter={xxx\par}]
+  \zhlipsum[8-10][name=zhufu,inter={xxx\par}]
   \clearpage
 }
 
 \TEST{Aspirin:}{%
-  \zhlipsum*{51-53}[name=aspirin,inter={\par xxx\par}]
+  \zhlipsum*[51-53][name=aspirin,inter={\par xxx\par}]
   \clearpage
 }
 

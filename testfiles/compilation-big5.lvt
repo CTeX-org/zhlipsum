@@ -16,17 +16,17 @@
 \TYPE{Checking compilation. No log file data expected.}
 
 \TEST{Simplified:}{%
-  \zhlipsum{-}[name=simp]
+  \zhlipsum[-][name=simp]
   \clearpage
 }
 
 \TEST{Traditional:}{%
-  \zhlipsum*{-}[name=trad]
+  \zhlipsum*[-][name=trad]
   \clearpage
 }
 
 \TEST{Xiangyu}{%
-  \zhlipsum{-}[name=xiangyu]
+  \zhlipsum[-][name=xiangyu]
   \clearpage
 }
 

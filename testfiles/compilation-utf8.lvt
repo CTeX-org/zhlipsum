@@ -8,32 +8,32 @@
 \START
 
 \TEST{Simplified:}{%
-  \zhlipsum{-}[name=simp]
+  \zhlipsum[-][name=simp]
   \clearpage
 }
 
 \TEST{Traditional:}{%
-  \zhlipsum{-}[name=trad]
+  \zhlipsum[-][name=trad]
   \clearpage
 }
 
 \TEST{Nanshanjing:}{%
-  \zhlipsum{-}[name=nanshanjing]
+  \zhlipsum[-][name=nanshanjing]
   \clearpage
 }
 
 \TEST{Xiangyu}{%
-  \zhlipsum*{-}[name=xiangyu]
+  \zhlipsum*[-][name=xiangyu]
   \clearpage
 }
 
 \TEST{Zhufu}{%
-  \zhlipsum*{-}[name=zhufu]
+  \zhlipsum*[-][name=zhufu]
   \clearpage
 }
 
 \TEST{Aspirin}{%
-  \zhlipsum*{-}[name=aspirin]
+  \zhlipsum*[-][name=aspirin]
   \clearpage
 }
 
