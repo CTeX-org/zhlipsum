@@ -1,62 +1,70 @@
 #!/usr/bin/env sh
 
-export NAME=zhlipsum
+# This script is used for creating CTAN archive of zhlipsum.
 
-export TEX_PATH=TDS/tex/latex/$NAME
-export DOC_PATH=TDS/doc/latex/$NAME
-export SRC_PATH=TDS/source/latex/$NAME
-export TEMP_PATH=TDS/TEMP
+JOB_NAME=zhlipsum
+WORKING_DIR=$PWD
 
-export DOC_EN_SCRIPT=scripts/get-doc-en.lua
-export ZHCONVERT_SCRIPT=scripts/zhconvert.local.sh
+# Copy all the files to system temp folder, in order to use
+# chmod correctly.
+TEMP_DIR=/tmp/$JOB_NAME
+
+TDS_DIR=$TEMP_DIR/TDS
+CTAN_DIR=$TEMP_DIR/$JOB_NAME
+
+SRC_DIR=$TDS_DIR/source/latex/$JOB_NAME
+TEX_DIR=$TDS_DIR/tex/latex/$JOB_NAME
+DOC_DIR=$TDS_DIR/doc/latex/$JOB_NAME
+
+DOC_EN_SCRIPT=$WORKING_DIR/scripts/get-doc-en.lua
+ZHCONVERT_SCRIPT=$WORKING_DIR/scripts/zhconvert.sh
+
+mkdir -p $TEMP_DIR
+
+mkdir -p $TDS_DIR
+mkdir -p $CTAN_DIR
+
+mkdir -p $SRC_DIR
+mkdir -p $TEX_DIR
+mkdir -p $DOC_DIR
+
+cp $WORKING_DIR/source/*.dtx $TEMP_DIR
+cp $WORKING_DIR/source/*.pdf $TEMP_DIR
+
+cd $TEMP_DIR
+xetex $JOB_NAME.dtx >/dev/null
+texlua $DOC_EN_SCRIPT $JOB_NAME.dtx $JOB_NAME-en.tex
+$ZHCONVERT_SCRIPT
+
+# All files should be rw-r--r--
+chmod 644 $TEMP_DIR/*.*
+
+cp $TEMP_DIR/*.dtx $SRC_DIR
+cp $TEMP_DIR/*.ins $SRC_DIR
+cp $TEMP_DIR/*.def $TEX_DIR
+cp $TEMP_DIR/*.sty $TEX_DIR
+cp $TEMP_DIR/*.md  $DOC_DIR
+cp $TEMP_DIR/*.tex $DOC_DIR
+cp $TEMP_DIR/*.pdf $DOC_DIR
 
 # Make TDS zip
+cd $TDS_DIR
+zip -q -r -9 $JOB_NAME.tds.zip .
 
-mkdir -p $SRC_PATH/
-mkdir -p $TEX_PATH/
-mkdir -p $DOC_PATH/
-mkdir -p $TEMP_PATH/
+cp $TEMP_DIR/*.dtx $CTAN_DIR
+cp $TEMP_DIR/*.md  $CTAN_DIR
+cp $TEMP_DIR/*.pdf $CTAN_DIR
+cp $TDS_DIR/*.zip  $CTAN_DIR
 
-cp source/*.dtx $TEMP_PATH/
-cp source/*.pdf $TEMP_PATH/
-
-# All files should be rw-rw-r--
-chmod 664 $TEMP_PATH/*
-
-cd $TEMP_PATH/
-xetex $NAME.dtx
-texlua ../../$DOC_EN_SCRIPT $NAME.dtx $NAME-en.tex
-source ../../$ZHCONVERT_SCRIPT
-cd ../..
-
-mv $TEMP_PATH/*.dtx  $SRC_PATH/
-mv $TEMP_PATH/*.ins  $SRC_PATH/
-mv $TEMP_PATH/*.sty  $TEX_PATH/
-mv $TEMP_PATH/*.def  $TEX_PATH/
-mv $TEMP_PATH/*.md   $DOC_PATH/
-mv $TEMP_PATH/*.tex  $DOC_PATH/
-mv $TEMP_PATH/*.pdf  $DOC_PATH/
-
-cd TDS/
-rm -r TEMP/
-
-zip -r -9 $NAME.tds.zip .
-cd ..
-mv -f TDS/$NAME.tds.zip .
+rm -r $TDS_DIR
+rm $TEMP_DIR/*.*
 
 # Make CTAN zip
+cd $TEMP_DIR
+zip -q -r -9 $JOB_NAME.zip .
 
-mkdir CTAN/
+cd $WORKING_DIR
+cp -f $TEMP_DIR/$JOB_NAME.zip     .
+cp -f $CTAN_DIR/$JOB_NAME.tds.zip .
 
-cp $SRC_PATH/*.dtx  CTAN/
-cp $DOC_PATH/*.md   CTAN/
-cp $DOC_PATH/*.pdf  CTAN/
-cp $NAME.tds.zip    CTAN/
-
-cd CTAN/
-zip -r -9 $NAME.zip .
-cd ..
-mv -f CTAN/$NAME.zip .
-
-rm -r TDS/
-rm -r CTAN/
+rm -r $TEMP_DIR
