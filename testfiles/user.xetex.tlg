@@ -5712,7 +5712,7 @@ Completed box being shipped out [5]
 ....\glue(\rightskip) 0.0
 ...\penalty 150
 ...\glue(\baselineskip) 6.12341
-...\hbox(8.28395+2.03409)x345.0, glue set 70.97644fil
+...\hbox(8.28395+2.03409)x345.0, glue set 77.7638fil
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 代
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 认
@@ -5773,7 +5773,6 @@ Completed box being shipped out [5]
 ....\kern -0.00041
 ....\kern -0.18753
 ....\kern 0.18753
-....\glue 6.78735 minus 5.26968
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0

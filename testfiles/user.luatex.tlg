@@ -16441,7 +16441,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 —
-....\kern 0.0
+....\kern0.0
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 —
 ....\penalty 10000
@@ -17002,7 +17002,7 @@ Completed box being shipped out [10]
 ....\glue 5.26968 minus 5.26968
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 —
-....\kern 0.0
+....\kern0.0
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 —
 ....\glue 0.0 plus 0.60931
@@ -17068,7 +17068,7 @@ Completed box being shipped out [10]
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 …
-....\kern 0.0
+....\kern0.0
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 …
 ....\penalty 10000
@@ -17198,7 +17198,7 @@ Completed box being shipped out [10]
 ....\glue 5.26968 minus 5.26968
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 —
-....\kern 0.0
+....\kern0.0
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 —
 ....\glue 0.0 plus 0.60931
@@ -17693,7 +17693,7 @@ Completed box being shipped out [11]
 ....\glue 2.63484 plus 1.0 minus 1.0
 ....\TU/lmr/m/n/10.53937 C
 ....\TU/lmr/m/n/10.53937 O
-....\kern -0.2951
+....\kern-0.2951
 ....\TU/lmr/m/n/10.53937 X
 ....\glue 2.63484 plus 1.0 minus 1.0
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
@@ -18175,7 +18175,6 @@ Completed box being shipped out [11]
 ....\TU/lmr/m/n/10.53937 4
 ....\TU/lmr/m/n/10.53937 5
 ....\TU/lmr/m/n/10.53937 – (ligature --)
-....\discretionary (penalty 50)
 ....\TU/lmr/m/n/10.53937 7
 ....\TU/lmr/m/n/10.53937 9
 ....\glue 2.63484 plus 1.0 minus 1.0
@@ -18197,7 +18196,6 @@ Completed box being shipped out [11]
 ....\TU/lmr/m/n/10.53937 5
 ....\TU/lmr/m/n/10.53937 5
 ....\TU/lmr/m/n/10.53937 – (ligature --)
-....\discretionary (penalty 50)
 ....\TU/lmr/m/n/10.53937 7
 ....\TU/lmr/m/n/10.53937 9
 ....\glue 2.63484 plus 1.0 minus 1.0
