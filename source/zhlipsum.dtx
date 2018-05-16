@@ -814,7 +814,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
   }
 \clist_map_inline:nn { expl3, xparse, l3keys2e }
   {
-    \@ifpackagelater {#1} { 2017/12/16 }
+    \@ifpackagelater {#1} { 2018/05/12 }
       { } { \msg_error:nnn { zhlipsum } { l3-too-old } {#1} }
   }
 %    \end{macrocode}
@@ -1311,12 +1311,12 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
         \seq_pop_left:NN \l_@@_tmpb_seq \l_@@_tmpa_tl
         \tl_if_empty:NTF \l_@@_tmpa_tl
-          { \int_set_eq:NN \l_@@_begin_int \c_one }
+          { \int_set_eq:NN \l_@@_begin_int \c_one_int }
           {
             \int_set:Nn \l_@@_begin_int { \l_@@_tmpa_tl }
-            \int_compare:nNnT \l_@@_begin_int < \c_one
+            \int_compare:nNnT \l_@@_begin_int < \c_one_int
               {
-                \int_set_eq:NN \l_@@_begin_int \c_one
+                \int_set_eq:NN \l_@@_begin_int \c_one_int
                 \bool_set_true:N \l_@@_modified_range_bool
               }
           }
@@ -1343,8 +1343,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
           { \int_compare_p:nNn \l_@@_begin_int > \l_@@_end_int }
           { \bool_set_true:N \l_@@_invalid_range_bool }
           {
-            \int_step_inline:nnnn
-              { \l_@@_begin_int } { \c_one } { \l_@@_end_int }
+            \int_step_inline:nnn
+              { \l_@@_begin_int } { \l_@@_end_int }
               { \seq_put_right:Nn \l_@@_tmpa_seq {##1} }
           }
       }
@@ -1353,8 +1353,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % 单个数字的处理。
 %    \begin{macrocode}
         \bool_lazy_or:nnTF
-          { \int_compare_p:nNn {#1} > { \l_@@_max_int } }
-          { \int_compare_p:nNn {#1} < { \c_one } }
+          { \int_compare_p:nNn {#1} > \l_@@_max_int }
+          { \int_compare_p:nNn {#1} < \c_one_int }
           { \bool_set_true:N \l_@@_invalid_range_bool }
           { \seq_put_right:Nn \l_@@_tmpa_seq {#1} }
       }
@@ -1479,7 +1479,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<*!utf8>
 \cs_new_protected:Npx \@@_active_first_byte:
   {
-    \int_step_function:nnnN { "81 } { 1 } { "FE }
+    \int_step_function:nnN { "81 } { "FE }
       \char_set_catcode_active:n
   }
 %</!utf8>
