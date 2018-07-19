@@ -1195,10 +1195,8 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
   }
 \@@_msg_new:nn { CJK-invalid-encoding }
   {
-%<@@=>
-    The~ current~ CJK~ environment~ uses~ "\tl_use:N \CJK@@@enc"~
+    The~ current~ CJK~ environment~ uses~ "\tl_use:N \CJK@@@@@enc"~
     encoding,\\
-%<@@=zhlipsum>
     but~ zhlipsum~ package~ has~ been~ loaded~ with~ the~ option~
     "encoding=\tl_use:N \g_@@_encoding_tl".\\\\
     Please~ check~ the~ package~ options.
@@ -1211,11 +1209,9 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 \prg_new_protected_conditional:Npnn \@@_if_cjk_valid_encoding: { TF }
   {
-%<@@=>
-    \tl_if_exist:NTF \CJK@@@enc
+    \tl_if_exist:NTF \CJK@@@@@enc
       {
-        \tl_set:Nx \l__zhlipsum_tmpa_tl { \str_lower_case:f { \CJK@@@enc } }
-%<@@=zhlipsum>
+        \tl_set:Nx \l_@@_tmpa_tl { \str_lower_case:f { \CJK@@@@@enc } }
 % TODO: str or tl?
         \str_if_eq:NNTF \g_@@_encoding_tl \l_@@_tmpa_tl
           { \prg_return_true: }
