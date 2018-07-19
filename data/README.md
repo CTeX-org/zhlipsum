@@ -1,7 +1,7 @@
 # Source of zhlipsum data
 
 - `aspirin`
-  - <https://zh.wikipedia.org/w/index.php?title=%E9%98%BF%E5%8F%B8%E5%8C%B9%E6%9E%97&oldid=48742883>
+  - <https://zh.wikipedia.org/w/index.php?title=%E9%98%BF%E5%8F%B8%E5%8C%B9%E6%9E%97&oldid=50457257>
   - License: [CC-BY-SA 3.0 License](https://zh.wikipedia.org/zh-cn/Wikipedia%3ACC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC)
 
 - `default-simp` and `default-trad`
