@@ -7,8 +7,8 @@
 if [ "$2" = "--docker" ]; then
   # See Dockerfile
   VOLUME=miktex
-  MIKTEXDIR=/home/miktex/.miktex
-  WORKDIR=/home/miktex/work
+  MIKTEXDIR=/miktex/.miktex
+  WORKDIR=/miktex/work
   DOCKER="docker run --volume $VOLUME:$MIKTEXDIR --volume $(pwd):$WORKDIR $3"
   TEXLUA="texlua --admin"
 else
@@ -52,8 +52,8 @@ compilation-big5
 
 if [ "$2" = "--docker" ]; then
   $DOCKER ls -al
-  $DOCKER /bin/bash -c "pdflatex hello.tex; cat /home/miktex/.miktex/texmfs/data/miktex/log/pdflatex.log"
-  $DOCKER /bin/bash -c "xelatex hello.tex; cat /home/miktex/.miktex/texmfs/data/miktex/log/xelatex.log"
+  $DOCKER /bin/bash -c "pdflatex hello.tex; cat /miktex/.miktex/texmfs/data/miktex/log/pdflatex.log"
+  $DOCKER /bin/bash -c "xelatex hello.tex; cat /miktex/.miktex/texmfs/data/miktex/log/xelatex.log"
   $DOCKER pdflatex hello-zh.tex
   $DOCKER xelatex hello-zh.tex
   #if [ "$1" = "check-utf8" ]; then
