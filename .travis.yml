@@ -16,6 +16,7 @@ matrix:
         - docker
       install:
         - docker build -t miktex:ubuntu-18.04 .
+        - docker volume create --name miktex
       script:
         - source ./scripts/run.sh check-utf8 --docker miktex:ubuntu-18.04
         - source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04

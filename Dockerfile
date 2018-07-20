@@ -15,7 +15,6 @@ RUN apt-get update \
 # Configure MiKTeX
   && initexmf --admin --verbose --mkmaps \
   && initexmf --admin --verbose --update-fndb \
-  && initexmf --admin --verbose --dump \
   && initexmf --admin --verbose --force --mklinks \
 # Diagnosis information
   && initexmf --report \
