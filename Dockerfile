@@ -21,8 +21,8 @@ RUN apt-get update \
   && initexmf --report \
   && initexmf --list-formats
 
-RUN useradd -md /home/miktex miktex
-  && mkdir /home/miktex/work
+RUN useradd -md /home/miktex miktex \
+  && mkdir /home/miktex/work \
   && mkdir /home/miktex/.miktex
 USER miktex
 WORKDIR /home/miktex/work
