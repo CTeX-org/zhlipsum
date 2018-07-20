@@ -10,8 +10,3 @@ RUN apt-get update \
 RUN apt-get update \
   && apt-get install miktex -y \
   && miktexsetup finish
-
-#  && tex --version \
-#  && xetex --version \
-#  && pdftex --version \
-#  && luatex --version

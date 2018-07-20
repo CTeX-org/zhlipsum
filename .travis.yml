@@ -3,28 +3,23 @@ matrix:
     - name: "TeX Live"
       install:
         - source ./scripts/texlive.sh
+      script:
+        - source ./scripts/run.sh check-utf8
+        - source ./scripts/run.sh check-gbk-big5
       cache:
         directories:
           - /tmp/texlive
           - $HOME/.texlive
-      script:
-        - source ./scripts/run.sh check-utf8
-        - source ./scripts/run.sh check-gbk-big5
     - name: "MikTeX"
       sudo: required
       services:
         - docker
       install:
-        - docker version
-        - docker info
         - docker build -t miktex-ubuntu:18.04 .
+        - docker run miktex-ubuntu:18.04 mpm --install=@./scripts/packages.list
       script:
-        - docker run miktex-ubuntu:18.04 mpm --version
-        - docker run miktex-ubuntu:18.04 miktex-console --version
-        - docker run miktex-ubuntu:18.04 tex --version
-        - docker run miktex-ubuntu:18.04 pdftex --version
-        - docker run miktex-ubuntu:18.04 xetex --version
-        - docker run miktex-ubuntu:18.04 luatex --version
+        - source ./scripts/run.sh check-utf8 --docker miktex-ubuntu:18.04
+        - source ./scripts/run.sh check-gbk-big5 --docker miktex-ubuntu:18.04
 
 after_failure:
   - cat ./build/test/*.diff

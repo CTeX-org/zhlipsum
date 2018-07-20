@@ -1,9 +1,12 @@
 #!/usr/bin/env sh
 
-export SAVE="texlua build.lua save"
-export CHECK="texlua build.lua check --halt-on-error"
+# Usage:
+#   run.sh save|check-utf8|check-gbk-big5 [--docker <image name>]
 
-export TESTFILES_A=\
+SAVE="texlua build.lua save"
+CHECK="texlua build.lua check --halt-on-error"
+
+TESTFILES_A=\
 "
 internal
 api
@@ -19,7 +22,7 @@ encodings08
 compilation-utf8
 "
 
-export TESTFILES_B=\
+TESTFILES_B=\
 "
 cjk01
 cjk02
@@ -36,12 +39,21 @@ compilation-gbk
 compilation-big5
 "
 
-if [ "$1" = "save" ]; then
-  $SAVE --engine xetex  $TESTFILES_A
-  $SAVE --engine luatex $TESTFILES_A
-  $SAVE $TESTFILES_B
-elif [ "$1" = "check-utf8" ]; then
-  $CHECK $TESTFILES_A
-elif [ "$1" = "check-gbk-big5" ]; then
-  $CHECK --quiet --force --engine pdftex $TESTFILES_B
+if [ "$2" = "--docker" ]; then
+  DOCKER="docker run $3"
+  if [ "$1" = "check-utf8" ]; then
+    $DOCKER $CHECK $TESTFILES_A
+  elif [ "$1" = "check-gbk-big5" ]; then
+    $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
+  fi
+else
+  if [ "$1" = "save" ]; then
+    $SAVE --engine xetex  $TESTFILES_A
+    $SAVE --engine luatex $TESTFILES_A
+    $SAVE $TESTFILES_B
+  elif [ "$1" = "check-utf8" ]; then
+    $CHECK $TESTFILES_A
+  elif [ "$1" = "check-gbk-big5" ]; then
+    $CHECK --quiet --force --engine pdftex $TESTFILES_B
+  fi
 fi
