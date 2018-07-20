@@ -55,7 +55,6 @@ tlmgr install     \
   graphics-cfg    \
   graphics-def    \
   ifluatex        \
-  ifpdf           \
   ifxetex         \
   kantlipsum      \
   knuth-lib       \
