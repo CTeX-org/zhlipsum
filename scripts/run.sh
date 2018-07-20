@@ -49,9 +49,9 @@ compilation-big5
 
 if [ "$2" = "--docker" ]; then
   if [ "$1" = "check-utf8" ]; then
-    $DOCKER $CHECK $TESTFILES_A
+    $DOCKER /bin/bash -c "$CHECK $TESTFILES_A; cat /root/.miktex/texmfs/data/miktex/log/xetex.log"
   elif [ "$1" = "check-gbk-big5" ]; then
-    $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
+    $DOCKER /bin/bash -c "$CHECK --quiet --force --engine pdftex $TESTFILES_B; cat /root/.miktex/texmfs/data/miktex/log/xetex.log"
   fi
 else
   if [ "$1" = "save" ]; then
