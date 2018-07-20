@@ -5,7 +5,8 @@
 
 # Environment variable
 if [ "$2" = "--docker" ]; then
-  WORKDIR=/home/miktex/work  # See Dockerfile
+  MIKTEXDIR=/home/miktex/.miktex  # See Dockerfile
+  WORKDIR=/home/miktex/work       # See Dockerfile
   DOCKER="docker run --volume $(pwd):$WORKDIR $3"
   TEXLUA="texlua --admin"
 else
