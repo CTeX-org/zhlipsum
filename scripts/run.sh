@@ -40,7 +40,9 @@ compilation-big5
 "
 
 if [ "$2" = "--docker" ]; then
-  DOCKER="docker run $3"
+  WORKDIR=/home/miktex/work  # See Dockerfile
+  DOCKER="docker run --volume $(pwd):$WORKDIR $3"
+  echo $DOCKER
   if [ "$1" = "check-utf8" ]; then
     $DOCKER $CHECK $TESTFILES_A
   elif [ "$1" = "check-gbk-big5" ]; then
