@@ -48,11 +48,16 @@ compilation-big5
 "
 
 if [ "$2" = "--docker" ]; then
-  if [ "$1" = "check-utf8" ]; then
-    $DOCKER $CHECK $TESTFILES_A
-  elif [ "$1" = "check-gbk-big5" ]; then
-    $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
-  fi
+  $DOCKER ls -al
+  $DOCKER pdflatex hello.tex
+  $DOCKER xelatex hello.tex
+  $DOCKER pdflatex hello-zh.tex
+  $DOCKER xelatex hello-zh.tex
+  #if [ "$1" = "check-utf8" ]; then
+  #  $DOCKER $CHECK $TESTFILES_A
+  #elif [ "$1" = "check-gbk-big5" ]; then
+  #  $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
+  #fi
 else
   if [ "$1" = "save" ]; then
     $SAVE --engine xetex  $TESTFILES_A
