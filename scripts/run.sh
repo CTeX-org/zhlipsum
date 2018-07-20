@@ -3,8 +3,16 @@
 # Usage:
 #   run.sh save|check-utf8|check-gbk-big5 [--docker <image name>]
 
-SAVE="texlua build.lua save"
-CHECK="texlua build.lua check --halt-on-error"
+# Environment variable
+if [ "$2" = "--docker" ]; then
+  WORKDIR=/home/miktex/work  # See Dockerfile
+  DOCKER="docker run --volume $(pwd):$WORKDIR $3"
+  TEXLUA="texlua --admin"
+else
+  TEXLUA="texlua"
+fi
+SAVE="$TEXLUA build.lua save"
+CHECK="$TEXLUA build.lua check --halt-on-error"
 
 TESTFILES_A=\
 "
@@ -40,9 +48,6 @@ compilation-big5
 "
 
 if [ "$2" = "--docker" ]; then
-  WORKDIR=/home/miktex/work  # See Dockerfile
-  DOCKER="docker run --volume $(pwd):$WORKDIR $3"
-  echo $DOCKER
   if [ "$1" = "check-utf8" ]; then
     $DOCKER $CHECK $TESTFILES_A
   elif [ "$1" = "check-gbk-big5" ]; then
