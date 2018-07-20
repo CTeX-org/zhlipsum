@@ -52,8 +52,8 @@ compilation-big5
 
 if [ "$2" = "--docker" ]; then
   $DOCKER ls -al
-  $DOCKER pdflatex hello.tex
-  $DOCKER xelatex hello.tex
+  $DOCKER /bin/bash -c "pdflatex hello.tex; cat /home/miktex/.miktex/texmfs/data/miktex/log/pdflatex.log"
+  $DOCKER /bin/bash -c "xelatex hello.tex; cat /home/miktex/.miktex/texmfs/data/miktex/log/xelatex.log"
   $DOCKER pdflatex hello-zh.tex
   $DOCKER xelatex hello-zh.tex
   #if [ "$1" = "check-utf8" ]; then
