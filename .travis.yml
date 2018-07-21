@@ -20,7 +20,7 @@ matrix:
         - docker volume create --name miktex
       before_script:
         - echo $(pwd)
-        - chmod -R 664 .
+        - chmod --recursive 777 .
       script:
         #- source ./scripts/run.sh check-utf8 --docker miktex:ubuntu-18.04
         #- source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04
