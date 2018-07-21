@@ -6,16 +6,14 @@
 # Environment variable
 if [ "$2" = "--docker" ]; then
   # See Dockerfile
-  VOLUME=miktex
-  MIKTEXDIR=/home/miktex/.miktex
-  WORKDIR=/home/miktex/work
-  DOCKER="docker run --volume $VOLUME:$MIKTEXDIR --volume $(pwd):$WORKDIR $3"
-  TEXLUA="texlua --admin"
-else
-  TEXLUA="texlua"
+  # VOLUME=zhlipsum
+  # MIKTEXDIR=/home/miktex/.miktex
+  # WORKDIR=/home/miktex/work
+  # DOCKER="docker run --volume $VOLUME:$MIKTEXDIR --volume $(pwd):$WORKDIR $3"
+  DOCKER="docker run --volume miktex:/miktex/.miktex --volume $(pwd):/miktex/work $3"
 fi
-SAVE="$TEXLUA build.lua save"
-CHECK="$TEXLUA build.lua check --halt-on-error"
+SAVE="texlua build.lua save"
+CHECK="texlua build.lua check --halt-on-error"
 
 TESTFILES_A=\
 "
@@ -51,21 +49,21 @@ compilation-big5
 "
 
 if [ "$2" = "--docker" ]; then
-  $DOCKER ls -al
-  $DOCKER pdftex --version
-  $DOCKER xetex --version
-  $DOCKER pdflatex --version
-  $DOCKER xelatex --version
-  $DOCKER miktex-kpsewhich --version
-  $DOCKER miktex-kpsewhich latex.ltx
-  $DOCKER pdflatex --interaction=nonstopmode hello.tex
-  $DOCKER xelatex --interaction=nonstopmode hello.tex
-  #$DOCKER xelatex hello-zh.tex
-  #if [ "$1" = "check-utf8" ]; then
-  #  $DOCKER $CHECK $TESTFILES_A
-  #elif [ "$1" = "check-gbk-big5" ]; then
-  #  $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
-  #fi
+  # $DOCKER ls -al
+  # $DOCKER pdftex --version
+  # $DOCKER xetex --version
+  # $DOCKER pdflatex --version
+  # $DOCKER xelatex --version
+  # $DOCKER miktex-kpsewhich --version
+  # $DOCKER miktex-kpsewhich latex.ltx
+  # $DOCKER pdflatex --interaction=nonstopmode hello.tex
+  # $DOCKER xelatex --interaction=nonstopmode hello.tex
+  # $DOCKER xelatex hello-zh.tex
+  if [ "$1" = "check-utf8" ]; then
+    $DOCKER $CHECK $TESTFILES_A
+  elif [ "$1" = "check-gbk-big5" ]; then
+    $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
+  fi
 else
   if [ "$1" = "save" ]; then
     $SAVE --engine xetex  $TESTFILES_A
