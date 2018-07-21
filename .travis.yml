@@ -21,8 +21,10 @@ matrix:
       script:
         #- source ./scripts/run.sh check-utf8 --docker miktex:ubuntu-18.04
         #- source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04
-        - source ./scripts/run.sh check-utf8 --docker miktex/miktex
-        - source ./scripts/run.sh check-gbk-big5 --docker miktex/miktex
+        #- source ./scripts/run.sh check-utf8 --docker miktex/miktex
+        #- source ./scripts/run.sh check-gbk-big5 --docker miktex/miktex
+        - docker run -v miktex:/miktex/.miktex -v $(pwd):/miktex/work miktex/miktex pdflatex hello.tex
+        - docker run -it -v miktex:/miktex/.miktex -v $(pwd):/miktex/work miktex/miktex pdflatex hello.tex
 
 after_failure:
   - cat ./build/test/*.diff
