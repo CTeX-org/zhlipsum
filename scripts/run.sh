@@ -52,6 +52,10 @@ compilation-big5
 
 if [ "$2" = "--docker" ]; then
   $DOCKER ls -al
+  $DOCKER pdflatex --version
+  $DOCKER xelatex --version
+  $DOCKER kpsewhich --version
+  $DOCKER kpsewhich latex.ltx
   $DOCKER pdflatex --interaction=nonstopmode hello.tex
   $DOCKER xelatex --interaction=nonstopmode hello.tex
   #$DOCKER xelatex hello-zh.tex
