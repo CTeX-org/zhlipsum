@@ -21,7 +21,7 @@ matrix:
         - docker volume create --name pkg
       install:
         - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --verbose --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install adobemapping
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --verbose --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install amsfonts
+        # - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --verbose --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install amsfonts
         - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --verbose --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install amsmath
         - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --verbose --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install caption
         - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --verbose --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install cjk
