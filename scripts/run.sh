@@ -7,8 +7,8 @@
 if [ "$2" = "--docker" ]; then
   # See Dockerfile
   VOLUME=miktex
-  MIKTEXDIR=/miktex/.miktex
-  WORKDIR=/miktex/work
+  MIKTEXDIR=/home/miktex/.miktex
+  WORKDIR=/home/miktex/work
   DOCKER="docker run --volume $VOLUME:$MIKTEXDIR --volume $(pwd):$WORKDIR $3"
   TEXLUA="texlua --admin"
 else
@@ -52,10 +52,12 @@ compilation-big5
 
 if [ "$2" = "--docker" ]; then
   $DOCKER ls -al
+  $DOCKER pdftex --version
+  $DOCKER xetex --version
   $DOCKER pdflatex --version
   $DOCKER xelatex --version
-  $DOCKER kpsewhich --version
-  $DOCKER kpsewhich latex.ltx
+  $DOCKER miktex-kpsewhich --version
+  $DOCKER miktex-kpsewhich latex.ltx
   $DOCKER pdflatex --interaction=nonstopmode hello.tex
   $DOCKER xelatex --interaction=nonstopmode hello.tex
   #$DOCKER xelatex hello-zh.tex
