@@ -1,11 +1,18 @@
+env:
+  - TEST_FILES_UTF8="internal api user encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-utf8"
+  - TEST_FILES_GBK_BIG5="cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-gbk compilation-big5"
+  # TODO: Some tests may fail
+  - TEST_FILES_UTF8_DOCKER="encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08"
+  - TEST_FILES_GBK_BIG5_DOCKER="cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-big5"
+
 matrix:
   include:
     - name: "TeX Live"
       install:
         - source ./scripts/texlive.sh
       script:
-        - source ./scripts/run.sh check-utf8
-        - source ./scripts/run.sh check-gbk-big5
+        - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
+        - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
       cache:
         directories:
           - /tmp/texlive
@@ -20,7 +27,16 @@ matrix:
       before_script:
         - source ./travis-ci/miktex/before-script.sh
       script:
-        - source ./scripts/run.sh check-utf8     --docker
-        - source ./scripts/run.sh check-gbk-big5 --docker
+        - docker run
+          --volume packages:/miktex/.miktex
+          --volume $(pwd):/miktex/work
+          nanmu42/tex-package-test-bench
+          texlua build.lua check--halt-on-error $TEST_FILES_UTF8_DOCKER
+        - docker run
+          --volume packages:/miktex/.miktex
+          --volume $(pwd):/miktex/work
+          nanmu42/tex-package-test-bench
+        - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5_DOCKER
+
 after_failure:
-  - cat ./build/test/*.diff
+  - tail -n +1 ./build/test/*.diff
