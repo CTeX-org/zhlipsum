@@ -51,19 +51,28 @@ compilation-big5
 "
 
 if [ "$2" = "--docker" ]; then
+  echo "============================================================"
+  echo "INFO"
+  echo "============================================================"
   $DOCKER ls -al
   $DOCKER mpm --list | grep ^i
   $DOCKER pdflatex --version
   $DOCKER xelatex --version
+  echo "============================================================"
+  echo "DEBUG"
+  echo "============================================================"
   $DOCKER pdflatex --interaction=nonstopmode hello.tex
   $DOCKER xelatex --interaction=nonstopmode hello.tex
+  $DOCKER xelatex --interaction=nonstopmode hello-zh.tex
+  echo "============================================================"
+  echo "CHECK"
+  echo "============================================================"
+  if [ "$1" = "check-utf8" ]; then
+    $DOCKER $CHECK $TESTFILES_A
+  elif [ "$1" = "check-gbk-big5" ]; then
+    $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
+  fi
   $DOCKER mpm --list | grep ^i
-  #$DOCKER xelatex hello-zh.tex
-  #if [ "$1" = "check-utf8" ]; then
-  #  $DOCKER $CHECK $TESTFILES_A
-  #elif [ "$1" = "check-gbk-big5" ]; then
-  #  $DOCKER $CHECK --quiet --force --engine pdftex $TESTFILES_B
-  #fi
 else
   if [ "$1" = "save" ]; then
     $SAVE --engine xetex  $TESTFILES_A
