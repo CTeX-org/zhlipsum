@@ -15,73 +15,10 @@ matrix:
       services:
         - docker
       before_install:
-        # - docker build -t miktex:ubuntu-18.04 .
-        # - docker volume create --name zhlipsum
-        - docker pull miktex/miktex
+        - docker build -t miktex:ubuntu-18.04 .
+        # - docker pull miktex/miktex
         - docker volume create --name pkg
       install:
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install adobemapping
-        # - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install amsfonts
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install amsmath
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install caption
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install cjk
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install cjkpunct
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install cm
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ctablestack
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ctex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install currfile
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install dvipdfmx
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install environ
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install etex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install etoolbox
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install euenc
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install fancyhdr
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install fandol
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install filehook
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install fontspec
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install graphics
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install graphics-cfg
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install graphics-def
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ifxetex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install kantlipsum
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install knuth-lib
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install l3build
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install l3experimental
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install l3kernel
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install l3packages
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install lm
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install lm-math
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ltxbase
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install lualatex-math
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install lualibs
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install luaotfload
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install luatex85
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install luatexbase
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install luatexja
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install metafont
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install mfware
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install miktex-luatex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install miktex-tex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install miktex-xetex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ms
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install oberdiek
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install preview
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install psnfss
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install tex-ini-files
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install tools
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install trimspaces
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ucharcat
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install ulem
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install unicode-data
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install uplatex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install varwidth
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install xcjk2uni
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install xcolor
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install xecjk
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install xkeyval
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install xunicode
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install zhmetrics
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --repository=https://mirrors.rit.edu/CTAN/systems/win32/miktex/tm/packages/ --install zhnumber
       before_script:
         - echo $(pwd)
         - chmod --recursive 777 .
@@ -90,10 +27,21 @@ matrix:
         # - source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04
         # - source ./scripts/run.sh check-utf8 --docker miktex/miktex
         # - source ./scripts/run.sh check-gbk-big5 --docker miktex/miktex
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex mpm --list | grep ^i
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex echo $(pwd)
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex ls -al
-        - docker run --volume pkg:/miktex/.miktex --volume $(pwd):/miktex/work miktex/miktex texlua --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 echo $(pwd)
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --list | grep ^i
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /home/miktex/.miktex
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /usr/local/share/miktex-texmf
+        # Success
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 initexmf --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktexsetup --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --version
+        # Failure
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 findtexmf --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktex-kpsewhich --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mthelp --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 pdftex --version
+        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 texlua --version
 
 after_failure:
   - cat ./build/test/*.diff
