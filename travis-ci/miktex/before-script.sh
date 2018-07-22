@@ -9,6 +9,6 @@ DOCKER_IMAGE="nanmu42/tex-package-test-bench"
 DOCKER_RUN="docker run $DOCKER_VOLUME $DOCKER_IMAGE"
 
 # Install packages automatically
-$DOCKER_RUN pdflatex ./travis-ci/miktex/bootstrap-cjk.tex
-$DOCKER_RUN xelatex  ./travis-ci/miktex/bootstrap-ctex.tex
-$DOCKER_RUN lualatex ./travis-ci/miktex/bootstrap-ctex.tex
+$DOCKER_RUN pdflatex --interaction=nonstopmode ./travis-ci/miktex/bootstrap-cjk.tex
+$DOCKER_RUN xelatex  --interaction=nonstopmode ./travis-ci/miktex/bootstrap-ctex.tex
+$DOCKER_RUN lualatex --interaction=nonstopmode ./travis-ci/miktex/bootstrap-ctex.tex
