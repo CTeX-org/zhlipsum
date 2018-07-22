@@ -6,7 +6,7 @@
 # Environment variable
 if [ "$2" = "--docker" ]; then
   # See Dockerfile
-  VOLUME=miktex
+  VOLUME=packages
   MIKTEXDIR=/miktex/.miktex
   WORKDIR=/miktex/work
   DOCKER="docker run --volume $VOLUME:$MIKTEXDIR --volume $(pwd):$WORKDIR $3"
@@ -52,8 +52,12 @@ compilation-big5
 
 if [ "$2" = "--docker" ]; then
   $DOCKER ls -al
+  $DOCKER mpm --list | grep ^i
+  $DOCKER pdflatex --version
+  $DOCKER xelatex --version
   $DOCKER pdflatex --interaction=nonstopmode hello.tex
   $DOCKER xelatex --interaction=nonstopmode hello.tex
+  $DOCKER mpm --list | grep ^i
   #$DOCKER xelatex hello-zh.tex
   #if [ "$1" = "check-utf8" ]; then
   #  $DOCKER $CHECK $TESTFILES_A

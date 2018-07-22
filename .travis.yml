@@ -16,16 +16,16 @@ matrix:
         - docker
       install:
         # - docker build -t miktex:ubuntu-18.04 .
-        - docker pull miktex/miktex
-        - docker volume create --name miktex
+        - docker pull nanmu42/tex-package-test-bench
+        - docker volume create --name packages
       before_script:
         - echo $(pwd)
         - chmod --recursive 777 .
       script:
         #- source ./scripts/run.sh check-utf8 --docker miktex:ubuntu-18.04
         #- source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04
-        - source ./scripts/run.sh check-utf8 --docker miktex/miktex
-        - source ./scripts/run.sh check-gbk-big5 --docker miktex/miktex
+        - source ./scripts/run.sh check-utf8 --docker nanmu42/tex-package-test-bench
+        - source ./scripts/run.sh check-gbk-big5 --docker nanmu42/tex-package-test-bench
 
 after_failure:
   - cat ./build/test/*.diff
