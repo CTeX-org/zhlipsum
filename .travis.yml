@@ -20,19 +20,7 @@ matrix:
       before_script:
         - source ./travis-ci/miktex/before-script.sh
       script:
-        # - source ./scripts/run.sh check-utf8 --docker nanmu42/tex-package-test-bench
-        # - source ./scripts/run.sh check-gbk-big5 --docker nanmu42/tex-package-test-bench
-        - docker run
-          --volume packages:/miktex/.miktex
-          --volume $(pwd):/miktex/work
-          nanmu42/tex-package-test-bench
-          texlua build.lua check
-          internal api user encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-utf8
-        - docker run
-          --volume packages:/miktex/.miktex
-          --volume $(pwd):/miktex/work
-          nanmu42/tex-package-test-bench
-          texlua build.lua check --quiet --force --engine pdftex
-          cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-gbk compilation-big5
+        - source ./scripts/run.sh check-utf8     --docker
+        - source ./scripts/run.sh check-gbk-big5 --docker
 after_failure:
   - cat ./build/test/*.diff

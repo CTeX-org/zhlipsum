@@ -50,7 +50,13 @@ CHECK_UTF8="$CHECK $TESTFILES_UTF8"
 CHECK_GBK_BIG5="$CHECK --quiet --force --engine pdftex $TESTFILES_GBK_BIG5"
 
 DIFF="./build/test/*.diff"
-SHOW_DIFF="COUNT=`ls -1 $DIFF 2>/dev/null | wc -l`; if [ $COUNT != 0 ]; then tail -n +1 $DIFF; fi"
+SHOW_DIFF=\
+"
+COUNT=`ls -1 $DIFF 2>/dev/null | wc -l`;
+if [ $COUNT != 0 ]; then
+  tail -n +1 $DIFF;
+fi
+"
 
 if [ "$2" = "--docker" ]; then
   if [ "$1" = "check-utf8" ]; then
@@ -69,5 +75,5 @@ else
   elif [ "$1" = "check-gbk-big5" ]; then
     $CHECK_GBK_BIG5
   fi
-  $SHOW_DIFF
+  bash -c $SHOW_DIFF
 fi
