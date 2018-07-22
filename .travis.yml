@@ -27,21 +27,21 @@ matrix:
         # - source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04
         # - source ./scripts/run.sh check-utf8 --docker miktex/miktex
         # - source ./scripts/run.sh check-gbk-big5 --docker miktex/miktex
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 echo $(pwd)
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --list | grep ^i
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /home/miktex/.miktex
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /usr/local/share/miktex-texmf
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 echo $(pwd)
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --list | grep ^i
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /home/miktex/.miktex
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /usr/local/share/miktex-texmf
         # Success
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 initexmf --version
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktexsetup --version
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 initexmf --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktexsetup --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --version
         # Failure
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 findtexmf --version
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktex-kpsewhich --version
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mthelp --version
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 pdftex --version
-        - docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 texlua --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 findtexmf --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktex-kpsewhich --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mthelp --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 pdftex --version
+        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 texlua --version
 
 after_failure:
   - cat ./build/test/*.diff
