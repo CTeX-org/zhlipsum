@@ -12,7 +12,7 @@ RUN apt-get update \
 # For USA
 # https://mirrors.rit.edu/CTAN/...
 # deb https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/miktex/setup/deb/ bionic universe
-RUN echo "deb https://miktex.org/download/ubuntu xenial universe" | tee /etc/apt/sources.list.d/miktex.list \
+RUN echo "deb http://miktex.org/download/ubuntu xenial universe" | tee /etc/apt/sources.list.d/miktex.list \
   && apt-get update \
   && apt-get install --yes miktex
 
