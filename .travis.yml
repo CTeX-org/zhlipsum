@@ -9,7 +9,7 @@ matrix:
   include:
     - name: TeX Live
       install:
-        - source ./scripts/texlive.sh
+        - source ./travis-ci/texlive/install.sh
       script:
         - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
         - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
