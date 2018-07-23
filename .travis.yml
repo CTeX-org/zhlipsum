@@ -5,38 +5,44 @@ env:
     TEST_FILES_UTF8_MIKTEX='encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08'
     TEST_FILES_GBK_BIG5_MIKTEX='cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-big5'
 
-matrix:
-  include:
-    - name: TeX Live
-      install:
-        - source ./scripts/texlive.sh
-      script:
-        - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
-        - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
-      cache:
-        directories:
-          - /tmp/texlive
-          - $HOME/.texlive
-    - name: MikTeX
-      sudo: required
-      services:
-        - docker
-      install:
-        - docker pull nanmu42/tex-package-test-bench
-        - docker volume create --name packages
-      before_script:
-        - source ./travis-ci/miktex/before-script.sh
-      script:
-        - docker run
-          --volume packages:/miktex/.miktex
-          --volume $(pwd):/miktex/work
-          nanmu42/tex-package-test-bench
-          texlua build.lua check --halt-on-error $TEST_FILES_UTF8_MIKTEX
-        - docker run
-          --volume packages:/miktex/.miktex
-          --volume $(pwd):/miktex/work
-          nanmu42/tex-package-test-bench
-          texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5_MIKTEX
+script:
+  - echo $TEST_FILES_UTF8
+  - echo $TEST_FILES_GBK_BIG5
+  - echo $TEST_FILES_UTF8_MIKTEX
+  - echo $TEST_FILES_GBK_BIG5_MIKTEX
+
+#matrix:
+#  include:
+#    - name: TeX Live
+#      install:
+#        - source ./scripts/texlive.sh
+#      script:
+#        - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
+#        - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
+#      cache:
+#        directories:
+#          - /tmp/texlive
+#          - $HOME/.texlive
+#    - name: MikTeX
+#      sudo: required
+#      services:
+#        - docker
+#      install:
+#        - docker pull nanmu42/tex-package-test-bench
+#        - docker volume create --name packages
+#      before_script:
+#        - source ./travis-ci/miktex/before-script.sh
+#      script:
+#        - docker run
+#          --volume packages:/miktex/.miktex
+#          --volume $(pwd):/miktex/work
+#          nanmu42/tex-package-test-bench
+#          texlua build.lua check --halt-on-error $TEST_FILES_UTF8_MIKTEX
+#        - docker run
+#          --volume packages:/miktex/.miktex
+#          --volume $(pwd):/miktex/work
+#          nanmu42/tex-package-test-bench
+#          texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5_MIKTEX
 
 after_failure:
   - tail -n +1 ./build/test/*.diff
