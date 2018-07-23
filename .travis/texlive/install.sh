@@ -21,7 +21,7 @@ if ! command -v texlua > /dev/null; then
 
   # Install a minimal system
   ./install-tl                                \
-    --profile     ../travis-ci/texlive/texlive.profile  \
+    --profile     ../.travis/texlive/texlive.profile  \
     --repository  https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
   cd ..
 fi

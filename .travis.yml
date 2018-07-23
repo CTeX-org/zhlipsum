@@ -9,7 +9,7 @@ matrix:
   include:
     - name: TeX Live
       install:
-        - source ./travis-ci/texlive/install.sh
+        - source .travis/texlive/install.sh
       script:
         - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
         - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
@@ -21,15 +21,13 @@ matrix:
       sudo: required
       services:
         - docker
-      before_install:
-        - docker build -t miktex:ubuntu-18.04 .
-        # - docker pull miktex/miktex
-        - docker volume create --name pkg
       install:
+        # See https://github.com/nanmu42/TeXPackageTestBench
+        # and https://github.com/nanmu42/CQUThesis/blob/master/.travis.yml
         - docker pull nanmu42/tex-package-test-bench
         - docker volume create --name packages
       before_script:
-        - source ./travis-ci/miktex/before-script.sh
+        - source .travis/miktex/before-script.sh
       script:
         - docker run
           --volume packages:/miktex/.miktex
@@ -43,4 +41,4 @@ matrix:
           texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5_MIKTEX
 
 after_failure:
-  - tail -n +1 ./build/test/*.diff
+  - tail -n +1 build/test/*.diff
