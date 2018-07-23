@@ -1,10 +1,9 @@
 env:
-  - global:
-    - TEST_FILES_UTF8='internal api user encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-utf8'
-    - TEST_FILES_GBK_BIG5='cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-gbk compilation-big5'
+  - TEST_FILES_UTF8='internal api user encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-utf8'
+    TEST_FILES_GBK_BIG5='cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-gbk compilation-big5'
     # HACK: Some tests may fail in MikTeX
-    - TEST_FILES_UTF8_MIKTEX='encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08'
-    - TEST_FILES_GBK_BIG5_MIKTEX='cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-big5'
+    TEST_FILES_UTF8_MIKTEX='encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08'
+    TEST_FILES_GBK_BIG5_MIKTEX='cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-big5'
 
 matrix:
   include:
