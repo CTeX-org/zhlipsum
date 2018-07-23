@@ -1,6 +1,6 @@
 # zhlipsum
 
-[![Build Status](https://travis-ci.org/Stone-Zeng/zhlipsum.svg?branch=master)](https://travis-ci.org/Stone-Zeng/zhlipsum)
+[![Build Status](https://img.shields.io/travis/Stone-Zeng/zhlipsum.svg)](#build-status)
 [![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
 [![GitHub release](https://img.shields.io/github/release/Stone-Zeng/zhlipsum/all.svg)](https://github.com/Stone-Zeng/zhlipsum/releases/latest)
 
@@ -45,6 +45,17 @@ This package provides an interface to dummy text in Chinese language, which will
 ```
 
 More information can be found in the package documentation [zhlipsum-en.pdf](http://mirror.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf).
+
+### Continuous build status
+
+| Build Type | Status |
+| :--------: | :----: |
+| Linux TeX Live | [![Build Status][1]][travis] |
+| Linux MikTeX   | [![Build Status][2]][travis] |
+
+[1]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/1
+[2]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/2
+[travis]: https://travis-ci.org/Stone-Zeng/zhlipsum
 
 ### Contributing
 
