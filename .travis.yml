@@ -1,16 +1,23 @@
+env:
+  - TEST_FILES_UTF8: "'internal api user encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-utf8'"
+    TEST_FILES_GBK_BIG5: "'cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-gbk compilation-big5'"
+    # HACK: Some tests may fail in MikTeX
+    TEST_FILES_UTF8_MIKTEX: "'encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08'"
+    TEST_FILES_GBK_BIG5_MIKTEX: "'cjk01 cjk02 cjk03 encodings01 encodings02 encodings03 encodings04 encodings05 encodings06 encodings07 encodings08 compilation-big5'"
+
 matrix:
   include:
-    - name: "TeX Live"
+    - name: TeX Live
       install:
         - source ./scripts/texlive.sh
       script:
-        - source ./scripts/run.sh check-utf8
-        - source ./scripts/run.sh check-gbk-big5
+        - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
+        - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
       cache:
         directories:
           - /tmp/texlive
           - $HOME/.texlive
-    - name: "MikTeX"
+    - name: MikTeX
       sudo: required
       services:
         - docker
@@ -19,29 +26,21 @@ matrix:
         # - docker pull miktex/miktex
         - docker volume create --name pkg
       install:
+        - docker pull nanmu42/tex-package-test-bench
+        - docker volume create --name packages
       before_script:
-        - echo $(pwd)
-        - chmod --recursive 777 .
+        - source ./travis-ci/miktex/before-script.sh
       script:
-        # - source ./scripts/run.sh check-utf8 --docker miktex:ubuntu-18.04
-        # - source ./scripts/run.sh check-gbk-big5 --docker miktex:ubuntu-18.04
-        # - source ./scripts/run.sh check-utf8 --docker miktex/miktex
-        # - source ./scripts/run.sh check-gbk-big5 --docker miktex/miktex
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 echo $(pwd)
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --list | grep ^i
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /home/miktex/.miktex
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 ls -al /usr/local/share/miktex-texmf
-        # Success
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 initexmf --version
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktexsetup --version
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mpm --version
-        # Failure
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 findtexmf --version
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 miktex-kpsewhich --version
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 mthelp --version
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 pdftex --version
-        - sudo docker run --volume pkg:/home/miktex/.miktex --volume $(pwd):/home/miktex/work miktex:ubuntu-18.04 texlua --version
+        - docker run
+          --volume packages:/miktex/.miktex
+          --volume $(pwd):/miktex/work
+          nanmu42/tex-package-test-bench
+          texlua build.lua check --halt-on-error $TEST_FILES_UTF8_MIKTEX
+        - docker run
+          --volume packages:/miktex/.miktex
+          --volume $(pwd):/miktex/work
+          nanmu42/tex-package-test-bench
+          texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5_MIKTEX
 
 after_failure:
-  - cat ./build/test/*.diff
+  - tail -n +1 ./build/test/*.diff
