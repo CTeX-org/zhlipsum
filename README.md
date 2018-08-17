@@ -10,7 +10,7 @@
 
 ### 基本用法
 
-```tex
+```latex
 \zhlipsum
 \zhlipsum*[1-5]
 \zhlipsum[6-10,18][name=trad]
@@ -38,7 +38,7 @@ This package provides an interface to dummy text in Chinese language, which will
 
 ### Basic usage
 
-```tex
+```latex
 \zhlipsum
 \zhlipsum*[1-5]
 \zhlipsum[6-10,18][name=trad]
