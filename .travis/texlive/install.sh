@@ -11,6 +11,7 @@ if [ "$OSTYPE" == "linux-gnu" ]; then
   export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
 elif [ "$OSTYPE" == "darwin"* ]; then
   export PATH=/tmp/texlive/bin/x86_64-darwin:$PATH
+  source .bashrc
 fi
 
 # See if there is a cached version of TL available
