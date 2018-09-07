@@ -50,11 +50,13 @@ More information can be found in the package documentation [zhlipsum-en.pdf](htt
 
 | Build Type | Status |
 | :--------: | :----: |
-| Linux TeX Live | [![Build Status][1]][travis] |
-| Linux MikTeX   | [![Build Status][2]][travis] |
+| TeX Live (Linux) | [![Build Status][1]][travis] |
+| TeX Live (macOS) | [![Build Status][2]][travis] |
+| MikTeX (Linux)   | [![Build Status][3]][travis] |
 
 [1]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/1
 [2]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/2
+[3]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/3
 [travis]: https://travis-ci.org/Stone-Zeng/zhlipsum
 
 ### Contributing
