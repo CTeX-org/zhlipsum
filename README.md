@@ -52,11 +52,13 @@ More information can be found in the package documentation [zhlipsum-en.pdf](htt
 | :--------: | :----: |
 | TeX Live (Linux) | [![Build Status][1]][travis] |
 | TeX Live (macOS) | [![Build Status][2]][travis] |
-| MikTeX (Linux)   | [![Build Status][3]][travis] |
+| MiKTeX (Linux)   | [![Build Status][3]][travis] |
+| MiKTeX (macOS)   | [![Build Status][4]][travis] |
 
 [1]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/1
 [2]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/2
 [3]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/3
+[4]: https://travis-matrix-badges.herokuapp.com/repos/Stone-Zeng/zhlipsum/branches/master/4
 [travis]: https://travis-ci.org/Stone-Zeng/zhlipsum
 
 ### Contributing
