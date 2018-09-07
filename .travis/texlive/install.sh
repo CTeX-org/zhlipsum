@@ -27,6 +27,14 @@ if ! command -v texlua > /dev/null; then
   cd ..
 fi
 
+# DEBUG
+echo $OSTYPE
+echo $PATH
+ls -al /tmp/texlive/
+ls -al /tmp/texlive/bin/
+ls -al /tmp/texlive/bin/x86_64-linux
+ls -al /tmp/texlive/bin/x86_64-darwin
+
 # Change default package repository
 tlmgr option repository https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
 
