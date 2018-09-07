@@ -7,9 +7,9 @@
 # A minimal current TL is installed adding only the packages that are
 # required
 
-if [ "$OSTYPE" == "linux-gnu" ]; then
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
   export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
-elif [ "$OSTYPE" == "darwin"* ]; then
+elif [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=/tmp/texlive/bin/x86_64-darwin:$PATH
 
   echo "1"
