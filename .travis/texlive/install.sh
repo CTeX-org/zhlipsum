@@ -13,22 +13,22 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=/tmp/texlive/bin/x86_64-darwin:$PATH
 
   echo "1"
-  set | more
+  # set | more
   echo $PATH
 
   echo "2"
   source .bashrc
-  set | more
+  # set | more
   echo $PATH
 
   echo "3"
   source .profile
-  set | more
+  # set | more
   echo $PATH
 
   echo "4"
   source .bash_profile
-  set | more
+  # set | more
   echo $PATH
 fi
 
