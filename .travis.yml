@@ -7,7 +7,8 @@ env:
 
 matrix:
   include:
-    - name: TeX Live
+    - name: TeX Live (Linux)
+      os: linux
       install:
         - source .travis/texlive/install.sh
       script:
@@ -17,7 +18,19 @@ matrix:
         directories:
           - /tmp/texlive
           - $HOME/.texlive
-    - name: MikTeX
+    - name: TeX Live (macOS)
+      os: osx
+      install:
+        - source .travis/texlive/install.sh
+      script:
+        - texlua build.lua check --halt-on-error $TEST_FILES_UTF8
+        - texlua build.lua check --halt-on-error --quiet --force --engine pdftex $TEST_FILES_GBK_BIG5
+      cache:
+        directories:
+          - /tmp/texlive
+          - $HOME/.texlive
+    - name: MikTeX (Linux)
+      os: linux
       sudo: required
       services:
         - docker
