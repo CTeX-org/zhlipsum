@@ -4,12 +4,16 @@
 # https://github.com/latex3/latex3/blob/master/support/texlive.sh
 
 # This script is used for testing using Travis
-# It is intended to work on their VM set up: Ubuntu 12.04 LTS
 # A minimal current TL is installed adding only the packages that are
 # required
 
+if [ "$OSTYPE" == "linux-gnu" ]; then
+  export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
+elif [ "$OSTYPE" == "darwin"* ]; then
+  export PATH=/tmp/texlive/bin/x86_64-darwin:$PATH
+fi
+
 # See if there is a cached version of TL available
-export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
 if ! command -v texlua > /dev/null; then
   # Obtain TeX Live
   wget https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
@@ -22,10 +26,6 @@ if ! command -v texlua > /dev/null; then
     --repository  https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
   cd ..
 fi
-
-# DEBUG
-ls -l /tmp/texlive
-ls -l /tmp/texlive/bin
 
 # Change default package repository
 tlmgr option repository https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
