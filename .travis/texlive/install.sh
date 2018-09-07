@@ -11,25 +11,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
 elif [[ "$OSTYPE" == "darwin"* ]]; then
   export PATH=/tmp/texlive/bin/x86_64-darwin:$PATH
-
-  echo "1"
-  # set | more
-  echo $PATH
-
-  echo "2"
-  source .bashrc
-  # set | more
-  echo $PATH
-
-  echo "3"
-  source .profile
-  # set | more
-  echo $PATH
-
-  echo "4"
-  source .bash_profile
-  # set | more
-  echo $PATH
 fi
 
 # See if there is a cached version of TL available
@@ -45,14 +26,6 @@ if ! command -v texlua > /dev/null; then
     --repository  https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
   cd ..
 fi
-
-# DEBUG
-echo $OSTYPE
-echo $PATH
-ls -al /tmp/texlive/
-ls -al /tmp/texlive/bin/
-ls -al /tmp/texlive/bin/x86_64-linux
-ls -al /tmp/texlive/bin/x86_64-darwin
 
 # Change default package repository
 tlmgr option repository https://mirrors.rit.edu/CTAN/systems/texlive/tlnet

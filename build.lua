@@ -25,8 +25,8 @@ function zhconv(input, output, encoding)
   local cmd_rm    = "rm" .. " " .. input_tmp
   local cmd_conv  = "iconv" .. " " .. "--from-code=utf8"
                             .. " " .. "--to-code=" .. encoding
-                            .. " " .. "--output=" .. output
-                            .. " " .. input_tmp
+                            .. " <" .. input_tmp
+                            .. " >" .. output
   run(maindir, cmd_cp)
   run(maindir, cmd_conv)
   run(maindir, cmd_rm)
