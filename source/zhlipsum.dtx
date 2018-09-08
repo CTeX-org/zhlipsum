@@ -183,7 +183,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
 %<*!(driver|install)>
-%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.1.0 2018-04-08 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
+%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.1.1 2018-09-08 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
 %<utf8>  {Chinese dummy text with UTF-8 encoding (for zhlipsum)}
@@ -237,7 +237,6 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \preto\ctexexam{\catcode`!=\active}
 \preto\endctexexam{\catcode`!=12}
 \catcode`!=12
-\makeatother
 % Do not add hyperlink for `TF`, and do not change color.
 \ExplSyntaxOn
 \cs_set_protected:Npn \__codedoc_typeset_TF:
@@ -253,7 +252,19 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
         }
     \group_end:
   }
+% From l3doc, to make @@ -> <module> while @@@@ -> @@
+\cs_set_protected:Npn \__ctxdoc_replace_at_at_aux:Nn #1#2
+  {
+    \tl_replace_all:Nnn #1 { \token_to_str:N @ } { @ }
+    \tl_replace_all:Nnn #1 { \token_to_str:N _ } { _ }
+    \tl_replace_all:Nnn #1 { @ @ @ @ } { \token_to_str:N a a }
+    \tl_replace_all:Nnn #1 { _ _ @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 {   _ @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 {     @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 { \token_to_str:N a a } { @ @ }
+  }
 \ExplSyntaxOff
+\makeatother
 \RenewDocumentEnvironment{arguments}{}%
   {\enumerate[label={\texttt{\#\arabic*:~}},
     leftmargin=2em, labelsep=0pt, nolistsep]}%
@@ -280,6 +291,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v0.4}{2017/09/16}{将安装、测试文件集成进源文件。}
 % \changes{v0.4}{2017/09/16}{优化宏包实现。}
 % \changes{v0.5}{2018/01/06}{添加英文版用户文档。}
+% \changes{v1.1.1}{2018/09/08}{完善持续集成系统，在多平台上进行测试。}
 %
 % \CheckSum{0}
 %
@@ -301,11 +313,11 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2018/04/08 \quad v1.1.0^^A
+% \date{2018/09/08 \quad v1.1.1^^A
 %   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A! \title{\textbf{The \pkg{zhlipsum} Package: Chinese Dummy Text}}
 %^^A! \author{Xiangdong Zeng}
-%^^A! \date{2018/04/08 \quad v1.1.0%
+%^^A! \date{2018/09/08 \quad v1.1.1%
 %^^A!   \thanks{\url{https://github.com/Stone-Zeng/zhlipsum}.}}
 %^^A!
 %
@@ -921,7 +933,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \begin{macrocode}
 \keys_define:nn { zhlipsum / option }
   {
-    encoding .choices:nn       =
+    encoding .choices:nn =
       { utf8, gbk, big5 }
       {
         \tl_gset_eq:NN \g_@@_encoding_tl \l_keys_choice_tl
@@ -944,7 +956,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % 处理未知选项。
 %    \begin{macrocode}
-    unknown  .code:n           = { \@@_error:n { unknown-option } }
+    unknown .code:n = { \@@_error:n { unknown-option } }
   }
 %    \end{macrocode}
 %
@@ -1484,6 +1496,7 @@ Copyright (C) 2017, 2018 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \end{macro}
 %
 % \changes{v1.0.0}{2018/03/26}{增加预定义假文。}
+% \changes{v1.1.1}{2018/07/19}{更新假文文本。}
 %
 % 预定义假文的声明放置在分组内，利用 \cs{@@_set_special_catcode:} 切换
 % 类别码后可以不再需要 \pkg{CJK} 的预处理操作。具体声明此处不再列出。
