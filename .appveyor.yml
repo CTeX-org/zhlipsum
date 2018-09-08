@@ -4,8 +4,7 @@ install:
       $client = New-Object System.Net.WebClient
       $client.DownloadFile("https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl", "install-tl")
       $client.DownloadFile("https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.bat", "install-tl-windows.bat")
-
-      Get-ChildItem
-      .\install-tl-windows.bat --help
-      .\install-tl-windows.bat --version
-      .\install-tl-windows.bat
+  - ps: Get-ChildItem
+  - ps: .\install-tl-windows.bat --help
+  - ps: .\install-tl-windows.bat --version
+  - ps: .\install-tl-windows.bat
