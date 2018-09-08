@@ -4,10 +4,6 @@ environment:
 
 install:
   - ps: .appveyor\texlive\install.ps1
-  # DEBUG
-  - ps: ls C:\texlive
-  - ps: ls C:\Users\appveyor
-  - ps: ls C:\Users\appveyor\.texlive
 
 build: off
 
@@ -17,4 +13,4 @@ test_script:
 
 cache:
   - 'C:\texlive'
-  - 'C:\Users\appveyor\.texlive'
+  # - 'C:\Users\appveyor\.texlive'
