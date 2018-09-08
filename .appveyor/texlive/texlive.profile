@@ -2,12 +2,12 @@
 # https://github.com/latex3/latex3/blob/master/support/texlive.profile
 
 selected_scheme scheme-infraonly
-TEXDIR %PROGRAMFILES%/texlive
-TEXMFCONFIG %USERPROFILE%/.texlive/texmf-config
-TEXMFHOME %USERPROFILE%/texmf
-TEXMFLOCAL %PROGRAMFILES%/texlive/texmf-local
-TEXMFSYSCONFIG %PROGRAMFILES%/texlive/texmf-config
-TEXMFSYSVAR %PROGRAMFILES%/texlive/texmf-var
-TEXMFVAR %USERPROFILE%/.texlive/texmf-var
+TEXDIR C:/texlive
+TEXMFCONFIG C:/Users/appveyor/.texlive/texmf-config
+TEXMFHOME C:/Users/appveyor/texmf
+TEXMFLOCAL C:/texlive/texmf-local
+TEXMFSYSCONFIG C:/texlive/texmf-config
+TEXMFSYSVAR C:/texlive/texmf-var
+TEXMFVAR C:/Users/appveyor/.texlive/texmf-var
 option_doc 0
 option_src 0
