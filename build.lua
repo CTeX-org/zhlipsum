@@ -23,17 +23,10 @@ function zhconv(input, output, encoding)
   local input_tmp = input .. ".tmp"
   local cmd_cp    = "cp" .. " " .. input .. " " .. input_tmp
   local cmd_rm    = "rm" .. " " .. input_tmp
-  if os.type == "windows" then
-    -- See https://stackoverflow.com/q/3604753/8479490
-    local redirect = " |" .. " Out-File -Encoding " .. encoding
-                          .. " " .. output
-  else
-    local redirect = " >" .. output
-  end
-  local cmd_conv  = "iconv" .. " " .. "--from-code=utf8"
+  local cmd_conv  = "iconv" .. " " .. "--from-code=UTF-8"
                             .. " " .. "--to-code=" .. encoding
                             .. " <" .. input_tmp
-                            .. redirect
+                            .. " >" .. output
   run(maindir, cmd_cp)
   run(maindir, cmd_conv)
   run(maindir, cmd_rm)
@@ -45,14 +38,14 @@ function hooked_bundleunpack(sourcedirs, sources)
   for _, glob in ipairs(gbkfiles) do
     for _, f in ipairs(filelist(unpackdir, glob)) do
       local f_utf = unpackdir .. "/" .. f
-      zhconv(f_utf, f_utf, "gbk")
+      zhconv(f_utf, f_utf, "GBK")
     end
   end
   -- UTF-8 to Big5 conversion
   for _, glob in ipairs(big5files) do
     for _, f in ipairs(filelist(unpackdir, glob)) do
       local f_utf = unpackdir .. "/" .. f
-      zhconv(f_utf, f_utf, "big5")
+      zhconv(f_utf, f_utf, "BIG-5")
     end
   end
 end
