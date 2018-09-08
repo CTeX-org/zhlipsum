@@ -23,10 +23,17 @@ function zhconv(input, output, encoding)
   local input_tmp = input .. ".tmp"
   local cmd_cp    = "cp" .. " " .. input .. " " .. input_tmp
   local cmd_rm    = "rm" .. " " .. input_tmp
+  if os.type == "windows" then
+    -- See https://stackoverflow.com/q/3604753/8479490
+    local redirect = " |" .. " Out-File -Encoding " .. encoding
+                          .. " " .. output
+  else
+    local redirect = " >" .. output
+  end
   local cmd_conv  = "iconv" .. " " .. "--from-code=utf8"
                             .. " " .. "--to-code=" .. encoding
                             .. " <" .. input_tmp
-                            .. " >" .. output
+                            .. redirect
   run(maindir, cmd_cp)
   run(maindir, cmd_conv)
   run(maindir, cmd_rm)
