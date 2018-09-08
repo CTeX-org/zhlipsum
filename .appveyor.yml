@@ -4,7 +4,7 @@ install:
 build: off
 
 test_script:
-  - cmd: echo %PATH%
-  - cmd: tlmgr --version
-  - cmd: tlmgr --help
   - cmd: tex --version
+  - cmd: pdftex --version
+  - cmd: xetex --version
+  - cmd: luatex --version
