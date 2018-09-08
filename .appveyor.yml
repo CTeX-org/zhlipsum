@@ -1,9 +1,14 @@
 install:
-  - ps: |
-      Get-ChildItem
-      $client = New-Object System.Net.WebClient
-      $client.DownloadFile("https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl", "install-tl")
-      $client.DownloadFile("https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.bat", "install-tl-windows.bat")
+  # - ps: |
+  #     Get-ChildItem
+  #     $client = New-Object System.Net.WebClient
+  #     $client.DownloadFile("https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl", "install-tl")
+  #     $client.DownloadFile("https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.bat", "install-tl-windows.bat")
+  - ps: Get-ChildItem
+  - ps: Invoke-WebRequest -Uri "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl"
+  - ps: Invoke-WebRequest -Uri "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl" -OutFile "install-tl"
+  - ps: Invoke-WebRequest -Uri "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl-windows.bat"
+  - ps: Invoke-WebRequest -Uri "https://mirrors.rit.edu/CTAN/systems/texlive/tlnet/install-tl" -OutFile "install-tl-windows.bat"
   - ps: Get-ChildItem
   - ps: .\install-tl-windows.bat --help
   - ps: .\install-tl-windows.bat --version
