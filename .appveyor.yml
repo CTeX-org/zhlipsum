@@ -13,4 +13,3 @@ test_script:
 
 cache:
   - C:\texlive
-  # - C:\Users\appveyor\.texlive
