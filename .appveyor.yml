@@ -4,14 +4,12 @@ environment:
 
 install:
   - ps: .appveyor\texlive\install.ps1
-
-build: off
-
-before_test:
   # DEBUG
   - ps: ls C:\texlive
-  - ps: ls $env:USERPROFILE
-  - ps: ls $env:USERPROFILE\.texlive
+  - ps: ls C:\Users\appveyor
+  - ps: ls C:\Users\appveyor\.texlive
+
+build: off
 
 test_script:
   - ps: texlua build.lua check --halt-on-error %TEST_FILES_UTF8%
@@ -19,4 +17,4 @@ test_script:
 
 cache:
   - 'C:\texlive'
-  - '%USERPROFILE%\.texlive'
+  - 'C:\Users\appveyor\.texlive'
