@@ -1,7 +1,7 @@
 # zhlipsum
 
-[![Build Status](https://img.shields.io/travis/Stone-Zeng/zhlipsum.svg)](#build-status)
-[![Build status](https://ci.appveyor.com/api/projects/status/rhftdsngpgp9u0xh?svg=true)](#build-status)
+[![Build Status](https://img.shields.io/travis/Stone-Zeng/zhlipsum.svg)](#continuous-build-status)
+[![Build status](https://ci.appveyor.com/api/projects/status/rhftdsngpgp9u0xh?svg=true)](#continuous-build-status)
 [![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
 [![GitHub release](https://img.shields.io/github/release/Stone-Zeng/zhlipsum/all.svg)](https://github.com/Stone-Zeng/zhlipsum/releases/latest)
 
