@@ -9,8 +9,13 @@ Set-Location "install-tl-20*"
                           -repository  https://mirrors.rit.edu/CTAN/systems/texlive/tlnet
 
 Write-Output $env:PATH
-Write-Output $env:PROGRAMFILES
-Write-Output $env:USERPROFILE
+$env:PATH += ";C:\texlive\bin\win32"
+Write-Output $env:PATH
 
-Get-ChildItem $env:PROGRAMFILES
-Get-ChildItem $env:USERPROFILE
+# DEBUG
+Get-ChildItem "C:\texlive"
+Get-ChildItem "C:\texlive\bin"
+Get-ChildItem "C:\texlive\bin\win32"
+Get-ChildItem "C:\texlive\texmf-dist"
+
+Get-Content "C:\texlive\install-tl.log"

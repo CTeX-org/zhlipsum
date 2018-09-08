@@ -1,7 +1,7 @@
 install:
   - ps: .appveyor\texlive\install.ps1
 
-test_script:
+test:
   - cmd: tlmgr --version
   - cmd: tlmgr --help
   - cmd: tex --version
