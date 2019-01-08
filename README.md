@@ -78,4 +78,4 @@ Licenses of text data can be found in this [README](https://github.com/Stone-Zen
 
 -----
 
-Copyright (C) 2017, 2018 by Xiangdong Zeng.
+Copyright (C) 2017&ndash;2019 by Xiangdong Zeng.
