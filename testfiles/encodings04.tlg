@@ -4,65 +4,40 @@ Don't change this file in any respect.
 TEST 1: Load package:
 ============================================================
 (zhlipsum.sty
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! zhlipsum error: "ctex-invalid-encoding"
-! 
-! Package option "encoding=utf8" is in conflict with ctex's option "GBK".
-! 
-! Please check the package options.
-! 
-! See the zhlipsum documentation for further information.
-! 
-! Type <return> to continue.
-!...............................................  
+Package: zhlipsum ....-..-.. v....1 Chinese dummy text
+! Package zhlipsum Error: Package option "encoding=utf8" is in conflict with
+(zhlipsum)                ctex's option "GBK".
+(zhlipsum)                
+(zhlipsum)                Please check the package options.
+Type <return> to continue.
+ ...                                              
 l. ...\ProcessKeysOptions { zhlipsum / option }
-|'''''''''''''''''''''''''''''''''''''''''''''''
-| LaTeX does not know anything more about this error, sorry.
-| 
-| Try typing <return> to proceed.
-| If that doesn't work, type X <return> to quit.
-|...............................................
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
 \l__zhlipsum_begin_int=\count...
 \l__zhlipsum_end_int=\count...
 \l__zhlipsum_max_int=\count...
 (zhlipsum-utf8.def
+File: zhlipsum-utf8.def ....-..-.. v....1 Chinese dummy text with UTF-8 encoding (for zhlipsum)
 \g__zhlipsum_simp_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "simp" is created. It has 50 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "simp" is created. It has 50
+(zhlipsum)             paragraphs.
 \g__zhlipsum_trad_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "trad" is created. It has 50 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "trad" is created. It has 50
+(zhlipsum)             paragraphs.
 \g__zhlipsum_nanshanjing_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "nanshanjing" is created. It has 43 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "nanshanjing" is created. It has 43
+(zhlipsum)             paragraphs.
 \g__zhlipsum_xiangyu_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "xiangyu" is created. It has 45 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
+(zhlipsum)             paragraphs.
 \g__zhlipsum_zhufu_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "zhufu" is created. It has 110 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "zhufu" is created. It has 110
+(zhlipsum)             paragraphs.
 \g__zhlipsum_aspirin_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "aspirin" is created. It has 66 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 66
+(zhlipsum)             paragraphs.
 ))
 ============================================================
 ============================================================

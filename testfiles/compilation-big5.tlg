@@ -5,13 +5,10 @@ Checking compilation. No log file data expected.
 ============================================================
 TEST 1: Simplified:
 ============================================================
-*************************************************
-* zhlipsum warning: "big5-require-trad"
-* 
-* Name "simp" is not available in "Big5" encoding.
-* Changed into "trad".
-*************************************************
+Package zhlipsum Warning: Name "simp" is not available in "Big5" encoding.
+(zhlipsum)                Changed into "trad".
 LaTeX Font Info:    Try loading font information for C00+bsmi on input line ....
+File: c00bsmi.fdx ....-..-.. 4.8.4
 ) [1
 ] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
 ============================================================

@@ -5712,7 +5712,7 @@ Completed box being shipped out [5]
 ....\glue(\rightskip) 0.0
 ...\penalty 150
 ...\glue(\baselineskip) 6.12341
-...\hbox(8.28395+2.03409)x345.0, glue set 77.7638fil
+...\hbox(8.28395+2.03409)x345.0, glue set 70.97644fil
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 代
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 认
@@ -5773,6 +5773,7 @@ Completed box being shipped out [5]
 ....\kern -0.00041
 ....\kern -0.18753
 ....\kern 0.18753
+....\glue 6.78735 minus 5.26968
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
@@ -5786,12 +5787,9 @@ Completed box being shipped out [5]
 ============================================================
 TEST 2: Simplified:
 ============================================================
-*************************************************
-* zhlipsum warning: "modified-range"
-* 
-* Your required range "49-51" in "49-51" will be modified.
-* Changed into "49-50".
-*************************************************
+Package zhlipsum Warning: Your required range "49-51" in "49-51" will be
+(zhlipsum)                modified.
+(zhlipsum)                Changed into "49-50".
 Completed box being shipped out [6]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -7708,12 +7706,8 @@ Completed box being shipped out [6]
 ============================================================
 TEST 3: Traditional:
 ============================================================
-*************************************************
-* zhlipsum warning: "deprecated-option"
-* 
-* Option "script" is deprecated.
-* Option "name=trad" will be set.
-*************************************************
+Package zhlipsum Warning: Option "script" is deprecated.
+(zhlipsum)                Option "name=trad" will be set.
 Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!

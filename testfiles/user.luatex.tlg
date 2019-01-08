@@ -8124,12 +8124,9 @@ Completed box being shipped out [5]
 ============================================================
 TEST 2: Simplified:
 ============================================================
-*************************************************
-* zhlipsum warning: "modified-range"
-* 
-* Your required range "49-51" in "49-51" will be modified.
-* Changed into "49-50".
-*************************************************
+Package zhlipsum Warning: Your required range "49-51" in "49-51" will be
+(zhlipsum)                modified.
+(zhlipsum)                Changed into "49-50".
 Completed box being shipped out [6]
 \vbox(633.0+0.0)x407.0, direction TLT
 .\whatsit4=[]
@@ -10810,12 +10807,8 @@ Completed box being shipped out [6]
 ============================================================
 TEST 3: Traditional:
 ============================================================
-*************************************************
-* zhlipsum warning: "deprecated-option"
-* 
-* Option "script" is deprecated.
-* Option "name=trad" will be set.
-*************************************************
+Package zhlipsum Warning: Option "script" is deprecated.
+(zhlipsum)                Option "name=trad" will be set.
 Completed box being shipped out [7]
 \vbox(633.0+0.0)x407.0, direction TLT
 .\whatsit4=[]
@@ -17693,7 +17686,7 @@ Completed box being shipped out [11]
 ....\glue 2.63484 plus 1.0 minus 1.0
 ....\TU/lmr/m/n/10.53937 C
 ....\TU/lmr/m/n/10.53937 O
-....\kern-0.2951
+....\kern-0.2951 (font)
 ....\TU/lmr/m/n/10.53937 X
 ....\glue 2.63484 plus 1.0 minus 1.0
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT

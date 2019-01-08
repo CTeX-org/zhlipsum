@@ -4,24 +4,21 @@ Don't change this file in any respect.
 TEST 1: Load package:
 ============================================================
 (zhlipsum.sty
+Package: zhlipsum ....-..-.. v....1 Chinese dummy text
 (../l3keys2e.sty
+Package: l3keys2e ....-..-.. LaTeX2e option processing using LaTeX3 keys
 )
 \l__zhlipsum_begin_int=\count...
 \l__zhlipsum_end_int=\count...
 \l__zhlipsum_max_int=\count...
 (zhlipsum-big5.def
+File: zhlipsum-big5.def ....-..-.. v....1 Chinese dummy text with Big5 encoding (for zhlipsum)
 \g__zhlipsum_trad_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "trad" is created. It has 50 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "trad" is created. It has 50
+(zhlipsum)             paragraphs.
 \g__zhlipsum_xiangyu_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "xiangyu" is created. It has 45 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
+(zhlipsum)             paragraphs.
 ))
 ============================================================
 ============================================================

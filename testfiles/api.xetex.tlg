@@ -12265,29 +12265,20 @@ Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-*************************************************
-* zhlipsum warning: "invalid-range"
-* 
-* Your required range "0" in "0,10,100-110" is invalid.
-* Nothing will be output.
-*************************************************
-*************************************************
-* zhlipsum warning: "invalid-range"
-* 
-* Your required range "100-110" in "0,10,100-110" is invalid.
-* Nothing will be output.
-*************************************************
+Package zhlipsum Warning: Your required range "0" in "0,10,100-110" is
+(zhlipsum)                invalid.
+(zhlipsum)                Nothing will be output.
+Package zhlipsum Warning: Your required range "100-110" in "0,10,100-110" is
+(zhlipsum)                invalid.
+(zhlipsum)                Nothing will be output.
 Missing character: There is no 䧿 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 搖 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 瘞 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-*************************************************
-* zhlipsum warning: "modified-range"
-* 
-* Your required range "40-50" in "40-50" will be modified.
-* Changed into "40-45".
-*************************************************
+Package zhlipsum Warning: Your required range "40-50" in "40-50" will be
+(zhlipsum)                modified.
+(zhlipsum)                Changed into "40-45".
 Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT!
@@ -14763,25 +14754,16 @@ Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
 Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!
-! zhlipsum error: "invalid-name"
-! 
-! Name "test" is unknown.
-! 
-! Please use the pre-defined Chinese dummy texts or declare new one.
-! 
-! See the zhlipsum documentation for further information.
-! 
-! Type <return> to continue.
-!...............................................  
+! Package zhlipsum Error: Name "test" is unknown.
+(zhlipsum)                
+(zhlipsum)                Please use the pre-defined Chinese dummy texts or
+(zhlipsum)                declare new one.
+Type <return> to continue.
+ ...                                              
 l. ...  }
-|'''''''''''''''''''''''''''''''''''''''''''''''
-| LaTeX does not know anything more about this error, sorry.
-| 
-| Try typing <return> to proceed.
-| If that doesn't work, type X <return> to quit.
-|...............................................
+LaTeX does not know anything more about this error, sorry.
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
 Completed box being shipped out [8]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -16841,11 +16823,8 @@ Completed box being shipped out [8]
 TEST 4: Declare new dummy text:
 ============================================================
 \g__zhlipsum_test_int=\count...
-.................................................
-. zhlipsum info: "defining-text"
-. 
-. Chinese dummy text "test" is created. It has 8 paragraphs.
-.................................................
+Package zhlipsum Info: Chinese dummy text "test" is created. It has 8
+(zhlipsum)             paragraphs.
 Completed box being shipped out [9]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
