@@ -25,6 +25,7 @@
 *.def
 *.ins
 
+.DS_Store
 .vscode/
 CTAN/
 TDS/
