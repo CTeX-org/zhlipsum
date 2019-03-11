@@ -200,7 +200,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A+
 \documentclass{ctxdoc}
 \usepackage{multirow}
-\setCJKmonofont{FangSong}[ItalicFont=KaiTi]
+\setCJKmonofont{STFangsong}[ItalicFont=Kaiti SC]
 %^^A-
 \hypersetup{%
   pdftitle={zhlipsum: 中文乱数假文（Lorem ipsum）},
@@ -219,21 +219,20 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \pagestyle{headings}
 %^^A+
 % Use `!` for comment in `ctexexam`.
-\makeatletter
 \catcode`!=\active
 \RecustomVerbatimEnvironment{ctexexam}{Verbatim}{%
   frame=single, framesep=10pt,
 %^^A-
   gobble=4,
   label=\rule{0pt}{12pt}\textnormal{\bfseries 例 \arabic{ctexexam}},
+  defineactive=\def!{\color{gray}\%},
 %^^A!  gobble=2,
 %^^A!  label=\rule{0pt}{12pt}\textnormal{\bfseries Example \arabic{ctexexam}},
+%^^A!  defineactive=\def!{\color{gray}\itshape\%},
 %^^A+
   listparameters=%
     \setlength\topsep{\bigskipamount}%
-    \refstepcounter{ctexexam}\ctexexamlabelref
-    \appto\FV@EndList{\nointerlineskip},
-  defineactive=\def!{\color{gray}\itshape\%}}
+    \refstepcounter{ctexexam}\ctexexamlabelref}
 \preto\ctexexam{\catcode`!=\active}
 \preto\endctexexam{\catcode`!=12}
 \catcode`!=12
@@ -251,17 +250,6 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
           \underline{\phantom{\itshape TF} \kern-0.1em}
         }
     \group_end:
-  }
-% From l3doc, to make @@ -> <module> while @@@@ -> @@
-\cs_set_protected:Npn \__ctxdoc_replace_at_at_aux:Nn #1#2
-  {
-    \tl_replace_all:Nnn #1 { \token_to_str:N @ } { @ }
-    \tl_replace_all:Nnn #1 { \token_to_str:N _ } { _ }
-    \tl_replace_all:Nnn #1 { @ @ @ @ } { \token_to_str:N a a }
-    \tl_replace_all:Nnn #1 { _ _ @ @ } { _ _ #2 }
-    \tl_replace_all:Nnn #1 {   _ @ @ } { _ _ #2 }
-    \tl_replace_all:Nnn #1 {     @ @ } { _ _ #2 }
-    \tl_replace_all:Nnn #1 { \token_to_str:N a a } { @ @ }
   }
 \ExplSyntaxOff
 \makeatother
@@ -432,8 +420,8 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %
 % 如果使用了 \CTeX{} 宏集，则编码会根据 \CTeX{} 自动确定。但需注意，
-% 在 \CTeX{} 宏集中，相应的宏包选项为 \opt{UTF8} 和 \opt{GBK}，而本
-% 宏包中所有选项均为小写。
+% 在 \CTeX{} 宏集中，相应的宏包选项为大写的 \opt{UTF8} 和 \opt{GBK}，
+% 而本宏包中所有选项均为小写。
 %^^A! If you have loaded \CTeX{} bundle, then the encoding will be
 %^^A! selected automatically according to \CTeX{}. Note that in \CTeX{}
 %^^A! bundle, the correspoding options are \opt{UTF8} and \opt{GBK},
@@ -767,8 +755,8 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %   ! \usepackage[encoding=big5]{zhlipsum}
 %
 %   ! 直接使用 \newzhlipsum{big5}{許蓋功, 蓋功許, 功許蓋} 会报错
-%   ! 原理：在分组内用 <、>、+ 代替 {、}、\，再将原先的 {、}、\ 设为“其他”
-%   ! 类（即类别码为 12）
+%   ! 原理：分组内使用 < > + 代替 { } \ 后，再将原先的 { } \ 设为“其他”类（即
+%   ! 类别码为 12）
 %   \begingroup
 %     \catcode`\<=1
 %     \catcode`\>=2
@@ -786,7 +774,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %^^A!   ! Using `\newzhlipsum{big5}{許蓋功, 蓋功許, 功許蓋}' directly will
 %^^A!   ! lead to an error.
-%^^A!   ! Use <, >, + to replace {, } and \, and set the original {, } and \
+%^^A!   ! Use <, >, + to replace {, } and \, then set the original {, } and \
 %^^A!   ! to be `other' category (i.e. catcode=12).
 %^^A!   \begingroup
 %^^A!     \catcode`\<=1
@@ -1288,7 +1276,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \clist_map_inline:nn {#2}
       {
         \@@_parse_par_aux:n {##1}
-        \bool_if:NTF \l@@_invalid_range_bool
+        \bool_if:NTF \l_@@_invalid_range_bool
           { \@@_warning:nnn { invalid-range } {##1} {#2} }
           {
             \bool_if:NT \l_@@_modified_range_bool

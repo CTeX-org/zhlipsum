@@ -39,13 +39,11 @@
 \ProcessOptions
 \@namedef{ver@thumbpdf.sty}{9999/99/99}
 \LoadClass{l3doc}
-\RequirePackage[UTF8, punct = kaiming, heading, fontset = none,
-  linespread = 1.2, sub3section]{ctex}
+\RequirePackage[UTF8, punct = kaiming, heading, linespread = 1.2, sub3section]{ctex}
 \ifxetex
   \xeCJKsetup{AutoFakeBold=false}
 \fi
 \ctexset{
-  fontset,
   abstractname   = 简介,
   indexname      = 代码索引,
   section        = {
@@ -62,19 +60,31 @@
 \RequirePackage{unicode-math}
 \RequirePackage{xcolor}
 \RequirePackage{caption}
-\RequirePackage{fvrb-ex}
+\RequirePackage{fancyvrb-ex}
 \RequirePackage{zref-base}
 \geometry{includemp,hmargin={0mm,15mm},vmargin={25mm,15mm},footskip=7mm}
 \hypersetup{pdfstartview=FitH,bookmarksdepth=subparagraph}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{2}
 \newcommand*\email{\nolinkurl}
-\setmainfont{TeX Gyre Pagella}
-\setsansfont{TeX Gyre Heros}
-\setmonofont[
-  HyphenChar = None ,
-  UprightFont=* Light, BoldFont=* Bold,
-  SlantedFont=* Light Oblique]{CMU Typewriter Text}
+\setmainfont{texgyrepagella}[%
+  Extension      = .otf,
+  UprightFont    = *-regular,
+  BoldFont       = *-bold,
+  ItalicFont     = *-italic,
+  BoldItalicFont = *-bolditalic]
+\setsansfont{texgyreheros}[%
+  Extension      = .otf,
+  UprightFont    = *-regular,
+  BoldFont       = *-bold,
+  ItalicFont     = *-italic,
+  BoldItalicFont = *-bolditalic]
+\setmonofont{lmmonolt10}[%
+  Extension      = .otf,
+  UprightFont    = *-regular,
+  BoldFont       = *-bold,
+  ItalicFont     = *-oblique,
+  BoldItalicFont = *-boldoblique]
 \setmathfont{texgyrepagella-math.otf}
 \captionsetup{strut=off, labelsep=quad, labelfont+=bf}
 %% <--- http://tex.stackexchange.com/a/40896
@@ -603,10 +613,16 @@
           #1 \g__codedoc_module_name_tl
       }
   }
-\cs_new_protected:Npn \__ctxdoc_replace_at_at_aux:Nn #1#2
+% From l3doc, to make @@ -> <module> while @@@@ -> @@
+\cs_set_protected:Npn \__ctxdoc_replace_at_at_aux:Nn #1#2
   {
-    \tl_replace_all:Nnn #1 { _ @ @ } { _ _ #2 }
-    \tl_replace_all:Nnn #1 {   @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 { \token_to_str:N @ } { @ }
+    \tl_replace_all:Nnn #1 { \token_to_str:N _ } { _ }
+    \tl_replace_all:Nnn #1 { @ @ @ @ } { \token_to_str:N a a }
+    \tl_replace_all:Nnn #1 { _ _ @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 {   _ @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 {     @ @ } { _ _ #2 }
+    \tl_replace_all:Nnn #1 { \token_to_str:N a a } { @ @ }
   }
 \cs_new_protected:Npn \__ctxdoc_output_line:n #1
   {
