@@ -35,6 +35,7 @@ test/
 *.bat
 
 scripts/*.local.sh
+source/*.sh
 source/*.md
 source/*.tex
 source/latexmkrc
