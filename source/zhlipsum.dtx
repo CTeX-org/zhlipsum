@@ -958,7 +958,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 \@@_msg_new:nn { ctex-invalid-encoding }
   {
     Package~ option~ "encoding=#1"~ is~ in~ conflict~ with~ ctex's~
-    option~ "\tl_use:N \l__ctex_encoding_tl".\\\\
+    option~ "\l__ctex_encoding_tl".\\\\
     Please~ check~ the~ package~ options.
   }
 \@@_msg_new:nn { invalid-encoding }
@@ -1172,15 +1172,18 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
         \zhlipsum_if_exist:nTF {#1}
           {
             \@@_parse_par:nn {#1} {#2}
-            \seq_pop_right:NN  \l_@@_par_num_seq \l_@@_tmpa_tl
-            \tl_use:N \l_@@_before_tl
-            \seq_map_inline:Nn \l_@@_par_num_seq
+            \seq_if_empty:NF \l_@@_par_num_seq
               {
-                \@@_use:nn {#1} {##1}
-                \tl_use:N \l_@@_inter_tl
+                \seq_pop_right:NN  \l_@@_par_num_seq \l_@@_tmpa_tl
+                \l_@@_before_tl
+                \seq_map_inline:Nn \l_@@_par_num_seq
+                  {
+                    \@@_use:nn {#1} {##1}
+                    \l_@@_inter_tl
+                  }
+                \@@_use:nn {#1} { \l_@@_tmpa_tl }
+                \l_@@_after_tl
               }
-            \@@_use:nn {#1} { \tl_use:N \l_@@_tmpa_tl }
-            \tl_use:N \l_@@_after_tl
           }
           { \@@_error:nn { invalid-name } {#1} }
       }
@@ -1195,10 +1198,10 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
   }
 \@@_msg_new:nn { CJK-invalid-encoding }
   {
-    The~ current~ CJK~ environment~ uses~ "\tl_use:N \CJK@@@@@enc"~
+    The~ current~ CJK~ environment~ uses~ "\CJK@@@@@enc"~
     encoding,\\
     but~ zhlipsum~ package~ has~ been~ loaded~ with~ the~ option~
-    "encoding=\tl_use:N \g_@@_encoding_tl".\\\\
+    "encoding=\g_@@_encoding_tl".\\\\
     Please~ check~ the~ package~ options.
   }
 %    \end{macrocode}
