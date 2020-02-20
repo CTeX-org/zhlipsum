@@ -19,7 +19,7 @@ unpackopts      = "-file-line-error -halt-on-error -interaction=batchmode"
 -- unpackopts   = "-interaction=batchmode"
 
 -- stdengine       = "xetex"
-checkengines    = {"pdftex", "xetex", "luatex", "uptex"}
+checkengines    = {"pdftex", "xetex", "luatex"}
 specialformats  = {}
 specialformats.latex = {
   pdftex = {binary = "latex", options = "-output-format=dvi"},
