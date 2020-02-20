@@ -4,7 +4,7 @@ on: [push]
 
 env:
   CTAN_URL: https://mirrors.rit.edu/CTAN
-  TL_PACKAGES: adobemapping amsfonts amsmath caption cjk cjkpunct cjkutils cm ctablestack ctex currfile dvipdfmx etex etoolbox euenc fandol filehook fontspec graphics graphics-cfg graphics-def iftex knuth-lib l3backend l3build l3experimental l3kernel l3packages latex-bin lm lm-math lualatex-math lualibs luaotfload luatex luatex85 luatexbase luatexja metafont mfware ms oberdiek platex-tools psnfss tex tex-ini-files tools ucharcat ulem unicode-data uplatex xcjk2uni xcolor xecjk xetex xkeyval xunicode zhmetrics zhmetrics-uptex zhnumber
+  TL_PACKAGES: adobemapping amsfonts amsmath atbegshi caption cjk cjkpunct cjkutils cm ctablestack ctex currfile dvipdfmx epstopdf-pkg etex etoolbox euenc fandol filehook fontspec graphics graphics-cfg graphics-def iftex knuth-lib l3backend l3build l3experimental l3kernel l3packages latex-bin lm lm-math ltxcmds lualatex-math lualibs luaotfload luatex luatex85 luatexbase luatexja metafont mfware ms oberdiek platex-tools psnfss tex tex-ini-files tools ucharcat ulem unicode-data uplatex xcjk2uni xcolor xecjk xetex xkeyval xunicode zhmetrics zhmetrics-uptex zhnumber
 
 jobs:
   build-ubuntu:
