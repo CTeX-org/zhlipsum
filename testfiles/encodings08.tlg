@@ -24,5 +24,5 @@ Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
 ============================================================
 TEST 2: Check encoding:
 ============================================================
-> \g__zhlipsum_encoding_tl=big5.
+> \g__zhlipsum_encoding_str=big5.
 ============================================================

@@ -1,6 +1,7 @@
 \input{regression-test}
 
 \documentclass[UTF8, fontset=fandol]{ctexart}
+\usepackage{iftex}
 \usepackage{zhlipsum}
 
 \begin{document}
@@ -18,7 +19,9 @@
 }
 
 \TEST{Nanshanjing:}{%
-  \zhlipsum[-][name=nanshanjing]
+  \ifpdftex\else
+    \zhlipsum[-][name=nanshanjing]
+  \fi
   \clearpage
 }
 

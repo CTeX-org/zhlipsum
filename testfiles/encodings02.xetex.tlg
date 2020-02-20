@@ -5,8 +5,9 @@ TEST 1: Load package:
 ============================================================
 (zhlipsum.sty
 Package: zhlipsum ....-..-.. v....1 Chinese dummy text
-Package zhlipsum Warning: You are now using Unicode engine xetex.
-(zhlipsum)                Encoding "gbk" is invalid. Changed into "utf8".
+Package zhlipsum Warning: You are now using Unicode engine xetex so encoding
+(zhlipsum)                "gbk" is invalid.
+(zhlipsum)                Changed into "utf8".
 \l__zhlipsum_begin_int=\count...
 \l__zhlipsum_end_int=\count...
 \l__zhlipsum_max_int=\count...
@@ -35,5 +36,5 @@ Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 66
 ============================================================
 TEST 2: Check encoding:
 ============================================================
-> \g__zhlipsum_encoding_tl=utf8.
+> \g__zhlipsum_encoding_str=utf8.
 ============================================================

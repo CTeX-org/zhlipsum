@@ -4,1158 +4,2274 @@ Don't change this file in any respect.
 TEST 1: Simplified:
 ============================================================
 [1
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20]
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+[18] [19] [20]
 ============================================================
 ============================================================
 TEST 2: Traditional:
 ============================================================
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [21
 ]
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [22]
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [23]
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [24]
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [25]
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [26]
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [27]
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 廁 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 廁 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [28]
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [29]
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鬚 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鬚 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [30]
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 廁 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 廁 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [31]
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 拋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [32]
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [33]
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 殼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [34]
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 虛 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 虛 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [35]
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [36]
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 佈 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 禿 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 佈 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 禿 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [37]
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [38]
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 錄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [39] [40]
 ============================================================
 ============================================================
 TEST 3: Nanshanjing:
 ============================================================
-Missing character: There is no 䧿 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 搖 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 飢 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 狌 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 狌 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 𪊨 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 棪 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 猨 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 杻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 謠 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 魼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鯥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 亶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 妬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 猼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 訑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 𪁺 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 𩿧 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 䨼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鳩 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鱬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 踆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 汸 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 淯 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 䧿 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 搖 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 瘞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鴟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 痺 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鴸 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 䧿 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 搖 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 飢 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 狌 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 狌 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 𪊨 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 棪 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 猨 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 杻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 謠 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 魼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鯥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 亶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 妬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 猼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 訑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 𪁺 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 𩿧 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 臥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 䨼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鳩 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鱬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 踆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 汸 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 淯 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 䧿 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 搖 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 瘞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鴟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 痺 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鴸 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [41
 ]
-Missing character: There is no 褢 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 斲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鮆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 䨼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 𨴯 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 虖 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 砆 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 湨 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 湨 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 䍺 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 虖 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 柟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 荊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 瘞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鵁 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 泿 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 褢 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 斲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鮆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 䨼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 𨴯 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 虖 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 砆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 湨 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 湨 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 䍺 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 虖 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 柟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 荊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 瘞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鵁 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 泿 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [42]
-Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 汎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 雘 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鱄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鮒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 梟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 顒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 䨼 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 飴 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 飢 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 䓘 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 槀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 輒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鵷 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鶵 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 汎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 雘 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鱄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鮒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 梟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 顒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 䨼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 飴 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 飢 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 䓘 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 槀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 輒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鵷 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鶵 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 稌 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [43]
 ============================================================
 ============================================================
 TEST 4: Xiangyu
 ============================================================
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 蘄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眴 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 綬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 慴 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 諭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 異 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鄛 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 雝 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 諫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 碭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 碭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 碭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 蟣 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鬬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 銳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 慴 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 諛 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 諫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鈇 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 僇 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 汙 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 虛 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 異 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 饗 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鯫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 盜 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 郤 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 珪 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 瞋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 髮 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 啗 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 宮 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 盜 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 廁 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 酈 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 桮 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 豎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 宮 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 宮 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 繡 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 銳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 菑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 棄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鋗 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 橫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 棄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 橫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 誑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 樅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 樅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 罵 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 樅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 桮 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鬬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 鬬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 輒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 瞋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 剄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 蘄 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眛 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 闋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 紿 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 瞋 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 檥 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 蘄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眴 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 綬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 慴 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 諭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 異 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 雞 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鄛 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 雝 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 諫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 碭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 碭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 碭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 別 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 蟣 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鬬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 銳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 慴 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鉅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 諛 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 諫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鈇 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 僇 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 汙 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 虛 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 異 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 饗 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鯫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 盜 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 郤 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 珪 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 瞋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 髮 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 啗 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 宮 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 盜 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 廁 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 噲 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 酈 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 桮 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 豎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 宮 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 宮 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 繡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 銳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 菑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 棄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鋗 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 橫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 卻 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 棄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 橫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 誑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 樅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 樅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 罵 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 樅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 桮 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鬬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 鬬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 輒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 瞋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閒 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 彊 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 剄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 蘄 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眛 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 滎 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 絕 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 騅 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 闋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 紿 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 脫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 瞋 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 檥 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 戶 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 呂 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 爭 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [44
 ] [45] [46] [47] [48] [49] [50] [51] [52] [53]
 ============================================================

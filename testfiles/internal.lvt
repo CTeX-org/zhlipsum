@@ -77,8 +77,6 @@
       { \zhlipsumtest_parse_par_num_ii:n {#1} }
   }
 
-\loggingoutput
-
 \TEST { Use~ single~ paragraph: }
   {
     \__zhlipsum_use:nn { simp        } { 1 } \par

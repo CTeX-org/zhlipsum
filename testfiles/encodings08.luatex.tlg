@@ -8,8 +8,9 @@ Package: zhlipsum ....-..-.. v....1 Chinese dummy text
 (../l3keys2e.sty
 Package: l3keys2e ....-..-.. LaTeX2e option processing using LaTeX3 keys
 )
-Package zhlipsum Warning: You are now using Unicode engine luatex.
-(zhlipsum)                Encoding "big5" is invalid. Changed into "utf8".
+Package zhlipsum Warning: You are now using Unicode engine luatex so encoding
+(zhlipsum)                "big5" is invalid.
+(zhlipsum)                Changed into "utf8".
 \l__zhlipsum_begin_int=\count...
 \l__zhlipsum_end_int=\count...
 \l__zhlipsum_max_int=\count...
@@ -38,5 +39,5 @@ Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 66
 ============================================================
 TEST 2: Check encoding:
 ============================================================
-> \g__zhlipsum_encoding_tl=utf8.
+> \g__zhlipsum_encoding_str=utf8.
 ============================================================

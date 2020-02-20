@@ -11,7 +11,7 @@
   { \usepackage [ encoding = gbk ] { zhlipsum } }
 
 \TEST { Check~ encoding: }
-  { \tl_log:N \g__zhlipsum_encoding_tl }
+  { \str_log:N \g__zhlipsum_encoding_str }
 
 \ExplSyntaxOff
 

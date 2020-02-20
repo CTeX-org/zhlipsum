@@ -1,13 +1,11 @@
 This is a generated file for the l3build validation system.
 Don't change this file in any respect.
 ============================================================
-Checking compilation. No log file data expected.
 ============================================================
 TEST 1: Simplified:
 ============================================================
-LaTeX Font Info:    Try loading font information for C10+gbsn on input line ....
-File: c10gbsn.fdx ....-..-.. 4.8.4
-) [1
+LaTeX Font Info:    Trying to load font information for C10+gbsn on input line ....
+[1
 ] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
 ============================================================
 ============================================================
@@ -19,30 +17,30 @@ TEST 2: Zhufu
 ============================================================
 TEST 3: Aspirin
 ============================================================
-LaTeX Font Info:    Try loading font information for OML+cmr on input line ....
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line ....
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line ....
-Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
-[]\C10/gbsn/m/n/10/06 ^^83 \C10/gbsn/m/n/10/16 ^^89 \C10/gbsn/m/n/10/14 ^^9a \C10/gbsn/m/n/10/12 ^^f5 \C10/gbsn/m/n/10/01 ^^c3 \C10/gbsn/m/n/10/19 ] ^^aa \C10/gbsn/m/n/10/01 ^^d5\OT1/cmr/m/n/10 Aspirin\C10/gbsn/m/n/10/01 ^^c4 ^^c7 \C10/gbsn/m/n/10/19 ^^O \C10/gbsn/m/n/10/07 ^^c1 \C10/gbsn/m/n/10/19 / \C10/gbsn/m/n/10/31 ^^da \C10/gbsn/m/n/10/16 y \C10/gbsn/m/n/10/18 ^^ed \C10/gbsn/m/n/10/16 ^^ac \C10/gbsn/m/n/10/01 ^^c3 \C10/gbsn/m/n/10/19 ] ^^aa \C10/gbsn/m/n/10/01 ^^d5\OT1/cmr/m/n/10 acetylsalicylic acid\C10/gbsn/m/n/10/01 ^^c4 ^^c7
+Overfull \hbox (11.80576pt too wide) in paragraph at lines 29--29
+[]\C10/gbsn/m/n/10/06 ƒ \C10/gbsn/m/n/10/16 ‰ \C10/gbsn/m/n/10/14 š \C10/gbsn/m/n/10/12 õ \C10/gbsn/m/n/10/01 Ã \C10/gbsn/m/n/10/19 ] ª \C10/gbsn/m/n/10/01 Õ\OT1/cmr/m/n/10 Aspirin\C10/gbsn/m/n/10/01 Ä Ç \C10/gbsn/m/n/10/19 ^^O \C10/gbsn/m/n/10/07 Á \C10/gbsn/m/n/10/19 / \C10/gbsn/m/n/10/31 Ú \C10/gbsn/m/n/10/16 y \C10/gbsn/m/n/10/18 í \C10/gbsn/m/n/10/16 ¬ \C10/gbsn/m/n/10/01 Ã \C10/gbsn/m/n/10/19 ] ª \C10/gbsn/m/n/10/01 Õ\OT1/cmr/m/n/10 acetylsalicylic acid\C10/gbsn/m/n/10/01 Ä Ç
 \hbox(8.71999+1.94444)x345.0, glue set - 1.0
 .\hbox(0.0+0.0)x15.0
-.\C10/gbsn/m/n/10/06 ^^83
+.\C10/gbsn/m/n/10/06 ƒ
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/16 ^^89
+.\C10/gbsn/m/n/10/16 ‰
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/14 ^^9a
+.\C10/gbsn/m/n/10/14 š
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/12 ^^f5
+.\C10/gbsn/m/n/10/12 õ
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/01 ^^c3
+.\C10/gbsn/m/n/10/01 Ã
 .\kern -0.00003
 .\kern 0.00003
 .\penalty 10000
@@ -52,13 +50,13 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/19 ^^aa
+.\C10/gbsn/m/n/10/19 ª
 .\kern -0.00002
 .\kern 0.00002
 .\penalty 10000
 .\glue 0.0 plus 0.96002
 .\penalty 10000
-.\C10/gbsn/m/n/10/01 ^^d5
+.\C10/gbsn/m/n/10/01 Õ
 .\kern -0.00002
 .\kern 0.00002
 .\OT1/cmr/m/n/10 A
@@ -68,13 +66,13 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\OT1/cmr/m/n/10 r
 .\OT1/cmr/m/n/10 i
 .\OT1/cmr/m/n/10 n
-.\C10/gbsn/m/n/10/01 ^^c4
+.\C10/gbsn/m/n/10/01 Ä
 .\kern -0.00002
 .\kern 0.00002
 .\penalty 10000
 .\glue 0.0 plus 0.96002
 .\penalty 10000
-.\C10/gbsn/m/n/10/01 ^^c7
+.\C10/gbsn/m/n/10/01 Ç
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
@@ -82,7 +80,7 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/07 ^^c1
+.\C10/gbsn/m/n/10/07 Á
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
@@ -90,7 +88,7 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/31 ^^da
+.\C10/gbsn/m/n/10/31 Ú
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
@@ -98,15 +96,15 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/18 ^^ed
+.\C10/gbsn/m/n/10/18 í
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/16 ^^ac
+.\C10/gbsn/m/n/10/16 ¬
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/01 ^^c3
+.\C10/gbsn/m/n/10/01 Ã
 .\kern -0.00003
 .\kern 0.00003
 .\penalty 10000
@@ -116,13 +114,13 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\kern -0.00002
 .\kern 0.00002
 .\glue 0.0 plus 0.96002
-.\C10/gbsn/m/n/10/19 ^^aa
+.\C10/gbsn/m/n/10/19 ª
 .\kern -0.00002
 .\kern 0.00002
 .\penalty 10000
 .\glue 0.0 plus 0.96002
 .\penalty 10000
-.\C10/gbsn/m/n/10/01 ^^d5
+.\C10/gbsn/m/n/10/01 Õ
 .\kern -0.00002
 .\kern 0.00002
 .\OT1/cmr/m/n/10 a
@@ -146,17 +144,16 @@ Overfull \hbox (11.80576pt too wide) in paragraph at lines 31--31
 .\OT1/cmr/m/n/10 c
 .\OT1/cmr/m/n/10 i
 .\OT1/cmr/m/n/10 d
-.\C10/gbsn/m/n/10/01 ^^c4
+.\C10/gbsn/m/n/10/01 Ä
 .\kern -0.00002
 .\kern 0.00002
 .\penalty 10000
 .\glue 0.0 plus 0.96002
 .\penalty 10000
-.\C10/gbsn/m/n/10/01 ^^c7
+.\C10/gbsn/m/n/10/01 Ç
 .\kern -0.00002
 .\kern 0.0
 .\glue(\rightskip) 0.0
 [23
 ] [24] [25] [26] [27] [28] [29]
 ============================================================
-Bad grouping: 2!

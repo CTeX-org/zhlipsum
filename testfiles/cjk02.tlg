@@ -5,9 +5,11 @@ TEST 1: Check CJK encoding (UTF8):
 ============================================================
 (../UTF8.bdg
 File: UTF8.bdg ....-..-.. 4.8.4
-) (../UTF8.enc
+)
+(../UTF8.enc
 File: UTF8.enc ....-..-.. 4.8.4
-) (../UTF8.chr
+)
+(../UTF8.chr
 File: UTF8.chr ....-..-.. 4.8.4
 )
 > false.
@@ -19,9 +21,11 @@ TEST 2: Check CJK encoding (GBK):
 ============================================================
 (../standard.bdg
 File: standard.bdg ....-..-.. 4.8.4
-) (../extended.enc
+)
+(../extended.enc
 File: extended.enc ....-..-.. 4.8.4
-) (../extended.chr
+)
+(../extended.chr
 File: extended.chr ....-..-.. 4.8.4
 )
 > true.
@@ -33,7 +37,8 @@ TEST 3: Check CJK encoding (GB):
 ============================================================
 (../standard.enc
 File: standard.enc ....-..-.. 4.8.4
-) (../standard.chr
+)
+(../standard.chr
 File: standard.chr ....-..-.. 4.8.4
 )
 > true.
@@ -45,7 +50,8 @@ TEST 4: Check CJK encoding (Bg5):
 ============================================================
 (../Bg5.enc
 File: Bg5.enc ....-..-.. 4.8.4
-) (../Bg5.chr
+)
+(../Bg5.chr
 File: Bg5.chr ....-..-.. 4.8.4
 )
 > false.

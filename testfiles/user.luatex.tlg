@@ -11240,11 +11240,13 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 技
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 說
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 說
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 沒
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 沒
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\penalty 10000
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
@@ -11613,8 +11615,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 命
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 複
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 複
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 機
@@ -11657,8 +11660,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 細
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 線
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 線
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 名
@@ -11691,8 +11695,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\glue 5.26968 minus 5.26968
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 內
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 內
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 信
@@ -12115,8 +12120,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\glue 5.26968 minus 5.26968
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 並
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 並
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 細
@@ -12171,8 +12177,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 家
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 決
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 決
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 空
@@ -12388,8 +12395,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 江
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 內
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 內
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 立
@@ -12416,8 +12424,9 @@ Completed box being shipped out [7]
 ...\glue(\baselineskip) 5.90208
 ...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
 ....\whatsit4=[]
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 況
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 況
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 半
@@ -12598,8 +12607,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 與
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 內
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 內
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 關
@@ -12626,8 +12636,9 @@ Completed box being shipped out [7]
 ...\glue(\baselineskip) 5.90208
 ...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
 ....\whatsit4=[]
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 曆
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 曆
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 李
@@ -13066,8 +13077,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 光
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 採
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 採
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 用
@@ -13314,8 +13326,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 員
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 況
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 況
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 屬
@@ -13427,8 +13440,9 @@ Completed box being shipped out [7]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 格
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 並
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 並
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 下
@@ -13472,20 +13486,20 @@ Completed box being shipped out [7]
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0, direction TLT
 ...\whatsit4=[]
-Missing character: There is no 說 (U+8AAA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 沒 (U+6C92) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 線 (U+7DDA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 決 (U+6C7A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 況 (U+6CC1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 曆 (U+66C6) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 採 (U+63A1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 況 (U+6CC1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
+Missing character: There is no 說 (U+8AAA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 沒 (U+6C92) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 線 (U+7DDA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 決 (U+6C7A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 況 (U+6CC1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 曆 (U+66C6) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 採 (U+63A1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 況 (U+6CC1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 ============================================================
 ============================================================
 TEST 4: Nanshanjing:
@@ -13539,8 +13553,9 @@ Completed box being shipped out [8]
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 曰
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 䧿
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 䧿
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 山
@@ -13561,8 +13576,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 招
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 搖
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 搖
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 之
@@ -13689,8 +13705,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 不
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 飢
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 飢
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\penalty 10000
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
@@ -13718,8 +13735,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 如
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 穀
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 穀
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue(\rightskip) 0.0
 ...\glue(\baselineskip) 5.90208
 ...\hbox(9.27464+1.26472)x345.0, glue set - 0.10623, direction TLT
@@ -13765,8 +13783,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 迷
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 穀
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 穀
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\penalty 10000
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
@@ -13854,11 +13873,13 @@ Completed box being shipped out [8]
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 曰
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 狌
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 狌
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 狌
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 狌
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\penalty 10000
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
@@ -13883,8 +13904,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 麗
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 𪊨
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 𪊨
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 之
@@ -14020,8 +14042,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 多
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 棪
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 棪
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 木
@@ -14059,8 +14082,9 @@ Completed box being shipped out [8]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 多
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 黃
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 黃
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\penalty 500
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
@@ -14110,8 +14134,9 @@ Completed box being shipped out [8]
 ....\norule(9.27464+1.26472)x0.0
 ....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 曰
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 猨
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 猨
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 翼
@@ -14243,17 +14268,17 @@ Completed box being shipped out [8]
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0, direction TLT
 ...\whatsit4=[]
-Missing character: There is no 䧿 (U+49FF) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 搖 (U+6416) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 飢 (U+98E2) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 穀 (U+7A40) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 穀 (U+7A40) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 狌 (U+72CC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 狌 (U+72CC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 𪊨 (U+2A2A8) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 棪 (U+68EA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 黃 (U+9EC3) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 猨 (U+7328) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
+Missing character: There is no 䧿 (U+49FF) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 搖 (U+6416) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 飢 (U+98E2) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 穀 (U+7A40) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 穀 (U+7A40) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 狌 (U+72CC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 狌 (U+72CC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 𪊨 (U+2A2A8) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 棪 (U+68EA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 黃 (U+9EC3) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 猨 (U+7328) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 ============================================================
 ============================================================
 TEST 5: Xiangyu:
@@ -14401,8 +14426,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\glue 5.26968 minus 5.26968
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 秦
@@ -14444,8 +14470,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 世
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 楚
@@ -14751,8 +14778,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 有
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 櫟
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 櫟
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 陽
@@ -14770,8 +14798,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 請
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 蘄
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 蘄
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 獄
@@ -14791,8 +14820,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 抵
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 櫟
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 櫟
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 陽
@@ -14869,8 +14899,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 於
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
@@ -14879,8 +14910,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 。
 ....\glue 5.26968
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
@@ -14919,8 +14951,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 每
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
@@ -14959,8 +14992,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 常
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 主
@@ -15261,8 +15295,9 @@ Completed box being shipped out [9]
 ...\glue(\baselineskip) 5.90208
 ...\hbox(9.27464+1.26472)x345.0, glue set - 0.2656, direction TLT
 ....\whatsit4=[]
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
@@ -15459,8 +15494,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 則
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 人
@@ -15791,8 +15827,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 梁
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 眴
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 眴
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 籍
@@ -15887,8 +15924,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 印
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 綬
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 綬
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\penalty 10000
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
@@ -15963,8 +16001,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 皆
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 慴
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 慴
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 伏
@@ -16014,8 +16053,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\glue 5.26968 minus 5.26968
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 諭
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 諭
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 以
@@ -16023,8 +16063,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 所
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 起
@@ -16048,8 +16089,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 舉
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
@@ -16111,8 +16153,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 署
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 吳
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 中
@@ -16120,11 +16163,13 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 豪
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 傑
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 傑
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 校
@@ -16282,8 +16327,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x5.26968, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 」
 ....\glue 5.26968 minus 5.26968
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 眾
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 眾
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 乃
@@ -16307,8 +16353,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 梁
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 會
@@ -16326,8 +16373,9 @@ Completed box being shipped out [9]
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 籍
 ....\glue 0.0 plus 0.60931
-....\hbox(9.27464+1.26472)x10.53937, direction TLT
-.....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 為
+....\norule(9.27464+1.26472)x0.0
+....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 󰀀
 ....\glue 0.0 plus 0.60931
 ....\hbox(9.27464+1.26472)x10.53937, direction TLT
 .....\LTJY3/FandolSong-Regular(0)/m/n/10.53937 裨
@@ -16366,29 +16414,29 @@ Completed box being shipped out [9]
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0, direction TLT
 ...\whatsit4=[]
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 櫟 (U+6ADF) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 蘄 (U+8604) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 櫟 (U+6ADF) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 眴 (U+7734) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 綬 (U+7DAC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 慴 (U+6174) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 諭 (U+8AED) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 傑 (U+5091) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 眾 (U+773E) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=DFLT;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 櫟 (U+6ADF) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 蘄 (U+8604) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 櫟 (U+6ADF) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 眴 (U+7734) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 綬 (U+7DAC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 慴 (U+6174) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 諭 (U+8AED) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 傑 (U+5091) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 眾 (U+773E) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 ============================================================
 ============================================================
 TEST 6: Zhufu:

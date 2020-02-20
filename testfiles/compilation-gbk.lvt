@@ -13,8 +13,6 @@
 
 \SEPARATOR
 
-\TYPE{Checking compilation. No log file data expected.}
-
 \TEST{Simplified:}{%
   \zhlipsum[-][name=simp]
   \clearpage
@@ -30,8 +28,8 @@
   \clearpage
 }
 
-\END
-
 \end{CJK*}
+
+\END
 
 \end{document}

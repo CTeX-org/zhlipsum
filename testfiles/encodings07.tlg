@@ -33,5 +33,5 @@ Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 66
 ============================================================
 TEST 2: Check encoding:
 ============================================================
-> \g__zhlipsum_encoding_tl=gbk.
+> \g__zhlipsum_encoding_str=gbk.
 ============================================================
