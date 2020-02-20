@@ -1,6 +1,6 @@
 % \iffalse meta-comment
 %
-% Copyright (C) 2017--2019 by Xiangdong Zeng <xdzeng96@gmail.com>
+% Copyright (C) 2017--2020 by Xiangdong Zeng <xdzeng96@gmail.com>
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either
@@ -85,7 +85,7 @@ version.
 
 -----
 
-Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
+Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %</readme>
 %
 %<*internal>
@@ -102,7 +102,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 
 \preamble
 
-    Copyright (C) 2017--2019 by Xiangdong Zeng <xdzeng96@gmail.com>
+    Copyright (C) 2017--2020 by Xiangdong Zeng <xdzeng96@gmail.com>
 
     This work may be distributed and/or modified under the
     conditions of the LaTeX Project Public License, either
@@ -195,11 +195,12 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %</!(driver|install)>
 %<*driver>
-%\PassOptionsToPackage{showframe}{geometry}
+\PassOptionsToPackage{showframe}{geometry}
 %^^A! \PassOptionsToPackage{scheme=plain, linespread=1.1}{ctex}
 %^^A+
 \documentclass{ctxdoc}
 \usepackage{multirow}
+\setCJKmainfont{Source Han Serif SC}[ItalicFont=Kaiti SC]
 \setCJKmonofont{STFangsong}[ItalicFont=Kaiti SC]
 %^^A-
 \hypersetup{%
@@ -821,19 +822,17 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \subsection{内部变量和函数}
 %
-% \begin{variable}{\l_@@_tmpa_tl,\l_@@_tmpa_seq,\l_@@_tmpb_seq}
+% \begin{variable}{
+%   \l_@@_tmpa_tl,
+%   \l_@@_tmpa_seq,
+%   \l_@@_tmpb_seq,
+%   \l_@@_tmpa_str}
 % 临时变量。
 %    \begin{macrocode}
 \tl_new:N  \l_@@_tmpa_tl
 \seq_new:N \l_@@_tmpa_seq
 \seq_new:N \l_@@_tmpb_seq
-%    \end{macrocode}
-% \end{variable}
-%
-% \begin{variable}{\g_@@_encoding_tl}
-% 编码信息。
-%    \begin{macrocode}
-\tl_new:N \g_@@_encoding_tl
+\str_new:N \l_@@_tmpa_str
 %    \end{macrocode}
 % \end{variable}
 %
@@ -847,56 +846,64 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \begin{variable}{\c_zhlipsum_simp_seq,\c_zhlipsum_trad_seq}
 % 预定义的简体中文与繁体中文的假文名称列表。
 %    \begin{macrocode}
-\seq_new:N \c_zhlipsum_simp_seq
-\seq_new:N \c_zhlipsum_trad_seq
-\seq_set_from_clist:Nn \c_zhlipsum_simp_seq { simp, zhufu, aspirin }
-\seq_set_from_clist:Nn \c_zhlipsum_trad_seq { trad, xiangyu, nanshanjing }
+\seq_const_from_clist:Nn \c_zhlipsum_simp_seq { simp, zhufu, aspirin }
+\seq_const_from_clist:Nn \c_zhlipsum_trad_seq { trad, xiangyu, nanshanjing }
 %    \end{macrocode}
 % \end{variable}
 %
+% \begin{macro}[int]{\file_input:x}
 % \LaTeX3 函数变体。
 %    \begin{macrocode}
 \cs_generate_variant:Nn \file_input:n { x }
-\prg_generate_conditional_variant:Nnn \tl_if_eq:nn { Vn } { T, TF }
-%    \end{macrocode}
-%
-% \begin{macro}[int,TF]{\@@_if_unicode_engine:}
-% 判断是否为 Unicode 引擎。来自于 \pkg{zhnumber} 宏包。
-%    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \@@_if_unicode_engine: { T, F, TF }
-  {
-    \bool_lazy_any:nTF
-      {
-        { \sys_if_engine_xetex_p:  }
-        { \sys_if_engine_luatex_p: }
-        { \sys_if_engine_uptex_p:  }
-      }
-      { \prg_return_true:  }
-      { \prg_return_false: }
-  }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}[TF]{\@@_if_encoding:n}
-% 判断当前编码。
+% \begin{macro}[TF]{\@@_if_unicode_engine:}
+% 判断是否为 Unicode 引擎。来自于 \pkg{zhnumber} 宏包。
 %    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \@@_if_encoding:n #1 { T, F, TF }
+\prg_new_conditional:Npnn \@@_if_unicode_engine: { T, F, TF }
   {
-    \tl_if_eq:VnTF \g_@@_encoding_tl {#1}
+    \bool_lazy_any:nTF
+      {
+        \sys_if_engine_xetex_p:
+        \sys_if_engine_luatex_p:
+        \sys_if_engine_uptex_p:
+      }
       { \prg_return_true: } { \prg_return_false: }
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_msg_new:nn,
-%   \@@_error:n,\@@_error:nn,
-%   \@@_warning:nn,\@@_warning:nnn,\@@_warning:nxxx,
+% \begin{macro}[TF]{\@@_if_encoding:n}
+% \begin{variable}{\g_@@_encoding_str}
+% 判断当前编码。
+%    \begin{macrocode}
+\prg_new_conditional:Npnn \@@_if_encoding:n #1 { T, F, TF }
+  {
+    \str_if_eq:VnTF \g_@@_encoding_str {#1}
+      { \prg_return_true: } { \prg_return_false: }
+  }
+\prg_generate_conditional_variant:Nnn \@@_if_encoding:n { V } { T, F, TF }
+\str_new:N \g_@@_encoding_str
+%    \end{macrocode}
+% \end{variable}
+% \end{macro}
+%
+% \begin{macro}{
+%   \@@_msg_new:nn,
+%   \@@_error:n,
+%   \@@_error:nn,
+%   \@@_warning:n,
+%   \@@_warning:nn,
+%   \@@_warning:nnn,
+%   \@@_warning:nxxx,
 %   \@@_info:nn}
 % 各种信息函数的缩略形式。
 %    \begin{macrocode}
 \cs_new:Npn \@@_msg_new:nn   { \msg_new:nnn       { zhlipsum } }
 \cs_new:Npn \@@_error:n      { \msg_error:nn      { zhlipsum } }
 \cs_new:Npn \@@_error:nn     { \msg_error:nnn     { zhlipsum } }
+\cs_new:Npn \@@_warning:n    { \msg_warning:nn    { zhlipsum } }
 \cs_new:Npn \@@_warning:nn   { \msg_warning:nnn   { zhlipsum } }
 \cs_new:Npn \@@_warning:nnn  { \msg_warning:nnnn  { zhlipsum } }
 \cs_new:Npn \@@_warning:nxxx { \msg_warning:nnxxx { zhlipsum } }
@@ -915,6 +922,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \changes{v0.4}{2017/09/16}{新增 \opt{encoding} 选项。}
 % \changes{v0.5}{2017/12/22}{支持 Big5 编码。}
+% \changes{v1.0.0}{2018/04/01}{根据 \CTeX{} 宏集的选项自动确定编码。}
 %
 % \begin{macro}{encoding}
 % 设置编码。
@@ -923,19 +931,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
   {
     encoding .choices:nn =
       { utf8, gbk, big5 }
-      {
-        \tl_gset_eq:NN \g_@@_encoding_tl \l_keys_choice_tl
-        \@@_if_unicode_engine:T
-          {
-            \@@_if_encoding:nF { utf8 }
-              {
-                \tl_gset:Nn \g_@@_encoding_tl { utf8 }
-                \@@_warning:nn { unicode-engine } {#1}
-              }
-          }
-        \@@_if_ctex_valid_encoding:F
-          { \@@_error:nn { ctex-invalid-encoding } {#1} }
-      },
+      { \str_gset:Nn \g_@@_encoding_str {#1} },
     encoding / unknown .code:n =
       { \@@_error:nn { invalid-encoding } {#1} },
     encoding .value_required:n = true,
@@ -950,62 +946,76 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % 提示信息。
 %    \begin{macrocode}
-\@@_msg_new:nn { unicode-engine }
-  {
-    You~ are~ now~ using~ Unicode~ engine~ \c_sys_engine_str. \\
-    Encoding~ "#1"~ is~ invalid.~ Changed~ into~ "utf8".
-  }
-\@@_msg_new:nn { ctex-invalid-encoding }
-  {
-    Package~ option~ "encoding=#1"~ is~ in~ conflict~ with~ ctex's~
-    option~ "\l__ctex_encoding_tl".\\\\
-    Please~ check~ the~ package~ options.
-  }
 \@@_msg_new:nn { invalid-encoding }
   {
-    Encoding~ "#1"~ is~ invalid. \\
-    Available~ encodings~ are~ "utf8",~ "gbk"~ and~ "big5".
+    Encoding~"#1"~is~invalid. \\
+    Available~encodings~are~"utf8",~"gbk"~and~"big5".
   }
 \@@_msg_new:nn { unknown-option }
-  { Package~ option~ "\l_keys_key_tl"~ is~ unknown. }
+  { Package~option~'\l_keys_key_tl'~is~unknown. }
 %    \end{macrocode}
 %
-% \changes{v1.0.0}{2018/04/01}{根据 \CTeX{} 宏集的选项自动确定编码。}
-%
-% \begin{macro}[TF]{\@@_if_ctex_valid_encoding:}
-% 检查 \CTeX{} 编码。
+% \begin{macro}{\@@_check_unicode_engine_encoding:}
+% Unicode 引擎下编码始终设为 UTF-8。
 %    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \@@_if_ctex_valid_encoding: { F }
+\cs_new_protected:Npn \@@_check_unicode_engine_encoding:
   {
-    \tl_if_exist:NTF \l__ctex_encoding_tl
+    \@@_if_unicode_engine:T
       {
-        \tl_set:Nx \l_@@_tmpa_tl
-          { \str_lower_case:f { \l__ctex_encoding_tl } }
-        \str_if_eq:NNTF \g_@@_encoding_tl \l_@@_tmpa_tl
-          { \prg_return_true: } { \prg_return_false: }
+        \str_if_empty:NF \g_@@_encoding_str
+          {
+            \@@_if_encoding:nF { utf8 }
+              { \@@_warning:n { unicode-engine } }
+          }
+        \str_gset:Nn \g_@@_encoding_str { utf8 }
       }
-      { \prg_return_true: }
+  }
+\@@_msg_new:nn { unicode-engine }
+  {
+    You~are~now~using~Unicode~engine~\c_sys_engine_str\c_space_tl~so~
+    encoding~"\g_@@_encoding_str"~is~invalid. \\
+    Changed~into~"utf8".
   }
 %    \end{macrocode}
 % \end{macro}
 %
-% 如果调用了 \CTeX{} 宏集，则自动确定编码；否则默认设为 UTF-8。
+% \begin{macro}{\@@_check_ctex_encoding:}
+% 如果调用了 \CTeX{} 宏集，则自动确定编码。
 %    \begin{macrocode}
-\tl_if_exist:NTF \l__ctex_encoding_tl
+\cs_new_protected:Npn \@@_check_ctex_encoding:
   {
-    \tl_if_eq:VnTF \l__ctex_encoding_tl { UTF8 }
-      { \tl_gset:Nn \g_@@_encoding_tl { utf8 } }
+    \tl_if_exist:NT \l__ctex_encoding_tl
       {
-        \tl_if_eq:VnT \l__ctex_encoding_tl { GBK }
-          { \tl_gset:Nn \g_@@_encoding_tl { gbk } }
+        \str_set:Nx \l_@@_tmpa_str
+          { \str_lower_case:f { \l__ctex_encoding_tl } }
+        \str_if_empty:NF \g_@@_encoding_str
+          {
+            \@@_if_encoding:VF \l_@@_tmpa_str
+              { \@@_warning:n { ctex-encoding-conflict } }
+          }
+        \str_gset_eq:NN \g_@@_encoding_str \l_@@_tmpa_str
       }
   }
-  { \tl_gset:Nn \g_@@_encoding_tl { utf8 } }
+\@@_msg_new:nn { ctex-encoding-conflict }
+  {
+    Package~option~"encoding=\g_@@_encoding_str"~is~in~conflict~with~
+    ctex's~option~"\l__ctex_encoding_tl". \\
+    Changed~into~"encoding=\l_@@_tmpa_str".
+  }
 %    \end{macrocode}
+% \end{macro}
 %
 % 将宏包选项传给 |zhlipsum/option|。
 %    \begin{macrocode}
 \ProcessKeysOptions { zhlipsum / option }
+%    \end{macrocode}
+%
+% 检查编码兼容性。
+%    \begin{macrocode}
+\@@_check_unicode_engine_encoding:
+\@@_check_ctex_encoding:
+\str_if_empty:NT \g_@@_encoding_str
+  { \str_gset:Nn \g_@@_encoding_str { utf8 } }
 %    \end{macrocode}
 %
 % \subsection{函数选项}
@@ -1051,8 +1061,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% \changes{v0.5}{2017/12/22}{新增选项 \opt{script}，同时支持简体中文
-%   和繁体中文。}
+% \changes{v0.5}{2017/12/22}{新增选项 \opt{script}，同时支持简体中文和繁体中文。}
 % \changes{v1.0.0}{2018/03/24}{\opt{script} 成为过时选项。}
 %
 % \begin{macro}{script}
@@ -1100,57 +1109,53 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \subsection{输出假文}
 %
-% \begin{macro}{\zhlipsum}
+% \begin{macro}{\zhlipsum,\@@:n}
 % \changes{v0.5}{2018/01/05}{支持选项设置。}
-% \changes{v1.0.0}{2018/03/23}{更改参数形式，允许利用逗号分隔列表选择
-%   段落。}
+% \changes{v1.0.0}{2018/03/23}{更改参数形式，允许利用逗号分隔列表选择段落。}
 % \changes{v1.1.0}{2018/04/08}{改回使用方括号指定段落数的形式。}
-% 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选
-% 项列表。
+% 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选项列表。
 %    \begin{macrocode}
 \NewDocumentCommand \zhlipsum { s o +o }
   {
     \group_begin:
       \IfBooleanF {#1}
         {
-          \tl_set:Nn \l_@@_before_tl { \@@_par: }
-          \tl_set:Nn \l_@@_after_tl  { \@@_par: }
-          \tl_set:Nn \l_@@_inter_tl  { \@@_par: }
+          \tl_set:Nn \l_@@_before_tl { \par }
+          \tl_set:Nn \l_@@_after_tl  { \par }
+          \tl_set:Nn \l_@@_inter_tl  { \par }
         }
       \IfValueTF {#3}
         {
           \keys_set:nn { zhlipsum } {#3}
-          \zhlipsum_use:Vn \l_@@_name_tl {#2}
+          \@@:n {#2}
         }
         {
           \IfValueTF {#2}
             {
 %    \end{macrocode}
-% 如果只带一个参数，那么根据其是否含有 |=| 来判断该参数是段落数还是
-% 选项列表。
+% 如果只带一个参数，那么根据其是否含有 |=| 来判断该参数是段落数还是选项列表。
 %    \begin{macrocode}
               \@@_if_key_value_list:nTF {#2}
                 {
                   \keys_set:nn { zhlipsum } {#2}
-                  \zhlipsum_use:Vn \l_@@_name_tl { 1 - 3 }
+                  \@@:n { 1 - 3 }
                 }
-                { \zhlipsum_use:Vn \l_@@_name_tl {#2} }
+                { \@@:n {#2} }
             }
-            { \zhlipsum_use:Vn \l_@@_name_tl { 1 - 3 } }
+            { \@@:n { 1 - 3 } }
         }
     \group_end:
   }
+\cs_new_protected:Npn \@@:n #1
+  { \exp_args:No \zhlipsum_use:nn { \l_@@_name_tl } {#1} }
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}[TF]{\@@_if_key_value_list:n}
+% \begin{macro}{\@@_if_key_value_list:nTF}
 % 判断是否为键值列表，即是否含有 |=|。
 %    \begin{macrocode}
-\prg_new_protected_conditional:Npnn \@@_if_key_value_list:n #1 { TF }
-  {
-    \tl_if_in:nnTF {#1} { = }
-      { \prg_return_true: } { \prg_return_false: }
-  }
+\cs_new_protected:Npn \@@_if_key_value_list:nTF #1
+  { \tl_if_in:nnTF {#1} {=} }
 %    \end{macrocode}
 % \end{macro}
 %
@@ -1161,7 +1166,8 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{variable}
 %
-% \begin{macro}{\zhlipsum_use:nn,\zhlipsum_use:Vn}
+% \begin{macro}{\zhlipsum_use:nn}
+% \changes{v1.2.0}{2019/08/11}{检查空的段落范围避免陷入死循环。}
 % 输出多段假文。|#1| = 假文名称，|#2| = 段落编号列表。解析段落编号之
 % 后，按次序逐项输出，并在前后插入相应内容。注意最后一段需要单独处理。
 %    \begin{macrocode}
@@ -1189,19 +1195,17 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
       }
       { \@@_error:n { CJK-invalid-encoding } }
   }
-\cs_generate_variant:Nn \zhlipsum_use:nn { Vn }
 \@@_msg_new:nn { invalid-name }
   {
-    Name~ "#1"~ is~ unknown. \\\\
+    Name~ "#1"~ is~ unknown. \\
     Please~ use~ the~ pre-defined~ Chinese~ dummy~ texts~ or~
     declare~ new~ one.
   }
 \@@_msg_new:nn { CJK-invalid-encoding }
   {
-    The~ current~ CJK~ environment~ uses~ "\CJK@@@@@enc"~
-    encoding,\\
+    The~ current~ CJK~ environment~ uses~ "\CJK@@@@@enc"~ encoding,~
     but~ zhlipsum~ package~ has~ been~ loaded~ with~ the~ option~
-    "encoding=\g_@@_encoding_tl".\\\\
+    "encoding=\g_@@_encoding_str". \\
     Please~ check~ the~ package~ options.
   }
 %    \end{macrocode}
@@ -1214,25 +1218,13 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
   {
     \tl_if_exist:NTF \CJK@@@@@enc
       {
-        \tl_set:Nx \l_@@_tmpa_tl { \str_lower_case:f { \CJK@@@@@enc } }
-% TODO: str or tl?
-        \str_if_eq:NNTF \g_@@_encoding_tl \l_@@_tmpa_tl
-          { \prg_return_true: }
+        \exp_args:NV \str_case:nn \g_@@_encoding_str
           {
-            \@@_if_encoding:nTF { gbk }
-              {
-                \str_if_eq:VnTF \l_@@_tmpa_tl { gb }
-                  { \prg_return_true: } { \prg_return_false: }
-              }
-              {
-                \@@_if_encoding:nTF { big5 }
-                  {
-                    \str_if_eq:VnTF \l_@@_tmpa_tl { bg5 }
-                      { \prg_return_true: } { \prg_return_false: }
-                  }
-                  { \prg_return_false: }
-              }
+            { utf8 } { \str_if_eq:VnTF \CJK@@@@@enc { UTF8 } }
+            { gbk  } { \str_if_in:NnTF \CJK@@@@@enc { GB   } }
+            { big5 } { \str_if_eq:VnTF \CJK@@@@@enc { Bg5  } }
           }
+        { \prg_return_true: } { \prg_return_false: }
       }
       { \prg_return_true: }
   }
@@ -1440,7 +1432,7 @@ Copyright (C) 2017&ndash;2019 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % 根据编码读入假文文本定义文件。
 %    \begin{macrocode}
-\file_input:x { zhlipsum- \g_@@_encoding_tl .def }
+\file_input:x { zhlipsum- \g_@@_encoding_str .def }
 %</package>
 %    \end{macrocode}
 %

@@ -14,6 +14,7 @@
 *.map
 *.out
 *.synctex.gz
+*.synctex(busy)
 *.thm
 *.toc
 *.xdv
