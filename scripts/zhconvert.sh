@@ -7,7 +7,10 @@ JOB_NAME=zhlipsum
 mv $JOB_NAME-gbk.def  $JOB_NAME-gbk.tmp.def
 mv $JOB_NAME-big5.def $JOB_NAME-big5.tmp.def
 
-iconv -f utf8 -t gbk  -o $JOB_NAME-gbk.def  $JOB_NAME-gbk.tmp.def
-iconv -f utf8 -t big5 -o $JOB_NAME-big5.def $JOB_NAME-big5.tmp.def
+# iconv -f utf8 -t gbk  -o $JOB_NAME-gbk.def  $JOB_NAME-gbk.tmp.def
+# iconv -f utf8 -t big5 -o $JOB_NAME-big5.def $JOB_NAME-big5.tmp.def
+
+iconv -f utf8 -t gbk  $JOB_NAME-gbk.tmp.def  > $JOB_NAME-gbk.def
+iconv -f utf8 -t big5 $JOB_NAME-big5.tmp.def > $JOB_NAME-big5.def
 
 rm *.tmp.def
