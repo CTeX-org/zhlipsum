@@ -9,6 +9,9 @@
 % GB 2312 encoding does not support Traditional Chinese.
 \begin{CJK*}{GB}{gbsn}
 
+\zhlipsum[1]
+\clearpage
+
 \START
 
 \SEPARATOR

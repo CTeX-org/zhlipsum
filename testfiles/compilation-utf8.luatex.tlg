@@ -3,15 +3,13 @@ Don't change this file in any respect.
 ============================================================
 TEST 1: Simplified:
 ============================================================
-LaTeX Font Info:    Font shape `LTJY3/FandolSong-Regular(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `LTJY3/FandolSong-Regular(0)/m/it' tried instead on input line ....
-[1
+[2
 ]
 ============================================================
 ============================================================
 TEST 2: Traditional:
 ============================================================
-[2
+[3
 Missing character: There is no 麼 (U+9EBC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 Missing character: There is no 說 (U+8AAA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 Missing character: There is no 裡 (U+88E1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
@@ -28,7 +26,7 @@ Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mod
 ============================================================
 TEST 3: Nanshanjing:
 ============================================================
-[3
+[4
 Missing character: There is no 䍺 (U+437A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 Missing character: There is no 閼 (U+95BC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 ]
@@ -36,7 +34,7 @@ Missing character: There is no 閼 (U+95BC) in font [FandolSong-Regular.otf]:mod
 ============================================================
 TEST 4: Xiangyu
 ============================================================
-[4
+[5
 Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
 Missing character: There is no 阬 (U+962C) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
@@ -46,12 +44,12 @@ Missing character: There is no 橫 (U+6A6B) in font [FandolSong-Regular.otf]:mod
 ============================================================
 TEST 5: Zhufu
 ============================================================
-[5
+[6
 ]
 ============================================================
 ============================================================
 TEST 6: Aspirin
 ============================================================
-[6
+[7
 ]
 ============================================================

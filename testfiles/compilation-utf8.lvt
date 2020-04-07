@@ -6,6 +6,9 @@
 
 \begin{document}
 
+\zhlipsum[1]
+\clearpage
+
 \START
 
 \TEST{Simplified:}{%

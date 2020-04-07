@@ -9,6 +9,9 @@
 % Big5 encoding does not support Simplified Chinese.
 \begin{CJK*}{Bg5}{bsmi}
 
+\zhlipsum[1]
+\clearpage
+
 \START
 
 \SEPARATOR
