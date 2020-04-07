@@ -1,7 +1,6 @@
 # zhlipsum
 
-[![Build Status](https://img.shields.io/travis/stone-zeng/zhlipsum.svg)](#continuous-build-status)
-[![Build status](https://ci.appveyor.com/api/projects/status/rhftdsngpgp9u0xh?svg=true)](#continuous-build-status)
+[![build](https://github.com/stone-zeng/zhlipsum/workflows/build/badge.svg)](https://github.com/stone-zeng/zhlipsum/actions)
 [![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
 [![GitHub release](https://img.shields.io/github/release/stone-zeng/zhlipsum/all.svg)](https://github.com/stone-zeng/zhlipsum/releases/latest)
 
@@ -46,25 +45,6 @@ This package provides an interface to dummy text in Chinese language, which will
 ```
 
 More information can be found in the package documentation [zhlipsum-en.pdf](http://mirror.ctan.org/macros/latex/contrib/zhlipsum/zhlipsum-en.pdf).
-
-### Continuous build status
-
-| Distribution | Platform | Status |
-| :----------: | :------: | :----: |
-| TeX Live     | Linux    | [![Build Status][1.1]][travis]   |
-| TeX Live     | macOS    | [![Build Status][1.2]][travis]   |
-| TeX Live     | Windows  | [![Build Status][2.1]][appveyor] |
-| MiKTeX       | Linux    | [![Build Status][1.3]][travis]   |
-| MiKTeX       | macOS    | [![Build Status][1.4]][travis]   |
-
-[1.1]: https://travis-matrix-badges.herokuapp.com/repos/stone-zeng/zhlipsum/branches/master/1
-[1.2]: https://travis-matrix-badges.herokuapp.com/repos/stone-zeng/zhlipsum/branches/master/2
-[1.3]: https://travis-matrix-badges.herokuapp.com/repos/stone-zeng/zhlipsum/branches/master/3
-[1.4]: https://travis-matrix-badges.herokuapp.com/repos/stone-zeng/zhlipsum/branches/master/4
-[2.1]: https://appveyor-matrix-badges.herokuapp.com/repos/stone-zeng/zhlipsum/branch/master/1
-
-[travis]:   https://travis-ci.org/stone-zeng/zhlipsum
-[appveyor]: https://ci.appveyor.com/project/stone-zeng/zhlipsum
 
 ### Contributing
 
