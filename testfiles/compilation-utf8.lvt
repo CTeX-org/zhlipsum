@@ -9,34 +9,34 @@
 \START
 
 \TEST{Simplified:}{%
-  \zhlipsum[-][name=simp]
+  \zhlipsum[21][name=simp]
   \clearpage
 }
 
 \TEST{Traditional:}{%
-  \zhlipsum[-][name=trad]
+  \zhlipsum[22][name=trad]
   \clearpage
 }
 
 \TEST{Nanshanjing:}{%
   \ifpdftex\else
-    \zhlipsum[-][name=nanshanjing]
+    \zhlipsum[23][name=nanshanjing]
   \fi
   \clearpage
 }
 
 \TEST{Xiangyu}{%
-  \zhlipsum*[-][name=xiangyu]
+  \zhlipsum*[24][name=xiangyu]
   \clearpage
 }
 
 \TEST{Zhufu}{%
-  \zhlipsum*[-][name=zhufu]
+  \zhlipsum*[25][name=zhufu]
   \clearpage
 }
 
 \TEST{Aspirin}{%
-  \zhlipsum*[-][name=aspirin]
+  \zhlipsum*[26][name=aspirin]
   \clearpage
 }
 

@@ -14,17 +14,17 @@
 \SEPARATOR
 
 \TEST{Simplified:}{%
-  \zhlipsum[-][name=simp]
+  \zhlipsum[11][name=simp]
   \clearpage
 }
 
 \TEST{Zhufu}{%
-  \zhlipsum[-][name=zhufu]
+  \zhlipsum[12][name=zhufu]
   \clearpage
 }
 
 \TEST{Aspirin}{%
-  \zhlipsum*[-][name=aspirin]
+  \zhlipsum*[13][name=aspirin]
   \clearpage
 }
 

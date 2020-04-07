@@ -14,17 +14,17 @@
 \SEPARATOR
 
 \TEST{Simplified:}{%
-  \zhlipsum[-][name=simp]
+  \zhlipsum[1][name=simp]
   \clearpage
 }
 
 \TEST{Traditional:}{%
-  \zhlipsum*[-][name=trad]
+  \zhlipsum*[2][name=trad]
   \clearpage
 }
 
 \TEST{Xiangyu}{%
-  \zhlipsum[-][name=xiangyu]
+  \zhlipsum[3][name=xiangyu]
   \clearpage
 }
 
