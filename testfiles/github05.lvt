@@ -1,0 +1,54 @@
+\input{regression-test}
+
+\documentclass[UTF8, fontset=fandol]{ctexart}
+\usepackage{zhlipsum}
+
+\begin{document}
+
+\START
+
+\OMIT
+文字占位符 \clearpage
+\TIMO
+
+\loggingoutput
+
+\TEST{quote}{
+  \begin{quote}
+    \zhlipsum[1]
+  \end{quote}
+  \clearpage
+}
+
+\TEST{quotation}{
+  \begin{quotation}
+    \zhlipsum[2][name=trad]
+  \end{quotation}
+  \clearpage
+}
+
+\TEST{verse}{
+  \begin{verse}
+    \zhlipsum[3-5][name=nanshanjing]
+  \end{verse}
+  \clearpage
+}
+
+\TEST{itemize}{
+  \begin{itemize}
+    \item \zhlipsum[6-7][name=zhufu]
+  \end{itemize}
+  \clearpage
+}
+
+\TEST{enumerate}{
+  \begin{enumerate}
+    \item \zhlipsum[8-9][name=aspirin]
+    \item 
+  \end{enumerate}
+  \clearpage
+}
+
+\END
+
+\end{document}

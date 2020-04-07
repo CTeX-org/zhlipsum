@@ -911,18 +911,12 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %    \end{macrocode}
 % \end{macro}
 %
-% \begin{macro}{\@@_par:}
-% 分段命令。
-%    \begin{macrocode}
-\cs_new_eq:NN \@@_par: \tex_par:D
-%    \end{macrocode}
-% \end{macro}
-%
 % \subsection{宏包选项}
 %
 % \changes{v0.4}{2017/09/16}{新增 \opt{encoding} 选项。}
 % \changes{v0.5}{2017/12/22}{支持 Big5 编码。}
 % \changes{v1.0.0}{2018/04/01}{根据 \CTeX{} 宏集的选项自动确定编码。}
+% \changes{v1.2.0}{2020/02/20}{优化编码判断。}
 %
 % \begin{macro}{encoding}
 % 设置编码。
@@ -1113,6 +1107,7 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v0.5}{2018/01/05}{支持选项设置。}
 % \changes{v1.0.0}{2018/03/23}{更改参数形式，允许利用逗号分隔列表选择段落。}
 % \changes{v1.1.0}{2018/04/08}{改回使用方括号指定段落数的形式。}
+% \changes{v1.2.0}{2020/04/08}{修正 \env{quote}/\env{quotation} 等环境中段落缩进消失问题。}
 % 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选项列表。
 %    \begin{macrocode}
 \NewDocumentCommand \zhlipsum { s o +o }
