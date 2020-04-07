@@ -1108,6 +1108,7 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 % \changes{v1.0.0}{2018/03/23}{更改参数形式，允许利用逗号分隔列表选择段落。}
 % \changes{v1.1.0}{2018/04/08}{改回使用方括号指定段落数的形式。}
 % \changes{v1.2.0}{2020/04/08}{修正 \env{quote}/\env{quotation} 等环境中段落缩进消失问题。}
+% \changes{v1.2.0}{2020/04/08}{与 \pkg{lipsum} 等宏包保持一致，不在开头插入分段命令。}
 % 输出假文，第一个可选参数表示段落数，默认为 |1-3|；第二个可选参数为选项列表。
 %    \begin{macrocode}
 \NewDocumentCommand \zhlipsum { s o +o }
@@ -1115,7 +1116,7 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
     \group_begin:
       \IfBooleanF {#1}
         {
-          \tl_set:Nn \l_@@_before_tl { \par }
+          \tl_set:Nn \l_@@_before_tl { }
           \tl_set:Nn \l_@@_after_tl  { \par }
           \tl_set:Nn \l_@@_inter_tl  { \par }
         }

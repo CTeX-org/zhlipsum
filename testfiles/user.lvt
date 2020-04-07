@@ -21,6 +21,17 @@
   \clearpage
 }
 
+\TEST{Inline:}{%
+  之前文字【
+  \zhlipsum
+  】之后文字
+  \clearpage
+  之前文字【
+  \zhlipsum*
+  】之后文字
+  \clearpage
+}
+
 \TEST{Simplified:}{%
   \zhlipsum[49-51][name=simp]
   \clearpage
