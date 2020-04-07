@@ -23,6 +23,7 @@ jobs:
       run: |
         export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
         l3build check -q -H
+        cat ./build/test/compilation-big5.pdftex.log
 
   build-macos:
     runs-on: macos-latest
