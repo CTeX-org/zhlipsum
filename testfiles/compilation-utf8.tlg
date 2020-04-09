@@ -9,28 +9,64 @@ TEST 1: Simplified:
 ============================================================
 TEST 2: Traditional:
 ============================================================
+Missing character: There is no 麼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 裡 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 屆 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 強 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
 [3
 ]
 ============================================================
 ============================================================
 TEST 3: Nanshanjing:
 ============================================================
+Missing character: There is no 䍺 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 閼 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+[4
+]
 ============================================================
 ============================================================
 TEST 4: Xiangyu
 ============================================================
-[4
+Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 阬 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+Missing character: There is no 橫 in font [FandolSong-Regular.otf]/OT:language=d
+flt;!
+[5
 ]
 ============================================================
 ============================================================
 TEST 5: Zhufu
 ============================================================
-[5
+[6
 ]
 ============================================================
 ============================================================
 TEST 6: Aspirin
 ============================================================
-[6
+[7
 ]
 ============================================================

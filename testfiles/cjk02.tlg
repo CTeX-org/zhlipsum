@@ -12,7 +12,7 @@ File: UTF8.enc ....-..-.. 4.8.4
 (../UTF8.chr
 File: UTF8.chr ....-..-.. 4.8.4
 )
-> false.
+> true.
 <recently read> }
 l. ...  }
 ============================================================
@@ -28,7 +28,7 @@ File: extended.enc ....-..-.. 4.8.4
 (../extended.chr
 File: extended.chr ....-..-.. 4.8.4
 )
-> true.
+> false.
 <recently read> }
 l. ...  }
 ============================================================
@@ -41,7 +41,7 @@ File: standard.enc ....-..-.. 4.8.4
 (../standard.chr
 File: standard.chr ....-..-.. 4.8.4
 )
-> true.
+> false.
 <recently read> }
 l. ...  }
 ============================================================
