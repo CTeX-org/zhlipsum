@@ -112,7 +112,3 @@ end
 
 input_file:close()
 output_file:close()
-
--- TODO: use `dos2unix` to convert line breaks into LF.
--- Example:
---     dos2unix.exe zhlipsum-en.tex
