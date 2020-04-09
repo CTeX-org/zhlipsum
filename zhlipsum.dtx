@@ -183,7 +183,7 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<package>\NeedsTeXFormat{LaTeX2e}
 %<package>\RequirePackage{expl3}
 %<*!(driver|install)>
-%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.1.1 2018-09-08 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
+%<!readme>\GetIdInfo $Id: zhlipsum.dtx 1.2.0 2020-04-10 12:00:00Z Xiangdong Zeng <xdzeng96@gmail.com> $
 %<package>  {Chinese dummy text}
 %<package>\ProvidesExplPackage{\ExplFileName}
 %<utf8>  {Chinese dummy text with UTF-8 encoding (for zhlipsum)}
@@ -195,7 +195,6 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %<!readme>  {\ExplFileDate}{\ExplFileVersion}{\ExplFileDescription}
 %</!(driver|install)>
 %<*driver>
-\PassOptionsToPackage{showframe}{geometry}
 %^^A! \PassOptionsToPackage{scheme=plain, linespread=1.1}{ctex}
 %^^A+
 \documentclass{ctxdoc}
@@ -302,11 +301,11 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %
 % \title{\textbf{zhlipsum: 中文乱数假文（Lorem ipsum）}}
 % \author{曾祥东}
-% \date{2018/09/08 \quad v1.1.1^^A
+% \date{2020/04/10 \quad v1.2.0^^A
 %   \thanks{\url{https://github.com/stone-zeng/zhlipsum}.}}
 %^^A! \title{\textbf{The \pkg{zhlipsum} Package: Chinese Dummy Text}}
 %^^A! \author{Xiangdong Zeng}
-%^^A! \date{2018/09/08 \quad v1.1.1%
+%^^A! \date{2020/04/10 \quad v1.2.0%
 %^^A!   \thanks{\url{https://github.com/stone-zeng/zhlipsum}.}}
 %^^A!
 %
@@ -430,7 +429,7 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A!
 %
 %^^A+
-% \begin{function}[updated=2018-04-08]{\zhlipsum}
+% \begin{function}[updated=2020-04-08]{\zhlipsum}
 %^^A-
 %   \begin{syntax}
 %     \cs{zhlipsum}\oarg{段落}\oarg{选项}
@@ -449,11 +448,11 @@ Copyright (C) 2017&ndash;2020 by Xiangdong Zeng <xdzeng96@gmail.com>.
 %^^A! \end{function}
 %^^A!
 %
-% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之前、之后与
-% 之间进行分段（即插入 \tn{par}），而带星号的命令 \cs{zhlipsum}|*|
+% 默认情况下，不带星号的命令 \cs{zhlipsum} 会在假文段落之后与之间
+% 进行分段（即插入 \tn{par}），而带星号的命令 \cs{zhlipsum}|*|
 % 则不做额外处理。您可以利用后文给出的 \opt{before}、\opt{after}、
 % \opt{inter} 选项来更改默认设置。
-%^^A! By default, the \cs{zhlipsum} command will insert \tn{par} before,
+%^^A! By default, the \cs{zhlipsum} command will insert \tn{par}
 %^^A! after and between dummy text paragraphs, while \cs{zhlipsum}|*|
 %^^A! will not give any extra processing. To change the default
 %^^A! behavior, you can use the \opt{before}, \opt{after} and
