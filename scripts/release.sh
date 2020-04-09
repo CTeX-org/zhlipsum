@@ -11,7 +11,7 @@ tdsdir=$distribdir/tds
 unpackdir=$builddir/unpacked
 ctandir=$distribdir/ctan/$module
 tds_docdir=$tdsdir/doc/latex/$module
-tds_srcdir=$tdsdir/src/latex/$module
+tds_srcdir=$tdsdir/source/latex/$module
 tds_texdir=$tdsdir/tex/latex/$module
 
 rm -rf $distribdir
