@@ -1,8 +1,8 @@
 # zhlipsum
 
-[![build](https://github.com/stone-zeng/zhlipsum/workflows/build/badge.svg)](https://github.com/stone-zeng/zhlipsum/actions)
+[![build](https://github.com/CTeX-org/zhlipsum/workflows/build/badge.svg)](https://github.com/CTeX-org/zhlipsum/actions)
 [![CTAN](https://img.shields.io/ctan/v/zhlipsum.svg)](https://www.ctan.org/pkg/zhlipsum)
-[![GitHub release](https://img.shields.io/github/release/stone-zeng/zhlipsum/all.svg)](https://github.com/stone-zeng/zhlipsum/releases/latest)
+[![GitHub release](https://img.shields.io/github/release/CTeX-org/zhlipsum/all.svg)](https://github.com/CTeX-org/zhlipsum/releases/latest)
 
 ## 欢迎使用 zhlipsum （中文乱数假文）
 
@@ -20,13 +20,13 @@
 
 ### 贡献
 
-如果您有任何改进意见或者功能需求，欢迎提交 [issue](https://github.com/stone-zeng/zhlipsum/issues) 或 [pull request](https://github.com/stone-zeng/zhlipsum/pulls)。
+如果您有任何改进意见或者功能需求，欢迎提交 [issue](https://github.com/CTeX-org/zhlipsum/issues) 或 [pull request](https://github.com/CTeX-org/zhlipsum/pulls)。
 
 ### 许可证
 
 除文本数据外，本模板的发布遵守 [LaTeX Project Public License](http://www.latex-project.org/lppl.txt)（版本 1.3c 或更高）。
 
-文本数据的许可证见该 [README](https://github.com/stone-zeng/zhlipsum/blob/master/data/README.md)。
+文本数据的许可证见该 [README](https://github.com/CTeX-org/zhlipsum/blob/master/data/README.md)。
 
 <br>
 
@@ -48,13 +48,13 @@ More information can be found in the package documentation [zhlipsum-en.pdf](htt
 
 ### Contributing
 
-[Issues](https://github.com/stone-zeng/zhlipsum/issues) and [pull requests](https://github.com/stone-zeng/zhlipsum/pulls) are always welcome.
+[Issues](https://github.com/CTeX-org/zhlipsum/issues) and [pull requests](https://github.com/CTeX-org/zhlipsum/pulls) are always welcome.
 
 ### License
 
 Except for the text data, this work may be distributed and/or modified under the conditions of the [LaTeX Project Public License](http://www.latex-project.org/lppl.txt), either version 1.3c of this license or (at your option) any later version.
 
-Licenses of text data can be found in this [README](https://github.com/stone-zeng/zhlipsum/blob/master/data/README.md).
+Licenses of text data can be found in this [README](https://github.com/CTeX-org/zhlipsum/blob/master/data/README.md).
 
 -----
 

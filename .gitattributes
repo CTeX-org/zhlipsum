@@ -22,6 +22,4 @@
 *.ins         linguist-language=TeX
 *.lvt         linguist-language=TeX
 *.sty         linguist-language=TeX
-latexmkrc     linguist-language=Perl
-latexmkrc-en  linguist-language=Perl
 *.profile     linguist-language=Shell
