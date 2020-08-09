@@ -26,4 +26,7 @@
 - *xiang-yu-ben-ji* p.11 and p.34: `鬬` (`U+9B2C`) does not exist in Big5 encoding.
   Use `鬥` (`U+9B25`) for Big5.
 - *xiang-yu-ben-ji* p.22: there should be one more sentence `并王其地。` afterwards.
-- *aspirin* `心肌梗塞` -> `心肌梗死`.
+- *aspirin*
+  - all: `心肌梗塞` -> `心肌梗死`.
+  - p44: remove `（R-OH → R-OCOCH3）`.
+- *zhufu* p.86: `‘善女人’` -> `“善女人”`.
