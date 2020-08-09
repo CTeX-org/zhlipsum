@@ -18241,6 +18241,8 @@ Completed box being shipped out [14]
 ============================================================
 TEST 8: Aspirin:
 ============================================================
+Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
 Completed box being shipped out [15]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
@@ -18254,678 +18256,109 @@ Completed box being shipped out [15]
 ....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
-..\vbox(550.0+0.0)x345.0, glue set 260.4675fil
+..\vbox(550.0+0.0)x345.0, glue set 194.70871fil
 ...\write-{}
-...\glue(\topskip) 1.75821
-...\hbox(8.24179+2.03409)x345.0, glue set - 0.17706
+...\glue(\topskip) 1.74768
+...\hbox(8.25232+1.99193)x345.0, glue set 0.00754
 ....\hbox(0.0+0.0)x21.07874
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 在
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 体
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 内
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 分
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 解
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 为
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 水
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 杨
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
+....\TU/FandolSong-Regular(0)/m/n/10.53937 然
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 而
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 水
+....\TU/FandolSong-Regular(0)/m/n/10.53937 许
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 杨
+....\TU/FandolSong-Regular(0)/m/n/10.53937 多
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 本
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 身
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 则
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 有
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 抗
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 炎
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 、
-....\rule(0.0+0.0)x-6.87167
-....\glue 6.87167 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 退
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 烧
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 、
-....\rule(0.0+0.0)x-6.87167
-....\glue 6.87167 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 镇
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 痛
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 等
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 6.19719
-...\hbox(8.21017+2.03409)x345.0, glue set 0.21872
-....\TU/FandolSong-Regular(0)/m/n/10.53937 作
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
-....\TU/lmr/m/n/10.53937 2012
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 年
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 发
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 现
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 水
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 杨
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 还
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 能
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 激
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 活
-....\glue 3.50961 plus 1.75304 minus 1.17102
-....\TU/lmr/m/n/10.53937 AMP
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 活
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 化
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 蛋
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 白
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 激
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酶
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 这
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 是
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 水
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 杨
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 和
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.13396
-...\hbox(8.2734+1.99193)x345.0, glue set 0.21819
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 药
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 效
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\TU/FandolSong-Regular(0)/m/n/10.53937 新
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 一
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 种
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 可
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 能
+....\TU/FandolSong-Regular(0)/m/n/10.53937 代
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-2
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抑
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 解
+....\TU/FandolSong-Regular(0)/m/n/10.53937 制
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 释
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
+....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\TU/FandolSong-Regular(0)/m/n/10.53937 如
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 分
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 子
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 中
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 乙
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酰
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 基
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 也
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 并
+....\TU/FandolSong-Regular(0)/m/n/10.53937 罗
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 非
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 没
+....\TU/FandolSong-Regular(0)/m/n/10.53937 昔
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 有
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 作
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.13396
-...\hbox(8.31557+1.99193)x345.0, glue set 0.42345
-....\TU/FandolSong-Regular(0)/m/n/10.53937 细
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 胞
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 蛋
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 白
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 乙
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酰
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 化
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 是
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 其
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 转
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 译
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 后
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 修
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 饰
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 中
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 被
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 广
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 泛
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 研
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 究
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 现
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 象
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 能
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 使
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 包
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.26044
-...\hbox(8.18909+1.99193)x345.0, glue set - 0.21269
-....\TU/FandolSong-Regular(0)/m/n/10.53937 括
-....\glue 3.50961 plus 1.75304 minus 1.17102
-....\TU/lmr/m/n/10.53937 COX
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 同
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 工
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酶
+....\TU/FandolSong-Regular(0)/m/n/10.53937 布
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 在
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 去
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 十
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 年
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 内
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\TU/FandolSong-Regular(0)/m/n/10.53937 都
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 几
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 种
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 蛋
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 白
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 质
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 乙
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酰
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 化
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 这
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 些
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 乙
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 酰
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 化
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 反
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 应
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 可
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 能
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 可
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阐
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 释
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 一
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 6.17612
-...\hbox(8.2734+1.99193)x345.0, glue set 193.69684fil
-....\TU/FandolSong-Regular(0)/m/n/10.53937 些
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 尚
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 未
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 得
+....\TU/FandolSong-Regular(0)/m/n/10.53937 遭
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 到
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 解
+....\TU/FandolSong-Regular(0)/m/n/10.53937 了
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 释
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 效
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 应
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\kern 0.00041
-....\kern -0.00041
-....\kern -0.18753
-....\kern 0.18753
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 9.90706
-...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
-....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 xxx
-....\kern -0.0002
-....\kern 0.0002
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 8.14697
-...\hbox(8.29448+2.03409)x345.0, glue set - 0.2656
-....\hbox(0.0+0.0)x21.07874
-....\TU/FandolSong-Regular(0)/m/n/10.53937 一
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 般
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 来
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 说
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 成
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 人
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 于
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 治
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疗
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 发
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 烧
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 或
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 关
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 节
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 炎
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 时
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 每
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 天
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 服
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 四
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 次
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 这
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 和
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 前
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 治
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疗
+....\TU/FandolSong-Regular(0)/m/n/10.53937 撤
 ....\glue(\rightskip) 0.0
 ...\penalty 150
-...\glue(\baselineskip) 6.16557
-...\hbox(8.24179+1.89706)x345.0, glue set 0.42345
-....\TU/FandolSong-Regular(0)/m/n/10.53937 风
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 湿
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 热
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 时
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 所
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 量
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 接
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 近
+...\glue(\baselineskip) 6.20773
+...\hbox(8.24179+2.03409)x345.0, glue set - 0.2656
+....\TU/FandolSong-Regular(0)/m/n/10.53937 回
 ....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\glue 6.78735 minus 5.26968
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 因
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 有
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 或
+....\TU/FandolSong-Regular(0)/m/n/10.53937 证
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 怀
+....\TU/FandolSong-Regular(0)/m/n/10.53937 据
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疑
+....\TU/FandolSong-Regular(0)/m/n/10.53937 表
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\TU/FandolSong-Regular(0)/m/n/10.53937 明
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 冠
+....\TU/FandolSong-Regular(0)/m/n/10.53937 它
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 状
+....\TU/FandolSong-Regular(0)/m/n/10.53937 们
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 动
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 脉
+....\TU/FandolSong-Regular(0)/m/n/10.53937 增
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 加
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 患
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 心
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 脏
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 病
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 史
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 人
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 要
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 预
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 防
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 心
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 肌
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 梗
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 死
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 6.1129
-...\hbox(8.43149+2.10786)x345.0, glue set 192.17917fil
-....\rule(0.0+0.0)x-6.68196
-....\TU/FandolSong-Regular(0)/m/n/10.53937 （
-....\penalty 10000
-....\glue 0.0
-....\TU/lmr/m/n/10.53937 MI
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ）
-....\penalty 10000
-....\glue -5.26968 plus 5.26968 minus 1.41228
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 每
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 天
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 量
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 服
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 一
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 次
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 即
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 可
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 。
-....\rule(0.0+0.0)x-6.78735
-....\kern 0.00041
-....\kern -0.00041
-....\kern -0.18753
-....\kern 0.18753
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 9.79112
-...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
-....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 xxx
-....\kern -0.0002
-....\kern 0.0002
-....\penalty 10000
-....\glue(\parfillskip) 0.0 plus 1.0fil
-....\glue(\rightskip) 0.0
-...\glue(\parskip) 0.0 plus 1.0
-...\glue(\baselineskip) 8.27344
-...\hbox(8.16801+2.03409)x345.0, glue set - 0.45403
-....\hbox(0.0+0.0)x21.07874
-....\TU/lmr/m/n/10.53937 USPSTF
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 在
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 2009
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 年
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 3
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 月
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 向
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 45–79
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 岁
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 男
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
-....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 和
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 55–79
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 岁
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 女
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 建
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 议
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 如
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 6.13396
-...\hbox(8.2734+1.99193)x345.0, glue set 0.40977
-....\TU/FandolSong-Regular(0)/m/n/10.53937 果
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 降
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 男
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 心
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 肌
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 梗
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 死
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 和
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 女
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 中
 ....\glue 0.0 plus 0.60931
@@ -18936,106 +18369,1138 @@ Completed box being shipped out [15]
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 风
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 险
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 所
+....\TU/FandolSong-Regular(0)/m/n/10.53937 人
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 带
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 来
+....\TU/FandolSong-Regular(0)/m/n/10.53937 体
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 潜
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 在
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 效
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 益
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 要
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 大
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 于
-....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.21828
-...\hbox(8.23125+2.03409)x345.0, glue set 0.42345
-....\TU/FandolSong-Regular(0)/m/n/10.53937 引
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 起
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 消
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 化
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 道
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 出
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 血
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\TU/FandolSong-Regular(0)/m/n/10.53937 管
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 潜
+....\TU/FandolSong-Regular(0)/m/n/10.53937 内
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 在
+....\TU/FandolSong-Regular(0)/m/n/10.53937 皮
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 危
+....\TU/FandolSong-Regular(0)/m/n/10.53937 细
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.21828
+...\hbox(8.18909+2.03409)x345.0, glue set - 0.06146
+....\TU/FandolSong-Regular(0)/m/n/10.53937 胞
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 害
+....\TU/FandolSong-Regular(0)/m/n/10.53937 原
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 本
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 合
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 成
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-2
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 选
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 择
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 性
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抑
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 制
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-2
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 后
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\rule(0.0+0.0)x-7.29324
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 那
+....\TU/FandolSong-Regular(0)/m/n/10.53937 因
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 么
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 血
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 小
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 板
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 里
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-1
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 未
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 5.97588
+...\hbox(8.43149+2.10786)x345.0, glue set - 0.17477
+....\TU/FandolSong-Regular(0)/m/n/10.53937 受
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 影
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 响
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 前
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 列
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 腺
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 素
+....\glue 0.0 plus 0.60931
+....\glue 6.68196 minus 5.26968
+....\rule(0.0+0.0)x-6.68196
+....\TU/FandolSong-Regular(0)/m/n/10.53937 （尤
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 其
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 是
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 前
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 列
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 环
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 素
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 PGI2
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ）
+....\rule(0.0+0.0)x-6.68196
+....\glue 6.68196 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 合
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 成
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 相
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 比
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 血
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 栓
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 素
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 所
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 降
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 低
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.04964
+...\hbox(8.28395+2.03409)x345.0, glue set - 0.2116
+....\TU/FandolSong-Regular(0)/m/n/10.53937 这
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 样
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 PGI2
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抗
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 凝
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 血
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 保
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 护
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 作
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 用
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 就
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 提
+....\TU/FandolSong-Regular(0)/m/n/10.53937 消
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 倡
+....\TU/FandolSong-Regular(0)/m/n/10.53937 失
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 了
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 这
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 增
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 加
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 血
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 栓
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 、
+....\rule(0.0+0.0)x-6.87167
+....\glue 6.87167 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 心
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 肌
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 梗
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 死
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 和
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 其
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 他
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 相
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.16557
+...\hbox(8.24179+2.03409)x345.0, glue set 0.23512
+....\TU/FandolSong-Regular(0)/m/n/10.53937 关
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 循
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 环
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 系
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 统
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 疾
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 病
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 风
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 险
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 因
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 血
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 小
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 板
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 没
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 DNA
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 它
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-1
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 若
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 被
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 6.15504
+...\hbox(8.25232+2.03409)x345.0, glue set 14.52759fil
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 不
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 可
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 逆
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 地
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抑
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 制
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 就
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 无
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 法
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 再
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 生
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 这
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 是
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 和
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 昔
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 布
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 类
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 可
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 逆
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抑
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 制
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 不
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 同
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 之
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 处
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\kern 0.00041
+....\kern -0.00041
+....\kern -0.18753
+....\kern 0.18753
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 9.8649
+...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
+....\hbox(0.0+0.0)x21.07874
+....\TU/lmr/m/n/10.53937 xxx
+....\kern -0.0002
+....\kern 0.0002
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 8.26291
+...\hbox(8.17854+2.03409)x345.0, glue set 0.00807
+....\hbox(0.0+0.0)x21.07874
+....\TU/FandolSong-Regular(0)/m/n/10.53937 此
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 外
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 除
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 了
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抑
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 制
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-2
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 环
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 能
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 力
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 之
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 外
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 还
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 能
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 将
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 其
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 转
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 6.18666
+...\hbox(8.2207+1.9287)x345.0, glue set 0.00731
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 类
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 似
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 脂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 加
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 酶
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 酵
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 素
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 被
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 处
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 理
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 后
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 COX-2
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 可
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 以
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 将
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 多
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 种
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 多
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 元
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 不
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.31313
+...\hbox(8.19963+2.03409)x345.0, glue set 0.42345
+....\TU/FandolSong-Regular(0)/m/n/10.53937 饱
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 和
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 脂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 肪
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 转
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 物
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 这
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 些
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 物
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 又
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 被
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 代
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 谢
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 具
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抗
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 炎
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 活
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 性
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 特
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 6.11288
+...\hbox(8.29448+2.03409)x345.0, glue set 56.68506fil
+....\TU/FandolSong-Regular(0)/m/n/10.53937 异
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 性
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 促
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 修
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 复
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 介
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 质
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 如
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 脂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 素
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 、
+....\rule(0.0+0.0)x-6.87167
+....\glue 6.87167 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 消
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 散
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 素
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 、
+....\rule(0.0+0.0)x-6.87167
+....\glue 6.87167 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 巨
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 噬
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 细
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 胞
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 消
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 炎
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 介
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 质
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 等
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 等
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\kern 0.00041
+....\kern -0.00041
+....\kern -0.18753
+....\kern 0.18753
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 9.8649
+...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
+....\hbox(0.0+0.0)x21.07874
+....\TU/lmr/m/n/10.53937 xxx
+....\kern -0.0002
+....\kern 0.0002
+....\penalty 10000
+....\glue(\parfillskip) 0.0 plus 1.0fil
+....\glue(\rightskip) 0.0
+...\glue(\parskip) 0.0 plus 1.0
+...\glue(\baselineskip) 8.12589
+...\hbox(8.31557+1.98138)x345.0, glue set - 0.2656
+....\hbox(0.0+0.0)x21.07874
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 还
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 三
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 种
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 作
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 用
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 方
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 式
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 一
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 是
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 使
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 线
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 粒
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 体
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 磷
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 解
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 偶
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 联
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue(\rightskip) 0.0
+...\penalty 150
+...\glue(\baselineskip) 6.23936
+...\hbox(8.2207+2.03409)x345.0, glue set 0.42345
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 携
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 带
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 质
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 子
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 从
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 线
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 粒
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 体
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 膜
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 间
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 隙
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 扩
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 散
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 进
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 入
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 线
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 粒
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 体
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 基
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 质
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 然
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 后
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 再
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 次
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 电
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 离
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 释
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 放
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.17612
+...\hbox(8.23125+2.03409)x345.0, glue set - 0.17706
+....\TU/FandolSong-Regular(0)/m/n/10.53937 质
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 子
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 简
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 而
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 言
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 之
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 作
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 为
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 缓
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 冲
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 运
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 输
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 质
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 子
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 因
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 此
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 高
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 量
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 服
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 用
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 该
+....\TU/FandolSong-Regular(0)/m/n/10.53937 时
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 药
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 以
+....\TU/FandolSong-Regular(0)/m/n/10.53937 因
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 预
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 防
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 冠
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 状
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 动
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 脉
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 心
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 脏
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疾
+....\TU/FandolSong-Regular(0)/m/n/10.53937 电
 ....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.97588
-...\hbox(8.43149+2.10786)x345.0, glue set 0.14455
-....\TU/FandolSong-Regular(0)/m/n/10.53937 病
+...\glue(\baselineskip) 6.17612
+...\hbox(8.23125+2.03409)x345.0, glue set - 0.2656
+....\TU/FandolSong-Regular(0)/m/n/10.53937 子
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 传
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 递
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 链
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 释
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 放
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 热
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 量
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 而
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 造
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 成
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 发
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 热
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 这
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 和
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 低
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 量
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 服
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 用
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 退
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 烧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 作
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 用
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 相
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 反
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
 ....\glue 6.78735 minus 5.26968
-....\TU/lmr/m/n/10.53937 WHI
-....\glue 3.50961 plus 1.7548 minus 1.16986
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 二
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 是
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.11288
+...\hbox(8.29448+1.9287)x345.0, glue set 0.42345
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 会
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 促
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 进
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 一
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氮
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 自
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 由
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 基
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 生
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 成
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 一
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氧
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 化
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 氮
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 自
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 由
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 基
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 本
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 身
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 在
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 小
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 鼠
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 体
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 内
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 也
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.27097
+...\hbox(8.24179+2.03409)x345.0, glue set 0.43803
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抗
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 炎
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 作
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 用
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 它
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 能
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 减
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 少
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 白
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 细
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 胞
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 粘
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 附
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 后
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 者
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 是
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 免
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 疫
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 系
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 统
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 应
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 对
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 感
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 染
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 重
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 要
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 一
+....\glue(\rightskip) 0.0
+...\glue(\baselineskip) 6.18666
+...\hbox(8.2207+2.03409)x345.0, glue set - 0.1328
+....\TU/FandolSong-Regular(0)/m/n/10.53937 步
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 不
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 没
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 足
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 够
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 证
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 据
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 表
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 明
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 林
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 能
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 抗
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 感
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 染
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 。
+....\rule(0.0+0.0)x-6.78735
+....\glue 6.78735 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 第
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 三
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
+....\rule(0.0+0.0)x-7.29324
+....\glue 7.29324 minus 5.26968
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 更
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 新
+....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 的
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 研
@@ -19046,251 +19511,115 @@ Completed box being shipped out [15]
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 明
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 女
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 如
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 果
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 坚
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 持
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 量
-....\glue 0.0 plus 0.60931
-....\glue 6.68196 minus 5.26968
-....\rule(0.0+0.0)x-6.68196
-....\TU/FandolSong-Regular(0)/m/n/10.53937 （
-....\penalty 10000
-....\glue 0.0
-....\TU/lmr/m/n/10.53937 75
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 毫
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 克
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 或
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 81
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 毫
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 克
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ）
-....\rule(0.0+0.0)x-6.68196
-....\glue 6.68196 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 服
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 死
+....\TU/FandolSong-Regular(0)/m/n/10.53937 水
 ....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 6.07072
-...\hbox(8.26286+2.03409)x345.0, glue set 0.22629
-....\TU/FandolSong-Regular(0)/m/n/10.53937 于
+...\glue(\baselineskip) 6.18666
+...\hbox(8.2207+1.94977)x345.0, glue set 0.16226
+....\TU/FandolSong-Regular(0)/m/n/10.53937 杨
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 心
+....\TU/FandolSong-Regular(0)/m/n/10.53937 酸
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 血
+....\TU/FandolSong-Regular(0)/m/n/10.53937 及
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 管
+....\TU/FandolSong-Regular(0)/m/n/10.53937 其
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疾
+....\TU/FandolSong-Regular(0)/m/n/10.53937 衍
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 病
+....\TU/FandolSong-Regular(0)/m/n/10.53937 生
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\TU/FandolSong-Regular(0)/m/n/10.53937 物
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 风
+....\TU/FandolSong-Regular(0)/m/n/10.53937 能
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 险
+....\TU/FandolSong-Regular(0)/m/n/10.53937 通
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 就
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 会
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 降
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
+....\glue 3.50961 plus 1.75304 minus 1.17102
+....\TU/lmr/m/n/10.53937 NF-κB
 ....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 25%
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
-....\rule(0.0+0.0)x-7.29324
-....\glue 7.29324 minus 5.26968
+....\TU/FandolSong-Regular(0)/m/n/10.53937 调
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 总
+....\TU/FandolSong-Regular(0)/m/n/10.53937 节
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 死
+....\TU/FandolSong-Regular(0)/m/n/10.53937 细
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 亡
+....\TU/FandolSong-Regular(0)/m/n/10.53937 胞
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 率
+....\TU/FandolSong-Regular(0)/m/n/10.53937 信
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 降
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 14%
+....\TU/FandolSong-Regular(0)/m/n/10.53937 号
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
 ....\glue 6.78735 minus 5.26968
+....\TU/lmr/m/n/10.53937 NF-κB
+....\glue 3.50961 plus 1.7548 minus 1.16986
+....\TU/FandolSong-Regular(0)/m/n/10.53937 是
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
+....\TU/FandolSong-Regular(0)/m/n/10.53937 一
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 剂
+....\TU/FandolSong-Regular(0)/m/n/10.53937 种
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 量
+....\TU/FandolSong-Regular(0)/m/n/10.53937 转
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 服
+....\TU/FandolSong-Regular(0)/m/n/10.53937 录
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
+....\TU/FandolSong-Regular(0)/m/n/10.53937 因
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 阿
+....\TU/FandolSong-Regular(0)/m/n/10.53937 子
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 司
+....\TU/FandolSong-Regular(0)/m/n/10.53937 复
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 合
 ....\glue(\rightskip) 0.0
-...\glue(\baselineskip) 5.97588
-...\hbox(8.43149+2.10786)x345.0, glue set 0.20164
-....\TU/FandolSong-Regular(0)/m/n/10.53937 匹
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 林
-....\glue 0.0 plus 0.60931
-....\glue 6.68196 minus 5.26968
-....\rule(0.0+0.0)x-6.68196
-....\TU/FandolSong-Regular(0)/m/n/10.53937 （每
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 天
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 75
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 毫
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 克
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 或
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/lmr/m/n/10.53937 81
-....\glue 3.50961 plus 1.7548 minus 1.16986
-....\TU/FandolSong-Regular(0)/m/n/10.53937 毫
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 克
-....\penalty 10000
-....\TU/FandolSong-Regular(0)/m/n/10.53937 ）
-....\rule(0.0+0.0)x-6.68196
-....\glue 6.68196 minus 5.26968
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 也
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 和
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 心
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 血
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 管
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疾
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 病
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 发
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 病
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 率
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 降
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 低
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 有
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 关
+...\penalty 150
+...\glue(\baselineskip) 6.0602
+...\hbox(8.43149+2.10786)x345.0, glue set 113.13391fil
+....\TU/FandolSong-Regular(0)/m/n/10.53937 体
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 ，
 ....\rule(0.0+0.0)x-7.29324
 ....\glue 7.29324 minus 5.26968
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 长
+....\TU/FandolSong-Regular(0)/m/n/10.53937 在
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 期
+....\TU/FandolSong-Regular(0)/m/n/10.53937 许
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 服
-....\glue(\rightskip) 0.0
-...\penalty 150
-...\glue(\baselineskip) 6.06018
-...\hbox(8.2734+1.99193)x345.0, glue set 28.81897fil
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
+....\TU/FandolSong-Regular(0)/m/n/10.53937 多
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 预
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 防
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 疾
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 病
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 患
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 者
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 利
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 用
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 这
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 种
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 方
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 式
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 可
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 以
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 兼
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 顾
-....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 药
+....\TU/FandolSong-Regular(0)/m/n/10.53937 生
 ....\glue 0.0 plus 0.60931
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 物
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 的
+....\TU/FandolSong-Regular(0)/m/n/10.53937 过
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 有
+....\TU/FandolSong-Regular(0)/m/n/10.53937 程
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 效
+....\glue 6.68196 minus 5.26968
+....\rule(0.0+0.0)x-6.68196
+....\TU/FandolSong-Regular(0)/m/n/10.53937 （包
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
+....\TU/FandolSong-Regular(0)/m/n/10.53937 括
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 和
+....\TU/FandolSong-Regular(0)/m/n/10.53937 发
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 安
+....\TU/FandolSong-Regular(0)/m/n/10.53937 炎
+....\penalty 10000
+....\TU/FandolSong-Regular(0)/m/n/10.53937 ）
+....\rule(0.0+0.0)x-6.68196
+....\glue 6.68196 minus 5.26968
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 全
+....\TU/FandolSong-Regular(0)/m/n/10.53937 中
 ....\glue 0.0 plus 0.60931
-....\TU/FandolSong-Regular(0)/m/n/10.53937 性
+....\TU/FandolSong-Regular(0)/m/n/10.53937 起
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 重
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 要
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 作
+....\glue 0.0 plus 0.60931
+....\TU/FandolSong-Regular(0)/m/n/10.53937 用
 ....\penalty 10000
 ....\TU/FandolSong-Regular(0)/m/n/10.53937 。
 ....\rule(0.0+0.0)x-6.78735
@@ -19302,7 +19631,7 @@ Completed box being shipped out [15]
 ....\penalty 10000
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
-...\glue -1.99193
+...\glue -2.10786
 ...\glue 0.0 plus 1.0fil
 ...\glue 0.0
 ...\glue 0.0 plus 0.0001fil

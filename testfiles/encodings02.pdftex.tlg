@@ -5,22 +5,16 @@ TEST 1: Load package:
 ============================================================
 (zhlipsum.sty
 Package: zhlipsum ....-..-.. v....0 Chinese dummy text
-Package zhlipsum Warning: Package option "encoding=gbk" is in conflict with
-(zhlipsum)                ctex's option "UTF8".
-(zhlipsum)                Changed into "encoding=utf8".
 \l__zhlipsum_begin_int=\count...
 \l__zhlipsum_end_int=\count...
 \l__zhlipsum_max_int=\count...
-(zhlipsum-utf8.def
-File: zhlipsum-utf8.def ....-..-.. v....0 Chinese dummy text with UTF-8 encoding (for zhlipsum)
+(zhlipsum-gbk.def
+File: zhlipsum-gbk.def ....-..-.. v....0 Chinese dummy text with GBK encoding (for zhlipsum)
 \g__zhlipsum_simp_int=\count...
 Package zhlipsum Info: Chinese dummy text "simp" is created. It has 50
 (zhlipsum)             paragraphs.
 \g__zhlipsum_trad_int=\count...
 Package zhlipsum Info: Chinese dummy text "trad" is created. It has 50
-(zhlipsum)             paragraphs.
-\g__zhlipsum_nanshanjing_int=\count...
-Package zhlipsum Info: Chinese dummy text "nanshanjing" is created. It has 43
 (zhlipsum)             paragraphs.
 \g__zhlipsum_xiangyu_int=\count...
 Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
@@ -29,12 +23,12 @@ Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
 Package zhlipsum Info: Chinese dummy text "zhufu" is created. It has 110
 (zhlipsum)             paragraphs.
 \g__zhlipsum_aspirin_int=\count...
-Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 66
+Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 67
 (zhlipsum)             paragraphs.
 ))
 ============================================================
 ============================================================
 TEST 2: Check encoding:
 ============================================================
-> \g__zhlipsum_encoding_str=utf8.
+> \g__zhlipsum_encoding_str=gbk.
 ============================================================
