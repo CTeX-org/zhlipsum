@@ -58,4 +58,4 @@ Licenses of text data can be found in this [README](https://github.com/CTeX-org/
 
 -----
 
-Copyright (C) 2017&ndash;2020 by Xiangdong Zeng.
+Copyright (C) 2017&ndash;2022 by Xiangdong Zeng.
