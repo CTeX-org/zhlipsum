@@ -9,7 +9,6 @@ env:
 jobs:
   build-ubuntu:
     runs-on: ubuntu-latest
-    if: "!endsWith(github.event.head_commit.message, '[ci skip]')"
     steps:
     - uses: actions/checkout@v4
     - name: Install TeX Live
@@ -28,7 +27,6 @@ jobs:
 
   build-macos:
     runs-on: macos-latest
-    if: "!endsWith(github.event.head_commit.message, '[ci skip]')"
     steps:
     - uses: actions/checkout@v4
     - name: Install TeX Live
@@ -47,7 +45,6 @@ jobs:
   ## Line wrap problem is difficult to resolve on windows.
   # build-windows:
   #   runs-on: windows-latest
-  #   if: "!endsWith(github.event.head_commit.message, '[ci skip]')"
   #   steps:
   #   - uses: actions/checkout@v4
   #   - name: Install TeX Live
