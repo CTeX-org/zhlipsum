@@ -10,35 +10,35 @@ TEST 1: Simplified:
 TEST 2: Traditional:
 ============================================================
 [3
-Missing character: There is no 麼 (U+9EBC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 說 (U+8AAA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 裡 (U+88E1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 屆 (U+5C46) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 強 (U+5F37) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 強 (U+5F37) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 決 (U+6C7A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 麼 (U+9EBC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 說 (U+8AAA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 裡 (U+88E1) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 屆 (U+5C46) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 強 (U+5F37) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 強 (U+5F37) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 決 (U+6C7A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
 ]
 ============================================================
 ============================================================
 TEST 3: Nanshanjing:
 ============================================================
 [4
-Missing character: There is no 䍺 (U+437A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 閼 (U+95BC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 䍺 (U+437A) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 閼 (U+95BC) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
 ]
 ============================================================
 ============================================================
 TEST 4: Xiangyu
 ============================================================
 [5
-Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 阬 (U+962C) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
-Missing character: There is no 橫 (U+6A6B) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=quanjiao!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 阬 (U+962C) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
+Missing character: There is no 橫 (U+6A6B) in font [FandolSong-Regular.otf]:mode=node;script=latn;language=dflt;jfm=zh_CN/{quanjiao}!
 ]
 ============================================================
 ============================================================

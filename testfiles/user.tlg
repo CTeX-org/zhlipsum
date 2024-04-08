@@ -9,11 +9,12 @@ Completed box being shipped out [2]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.0)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 2
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.0)x345.0
+....\hbox(7.01923+0.0)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 2
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -955,6 +956,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.11288
 ...\hbox(8.29448+2.03409)x345.0, glue set - 0.17706
 ....\hbox(0.0+0.0)x21.07874
@@ -1903,6 +1905,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.11288
 ...\hbox(8.29448+2.03409)x345.0, glue set - 0.17706
 ....\hbox(0.0+0.0)x21.07874
@@ -2429,17 +2432,19 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [3]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 3
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 3
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 457.74385fil
@@ -2903,17 +2908,19 @@ Completed box being shipped out [3]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [4]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.86485fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.13515+0.0)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 4
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.13515+0.0)x345.0
+....\hbox(7.13515+0.0)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 4
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -5397,17 +5404,19 @@ Completed box being shipped out [4]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [5]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 5
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 5
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 474.18355fil
@@ -5783,6 +5792,7 @@ Completed box being shipped out [5]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 2: Inline:
@@ -5793,11 +5803,12 @@ Completed box being shipped out [6]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 6
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 6
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -6753,6 +6764,7 @@ Completed box being shipped out [6]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.11288
 ...\hbox(8.29448+2.03409)x345.0, glue set - 0.17706
 ....\hbox(0.0+0.0)x21.07874
@@ -7701,6 +7713,7 @@ Completed box being shipped out [6]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.11288
 ...\hbox(8.29448+2.03409)x345.0, glue set - 0.17706
 ....\hbox(0.0+0.0)x21.07874
@@ -8227,17 +8240,19 @@ Completed box being shipped out [6]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [7]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.87538fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.12462+0.23186)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 7
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.12462+0.23186)x345.0
+....\hbox(7.12462+0.23186)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 7
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 441.30415fil
@@ -8696,6 +8711,7 @@ Completed box being shipped out [7]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.3026
 ...\hbox(8.10477+1.84438)x345.0, glue set 271.22443fil
 ....\hbox(0.0+0.0)x21.07874
@@ -8722,17 +8738,19 @@ Completed box being shipped out [7]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [8]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 8
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 8
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -11220,17 +11238,19 @@ Completed box being shipped out [8]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [9]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 9
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 339.73032fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 9
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 457.74385fil
@@ -11626,12 +11646,12 @@ Completed box being shipped out [9]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 3: Simplified:
 ============================================================
-Package zhlipsum Warning: Your required range "49-51" in "49-51" will be
-(zhlipsum)                modified.
+Package zhlipsum Warning: Your required range "49-51" in "49-51" will be modified.
 (zhlipsum)                Changed into "49-50".
 Completed box being shipped out [10]
 \vbox(633.0+0.0)x407.0
@@ -11639,11 +11659,12 @@ Completed box being shipped out [10]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 334.46063fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 10
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 334.46063fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 10
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 128.94992fil
@@ -12600,6 +12621,7 @@ Completed box being shipped out [10]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.11288
 ...\hbox(8.29448+2.03409)x345.0, glue set - 0.17706
 ....\hbox(0.0+0.0)x21.07874
@@ -13545,51 +13567,39 @@ Completed box being shipped out [10]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 4: Traditional:
 ============================================================
 Package zhlipsum Warning: Option "script" is deprecated.
 (zhlipsum)                Option "name=trad" will be set.
-Missing character: There is no 說 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 沒 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 複 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 線 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 決 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 內 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 曆 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 採 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 況 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 並 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
+Missing character: There is no 說 (U+8AAA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 沒 (U+6C92) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 複 (U+8907) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 線 (U+7DDA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 決 (U+6C7A) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 況 (U+6CC1) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 內 (U+5167) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 曆 (U+66C6) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 採 (U+63A1) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 況 (U+6CC1) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 並 (U+4E26) in font [FandolSong-Regular.otf]/OT:language=dflt;!
 Completed box being shipped out [11]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.0)x345.0, glue set 334.46063fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 11
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.0)x345.0
+....\hbox(7.01923+0.0)x345.0, glue set 334.46063fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 11
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 145.38962fil
@@ -15476,43 +15486,34 @@ Completed box being shipped out [11]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 5: Nanshanjing:
 ============================================================
-Missing character: There is no 䧿 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 搖 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 飢 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 穀 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 狌 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 狌 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 𪊨 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 棪 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 黃 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 猨 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
+Missing character: There is no 䧿 (U+49FF) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 搖 (U+6416) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 飢 (U+98E2) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 穀 (U+7A40) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 穀 (U+7A40) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 狌 (U+72CC) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 狌 (U+72CC) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 𪊨 (U+2A2A8) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 棪 (U+68EA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 黃 (U+9EC3) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 猨 (U+7328) in font [FandolSong-Regular.otf]/OT:language=dflt;!
 Completed box being shipped out [12]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.0)x345.0, glue set 334.46063fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 12
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.0)x345.0
+....\hbox(7.01923+0.0)x345.0, glue set 334.46063fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 12
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 424.86446fil
@@ -15856,6 +15857,7 @@ Completed box being shipped out [12]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 5.73346
 ...\hbox(8.6739+2.03409)x345.0, glue set 35.60632fil
 ....\hbox(0.0+0.0)x21.07874
@@ -15933,6 +15935,7 @@ Completed box being shipped out [12]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 5.73346
 ...\hbox(8.6739+2.03409)x345.0, glue set - 0.10623
 ....\hbox(0.0+0.0)x21.07874
@@ -16060,67 +16063,46 @@ Completed box being shipped out [12]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 6: Xiangyu:
 ============================================================
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 蘄 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 櫟 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 眴 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 綬 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 慴 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 諭 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 吳 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 傑 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 眾 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
-Missing character: There is no 為 in font [FandolSong-Regular.otf]/OT:language=d
-flt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 櫟 (U+6ADF) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 蘄 (U+8604) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 櫟 (U+6ADF) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 眴 (U+7734) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 綬 (U+7DAC) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 慴 (U+6174) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 諭 (U+8AED) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 吳 (U+5433) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 傑 (U+5091) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 眾 (U+773E) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
+Missing character: There is no 為 (U+70BA) in font [FandolSong-Regular.otf]/OT:language=dflt;!
 Completed box being shipped out [13]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 334.46063fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 13
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 334.46063fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 13
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 244.0278fil
@@ -17619,6 +17601,7 @@ Completed box being shipped out [13]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 7: Zhufu:
@@ -17629,11 +17612,12 @@ Completed box being shipped out [14]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.86485fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.13515+0.0)x345.0, glue set 334.46063fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 14
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.13515+0.0)x345.0
+....\hbox(7.13515+0.0)x345.0, glue set 334.46063fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 14
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 408.42476fil
@@ -17758,6 +17742,7 @@ Completed box being shipped out [14]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.20773
 ...\hbox(8.19963+2.03409)x345.0, glue set - 0.17706
 ....\hbox(0.0+0.0)x21.07874
@@ -18171,6 +18156,7 @@ Completed box being shipped out [14]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.22882
 ...\hbox(8.17854+2.03409)x345.0, glue set 110.27774fil
 ....\hbox(0.0+0.0)x21.07874
@@ -18237,23 +18223,25 @@ Completed box being shipped out [14]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 8: Aspirin:
 ============================================================
-Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no κ in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no κ (U+03BA) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no κ (U+03BA) in font [lmroman10-regular]:mapping=tex-text;!
 Completed box being shipped out [15]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 4.98077fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(7.01923+0.23186)x345.0, glue set 334.46063fil
-....\glue 0.0 plus 1.0fil
-....\TU/lmr/m/n/10.53937 15
-....\kern -0.0002
-....\kern 0.0002
+...\hbox(7.01923+0.23186)x345.0
+....\hbox(7.01923+0.23186)x345.0, glue set 334.46063fil
+.....\glue 0.0 plus 1.0fil
+.....\TU/lmr/m/n/10.53937 15
+.....\kern -0.0002
+.....\kern 0.0002
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 194.70871fil
@@ -18726,6 +18714,7 @@ Completed box being shipped out [15]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 9.8649
 ...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
 ....\hbox(0.0+0.0)x21.07874
@@ -18736,6 +18725,7 @@ Completed box being shipped out [15]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 8.26291
 ...\hbox(8.17854+2.03409)x345.0, glue set 0.00807
 ....\hbox(0.0+0.0)x21.07874
@@ -19005,6 +18995,7 @@ Completed box being shipped out [15]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 9.8649
 ...\hbox(4.54247+0.0)x345.0, glue set 307.2269fil
 ....\hbox(0.0+0.0)x21.07874
@@ -19015,6 +19006,7 @@ Completed box being shipped out [15]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 8.12589
 ...\hbox(8.31557+1.98138)x345.0, glue set - 0.2656
 ....\hbox(0.0+0.0)x21.07874
@@ -19637,4 +19629,5 @@ Completed box being shipped out [15]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================

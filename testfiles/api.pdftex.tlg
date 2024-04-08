@@ -36,9 +36,10 @@ Completed box being shipped out [2]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 2
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 2
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -1786,6 +1787,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -3561,6 +3563,7 @@ Completed box being shipped out [2]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -4515,15 +4518,17 @@ Completed box being shipped out [2]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [3]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 3
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 3
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -5400,6 +5405,7 @@ Completed box being shipped out [3]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.77126
 ....\hbox(0.0+0.0)x21.07874
@@ -7109,6 +7115,7 @@ Completed box being shipped out [3]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.44633
 ....\hbox(0.0+0.0)x21.07874
@@ -8873,15 +8880,17 @@ Completed box being shipped out [3]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [4]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 4
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 4
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -10572,6 +10581,7 @@ Completed box being shipped out [4]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -12289,6 +12299,7 @@ Completed box being shipped out [4]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45497
 ....\hbox(0.0+0.0)x21.07874
@@ -13255,15 +13266,17 @@ Completed box being shipped out [4]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [5]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 5
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 5
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -14082,6 +14095,7 @@ Completed box being shipped out [5]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -15825,6 +15839,7 @@ Completed box being shipped out [5]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -17600,6 +17615,7 @@ Completed box being shipped out [5]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -17733,15 +17749,17 @@ Completed box being shipped out [5]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 Completed box being shipped out [6]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 6
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 6
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -19438,6 +19456,7 @@ Completed box being shipped out [6]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.44635
 ....\hbox(0.0+0.0)x21.07874
@@ -21115,6 +21134,7 @@ Completed box being shipped out [6]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.44633
 ....\hbox(0.0+0.0)x21.07874
@@ -22077,14 +22097,12 @@ Completed box being shipped out [6]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
-Package zhlipsum Warning: Your required range "0" in "0,10,100-110" is
-(zhlipsum)                invalid.
+...\hbox(0.0+0.0)x345.0
+Package zhlipsum Warning: Your required range "0" in "0,10,100-110" is invalid.
 (zhlipsum)                Nothing will be output.
-Package zhlipsum Warning: Your required range "100-110" in "0,10,100-110" is
-(zhlipsum)                invalid.
+Package zhlipsum Warning: Your required range "100-110" in "0,10,100-110" is invalid.
 (zhlipsum)                Nothing will be output.
-Package zhlipsum Warning: Your required range "40-50" in "40-50" will be
-(zhlipsum)                modified.
+Package zhlipsum Warning: Your required range "40-50" in "40-50" will be modified.
 (zhlipsum)                Changed into "40-45".
 Completed box being shipped out [7]
 \vbox(633.0+0.0)x407.0
@@ -22092,9 +22110,10 @@ Completed box being shipped out [7]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 7
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 7
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set >20000.0fil
@@ -22913,6 +22932,7 @@ Completed box being shipped out [7]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -24662,6 +24682,7 @@ Completed box being shipped out [7]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.13899
 ....\hbox(0.0+0.0)x21.07874
@@ -24971,6 +24992,7 @@ Completed box being shipped out [7]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45062
 ....\hbox(0.0+0.0)x21.07874
@@ -25678,6 +25700,7 @@ Completed box being shipped out [7]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.13768
 ....\hbox(0.0+0.0)x21.07874
@@ -26532,9 +26555,9 @@ Completed box being shipped out [7]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ! Package zhlipsum Error: Name "test" is unknown.
-(zhlipsum)                Please use the pre-defined Chinese dummy texts or
-(zhlipsum)                declare new one.
+(zhlipsum)                Please use the pre-defined Chinese dummy texts or declare new one.
 Type <return> to continue.
  ...                                              
 l. ...  }
@@ -26547,9 +26570,10 @@ Completed box being shipped out [8]
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 8
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 8
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 30.31175fil
@@ -27588,6 +27612,7 @@ Completed box being shipped out [8]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.15482
 ....\hbox(0.0+0.0)x21.07874
@@ -29297,6 +29322,7 @@ Completed box being shipped out [8]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45497
 ....\hbox(0.0+0.0)x21.07874
@@ -29720,6 +29746,7 @@ Completed box being shipped out [8]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.45944
 ....\hbox(0.0+0.0)x21.07874
@@ -29900,6 +29927,7 @@ Completed box being shipped out [8]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 0.10805
 ....\hbox(0.0+0.0)x21.07874
@@ -30906,22 +30934,23 @@ Completed box being shipped out [8]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
 ============================================================
 TEST 4: Declare new dummy text:
 ============================================================
 \g__zhlipsum_test_int=\count...
-Package zhlipsum Info: Chinese dummy text "test" is created. It has 8
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "test" is created. It has 8 paragraphs.
 Completed box being shipped out [9]
 \vbox(633.0+0.0)x407.0
 .\glue 16.0
 .\vbox(617.0+0.0)x345.0, shifted 62.0
 ..\vbox(12.0+0.0)x345.0, glue set 5.20798fil
 ...\glue 0.0 plus 1.0fil
-...\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
-....\glue 0.0 plus 1.0fil
-....\OT1/cmr/m/n/10.53937 9
+...\hbox(6.79202+0.0)x345.0
+....\hbox(6.79202+0.0)x345.0, glue set 339.7303fil
+.....\glue 0.0 plus 1.0fil
+.....\OT1/cmr/m/n/10.53937 9
 ..\glue 25.0
 ..\glue(\lineskip) 0.0
 ..\vbox(550.0+0.0)x345.0, glue set 424.86446fil
@@ -30940,6 +30969,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -30954,6 +30984,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -30968,6 +30999,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -30982,6 +31014,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -30996,6 +31029,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -31010,6 +31044,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -31024,6 +31059,7 @@ Completed box being shipped out [9]
 ....\glue(\parfillskip) 0.0 plus 1.0fil
 ....\glue(\rightskip) 0.0
 ...\glue(\parskip) 0.0 plus 1.0
+...\glue(\parskip) 0.0
 ...\glue(\baselineskip) 6.95602
 ...\hbox(8.43149+1.05394)x345.0, glue set 302.84253fil
 ....\hbox(0.0+0.0)x21.07874
@@ -31043,4 +31079,5 @@ Completed box being shipped out [9]
 ...\glue 0.0 plus 0.0001fil
 ..\glue(\baselineskip) 30.0
 ..\hbox(0.0+0.0)x345.0
+...\hbox(0.0+0.0)x345.0
 ============================================================
