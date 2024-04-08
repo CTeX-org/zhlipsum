@@ -152,8 +152,10 @@ function hooked_bundleunpack(sourcedirs, sources)
   end
 end
 
+local l3build_main = main
+
 function main(target, names)
   unhooked_bundleunpack = bundleunpack
   bundleunpack = hooked_bundleunpack
-  stdmain(target, names)
+  l3build_main(target, names)
 end
