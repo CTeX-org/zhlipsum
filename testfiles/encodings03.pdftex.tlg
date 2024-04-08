@@ -4,30 +4,29 @@ Don't change this file in any respect.
 TEST 1: Load package:
 ============================================================
 (zhlipsum.sty
-Package: zhlipsum ....-..-.. v....0 Chinese dummy text
+Package: zhlipsum ....-..-.. v... Chinese dummy text
+(../xparse.sty
+Package: xparse ....-..-.. L3 Experimental document command parser
+) (../l3keys2e.sty
+Package: l3keys2e ....-..-.. LaTeX2e option processing using LaTeX3 keys
+)
 \l__zhlipsum_begin_int=\count...
 \l__zhlipsum_end_int=\count...
 \l__zhlipsum_max_int=\count...
 (zhlipsum-utf8.def
-File: zhlipsum-utf8.def ....-..-.. v....0 Chinese dummy text with UTF-8 encoding (for zhlipsum)
+File: zhlipsum-utf8.def ....-..-.. v... Chinese dummy text with UTF-8 encoding (for zhlipsum)
 \g__zhlipsum_simp_int=\count...
-Package zhlipsum Info: Chinese dummy text "simp" is created. It has 50
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "simp" is created. It has 50 paragraphs.
 \g__zhlipsum_trad_int=\count...
-Package zhlipsum Info: Chinese dummy text "trad" is created. It has 50
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "trad" is created. It has 50 paragraphs.
 \g__zhlipsum_nanshanjing_int=\count...
-Package zhlipsum Info: Chinese dummy text "nanshanjing" is created. It has 43
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "nanshanjing" is created. It has 43 paragraphs.
 \g__zhlipsum_xiangyu_int=\count...
-Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "xiangyu" is created. It has 45 paragraphs.
 \g__zhlipsum_zhufu_int=\count...
-Package zhlipsum Info: Chinese dummy text "zhufu" is created. It has 110
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "zhufu" is created. It has 110 paragraphs.
 \g__zhlipsum_aspirin_int=\count...
-Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 67
-(zhlipsum)             paragraphs.
+Package zhlipsum Info: Chinese dummy text "aspirin" is created. It has 67 paragraphs.
 ))
 ============================================================
 ============================================================
