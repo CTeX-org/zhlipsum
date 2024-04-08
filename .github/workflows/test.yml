@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     if: "!endsWith(github.event.head_commit.message, '[ci skip]')"
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - name: Install TeX Live
       run: |
         export PATH=/tmp/texlive/bin/x86_64-linux:$PATH
@@ -30,7 +30,7 @@ jobs:
     runs-on: macos-latest
     if: "!endsWith(github.event.head_commit.message, '[ci skip]')"
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - name: Install TeX Live
       run: |
         export PATH=/tmp/texlive/bin/x86_64-darwin:$PATH
@@ -49,7 +49,7 @@ jobs:
   #   runs-on: windows-latest
   #   if: "!endsWith(github.event.head_commit.message, '[ci skip]')"
   #   steps:
-  #   - uses: actions/checkout@v1
+  #   - uses: actions/checkout@v4
   #   - name: Install TeX Live
   #     run: |
   #       ${env:PATH} = "${{ github.workspace }}\tmp\texlive\bin\win32;" + ${env:PATH}
